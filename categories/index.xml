@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Anomie</title>
+    <link>https://dong2000.xyz/categories/</link>
+    <description>Recent content in Categories on Anomie</description>
+    <image>
+      <url>https://dong2000.xyz/wombo.png</url>
+      <link>https://dong2000.xyz/wombo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Dec 2022 01:34:50 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技巧</title>
+      <link>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 01 Dec 2022 01:34:50 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>探索</title>
+      <link>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</link>
+      <pubDate>Wed, 16 Nov 2022 22:37:16 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Category Test</title>
+      <link>https://dong2000.xyz/categories/category-test/</link>
+      <pubDate>Tue, 01 Nov 2022 15:31:58 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/category-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>知识</title>
+      <link>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 30 Oct 2022 01:20:00 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>想法</title>
+      <link>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</link>
+      <pubDate>Fri, 28 Oct 2022 21:19:45 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>整活</title>
+      <link>https://dong2000.xyz/categories/%E6%95%B4%E6%B4%BB/</link>
+      <pubDate>Tue, 11 Oct 2022 03:23:28 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E6%95%B4%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>历程</title>
+      <link>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</link>
+      <pubDate>Sat, 01 Oct 2022 23:00:01 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阅读</title>
+      <link>https://dong2000.xyz/categories/%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Tue, 20 Sep 2022 23:36:02 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E9%98%85%E8%AF%BB/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>用Python爬虫爬取高校教师邮箱 | Anomie</title>
+<meta name="keywords" content="爬虫, Python">
+<meta name="description" content="最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️
+预先准备
+安装python第三方库：requests，re，csv（必要）
+正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）">
+<meta name="author" content="Sheng, D.">
+<link rel="canonical" href="https://dong2000.xyz/post/get_email_by_python_crawler/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3983c8a0a55ff533473c6a62d0feb6aaaafc903801466819bb0d567c2385ec4f.css" integrity="sha256-OYPIoKVf9TNHPGpi0P62qqr8kDgBRmgZuw1WfCOF7E8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dong2000.xyz/wombo_small.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="用Python爬虫爬取高校教师邮箱" />
+<meta property="og:description" content="最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️
+预先准备
+安装python第三方库：requests，re，csv（必要）
+正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dong2000.xyz/post/get_email_by_python_crawler/" /><meta property="og:image" content="https://dong2000.xyz/wombo.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-03-18T11:01:32+00:00" />
+<meta property="article:modified_time" content="2022-03-18T11:01:32+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dong2000.xyz/wombo.png"/>
+
+<meta name="twitter:title" content="用Python爬虫爬取高校教师邮箱"/>
+<meta name="twitter:description" content="最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️
+预先准备
+安装python第三方库：requests，re，csv（必要）
+正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dong2000.xyz/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "用Python爬虫爬取高校教师邮箱",
+      "item": "https://dong2000.xyz/post/get_email_by_python_crawler/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "用Python爬虫爬取高校教师邮箱",
+  "name": "用Python爬虫爬取高校教师邮箱",
+  "description": "最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️\n预先准备 安装python第三方库：requests，re，csv（必要）\n正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）\n",
+  "keywords": [
+    "爬虫", "Python"
+  ],
+  "articleBody": "最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️\n预先准备 安装python第三方库：requests，re，csv（必要）\n正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）\n分析源码 教师名录 以上交的环境科学与工程系为例，先找到教师名录的网页。然后F12查看源码，找到转向教师个人主页的链接。可以看到个人主页的链接在源码里统一格式为，其中XX是编号或者姓名缩写。点进链接后发现网址的格式为https://sese.sjtu.edu.cn/faculty/view/XX，可见/faculty之前的内容被省略了。与之相对应，用来匹配个人主页链接的正则表达式为\n1 ",
+  "wordCount" : "228",
+  "inLanguage": "en",
+  "datePublished": "2022-03-18T11:01:32Z",
+  "dateModified": "2022-03-18T11:01:32Z",
+  "author":{
+    "@type": "Person",
+    "name": "Sheng, D."
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dong2000.xyz/post/get_email_by_python_crawler/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anomie",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dong2000.xyz/wombo_small.png"
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dong2000.xyz" accesskey="h" title="Anomie (Alt + H)">
+                <img src="https://dong2000.xyz/wombo.png" alt="" aria-label="logo"
+                    height="35">Anomie</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dong2000.xyz/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/categories/" title="Category">
+                    <span>Category</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <h1 class="post-title">
+      用Python爬虫爬取高校教师邮箱
+    </h1>
+    <div class="post-meta"><span title='2022-03-18 11:01:32 +0000 UTC'>March 18, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sheng, D.
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%a2%84%e5%85%88%e5%87%86%e5%a4%87" aria-label="预先准备">预先准备</a></li>
+                <li>
+                    <a href="#%e5%88%86%e6%9e%90%e6%ba%90%e7%a0%81" aria-label="分析源码">分析源码</a><ul>
+                        
+                <li>
+                    <a href="#%e6%95%99%e5%b8%88%e5%90%8d%e5%bd%95" aria-label="教师名录">教师名录</a></li>
+                <li>
+                    <a href="#%e4%b8%aa%e4%ba%ba%e4%b8%bb%e9%a1%b5" aria-label="个人主页">个人主页</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%95%b4%e4%b8%aa%e7%88%ac%e8%99%ab%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="整个爬虫的代码">整个爬虫的代码</a></li>
+                <li>
+                    <a href="#%e7%88%ac%e5%8f%96%e6%95%88%e6%9e%9c" aria-label="爬取效果">爬取效果</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️</p>
+<h1 id="预先准备">预先准备<a hidden class="anchor" aria-hidden="true" href="#预先准备">#</a></h1>
+<p>安装python第三方库：<code>requests</code>，<code>re</code>，<code>csv</code>（必要）</p>
+<p>正则表达式在线测试工具：<a href="https://tool.oschina.net/regex">在线正则表达式测试 (oschina.net)</a>（非必要）</p>
+<h1 id="分析源码">分析源码<a hidden class="anchor" aria-hidden="true" href="#分析源码">#</a></h1>
+<h2 id="教师名录">教师名录<a hidden class="anchor" aria-hidden="true" href="#教师名录">#</a></h2>
+<p>以上交的环境科学与工程系为例，先找到教师名录的网页。然后F12查看源码，找到转向教师个人主页的链接。可以看到个人主页的链接在源码里统一格式为<code>&lt;a href=&quot;/faculty/view/XX&quot; target=&quot;_blank&quot;&gt;</code>，其中<code>XX</code>是编号或者姓名缩写。点进链接后发现网址的格式为<code>https://sese.sjtu.edu.cn/faculty/view/XX</code>，可见<code>/faculty</code>之前的内容被省略了。与之相对应，用来匹配个人主页链接的正则表达式为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a href=&#34;/faculty/view[^&#34;]*
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到匹配的结果后需要拼接成正确的链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2">2</a>
+</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3">3</a>
+</span><span class="lnt" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4">4</a>
+</span><span class="lnt" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5">5</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span> 
+</span></span><span class="line"><span class="cl"><span class="n">match_person</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;a href=&#34;/faculty/view[^&#34;]*&#39;</span><span class="p">)</span> <span class="c1">#匹配列表的老师们的个人主页网址</span>
+</span></span><span class="line"><span class="cl"><span class="n">person_list</span> <span class="o">=</span> <span class="n">match_person</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span> 
+</span></span><span class="line"><span class="cl"><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://sese.sjtu.edu.cn/&#39;</span> <span class="o">+</span> <span class="n">person_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#34;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#拼接得到完整的个人主页网址</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://sese.sjtu.edu.cn/faculty/all">查看教师名录网页</a></p>
+<img src="/post/get_email_by_python_crawler/1240.jpeg" alt="1240.jpg" style="zoom:80%;" />
+<h2 id="个人主页">个人主页<a hidden class="anchor" aria-hidden="true" href="#个人主页">#</a></h2>
+<p>在个人主页上继续分析源码，姓名、邮箱、研究方向在源码里的统一格式分别为<code>&lt;h5 class=&quot;media-name&quot;&gt;老师的姓名XXX&lt;/h5&gt;</code>，<code>电子邮件：XXXX@XXXX.edu.cn</code>，<code>&lt;h2&gt;研究方向&lt;/h2&gt;&lt;p&gt;对主要研究方向的简单概括XXXX&lt;/p&gt; </code>。其中研究方向这一栏被注释掉了，替以更详细的介绍。但是我们只需要这个简单版本就可以了，所以采用注释部分的内容。用于正则表达式匹配和字符串清理的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1">1</a>
+</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2">2</a>
+</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3">3</a>
+</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4">4</a>
+</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5">5</a>
+</span><span class="lnt" id="hl-2-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-6">6</a>
+</span><span class="lnt" id="hl-2-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-7">7</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">match_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;h5 class=&#34;media-name&#34;&gt;[\u4E00-\u9FFF\.]*&#39;</span><span class="p">)</span> <span class="c1">#匹配姓名</span>
+</span></span><span class="line"><span class="cl"><span class="n">match_email</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;电子邮件[：: ]*[\w\.]*@[\w\.]*&#39;</span><span class="p">)</span> <span class="c1">#匹配电子邮箱</span>
+</span></span><span class="line"><span class="cl"><span class="n">match_research</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;研究方向&lt;/h2&gt;[^&lt;]*&lt;p&gt;[^&lt;\u200b\u200d]*&#39;</span><span class="p">)</span> <span class="c1">#匹配研究领域</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="n">match_name</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">email</span> <span class="o">=</span> <span class="n">match_email</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;：&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">research</span> <span class="o">=</span> <span class="n">match_research</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img loading="lazy" src="%e7%94%a8Python%e7%88%ac%e8%99%ab%e7%88%ac%e5%8f%96%e9%ab%98%e6%a0%a1%e6%95%99%e5%b8%88%e9%82%ae%e7%ae%b1/1240-16475725579581.jpeg" alt="个人主页源码.jpg"  />
+</p>
+<h1 id="整个爬虫的代码">整个爬虫的代码<a hidden class="anchor" aria-hidden="true" href="#整个爬虫的代码">#</a></h1>
+<p>由于高校的教师主页一般不会采用反爬虫技术，因此不需要采取Header设置之类额外的操作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-1"> 1</a>
+</span><span class="lnt" id="hl-3-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-2"> 2</a>
+</span><span class="lnt" id="hl-3-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-3"> 3</a>
+</span><span class="lnt" id="hl-3-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-4"> 4</a>
+</span><span class="lnt" id="hl-3-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-5"> 5</a>
+</span><span class="lnt" id="hl-3-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-6"> 6</a>
+</span><span class="lnt" id="hl-3-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-7"> 7</a>
+</span><span class="lnt" id="hl-3-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-8"> 8</a>
+</span><span class="lnt" id="hl-3-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-9"> 9</a>
+</span><span class="lnt" id="hl-3-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-10">10</a>
+</span><span class="lnt" id="hl-3-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-11">11</a>
+</span><span class="lnt" id="hl-3-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-12">12</a>
+</span><span class="lnt" id="hl-3-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-13">13</a>
+</span><span class="lnt" id="hl-3-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-14">14</a>
+</span><span class="lnt" id="hl-3-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-15">15</a>
+</span><span class="lnt" id="hl-3-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-16">16</a>
+</span><span class="lnt" id="hl-3-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-17">17</a>
+</span><span class="lnt" id="hl-3-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-18">18</a>
+</span><span class="lnt" id="hl-3-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-19">19</a>
+</span><span class="lnt" id="hl-3-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-20">20</a>
+</span><span class="lnt" id="hl-3-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-21">21</a>
+</span><span class="lnt" id="hl-3-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-22">22</a>
+</span><span class="lnt" id="hl-3-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-23">23</a>
+</span><span class="lnt" id="hl-3-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-24">24</a>
+</span><span class="lnt" id="hl-3-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-25">25</a>
+</span><span class="lnt" id="hl-3-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-26">26</a>
+</span><span class="lnt" id="hl-3-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-27">27</a>
+</span><span class="lnt" id="hl-3-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-28">28</a>
+</span><span class="lnt" id="hl-3-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-29">29</a>
+</span><span class="lnt" id="hl-3-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-30">30</a>
+</span><span class="lnt" id="hl-3-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-31">31</a>
+</span><span class="lnt" id="hl-3-32"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-32">32</a>
+</span><span class="lnt" id="hl-3-33"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-33">33</a>
+</span><span class="lnt" id="hl-3-34"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-34">34</a>
+</span><span class="lnt" id="hl-3-35"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-35">35</a>
+</span><span class="lnt" id="hl-3-36"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-36">36</a>
+</span><span class="lnt" id="hl-3-37"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-37">37</a>
+</span><span class="lnt" id="hl-3-38"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-38">38</a>
+</span><span class="lnt" id="hl-3-39"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-39">39</a>
+</span><span class="lnt" id="hl-3-40"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-40">40</a>
+</span><span class="lnt" id="hl-3-41"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-41">41</a>
+</span><span class="lnt" id="hl-3-42"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-42">42</a>
+</span><span class="lnt" id="hl-3-43"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-43">43</a>
+</span><span class="lnt" id="hl-3-44"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-44">44</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">csv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;教师列表.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="c1">#创建文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&#34;index&#34;</span><span class="p">,</span><span class="s2">&#34;name&#34;</span><span class="p">,</span><span class="s2">&#34;email&#34;</span><span class="p">,</span><span class="s2">&#34;researches&#34;</span><span class="p">,</span><span class="s2">&#34;website&#34;</span><span class="p">])</span> <span class="c1">#列表的标题行</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">root_url</span> <span class="o">=</span> <span class="s1">&#39;https://sese.sjtu.edu.cn/faculty/all&#39;</span>  <span class="c1">#教职工列表的网址</span>
+</span></span><span class="line"><span class="cl"><span class="n">root</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">root_url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">root</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">root</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">apparent_encoding</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">match_person</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;a href=&#34;/faculty/view[^&#34;]*&#39;</span><span class="p">)</span> <span class="c1">#匹配列表的老师们的个人主页网址</span>
+</span></span><span class="line"><span class="cl"><span class="n">person_list</span> <span class="o">=</span> <span class="n">match_person</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">person_list</span><span class="p">)):</span> <span class="c1">#遍历所有教师</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://sese.sjtu.edu.cn/&#39;</span> <span class="o">+</span> <span class="n">person_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#34;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#拼接得到完整的个人主页网址</span>
+</span></span><span class="line"><span class="cl">    <span class="n">person</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">person</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">person</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">apparent_encoding</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">match_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;h5 class=&#34;media-name&#34;&gt;[\u4E00-\u9FFF\.]*&#39;</span><span class="p">)</span> <span class="c1">#匹配姓名</span>
+</span></span><span class="line"><span class="cl">    <span class="n">match_email</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;电子邮件[：: ]*[\w\.]*@[\w\.]*&#39;</span><span class="p">)</span> <span class="c1">#匹配电子邮箱</span>
+</span></span><span class="line"><span class="cl">    <span class="n">match_research</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;研究方向&lt;/h2&gt;[^&lt;]*&lt;p&gt;[^&lt;\u200b\u200d]*&#39;</span><span class="p">)</span> <span class="c1">#匹配研究领域</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">name</span> <span class="o">=</span> <span class="n">match_name</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;?&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">email</span> <span class="o">=</span> <span class="n">match_email</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;：&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">email</span> <span class="o">=</span> <span class="s1">&#39;?&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">research</span> <span class="o">=</span> <span class="n">match_research</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">research</span> <span class="o">=</span> <span class="s1">&#39;?&#39;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">research</span><span class="p">,</span> <span class="n">url</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="c1">#写入文件</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="爬取效果">爬取效果<a hidden class="anchor" aria-hidden="true" href="#爬取效果">#</a></h1>
+<img src="/post/get_email_by_python_crawler/1240-16475725579592.jpeg" alt="爬取结果.jpg" style="zoom:80%;" />
+<p>这一方法的问题在于，写爬虫的工作量和爬取成功率非常取决于院校网页源码的标准程度。一些个人网站做得不太好的院校，不同老师的个人主页格式非常不统一，字体、排版、内容顺序等等各有千秋，使得我们很难从网页源码上识别出想要的信息。有时候适用于教师A主页的正则表达式，在教师B的主页上可能什么都匹配不到。这也是为什么我在写个人主页的<code>findall</code>命令时用了<code>try</code>语句——如果爬取失败了就用“?”替代，避免报错中断。</p>
+<p>在尝试了不同学校的网站之后，发现“研究领域”的信息是格式最不统一的，因此也是爬取失败率最高的。如果个人主页没有专门给邮箱地址设栏，那么邮箱地址也很可能爬取失败。写一个适用情况较广的正则表达式是很重要的，可以多查看几位教师的主页源码，找一找共同的规律。作为第一次听说正则表达式这一概念的新手，我都是先将源码复制到在线测试工具里，确认自己写的正则表达式能够成功之后再放进代码当中。</p>
+<p>教师姓名和个人主页网址一般情况下不会爬取失败，因为在职教师列表的页面通常有规律可循。因此非常建议记录每位老师的个人主页网址，便于有需要的情况下手动访问查阅。</p>
+<hr>
+<p>同样发表于简书：<a href="https://www.jianshu.com/p/f1c4464cbf35">爬虫记录：尝试用Python爬取教授邮箱 - 简书 (jianshu.com)</a></p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dong2000.xyz/tags/%E7%88%AC%E8%99%AB/">爬虫</a></li>
+      <li><a href="https://dong2000.xyz/tags/python/">Python</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://dong2000.xyz/post/outlook-on-a-balanced-regenerative-anthropocene/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Outlook on a balanced &amp; regenerative Anthropocene</span>
+  </a>
+  <a class="next" href="https://dong2000.xyz/post/hostory_of_system_sci/">
+    <span class="title">Next »</span>
+    <br>
+    <span>梳理系统科学发展历程</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022-2022 <a href="https://dong2000.xyz">Anomie</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    <span id="busuanzi_container_site_count">
+        <br>总访问量=<span id="busuanzi_value_site_pv"></span>, 
+        访客数=<span id="busuanzi_value_site_uv"></span>, 
+        本页阅读量=<span id="busuanzi_value_page_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+
+</html>
