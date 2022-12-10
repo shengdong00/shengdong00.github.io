@@ -3,16 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2022-12-01T01:34:50+08:00</lastmod>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2022-12-01T01:34:50+08:00</lastmod>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/epidemic-memory/</loc>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/epidemic/</loc>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2022-12-01T01:34:50+08:00</lastmod>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/public-memory/</loc>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2022-12-01T01:34:50+08:00</lastmod>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E7%96%AB%E6%83%85/</loc>
+    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/</loc>
     <lastmod>2022-12-01T01:34:50+08:00</lastmod>
@@ -90,9 +105,6 @@
     <lastmod>2022-10-28T21:19:45+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%86%9C%E4%B8%9A/</loc>
-    <lastmod>2022-10-28T21:19:45+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2022-10-28T21:19:45+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/matlab/</loc>
