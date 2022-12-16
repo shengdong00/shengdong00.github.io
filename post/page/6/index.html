@@ -175,93 +175,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>非期望产出SBM模型的数学推演及Python实现
+    <h2>梳理系统科学发展历程
     </h2>
   </header>
   <div class="entry-content">
-    <p>带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
-这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
-数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
-每个$DMU$有$m$种投入，记为$X_i(i=1,2,\dots,m)$，每种投入的权重为$v_i$；
-有$q$种产出，记为$Y_r(r=1,2,\dots,q)$，每种产出的权重为$u_r$.
-对第$k$个可比决策单元而言，其投入产出比（技术效率）为
-$$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
-限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
-$$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
-令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
-$$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
-从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-10 23:00:38 +0000 UTC'>August 10, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sheng, D.</footer>
-  <a class="entry-link" aria-label="post link to 非期望产出SBM模型的数学推演及Python实现" href="https://dong2000.xyz/post/undesirable_sbm_in_python/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>（伪）期末小记
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>这篇期末小记从建立文章题目到真正开始动笔之间过了一个月之久。考试周那段天天熬夜通宵，昏天黑地的日子，也已经在半个月前随着最后一场考试的交卷而结束了。这一个月里发生了很多变化。完成了本科期间最后一门专业课考试，告别了相伴两年的工高班的同学，半只脚踏进了西湖大学的实验室……虽然没有正式毕业，但是我的本科生活——或者说，那些和同学一起坐在教室里听老师们讲课的生活——似乎真的已经结束了。一个月前我就知道将发生很多变化，那时隐隐或许期待着改变后的焕然新生；一个月后，这些变化都如预期一样地发生了，却是以一种忙碌中略带麻木的方式。
+    <p>系统问题的提出 关于系统、组织和复杂性的性质的问题并不是现代所特有的。正如国际系统工程委员会 (INCOSE) 的先驱和前国际系统科学学会 （ISSS）主席约翰·沃菲尔德所说，
+Virtually every important concept that backs up the key ideas emergent in systems literature is found in ancient literature and in the centuries that follow.
+然而，直到20世纪中叶，人们才越来越意识到采用一种科学方法来解决“系统科学”中的组织和复杂性问题的必要性和可能性。1
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-07-08 00:09:04 +0000 UTC'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.</footer>
-  <a class="entry-link" aria-label="post link to （伪）期末小记" href="https://dong2000.xyz/post/at_end_of_term/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>系统科学与工程复习整理
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 来自老师的课程资料，请勿商用
-绪论 系统和系统科学 系统的定义 现代系统研究开创者贝塔朗菲对系统的定义：
-系统是相互作用的多元素的复合体。
-该定义的精确说法是
-如果一个对象集合中至少有两个可以区分的对象，所有对象按照可以辨认的特有方式相互联系在一起，就称该集合为一个系统。集合中包含的对象成为系统的组成部分（组分），最小的、不需要再细分的组分称为系统的元素或要素。
-重点：
-至少两个元素——系统的多元性 组成部分相互作用——矛盾的统一 ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-06-12 01:30:13 +0000 UTC'>June 12, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sheng, D.</footer>
-  <a class="entry-link" aria-label="post link to 系统科学与工程复习整理" href="https://dong2000.xyz/post/system_sci_review/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Sci-Hub &#43; Python爬虫实现文献批量下载
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 操作思路 在Web of Science或者其他学术搜索引擎上查找所需要的文献，然后将全体检索结果的信息导出成Excel（包括作者、标题、出版年份、期刊、DOI号等等） 以DOI号为检索条件，到Sci-Hub下载文献，将这一过程写成爬虫进行批量处理 导出DOI号序列，写成循环来逐个爬取 以DOI号检索文献，进入下载页面，查找到保存按钮对应的元素，下载到本地 将下载的PDF文件按照自己的标准重命名 手动补全无法在Sci-Hub上得到的文献 ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-05-18 19:27:46 +0000 UTC'>May 18, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sheng, D.</footer>
-  <a class="entry-link" aria-label="post link to Sci-Hub &#43; Python爬虫实现文献批量下载" href="https://dong2000.xyz/post/crawl_papers_from_scihub/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>2022美赛纪念
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。🐶
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-05-08 23:10:55 +0000 UTC'>May 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.</footer>
-  <a class="entry-link" aria-label="post link to 2022美赛纪念" href="https://dong2000.xyz/post/on_icm_2022/"></a>
+  <footer class="entry-footer"><span title='2022-03-18 09:37:41 +0000 UTC'>March 18, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <a class="entry-link" aria-label="post link to 梳理系统科学发展历程" href="https://dong2000.xyz/post/hostory_of_system_sci/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://dong2000.xyz/post/page/3/">
+    <a class="prev" href="https://dong2000.xyz/post/page/5/">
       «&nbsp;Prev&nbsp;
-    </a>
-    <a class="next" href="https://dong2000.xyz/post/page/5/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>

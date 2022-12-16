@@ -3,10 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/python/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/python-threads-processes/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%A4%9A%E8%BF%9B%E7%A8%8B/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</loc>
+    <lastmod>2022-12-16T14:11:55+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/epidemic-memory/</loc>
     <lastmod>2022-12-10T19:46:06+08:00</lastmod>
@@ -14,13 +35,7 @@
     <loc>https://dong2000.xyz/tags/epidemic/</loc>
     <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
-    <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/tags/public-memory/</loc>
-    <lastmod>2022-12-10T19:46:06+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/tags/</loc>
     <lastmod>2022-12-10T19:46:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</loc>
@@ -45,9 +60,6 @@
     <lastmod>2022-12-01T01:34:50+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/barrel-distortion/</loc>
-    <lastmod>2022-11-16T22:37:16+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</loc>
     <lastmod>2022-11-16T22:37:16+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
@@ -214,9 +226,6 @@
   </url><url>
     <loc>https://dong2000.xyz/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/</loc>
     <lastmod>2022-09-07T09:31:54+00:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/tags/python/</loc>
-    <lastmod>2022-08-10T23:00:38+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/undesirable_sbm_in_python/</loc>
     <lastmod>2022-08-10T23:00:38+00:00</lastmod>
