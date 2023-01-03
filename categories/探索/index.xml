@@ -9,7 +9,19 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Dec 2022 14:11:55 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 14:37:30 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The conceptual evolution of green building in the 21st century – textual changes in LEED</title>
+      <link>https://dong2000.xyz/post/textual-analysis-on-leed/</link>
+      <pubDate>Tue, 03 Jan 2023 14:37:30 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/textual-analysis-on-leed/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The conceptual evolution of green building is reflected in historical versions of green building rating tools. Computational text analysis on historical versions of LEED revealed changes in the category systems and textual contents, which reflects how LEED’s green building concept has evolved in the 21st century.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; green building rating tool (GBRT); conceptual evolution; LEED; computational text analysis&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Python多线程和多进程的运行速度比较</title>
       <link>https://dong2000.xyz/post/python-threads-processes/</link>
