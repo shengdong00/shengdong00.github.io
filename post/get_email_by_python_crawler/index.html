@@ -13,7 +13,7 @@
 正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）">
 <meta name="author" content="Sheng, D.">
 <link rel="canonical" href="https://dong2000.xyz/post/get_email_by_python_crawler/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5ac6e497fa49425461e0ab7ead7d874d14c61ca3c53da2d4f3aa3a9db4ca376d.css" integrity="sha256-Wsbkl/pJQlRh4Kt&#43;rX2HTRTGHKPFPaLU86o6nbTKN20=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6d911e26049d4df4d414a833110264eab017684cbb43cf61404ed9dd9df46338.css" integrity="sha256-bZEeJgSdTfTUFKgzEQJk6rAXaEy7Q89hQE7Z3Z30Yzg=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://dong2000.xyz/wombo_small.png">
@@ -220,33 +220,93 @@
     <div class="post-meta"><span title='2022-03-18 11:01:32 +0000 UTC'>March 18, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sheng, D.
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details >
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#%e9%a2%84%e5%85%88%e5%87%86%e5%a4%87" aria-label="预先准备">预先准备</a></li>
-                <li>
-                    <a href="#%e5%88%86%e6%9e%90%e6%ba%90%e7%a0%81" aria-label="分析源码">分析源码</a><ul>
-                        
-                <li>
-                    <a href="#%e6%95%99%e5%b8%88%e5%90%8d%e5%bd%95" aria-label="教师名录">教师名录</a></li>
-                <li>
-                    <a href="#%e4%b8%aa%e4%ba%ba%e4%b8%bb%e9%a1%b5" aria-label="个人主页">个人主页</a></li></ul>
-                </li>
-                <li>
-                    <a href="#%e6%95%b4%e4%b8%aa%e7%88%ac%e8%99%ab%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="整个爬虫的代码">整个爬虫的代码</a></li>
-                <li>
-                    <a href="#%e7%88%ac%e5%8f%96%e6%95%88%e6%9e%9c" aria-label="爬取效果">爬取效果</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e9%a2%84%e5%85%88%e5%87%86%e5%a4%87" aria-label="预先准备">预先准备</a></li>
+                    <li>
+                        <a href="#%e5%88%86%e6%9e%90%e6%ba%90%e7%a0%81" aria-label="分析源码">分析源码</a><ul>
+                            
+                    <li>
+                        <a href="#%e6%95%99%e5%b8%88%e5%90%8d%e5%bd%95" aria-label="教师名录">教师名录</a></li>
+                    <li>
+                        <a href="#%e4%b8%aa%e4%ba%ba%e4%b8%bb%e9%a1%b5" aria-label="个人主页">个人主页</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e6%95%b4%e4%b8%aa%e7%88%ac%e8%99%ab%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="整个爬虫的代码">整个爬虫的代码</a></li>
+                    <li>
+                        <a href="#%e7%88%ac%e5%8f%96%e6%95%88%e6%9e%9c" aria-label="爬取效果">爬取效果</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
 
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
   <div class="post-content"><p>最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️</p>
 <h1 id="预先准备">预先准备<a hidden class="anchor" aria-hidden="true" href="#预先准备">#</a></h1>
 <p>安装python第三方库：<code>requests</code>，<code>re</code>，<code>csv</code>（必要）</p>
