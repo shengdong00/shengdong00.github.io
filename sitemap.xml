@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-01-03T14:37:30+08:00</lastmod>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-01-03T14:37:30+08:00</lastmod>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/</loc>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/</loc>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E4%B8%8B%E9%9B%AA/</loc>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/snow-in-hangzhou/</loc>
+    <lastmod>2023-01-15T14:12:44+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/computational-text-analysis/</loc>
     <lastmod>2023-01-03T14:37:30+08:00</lastmod>
@@ -15,12 +30,6 @@
     <lastmod>2023-01-03T14:37:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/leed/</loc>
-    <lastmod>2023-01-03T14:37:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-01-03T14:37:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/tags/</loc>
     <lastmod>2023-01-03T14:37:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/textual-analysis-on-leed/</loc>
@@ -85,9 +94,6 @@
   </url><url>
     <loc>https://dong2000.xyz/post/simple_barrel_disto/</loc>
     <lastmod>2022-11-16T22:37:16+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/category-test/</loc>
-    <lastmod>2022-11-01T15:31:58+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/test/</loc>
     <lastmod>2022-11-01T15:31:58+08:00</lastmod>
@@ -171,9 +177,6 @@
     <lastmod>2022-10-11T03:23:28+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-10-01T23:00:01+00:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
     <lastmod>2022-10-01T23:00:01+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E6%89%98%E7%AE%A1/</loc>
@@ -270,9 +273,6 @@
     <lastmod>2022-05-18T19:27:46+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/on_icm_2022/</loc>
-    <lastmod>2022-05-08T23:10:55+00:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/tags/%E6%8B%BE/</loc>
     <lastmod>2022-05-08T23:10:55+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E7%BE%8E%E8%B5%9B/</loc>
