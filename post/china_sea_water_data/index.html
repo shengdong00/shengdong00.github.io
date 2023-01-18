@@ -349,11 +349,11 @@
 <li>将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性；</li>
 <li>利用机器学习，从多个污染指标数据预测海区分类。</li>
 </ol>
-<img src="/post/china_sea_water_data/image-20220424023106157.png" alt="image-20220424023106157" style="zoom:25%;" />   
+<img src="/images/image-20220424023106157.png" alt="image-20220424023106157" style="zoom:25%;" />   
 <h1 id="数据获取">数据获取<a hidden class="anchor" aria-hidden="true" href="#数据获取">#</a></h1>
 <h2 id="爬虫">爬虫<a hidden class="anchor" aria-hidden="true" href="#爬虫">#</a></h2>
 <p>来源：生态环境部的海水水质监测信息公开系统。网址：http://ep.nmemc.org.cn:8888/Water/</p>
-<p><img loading="lazy" src="/post/china_sea_water_data/image-20220424020835110.png" alt="image-20220424020835110"  />
+<p><img loading="lazy" src="/images/image-20220424020835110.png" alt="image-20220424020835110"  />
 </p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -499,7 +499,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s1">&#39;./Data.pkl&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/image-20220424020754676.png" alt="image-20220424020754676"  />
+</div><p><img loading="lazy" src="/images/image-20220424020754676.png" alt="image-20220424020754676"  />
 </p>
 <h1 id="水质类别动态变化">水质类别动态变化<a hidden class="anchor" aria-hidden="true" href="#水质类别动态变化">#</a></h1>
 <p>根据每个月水质监测数据的经纬度信息和水质类别作图。</p>
@@ -698,7 +698,7 @@
 </span></span><span class="line"><span class="cl">        <span class="n">draw_plot</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">month</span><span class="p">,</span><span class="n">longitude_by_level</span><span class="p">,</span><span class="n">latitude_by_level</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/2020-05.jpg" alt="2020-05"  />
+</div><img src="/images/2020-05.jpg" alt="2020-05"  />
 <p>将图片拼接成GIF动图。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -718,7 +718,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">imageio</span><span class="o">.</span><span class="n">mimsave</span><span class="p">(</span><span class="s2">&#34;../沿海检测点水质类别变化/result.gif&#34;</span><span class="p">,</span> <span class="n">frames</span><span class="p">,</span> <span class="s1">&#39;GIF&#39;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/result.gif" alt="result"  />
+</div><p><img loading="lazy" src="/images/result.gif" alt="result"  />
 </p>
 <h1 id="简单数据分析正态性检验方差分析pearson分析和线性回归">简单数据分析：正态性检验、方差分析、Pearson分析和线性回归<a hidden class="anchor" aria-hidden="true" href="#简单数据分析正态性检验方差分析pearson分析和线性回归">#</a></h1>
 <p>以“化学需氧量(mg/L)”为研究数据，考察不同海区/省份之间的海水COD差异性。首先将数据转换为数值类型，标记为“未检出”的数据记为0。由于方差分析适用于正态分布的样本，因此先对数据进行分布检验，变换为接近正态分布的形式后再进行方差分析。</p>
@@ -843,7 +843,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424021903070.png" alt="image-20220424021903070" style="zoom:33%;" />
+</div><img src="/images/image-20220424021903070.png" alt="image-20220424021903070" style="zoom:33%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-20-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-20-1">1</a>
@@ -885,7 +885,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Logarithmic Data&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/image-20220424022527148.png" alt="image-20220424022527148"  />
+</div><p><img loading="lazy" src="/images/image-20220424022527148.png" alt="image-20220424022527148"  />
 </p>
 <h2 id="方差分析">方差分析<a hidden class="anchor" aria-hidden="true" href="#方差分析">#</a></h2>
 <p>获取海区和省份的数据（定类数据），和对数化的COD一起合成data frame。</p>
@@ -916,7 +916,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;海区&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;logCOD&#39;</span><span class="p">,</span><span class="n">data</span> <span class="o">=</span> <span class="n">anova_data</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424022854526.png" alt="image-20220424022854526" style="zoom:50%;" />
+</div><img src="/images/image-20220424022854526.png" alt="image-20220424022854526" style="zoom:50%;" />
 <p>单因素方差分析。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -953,7 +953,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;省份&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;logCOD&#39;</span><span class="p">,</span><span class="n">data</span> <span class="o">=</span> <span class="n">anova_data</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424023106157.png" alt="image-20220424023106157" style="zoom:50%;" />
+</div><img src="/images/image-20220424023106157.png" alt="image-20220424023106157" style="zoom:50%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-28-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-28-1">1</a>
@@ -1013,7 +1013,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Logarithmic Data&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/image-20220424023434570.png" alt="image-20220424023434570"  />
+</div><p><img loading="lazy" src="/images/image-20220424023434570.png" alt="image-20220424023434570"  />
 </p>
 <p>由于有些监测点只有化学需氧量数据，没有无机氮数据，因此需要进行数据清理，将这些监测点删除。</p>
 <div class="highlight"><div class="chroma">
@@ -1097,7 +1097,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;logCOD&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424023919558.png" alt="image-20220424023919558" style="zoom: 50%;" />
+</div><img src="/images/image-20220424023919558.png" alt="image-20220424023919558" style="zoom: 50%;" />
 <p>考虑到海水地理位置对相关性的影响，再分海区绘制散点图和回归曲线。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1267,7 +1267,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.3</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/image-20220424024129532.png" alt="image-20220424024129532"  />
+</div><p><img loading="lazy" src="/images/image-20220424024129532.png" alt="image-20220424024129532"  />
 </p>
 <h1 id="机器学习">机器学习<a hidden class="anchor" aria-hidden="true" href="#机器学习">#</a></h1>
 <p>为了从多个污染指标的层面上对不同海区的差异进行分析，以“化学需氧量(mg/L)”、“无机氮(mg/L)”、“活性磷酸盐(mg/L)”、“石油类(mg/L)”这四个指标作为自变量，将“海区”作为因变量，尝试用5种不同的模型进行机器学习，并找出预测准确度最高的模型进行进一步分析。</p>
@@ -1381,7 +1381,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">D</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">D</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424024758504.png" alt="image-20220424024758504" style="zoom:50%;" />
+</div><img src="/images/image-20220424024758504.png" alt="image-20220424024758504" style="zoom:50%;" />
 <p>其中任何一项数据缺失的监测点都删除，最后把清理后的因变量保存为一维数组<code>Y</code>，自变量保存为四维数组<code>X</code>。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1505,7 +1505,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">})</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424025330318.png" alt="image-20220424025330318" style="zoom: 33%;" />
+</div><img src="/images/image-20220424025330318.png" alt="image-20220424025330318" style="zoom: 33%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-47-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-1"> 1</a>
@@ -1566,7 +1566,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">})</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424025454282.png" alt="image-20220424025454282" style="zoom: 33%;" />
+</div><img src="/images/image-20220424025454282.png" alt="image-20220424025454282" style="zoom: 33%;" />
 <p>通过混淆矩阵也可以判断不同模型的预测能力，并且比较不同海区的数据被正确判断或误判为其他海区的可能性。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1638,7 +1638,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="/post/china_sea_water_data/image-20220424025728647.png" alt="image-20220424025728647"  />
+</div><p><img loading="lazy" src="/images/image-20220424025728647.png" alt="image-20220424025728647"  />
 </p>
 <h2 id="knn模型">KNN模型<a hidden class="anchor" aria-hidden="true" href="#knn模型">#</a></h2>
 <p>综合以上，认为在当前的参数设置下KNN模型具有最好的解释力。输出KNN模型的分类报告。</p>
@@ -1767,7 +1767,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><img src="/post/china_sea_water_data/image-20220424030407019.png" alt="image-20220424030407019" style="zoom:50%;" />
+</div><img src="/images/image-20220424030407019.png" alt="image-20220424030407019" style="zoom:50%;" />
 <p>限制本模型预测能力的可能原因有：分类精细度和依据不合适；没有找到最关键的自变量；数据采集有偏；模型训练迭代次数不足。</p>
 
   </div>

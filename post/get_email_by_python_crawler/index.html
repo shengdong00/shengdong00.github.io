@@ -340,7 +340,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><a href="https://sese.sjtu.edu.cn/faculty/all">查看教师名录网页</a></p>
-<img src="/post/get_email_by_python_crawler/1240.jpeg" alt="1240.jpg" style="zoom:80%;" />
+<img src="/images/1240.jpeg" alt="1240.jpg" style="zoom:80%;" />
 <h2 id="个人主页">个人主页<a hidden class="anchor" aria-hidden="true" href="#个人主页">#</a></h2>
 <p>在个人主页上继续分析源码，姓名、邮箱、研究方向在源码里的统一格式分别为<code>&lt;h5 class=&quot;media-name&quot;&gt;老师的姓名XXX&lt;/h5&gt;</code>，<code>电子邮件：XXXX@XXXX.edu.cn</code>，<code>&lt;h2&gt;研究方向&lt;/h2&gt;&lt;p&gt;对主要研究方向的简单概括XXXX&lt;/p&gt; </code>。其中研究方向这一栏被注释掉了，替以更详细的介绍。但是我们只需要这个简单版本就可以了，所以采用注释部分的内容。用于正则表达式匹配和字符串清理的代码：</p>
 <div class="highlight"><div class="chroma">
@@ -462,7 +462,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="爬取效果">爬取效果<a hidden class="anchor" aria-hidden="true" href="#爬取效果">#</a></h1>
-<img src="/post/get_email_by_python_crawler/1240-16475725579592.jpeg" alt="爬取结果.jpg" style="zoom:80%;" />
+<img src="/images/1240-16475725579592.jpeg" alt="爬取结果.jpg" style="zoom:80%;" />
 <p>这一方法的问题在于，写爬虫的工作量和爬取成功率非常取决于院校网页源码的标准程度。一些个人网站做得不太好的院校，不同老师的个人主页格式非常不统一，字体、排版、内容顺序等等各有千秋，使得我们很难从网页源码上识别出想要的信息。有时候适用于教师A主页的正则表达式，在教师B的主页上可能什么都匹配不到。这也是为什么我在写个人主页的<code>findall</code>命令时用了<code>try</code>语句——如果爬取失败了就用“?”替代，避免报错中断。</p>
 <p>在尝试了不同学校的网站之后，发现“研究领域”的信息是格式最不统一的，因此也是爬取失败率最高的。如果个人主页没有专门给邮箱地址设栏，那么邮箱地址也很可能爬取失败。写一个适用情况较广的正则表达式是很重要的，可以多查看几位教师的主页源码，找一找共同的规律。作为第一次听说正则表达式这一概念的新手，我都是先将源码复制到在线测试工具里，确认自己写的正则表达式能够成功之后再放进代码当中。</p>
 <p>教师姓名和个人主页网址一般情况下不会爬取失败，因为在职教师列表的页面通常有规律可循。因此非常建议记录每位老师的个人主页网址，便于有需要的情况下手动访问查阅。</p>

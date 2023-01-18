@@ -443,25 +443,26 @@ The more similar the contents between the two texts, the closer the value of $D$
 <h2 id="3-results">3. Results<a hidden class="anchor" aria-hidden="true" href="#3-results">#</a></h2>
 <h3 id="31changes-in-independent-credit-categories">3.1.Changes in independent credit categories<a hidden class="anchor" aria-hidden="true" href="#31changes-in-independent-credit-categories">#</a></h3>
 <p>The rating systems have significant changes in categories (Fig 1) after each major update. From v2 to v3, the weights of “Sustainable Sites” and “Energy and Atmosphere” had increased, while that of “Materials and Resources” and “Indoor Environmental Quality” had dropped. From v3 to v4, a series of new categories emerged, including “Integrative Process”, “Location and Transportation”, and “Regional Priority”. Integration and separation of independent credits can be found in each update. E.g., “Low-Emitting Materials” in v2.0 was separated into sub-credits of different usage scenarios in v2.1, and then re-integrated from v3 to v4.0.</p>
-<p><img loading="lazy" src="/post/textual-analysis-on-leed/fig.jpg" alt="fig"  />
+<!--![fig](/images/fig.jpg)-->
+<p><img loading="lazy" src="https://s3.bmp.ovh/imgs/2023/01/18/d54e1dd367f38de4.jpg" alt="fig"  />
 </p>
 <p><strong>Fig 1.</strong> Independent credits (with names) of historical LEED versions. Block size stands for the percentage of credit points. Credits of the same category have the same color.</p>
 <h3 id="32content-connections">3.2.Content connections<a hidden class="anchor" aria-hidden="true" href="#32content-connections">#</a></h3>
 <h4 id="321-transition-matrices-and-connection-threshold">3.2.1 Transition matrices and connection threshold<a hidden class="anchor" aria-hidden="true" href="#321-transition-matrices-and-connection-threshold">#</a></h4>
 <p>The transition matrices of adjacent LEED versions are created according to the cosine similarities of every two credits (Fig 2). Ideally, a comprehensive, well-classified rating system should divide different aspects of an object into different parts (in this case, credits and categories), and keep its various sub-sections as independent as possible. This is to avoid overlapping of multiple rating processes. Therefore, if a rating system is good and consistent, its credits from a previous version should always be most similar to the corresponding credit in the latter version, with some weaker connections to nearby credits from the same category, and have little connection to credits from a completely different category. This principle is reflected especially in the latest update from v4.0 to v4.1, but not so well-reflected in updates from v2.2 to v3 and from v3 to v4.0. Categories such as environmental quality-related category showed significant change in the 2009 version, and almost everything changed from v3 2009 to v4.0.</p>
-<p><img loading="lazy" src="/post/textual-analysis-on-leed/image-20230103170040169.jpg" alt="image-20230103170040169"  />
-</p>
+<!--![image-20230103170040169](/images/image-20230103170040169.jpg)-->
+<img src = 'https://s3.bmp.ovh/imgs/2023/01/18/24729d5f65690c28.jpg' >
 <p><strong>Fig 2.</strong> Transition matrices of credit connection strengths between adjacent LEED rating systems.</p>
 <p>I counted up all the connections and get the histogram in Fig 3. The number of connections dropped drastically from 0.0 to 0.2, and remained at ~10<sup>1</sup> per bucket(0.02) afterwards. To make the network simple and only illustrates important connections, I used 0.54 as the threshold above which the connections will be considered as significant and marked in Fig 4.</p>
-<p><img loading="lazy" src="/post/textual-analysis-on-leed/Histogram.jpg" alt="Histogram"  />
-</p>
+<!--![Histogram](/images/Histogram.jpg)-->
+<img src = 'https://s3.bmp.ovh/imgs/2023/01/18/df31ef3804c4b16e.jpg' >
 <p><strong>Fig 3.</strong> Histogram of connections strengths between credits from adjacent versions.</p>
 <h4 id="322-flow-network">3.2.2 Flow network<a hidden class="anchor" aria-hidden="true" href="#322-flow-network">#</a></h4>
 <p>Fig 4 shows the flow network of credit ID<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and connections[^5]. Generally, credits in older versions are more intertwined with relevant ones, while credits in later versions mainly connect to their own adjacent credits of the same topic, which means less overlap between independent credits. The clear classification and distinct arrangement indicate the connotational improvement in green building concept.</p>
 <p>Relatively, credits have stronger connection with topic-related adjacent credits, with several exceptions. E.g., v3 EA-1 and v4.0 EA-2 both promotes energy performance, but their similarity is only 0.31, which is caused by technical developments in this area. The integration and separation of credits isn’t restricted to “credit/sub-credit” transformations. For example, EA-5 and EA-7 in v4.0 are both loosely connected to EA-5 in v4.1, indicating that green power and carbon offset concerns were merged into renewable energy credit.</p>
 <p>Apart from credit-to-credit relations, Fig 4 also reveals content changes at category level. Credits from SS-1 to SS-4 in v3 showed little connection to v4.0 SS, which means the element of transportation and location were basically removed from “Sustainable Site” category. Despite that v4.0 has a new category of “Transportation and Location”, it has no significant connection to v3 SS-1~4. Key word analysis reveals that instead of vehicle management requirements, v4.0 LT focused more on the buildings’ interactions with surrounding facilities and community.</p>
-<p><img loading="lazy" src="/post/textual-analysis-on-leed/flow_network.jpg" alt="Flow_network"  />
-</p>
+<!--![Flow_network](/images/flow_network.jpg)-->
+<img src = 'https://s3.bmp.ovh/imgs/2023/01/18/b7a67864c92b7620.jpg' >
 <p><strong>Fig 4.</strong> Flow network of independent credits (with IDs). Line width and color stands for cosine similarity.</p>
 <h2 id="4-discussion">4. Discussion<a hidden class="anchor" aria-hidden="true" href="#4-discussion">#</a></h2>
 <p>There’s a trend of becoming more systematic and multi-dimensional in the update process of LEED rating system. Compared with previous versions, v4 has the biggest change in both category systems and textual contents. The idea of interactions with surroundings and community gets more important in LEED’s green building concept. The connotation of water efficiency, energy, resource conservation and environmental quality had also changed to a great extent to meet with emerging technologies and social-natural backgrounds.</p>
