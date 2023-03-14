@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Dec 2022 01:34:50 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 01:38:43 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Hugo&#43;Papermod中添加Echartsjs</title>
+      <link>https://dong2000.xyz/post/learning-echartsjs/</link>
+      <pubDate>Sun, 12 Mar 2023 01:38:43 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/learning-echartsjs/</guid>
+      <description>&lt;p&gt;参照Echarts的&lt;a href=&#34;https://echarts.apache.org/handbook/zh/get-started/&#34;&gt;官方入门文档&lt;/a&gt;，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为&lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;Papermod&lt;/a&gt;)。以后需要放图表的时候就不用再傻乎乎地截图了。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>在Hugo&#43;PaperMod主题下添加不蒜子网站统计</title>
       <link>https://dong2000.xyz/post/my_web-count/</link>

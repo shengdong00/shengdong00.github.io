@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 11 Mar 2023 14:26:37 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 01:38:43 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Hugo&#43;Papermod中添加Echartsjs</title>
+      <link>https://dong2000.xyz/post/learning-echartsjs/</link>
+      <pubDate>Sun, 12 Mar 2023 01:38:43 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/learning-echartsjs/</guid>
+      <description>&lt;p&gt;参照Echarts的&lt;a href=&#34;https://echarts.apache.org/handbook/zh/get-started/&#34;&gt;官方入门文档&lt;/a&gt;，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为&lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;Papermod&lt;/a&gt;)。以后需要放图表的时候就不用再傻乎乎地截图了。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>什么在影响着碳排放交易？</title>
       <link>https://dong2000.xyz/post/carbon-price-data/</link>

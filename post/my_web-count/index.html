@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>在Hugo&#43;PaperMod主题下添加不蒜子网站统计 | Anomie</title>
-<meta name="keywords" content="不蒜子, 网站统计, 访客">
+<meta name="keywords" content="不蒜子, 网站统计, 访客, Hugo">
 <meta name="description" content="之前在使用Hexo平台 &#43; NexT主题搭建博客的时候，自带不蒜子1的网站访问统计。现在的这个主题下需要自行添加统计功能。最终还是决定使用不蒜子来实现，便于直接显示在网站页面上2。唯一的缺点就是目前没办法自定义初始值，所以域名更换后数据就从零开始了。">
 <meta name="author" content="Sheng, D.">
 <link rel="canonical" href="https://dong2000.xyz/post/my_web-count/">
@@ -98,7 +98,7 @@
   "name": "在Hugo\u002bPaperMod主题下添加不蒜子网站统计",
   "description": "之前在使用Hexo平台 + NexT主题搭建博客的时候，自带不蒜子1的网站访问统计。现在的这个主题下需要自行添加统计功能。最终还是决定使用不蒜子来实现，便于直接显示在网站页面上2。唯一的缺点就是目前没办法自定义初始值，所以域名更换后数据就从零开始了。\n",
   "keywords": [
-    "不蒜子", "网站统计", "访客"
+    "不蒜子", "网站统计", "访客", "Hugo"
   ],
   "articleBody": "之前在使用Hexo平台 + NexT主题搭建博客的时候，自带不蒜子1的网站访问统计。现在的这个主题下需要自行添加统计功能。最终还是决定使用不蒜子来实现，便于直接显示在网站页面上2。唯一的缺点就是目前没办法自定义初始值，所以域名更换后数据就从零开始了。\n在.\\themes\\PaperMod\\layouts\\partials\\footer.html的末尾添加：\n1 \u003cscript async src=\"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js\"\u003e\u003c/script\u003e 并且在标签中添加访问量和访客数，\n1 2 3 4 5 6 7 8 \u003cfooter class=\"footer\"\u003e ... ... \u003cspan id=\"busuanzi_container_site_count\"\u003e \u003cbr\u003e总访问量=\u003cspan id=\"busuanzi_value_site_pv\"\u003e\u003c/span\u003e, 访客数=\u003cspan id=\"busuanzi_value_site_uv\"\u003e\u003c/span\u003e, 本页阅读量=\u003cspan id=\"busuanzi_value_page_pv\"\u003e\u003c/span\u003e \u003c/span\u003e \u003c/footer\u003e 在导入不蒜子的脚本后，已知可以调用的变量有三个：\nbusuanzi_value_site_pv：单个用户连续访问n个页面，记录n次访问量 busuanzi_value_site_uv：单个用户连续点击n篇文章，只记录1次访客数 busuanzi_value_page_pv：单个用户点击1篇文章n次，本篇文章记录n次阅读量 顺便，意识到之后需要修改网站底部的文字的话，都可以在这个标签里进行编辑。\n不蒜子 - 极简网页计数器 (ibruce.info) ↩︎\n不蒜子计数器的使用_zolo_的博客-CSDN博客 ↩︎\n",
   "wordCount" : "41",
@@ -273,6 +273,7 @@
       <li><a href="https://dong2000.xyz/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/">不蒜子</a></li>
       <li><a href="https://dong2000.xyz/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1/">网站统计</a></li>
       <li><a href="https://dong2000.xyz/tags/%E8%AE%BF%E5%AE%A2/">访客</a></li>
+      <li><a href="https://dong2000.xyz/tags/hugo/">Hugo</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://dong2000.xyz/post/epidemic-memory/">
