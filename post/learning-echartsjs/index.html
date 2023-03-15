@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>在Hugo&#43;Papermod中添加Echartsjs | Anomie</title>
+<title>在Hugo &#43; Papermod中添加Echartsjs | Anomie</title>
 <meta name="keywords" content="Echarts, Hugo">
 <meta name="description" content="参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。">
 <meta name="author" content="Sheng, D.">
@@ -56,7 +56,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="在Hugo&#43;Papermod中添加Echartsjs" />
+</noscript><meta property="og:title" content="在Hugo &#43; Papermod中添加Echartsjs" />
 <meta property="og:description" content="参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dong2000.xyz/post/learning-echartsjs/" />
@@ -66,7 +66,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://dong2000.xyz/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-15%20045909.jpg" />
-<meta name="twitter:title" content="在Hugo&#43;Papermod中添加Echartsjs"/>
+<meta name="twitter:title" content="在Hugo &#43; Papermod中添加Echartsjs"/>
 <meta name="twitter:description" content="参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。"/>
 
 
@@ -84,7 +84,7 @@
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "在Hugo+Papermod中添加Echartsjs",
+      "name": "在Hugo + Papermod中添加Echartsjs",
       "item": "https://dong2000.xyz/post/learning-echartsjs/"
     }
   ]
@@ -94,13 +94,13 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "在Hugo+Papermod中添加Echartsjs",
-  "name": "在Hugo\u002bPapermod中添加Echartsjs",
+  "headline": "在Hugo + Papermod中添加Echartsjs",
+  "name": "在Hugo \u002b Papermod中添加Echartsjs",
   "description": "参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。\n",
   "keywords": [
     "Echarts", "Hugo"
   ],
-  "articleBody": "参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。\n在主题文件夹中，layouts/partials/head.html的文档末尾加上：\n1 2 3 4 {{ if .Params.echarts }} \u003cscript src=\"https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js\"\u003e\u003c/script\u003e {{ end }} 这里使用七牛云提供的CDN加速服务（Staticfile CDN）。\n如果在某篇博客里需要使用echarts渲染，需要在头部使用声明：\n1 2 3 --- echarts: true --- 尝试一下渲染入门文档给的例程：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 \u003cdiv id=\"main\" style=\"width: 600px;height:400px;\"\u003e\u003c/div\u003e \u003cscript type=\"text/javascript\"\u003e // 基于准备好的dom，初始化echarts实例 var myChart = echarts.init(document.getElementById('main')); // 指定图表的配置项和数据 var option = { title: { text: '第一个 ECharts 实例' }, tooltip: {}, legend: { data:['销量'] }, xAxis: { data: [\"衬衫\",\"羊毛衫\",\"雪纺衫\",\"裤子\",\"高跟鞋\",\"袜子\"] }, yAxis: {}, series: [{ name: '销量', type: 'bar', data: [5, 20, 36, 10, 10, 20] }] }; // 使用刚指定的配置项和数据显示图表。 myChart.setOption(option); \u003c/script\u003e XXXXXXXXXXXXXXXXX\n",
+  "articleBody": "参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。\n在主题文件夹中，layouts/partials/head.html的文档末尾加上：\n1 2 3 4 {{ if .Params.echarts }} \u003cscript src=\"https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js\"\u003e\u003c/script\u003e {{ end }} 这里使用七牛云提供的CDN加速服务（Staticfile CDN）。\n如果在某篇博客里需要使用echarts渲染，需要在头部使用声明：\n1 2 3 --- echarts: true --- 尝试一下渲染入门文档给的例程（为了避免移动端浏览时容器的宽度溢出，所以把宽度从600px改成了auto）：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 \u003cdiv id=\"main\" style=\"width: auto; height:400px;\"\u003e\u003c/div\u003e \u003cscript type=\"text/javascript\"\u003e // 基于准备好的dom，初始化echarts实例 var myChart = echarts.init(document.getElementById('main')); // 指定图表的配置项和数据 var option = { title: { text: '第一个 ECharts 实例' }, tooltip: {}, legend: { data:['销量'] }, xAxis: { data: [\"衬衫\",\"羊毛衫\",\"雪纺衫\",\"裤子\",\"高跟鞋\",\"袜子\"] }, yAxis: {}, series: [{ name: '销量', type: 'bar', data: [5, 20, 36, 10, 10, 20] }] }; // 使用刚指定的配置项和数据显示图表。 myChart.setOption(option); \u003c/script\u003e ",
   "wordCount" : "118",
   "inLanguage": "en",
   "image":"https://dong2000.xyz/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-15%20045909.jpg","datePublished": "2023-03-12T01:38:43+08:00",
@@ -211,7 +211,7 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
-      在Hugo&#43;Papermod中添加Echartsjs
+      在Hugo &#43; Papermod中添加Echartsjs
     </h1>
     <div class="post-meta"><span title='2023-03-12 01:38:43 +0800 CST'>March 12, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.
 
@@ -250,7 +250,7 @@
 </span></span><span class="line"><span class="cl">---
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>尝试一下渲染入门文档给的例程：</p>
+</div><p>尝试一下渲染入门文档给的例程（为了避免移动端浏览时容器的宽度溢出，所以把宽度从<code>600px</code>改成了<code>auto</code>）：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1"> 1</a>
@@ -283,7 +283,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 为ECharts准备一个具备大小（宽高）的Dom --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 600px;height:400px;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: auto; height:400px;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 基于准备好的dom，初始化echarts实例
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">var</span> <span class="nx">myChart</span> <span class="o">=</span> <span class="nx">echarts</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">));</span>
@@ -312,7 +312,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="width: 600px;height:400px;"></div>
+<div id="main" style="width: auto; height:400px;"></div>
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
@@ -338,7 +338,6 @@
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 </script>
-<p>XXXXXXXXXXXXXXXXX</p>
 
   </div>
 
