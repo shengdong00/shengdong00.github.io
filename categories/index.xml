@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Mar 2023 01:38:43 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 20:50:34 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>知识</title>
+      <link>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sat, 29 Apr 2023 20:50:34 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>技巧</title>
       <link>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</link>
@@ -43,15 +52,6 @@
       <pubDate>Tue, 03 Jan 2023 14:37:30 +0800</pubDate>
       
       <guid>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>知识</title>
-      <link>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Sun, 30 Oct 2022 01:20:00 +0800</pubDate>
-      
-      <guid>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</guid>
       <description></description>
     </item>
     
