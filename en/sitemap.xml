@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dong2000.xyz/profile/intro/</loc>
+    <lastmod>2023-07-02T11:31:30+08:00</lastmod>
+  </url><url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-05-17T18:42:18+08:00</lastmod>
+    <lastmod>2023-07-02T11:31:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -14,6 +17,9 @@
                 hreflang="en"
                 href="https://dong2000.xyz/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/profile/</loc>
+    <lastmod>2023-07-02T11:31:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
     <lastmod>2023-05-17T18:42:18+08:00</lastmod>
@@ -219,12 +225,6 @@
     <lastmod>2022-11-01T15:31:58+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/about/</loc>
-    <lastmod>2022-11-01T15:31:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/profile/about/</loc>
-    <lastmod>2022-11-01T15:31:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/profile/</loc>
     <lastmod>2022-11-01T15:31:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/mahalanobis-distance/</loc>
