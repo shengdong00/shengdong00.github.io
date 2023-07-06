@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Jul 2023 11:11:26 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jul 2023 09:29:42 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅试Biorender</title>
+      <link>https://dong2000.xyz/post/try-biorender/</link>
+      <pubDate>Thu, 06 Jul 2023 09:29:42 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/try-biorender/</guid>
+      <description>&lt;p&gt;在写一篇综述论文的时候被推荐了&lt;a href=&#34;https://www.biorender.com/&#34;&gt;BioRender&lt;/a&gt;这一作图工具，尝试了一下发现确实很好用，可以让生物领域的插图制作如有神助。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>本科毕业了！</title>
       <link>https://dong2000.xyz/post/bsc-graduation/</link>
