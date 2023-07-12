@@ -9,7 +9,18 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Jul 2023 09:29:42 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2023 17:05:28 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>纤维状颗粒的空气动力学直径误差传递公式</title>
+      <link>https://dong2000.xyz/post/equivalent-diameter-error/</link>
+      <pubDate>Sun, 09 Jul 2023 17:05:28 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/equivalent-diameter-error/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;基于Prodi et al (1982)的纤维颗粒空气动力学等效直径计算公式推导出以纤维颗粒的长度、直径为直接测量变量的等效直径误差传递公式。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
     <item>
       <title>浅试Biorender</title>
       <link>https://dong2000.xyz/post/try-biorender/</link>
