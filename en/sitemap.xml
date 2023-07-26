@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -28,17 +28,11 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
-    <loc>https://dong2000.xyz/tags/fourier-transformation/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/tags/noise/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -49,6 +43,24 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/post/summer-camp-2023/</loc>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%A4%8F%E4%BB%A4%E8%90%A5/</loc>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E9%AB%98%E4%B8%AD%E7%94%9F/</loc>
+    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/fourier-transformation/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/noise/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/tracking-noise/</loc>
     <lastmod>2023-07-16T13:22:19+08:00</lastmod>
@@ -85,9 +97,6 @@
   </url><url>
     <loc>https://dong2000.xyz/post/try-biorender/</loc>
     <lastmod>2023-07-06T09:29:42+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2023-07-04T11:11:26+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E6%9C%AC%E7%A7%91/</loc>
     <lastmod>2023-07-04T11:11:26+08:00</lastmod>
