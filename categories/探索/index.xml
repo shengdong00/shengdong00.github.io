@@ -9,7 +9,17 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Jan 2023 14:37:30 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 13:22:19 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracking Noise with Smartphones</title>
+      <link>https://dong2000.xyz/post/tracking-noise/</link>
+      <pubDate>Sun, 16 Jul 2023 13:22:19 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/tracking-noise/</guid>
+      <description>&lt;p&gt;Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.&lt;/p&gt;
+&lt;p&gt;So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>The conceptual evolution of green building in the 21st century – textual changes in LEED</title>
       <link>https://dong2000.xyz/post/textual-analysis-on-leed/</link>

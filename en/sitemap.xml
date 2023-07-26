@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-07-09T17:05:28+08:00</lastmod>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-07-09T17:05:28+08:00</lastmod>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -28,11 +28,17 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
+    <loc>https://dong2000.xyz/tags/fourier-transformation/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/noise/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+  </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-07-09T17:05:28+08:00</lastmod>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2023-07-09T17:05:28+08:00</lastmod>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -43,6 +49,15 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/post/tracking-noise/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%99%AA%E5%A3%B0%E6%B1%A1%E6%9F%93/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</loc>
+    <lastmod>2023-07-16T13:22:19+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2023-07-09T17:05:28+08:00</lastmod>
@@ -177,9 +192,6 @@
     <lastmod>2023-01-03T14:37:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/textual-analysis-on-leed/</loc>
-    <lastmod>2023-01-03T14:37:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</loc>
     <lastmod>2023-01-03T14:37:30+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/python/</loc>
