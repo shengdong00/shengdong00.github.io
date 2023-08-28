@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -28,11 +28,17 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
+    <loc>https://dong2000.xyz/tags/mmdetection/</loc>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/notes-on-mmdet/</loc>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
+  </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2023-07-26T23:42:36+08:00</lastmod>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -43,6 +49,15 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
+    <lastmod>2023-08-28T11:11:41+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/summer-camp-2023/</loc>
     <lastmod>2023-07-26T23:42:36+08:00</lastmod>
@@ -90,9 +105,6 @@
     <lastmod>2023-07-06T09:29:42+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
-    <lastmod>2023-07-06T09:29:42+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-07-06T09:29:42+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/try-biorender/</loc>
@@ -466,6 +478,9 @@
   </url><url>
     <loc>https://dong2000.xyz/post/hostory_of_system_sci/</loc>
     <lastmod>2022-03-18T09:37:41+00:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/emoji_cheating_sheet/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://dong2000.xyz/profile/intro/</loc>
   </url><url>
