@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Aug 2023 11:11:41 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 21:02:53 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABM</title>
+      <link>https://dong2000.xyz/tags/abm/</link>
+      <pubDate>Tue, 03 Oct 2023 21:02:53 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/tags/abm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>MMDetection</title>
       <link>https://dong2000.xyz/tags/mmdetection/</link>
