@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dong2000.xyz/tags/abm/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -31,14 +28,11 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
-    <loc>https://dong2000.xyz/post/learning-abm/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -49,6 +43,21 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/post/science-philosophy/</loc>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/abm/</loc>
+    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/learning-abm/</loc>
+    <lastmod>2023-10-03T21:02:53+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2023-10-03T21:02:53+08:00</lastmod>
@@ -144,9 +153,6 @@
     <lastmod>2023-05-11T22:47:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%B7%A5%E4%B8%9A%E5%8C%96/</loc>
-    <lastmod>2023-05-11T22:47:06+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2023-05-11T22:47:06+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/shitty-competition/</loc>
