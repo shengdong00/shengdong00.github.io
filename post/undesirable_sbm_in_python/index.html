@@ -26,6 +26,7 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
 其对偶模型为（对偶模型求解过程见文末）">
 <meta name="author" content="Sheng, D.">
 <link rel="canonical" href="https://dong2000.xyz/post/undesirable_sbm_in_python/">
+<meta name="google-site-verification" content="G-MT6FEG7LK4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3f639d09c02cad8fa393875b83a08cc1f61bf07f8d794f5373aa66808bda383a.css" integrity="sha256-P2OdCcAsrY&#43;jk4dbg6CMwfYb8H&#43;NeU9Tc6pmgIvaODo=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -73,7 +74,18 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
         }
 
     </style>
-</noscript><meta property="og:title" content="非期望产出SBM模型的数学推演及Python实现" />
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="非期望产出SBM模型的数学推演及Python实现" />
 <meta property="og:description" content="带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
 这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
 数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
