@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+    <lastmod>2024-02-16T19:57:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+    <lastmod>2024-02-16T19:57:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -29,7 +29,13 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2023-10-22T22:49:25+08:00</lastmod>
+    <lastmod>2024-02-16T19:57:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/diary-2024-02-16/</loc>
+    <lastmod>2024-02-16T19:57:19+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
+    <lastmod>2024-02-16T19:57:19+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
     <lastmod>2023-10-22T22:49:25+08:00</lastmod>
@@ -76,9 +82,6 @@
   </url><url>
     <loc>https://dong2000.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
     <lastmod>2023-08-28T11:11:41+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2023-08-28T02:30:22+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E6%88%90%E9%83%BD/</loc>
     <lastmod>2023-08-28T02:30:22+08:00</lastmod>
