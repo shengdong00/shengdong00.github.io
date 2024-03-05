@@ -9,7 +9,18 @@
       <link>https://dong2000.xyz/wombo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Oct 2023 21:02:53 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Mar 2024 02:56:58 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读[March 6th]——人与自然耦合系统</title>
+      <link>https://dong2000.xyz/post/reading-note-20240306/</link>
+      <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
+      <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
+Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+    </item>
+    
     <item>
       <title>Learning notes on agent-based modelling (ABM)</title>
       <link>https://dong2000.xyz/post/learning-abm/</link>
