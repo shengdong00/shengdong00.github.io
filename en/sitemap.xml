@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2024-04-06T16:46:45+08:00</lastmod>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2024-04-06T16:46:45+08:00</lastmod>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -29,10 +29,10 @@
                 />
   </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2024-04-06T16:46:45+08:00</lastmod>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2024-04-06T16:46:45+08:00</lastmod>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -43,6 +43,18 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%90%89%E4%BB%96/</loc>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E5%BC%B9%E5%94%B1/</loc>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E6%95%B4%E6%B4%BB/</loc>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/guoweivc-riluo/</loc>
+    <lastmod>2024-04-09T02:07:56+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E4%BC%9A%E8%AE%AE/</loc>
     <lastmod>2024-04-06T16:46:45+08:00</lastmod>
@@ -390,9 +402,6 @@
     <lastmod>2022-10-11T03:23:28+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/</loc>
-    <lastmod>2022-10-11T03:23:28+00:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E6%95%B4%E6%B4%BB/</loc>
     <lastmod>2022-10-11T03:23:28+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E7%A7%91%E5%B9%BB/</loc>
