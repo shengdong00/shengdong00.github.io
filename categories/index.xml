@@ -9,7 +9,16 @@
       <link>https://dong2000.xyz/ptr_small.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 May 2024 23:29:36 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 19:31:48 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>历程</title>
+      <link>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</link>
+      <pubDate>Mon, 12 Aug 2024 19:31:48 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>技巧</title>
       <link>https://dong2000.xyz/categories/%E6%8A%80%E5%B7%A7/</link>
@@ -29,29 +38,11 @@
     </item>
     
     <item>
-      <title>经历</title>
-      <link>https://dong2000.xyz/categories/%E7%BB%8F%E5%8E%86/</link>
-      <pubDate>Sat, 06 Apr 2024 16:46:45 +0800</pubDate>
-      
-      <guid>https://dong2000.xyz/categories/%E7%BB%8F%E5%8E%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>知识</title>
       <link>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
       <guid>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>历程</title>
-      <link>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</link>
-      <pubDate>Fri, 16 Feb 2024 19:57:19 +0800</pubDate>
-      
-      <guid>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</guid>
       <description></description>
     </item>
     
