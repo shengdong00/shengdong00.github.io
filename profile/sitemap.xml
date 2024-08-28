@@ -2,18 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dong2000.xyz/profile/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dong2000.xyz/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="profile"
-                href="https://dong2000.xyz/profile/"
-                />
-  </url><url>
     <loc>https://dong2000.xyz/profile/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -48,6 +36,18 @@
                 rel="alternate"
                 hreflang="profile"
                 href="https://dong2000.xyz/profile/tags/"
+                />
+  </url><url>
+    <loc>https://dong2000.xyz/profile/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dong2000.xyz/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="profile"
+                href="https://dong2000.xyz/profile/"
                 />
   </url>
 </urlset>
