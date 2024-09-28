@@ -59,17 +59,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Markdown-mermaid画流程图、甘特图和饼图" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Markdown-mermaid画流程图、甘特图和饼图" />
 <meta property="og:description" content="在很多支持Markdown语法的编辑器（例如Typora, 印象笔记）中，可以通过mermaid代码块的方式，实现流程图、时序图等图表的绘制。它是一种基于 Javascript 的图表和图表工具，提供标记启发的文本定义，以动态创建和修改图表。
 以下是除了普通的graph流程图以外，常用的一些mermaid功能。" />
 <meta property="og:type" content="article" />
@@ -89,16 +92,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "Markdown-mermaid画流程图、甘特图和饼图",
       "item": "https://dong2000.xyz/post/markdown-mermaid/"
     }
@@ -176,7 +179,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -245,11 +248,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       Markdown-mermaid画流程图、甘特图和饼图
     </h1>
-    <div class="post-meta"><span title='2022-03-20 01:07:53 +0000 UTC'>March 20, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2022-03-20 01:07:53 &#43;0000 UTC&#39;&gt;March 20, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
@@ -340,21 +343,21 @@ if (!doNotTrack) {
 <p>不过官网上显示flowchart仍然是测试版本，功能上可能会有一些欠缺。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1"> 1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2"> 2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3"> 3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4"> 4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5"> 5</a>
-</span><span class="lnt" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6"> 6</a>
-</span><span class="lnt" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7"> 7</a>
-</span><span class="lnt" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8"> 8</a>
-</span><span class="lnt" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9"> 9</a>
-</span><span class="lnt" id="hl-0-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-10">10</a>
-</span><span class="lnt" id="hl-0-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-11">11</a>
-</span><span class="lnt" id="hl-0-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-12">12</a>
-</span><span class="lnt" id="hl-0-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-13">13</a>
-</span><span class="lnt" id="hl-0-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-14">14</a>
-</span><span class="lnt" id="hl-0-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-15">15</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1"> 1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2"> 2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3"> 3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4"> 4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5"> 5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6"> 6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7"> 7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8"> 8</a>
+</span><span class="lnt" id="hl-0-9"><a class="lnlinks" href="#hl-0-9"> 9</a>
+</span><span class="lnt" id="hl-0-10"><a class="lnlinks" href="#hl-0-10">10</a>
+</span><span class="lnt" id="hl-0-11"><a class="lnlinks" href="#hl-0-11">11</a>
+</span><span class="lnt" id="hl-0-12"><a class="lnlinks" href="#hl-0-12">12</a>
+</span><span class="lnt" id="hl-0-13"><a class="lnlinks" href="#hl-0-13">13</a>
+</span><span class="lnt" id="hl-0-14"><a class="lnlinks" href="#hl-0-14">14</a>
+</span><span class="lnt" id="hl-0-15"><a class="lnlinks" href="#hl-0-15">15</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">flowchart TD
@@ -381,19 +384,19 @@ if (!doNotTrack) {
 <p>甘特图可以在时间轴上记录不同的事件名称、时长跨度和状态。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1"> 1</a>
-</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2"> 2</a>
-</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3"> 3</a>
-</span><span class="lnt" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4"> 4</a>
-</span><span class="lnt" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5"> 5</a>
-</span><span class="lnt" id="hl-1-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-6"> 6</a>
-</span><span class="lnt" id="hl-1-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-7"> 7</a>
-</span><span class="lnt" id="hl-1-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-8"> 8</a>
-</span><span class="lnt" id="hl-1-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-9"> 9</a>
-</span><span class="lnt" id="hl-1-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-10">10</a>
-</span><span class="lnt" id="hl-1-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-11">11</a>
-</span><span class="lnt" id="hl-1-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-12">12</a>
-</span><span class="lnt" id="hl-1-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-13">13</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1"> 1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2"> 2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3"> 3</a>
+</span><span class="lnt" id="hl-1-4"><a class="lnlinks" href="#hl-1-4"> 4</a>
+</span><span class="lnt" id="hl-1-5"><a class="lnlinks" href="#hl-1-5"> 5</a>
+</span><span class="lnt" id="hl-1-6"><a class="lnlinks" href="#hl-1-6"> 6</a>
+</span><span class="lnt" id="hl-1-7"><a class="lnlinks" href="#hl-1-7"> 7</a>
+</span><span class="lnt" id="hl-1-8"><a class="lnlinks" href="#hl-1-8"> 8</a>
+</span><span class="lnt" id="hl-1-9"><a class="lnlinks" href="#hl-1-9"> 9</a>
+</span><span class="lnt" id="hl-1-10"><a class="lnlinks" href="#hl-1-10">10</a>
+</span><span class="lnt" id="hl-1-11"><a class="lnlinks" href="#hl-1-11">11</a>
+</span><span class="lnt" id="hl-1-12"><a class="lnlinks" href="#hl-1-12">12</a>
+</span><span class="lnt" id="hl-1-13"><a class="lnlinks" href="#hl-1-13">13</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gantt
@@ -439,11 +442,11 @@ gantt
 <p><code>pie</code>可以按照类别占比有小到大的顺序，从12点开始顺时针排列并饼块，并计算出各部分的百分比。语法结构也很简单：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1">1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2">2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3">3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4">4</a>
-</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2">2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3">3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4">4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pie
@@ -466,27 +469,27 @@ pie
 <p>除了mermaid之外，Typora的代码块还能渲染其他模块。比如分析程序的时候经常会用到<code>flow</code>模块来画流程图，留待以后整理。这里先贴一张之前写过的<code>flow</code>图，立一个日后整理的flag~</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-1"> 1</a>
-</span><span class="lnt" id="hl-3-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-2"> 2</a>
-</span><span class="lnt" id="hl-3-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-3"> 3</a>
-</span><span class="lnt" id="hl-3-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-4"> 4</a>
-</span><span class="lnt" id="hl-3-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-5"> 5</a>
-</span><span class="lnt" id="hl-3-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-6"> 6</a>
-</span><span class="lnt" id="hl-3-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-7"> 7</a>
-</span><span class="lnt" id="hl-3-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-8"> 8</a>
-</span><span class="lnt" id="hl-3-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-9"> 9</a>
-</span><span class="lnt" id="hl-3-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-10">10</a>
-</span><span class="lnt" id="hl-3-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-11">11</a>
-</span><span class="lnt" id="hl-3-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-12">12</a>
-</span><span class="lnt" id="hl-3-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-13">13</a>
-</span><span class="lnt" id="hl-3-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-14">14</a>
-</span><span class="lnt" id="hl-3-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-15">15</a>
-</span><span class="lnt" id="hl-3-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-16">16</a>
-</span><span class="lnt" id="hl-3-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-17">17</a>
-</span><span class="lnt" id="hl-3-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-18">18</a>
-</span><span class="lnt" id="hl-3-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-19">19</a>
-</span><span class="lnt" id="hl-3-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-20">20</a>
-</span><span class="lnt" id="hl-3-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-21">21</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1"> 1</a>
+</span><span class="lnt" id="hl-3-2"><a class="lnlinks" href="#hl-3-2"> 2</a>
+</span><span class="lnt" id="hl-3-3"><a class="lnlinks" href="#hl-3-3"> 3</a>
+</span><span class="lnt" id="hl-3-4"><a class="lnlinks" href="#hl-3-4"> 4</a>
+</span><span class="lnt" id="hl-3-5"><a class="lnlinks" href="#hl-3-5"> 5</a>
+</span><span class="lnt" id="hl-3-6"><a class="lnlinks" href="#hl-3-6"> 6</a>
+</span><span class="lnt" id="hl-3-7"><a class="lnlinks" href="#hl-3-7"> 7</a>
+</span><span class="lnt" id="hl-3-8"><a class="lnlinks" href="#hl-3-8"> 8</a>
+</span><span class="lnt" id="hl-3-9"><a class="lnlinks" href="#hl-3-9"> 9</a>
+</span><span class="lnt" id="hl-3-10"><a class="lnlinks" href="#hl-3-10">10</a>
+</span><span class="lnt" id="hl-3-11"><a class="lnlinks" href="#hl-3-11">11</a>
+</span><span class="lnt" id="hl-3-12"><a class="lnlinks" href="#hl-3-12">12</a>
+</span><span class="lnt" id="hl-3-13"><a class="lnlinks" href="#hl-3-13">13</a>
+</span><span class="lnt" id="hl-3-14"><a class="lnlinks" href="#hl-3-14">14</a>
+</span><span class="lnt" id="hl-3-15"><a class="lnlinks" href="#hl-3-15">15</a>
+</span><span class="lnt" id="hl-3-16"><a class="lnlinks" href="#hl-3-16">16</a>
+</span><span class="lnt" id="hl-3-17"><a class="lnlinks" href="#hl-3-17">17</a>
+</span><span class="lnt" id="hl-3-18"><a class="lnlinks" href="#hl-3-18">18</a>
+</span><span class="lnt" id="hl-3-19"><a class="lnlinks" href="#hl-3-19">19</a>
+</span><span class="lnt" id="hl-3-20"><a class="lnlinks" href="#hl-3-20">20</a>
+</span><span class="lnt" id="hl-3-21"><a class="lnlinks" href="#hl-3-21">21</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">st=&gt;start: call DWA function
@@ -520,7 +523,7 @@ pie
     <ul class="post-tags">
       <li><a href="https://dong2000.xyz/tags/markdown/">Markdown</a></li>
       <li><a href="https://dong2000.xyz/tags/typora/">Typora</a></li>
-      <li><a href="https://dong2000.xyz/tags/mermaid/">mermaid</a></li>
+      <li><a href="https://dong2000.xyz/tags/mermaid/">Mermaid</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://dong2000.xyz/post/china_sea_water_data/">
@@ -540,7 +543,7 @@ pie
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

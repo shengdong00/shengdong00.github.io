@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="MMDetection目标检测入门笔记" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="MMDetection目标检测入门笔记" />
 <meta property="og:description" content="本篇是MMDetection学习应用过程中的踩坑记录，随学习情况更新。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dong2000.xyz/post/notes-on-mmdet/" /><meta property="og:image" content="https://dong2000.xyz/ptr_small.jpg"/><meta property="article:section" content="post" />
@@ -86,16 +89,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "MMDetection目标检测入门笔记",
       "item": "https://dong2000.xyz/post/notes-on-mmdet/"
     }
@@ -156,7 +159,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -225,11 +228,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       MMDetection目标检测入门笔记
     </h1>
-    <div class="post-meta"><span title='2023-08-28 11:11:41 +0800 CST'>August 28, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2023-08-28 11:11:41 &#43;0800 CST&#39;&gt;August 28, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
@@ -330,24 +333,24 @@ if (!doNotTrack) {
 <p>一开始以为问题出在<code>pycocotool</code>包上，于是安装卸载了好几轮，还尝试了用<code>mmpycocotools</code>替换<code>pycocotools</code>，但是都不能解决问题。经过调试发现报错发生在<code>mmengine</code>包里，即<code>site-packages/mmdet/engine/hooks/yolox_mode_switch_hook.py</code>的第50行：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">train_loader</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">update_skip_type_keys</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">skip_type_keys</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>神奇的是将这一行直接注释掉之后依然能够正确地将模型训练出来，基本不影响正常的使用。于是就不再去动它了……😅</p>
+</div><p>神奇的是将这一行直接注释掉之后依然能够正确地将模型训练出来，基本不影响正常的使用。于是就不再去动它了……&#x1f605;</p>
 <center><img src="/images/running-bug.jpg" alt="running-bug" style="zoom:50%;" /></center>
 <h3 id="gpu加速模型训练">GPU加速模型训练<a hidden class="anchor" aria-hidden="true" href="#gpu加速模型训练">#</a></h3>
 <h4 id="核对gpu信息">核对GPU信息<a hidden class="anchor" aria-hidden="true" href="#核对gpu信息">#</a></h4>
 <p>有独立显卡（GPU）的电脑上可以用GPU来提高模型训练的速度。在使用GPU训练之前需要先安装CUDA。可以用如下代码来查看本机的GPU信息<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1">1</a>
-</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2">2</a>
-</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3">3</a>
-</span><span class="lnt" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4">4</a>
-</span><span class="lnt" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2">2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3">3</a>
+</span><span class="lnt" id="hl-1-4"><a class="lnlinks" href="#hl-1-4">4</a>
+</span><span class="lnt" id="hl-1-5"><a class="lnlinks" href="#hl-1-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
@@ -360,10 +363,10 @@ if (!doNotTrack) {
 </div><p>在本机上打印出来的结果依次为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1">1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2">2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3">3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4">4</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2">2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3">3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4">4</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kc">True</span>
@@ -376,7 +379,7 @@ if (!doNotTrack) {
 <p>MMDetection的官方文档里说可以通过<code>CUDA_VISIBLE_DEVICES=$GPU_ID</code>来指定选优单一的GPU进行模型训练<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>，例如</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">2</span> python tools/train.py configs/qdtrack/qdtrack_faster-rcnn_r50_fpn_8xb2-4e_mot17halftrain_test-mot17halfval.py
@@ -385,8 +388,8 @@ if (!doNotTrack) {
 </div><p>但是上述命令在Windows平台中无法运行，命令行里会提示<code>'CUDA_VISIBLE_DEVICES' 不是内部或外部命令，也不是可运行的程序 或批处理文件。</code>在Windows中的workaround有很多种方式，其中我个人比较建议在训练脚本<code>tools/train.py</code>里插入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-1">1</a>
-</span><span class="lnt" id="hl-4-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a class="lnlinks" href="#hl-4-1">1</a>
+</span><span class="lnt" id="hl-4-2"><a class="lnlinks" href="#hl-4-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
@@ -401,7 +404,7 @@ if (!doNotTrack) {
 <p>训练模型时，每一个epoch会打印出格式如下的信息：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-5-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a class="lnlinks" href="#hl-5-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">08/28 11:12:40 - mmengine - INFO - Epoch<span class="o">(</span>train<span class="o">)</span>  <span class="o">[</span>306<span class="o">][</span>1/1<span class="o">]</span>  base_lr: 4.9967e-04 lr: 4.9967e-04  eta: 0:10:33  time: 0.9054  data_time: 0.3816  memory: <span class="m">3733</span>  loss: 4.1566  loss_cls: 0.6430  loss_bbox: 2.2906  loss_obj: 1.2230
@@ -450,7 +453,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

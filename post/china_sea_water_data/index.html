@@ -66,17 +66,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="我国海水水质数据分析" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="我国海水水质数据分析" />
 <meta property="og:description" content="环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。
 
 通过爬虫获取我国沿海海水水质的监测数据；
@@ -110,16 +113,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "我国海水水质数据分析",
       "item": "https://dong2000.xyz/post/china_sea_water_data/"
     }
@@ -180,7 +183,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -249,11 +252,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       我国海水水质数据分析
     </h1>
-    <div class="post-meta"><span title='2022-04-24 01:36:16 +0000 UTC'>April 24, 2022</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2022-04-24 01:36:16 &#43;0000 UTC&#39;&gt;April 24, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;10 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
@@ -378,11 +381,11 @@ if (!doNotTrack) {
 </p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2">2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3">3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4">4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3">3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4">4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
@@ -395,18 +398,18 @@ if (!doNotTrack) {
 </div><p>对动态网页的表格设置过滤属性。这里先筛选获取2020年的数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1"> 1</a>
-</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2"> 2</a>
-</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3"> 3</a>
-</span><span class="lnt" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4"> 4</a>
-</span><span class="lnt" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5"> 5</a>
-</span><span class="lnt" id="hl-1-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-6"> 6</a>
-</span><span class="lnt" id="hl-1-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-7"> 7</a>
-</span><span class="lnt" id="hl-1-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-8"> 8</a>
-</span><span class="lnt" id="hl-1-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-9"> 9</a>
-</span><span class="lnt" id="hl-1-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-10">10</a>
-</span><span class="lnt" id="hl-1-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-11">11</a>
-</span><span class="lnt" id="hl-1-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-12">12</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1"> 1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2"> 2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3"> 3</a>
+</span><span class="lnt" id="hl-1-4"><a class="lnlinks" href="#hl-1-4"> 4</a>
+</span><span class="lnt" id="hl-1-5"><a class="lnlinks" href="#hl-1-5"> 5</a>
+</span><span class="lnt" id="hl-1-6"><a class="lnlinks" href="#hl-1-6"> 6</a>
+</span><span class="lnt" id="hl-1-7"><a class="lnlinks" href="#hl-1-7"> 7</a>
+</span><span class="lnt" id="hl-1-8"><a class="lnlinks" href="#hl-1-8"> 8</a>
+</span><span class="lnt" id="hl-1-9"><a class="lnlinks" href="#hl-1-9"> 9</a>
+</span><span class="lnt" id="hl-1-10"><a class="lnlinks" href="#hl-1-10">10</a>
+</span><span class="lnt" id="hl-1-11"><a class="lnlinks" href="#hl-1-11">11</a>
+</span><span class="lnt" id="hl-1-12"><a class="lnlinks" href="#hl-1-12">12</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">year</span> <span class="o">=</span> <span class="n">wd</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;ddl_year&#39;</span><span class="p">)</span>
@@ -426,17 +429,17 @@ if (!doNotTrack) {
 </div><p>获取表头和数据，并整理成二维数组的类型。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1"> 1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2"> 2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3"> 3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4"> 4</a>
-</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5"> 5</a>
-</span><span class="lnt" id="hl-2-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-6"> 6</a>
-</span><span class="lnt" id="hl-2-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-7"> 7</a>
-</span><span class="lnt" id="hl-2-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-8"> 8</a>
-</span><span class="lnt" id="hl-2-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-9"> 9</a>
-</span><span class="lnt" id="hl-2-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-10">10</a>
-</span><span class="lnt" id="hl-2-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-11">11</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1"> 1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2"> 2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3"> 3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4"> 4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5"> 5</a>
+</span><span class="lnt" id="hl-2-6"><a class="lnlinks" href="#hl-2-6"> 6</a>
+</span><span class="lnt" id="hl-2-7"><a class="lnlinks" href="#hl-2-7"> 7</a>
+</span><span class="lnt" id="hl-2-8"><a class="lnlinks" href="#hl-2-8"> 8</a>
+</span><span class="lnt" id="hl-2-9"><a class="lnlinks" href="#hl-2-9"> 9</a>
+</span><span class="lnt" id="hl-2-10"><a class="lnlinks" href="#hl-2-10">10</a>
+</span><span class="lnt" id="hl-2-11"><a class="lnlinks" href="#hl-2-11">11</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">header</span> <span class="o">=</span> <span class="n">wd</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;gridHd&#39;</span><span class="p">)</span>
@@ -455,18 +458,18 @@ if (!doNotTrack) {
 </div><p>把2021年的数据也添加到数组里，转换成data frame。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-1"> 1</a>
-</span><span class="lnt" id="hl-3-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-2"> 2</a>
-</span><span class="lnt" id="hl-3-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-3"> 3</a>
-</span><span class="lnt" id="hl-3-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-4"> 4</a>
-</span><span class="lnt" id="hl-3-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-5"> 5</a>
-</span><span class="lnt" id="hl-3-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-6"> 6</a>
-</span><span class="lnt" id="hl-3-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-7"> 7</a>
-</span><span class="lnt" id="hl-3-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-8"> 8</a>
-</span><span class="lnt" id="hl-3-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-9"> 9</a>
-</span><span class="lnt" id="hl-3-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-10">10</a>
-</span><span class="lnt" id="hl-3-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-11">11</a>
-</span><span class="lnt" id="hl-3-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-12">12</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1"> 1</a>
+</span><span class="lnt" id="hl-3-2"><a class="lnlinks" href="#hl-3-2"> 2</a>
+</span><span class="lnt" id="hl-3-3"><a class="lnlinks" href="#hl-3-3"> 3</a>
+</span><span class="lnt" id="hl-3-4"><a class="lnlinks" href="#hl-3-4"> 4</a>
+</span><span class="lnt" id="hl-3-5"><a class="lnlinks" href="#hl-3-5"> 5</a>
+</span><span class="lnt" id="hl-3-6"><a class="lnlinks" href="#hl-3-6"> 6</a>
+</span><span class="lnt" id="hl-3-7"><a class="lnlinks" href="#hl-3-7"> 7</a>
+</span><span class="lnt" id="hl-3-8"><a class="lnlinks" href="#hl-3-8"> 8</a>
+</span><span class="lnt" id="hl-3-9"><a class="lnlinks" href="#hl-3-9"> 9</a>
+</span><span class="lnt" id="hl-3-10"><a class="lnlinks" href="#hl-3-10">10</a>
+</span><span class="lnt" id="hl-3-11"><a class="lnlinks" href="#hl-3-11">11</a>
+</span><span class="lnt" id="hl-3-12"><a class="lnlinks" href="#hl-3-12">12</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">year</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s1">&#39;2021&#39;</span><span class="p">)</span>
@@ -487,15 +490,15 @@ if (!doNotTrack) {
 <p>发现部分监测点数据位移，原因是部分监测点的溶解氧数据缺失，还有一些数据点的溶解氧和石油类数据都缺失。对这些监测点的信息进行修正，缺失的地方用<code>None</code>标记。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-1">1</a>
-</span><span class="lnt" id="hl-4-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-2">2</a>
-</span><span class="lnt" id="hl-4-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-3">3</a>
-</span><span class="lnt" id="hl-4-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-4">4</a>
-</span><span class="lnt" id="hl-4-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-5">5</a>
-</span><span class="lnt" id="hl-4-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-6">6</a>
-</span><span class="lnt" id="hl-4-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-7">7</a>
-</span><span class="lnt" id="hl-4-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-8">8</a>
-</span><span class="lnt" id="hl-4-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-9">9</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a class="lnlinks" href="#hl-4-1">1</a>
+</span><span class="lnt" id="hl-4-2"><a class="lnlinks" href="#hl-4-2">2</a>
+</span><span class="lnt" id="hl-4-3"><a class="lnlinks" href="#hl-4-3">3</a>
+</span><span class="lnt" id="hl-4-4"><a class="lnlinks" href="#hl-4-4">4</a>
+</span><span class="lnt" id="hl-4-5"><a class="lnlinks" href="#hl-4-5">5</a>
+</span><span class="lnt" id="hl-4-6"><a class="lnlinks" href="#hl-4-6">6</a>
+</span><span class="lnt" id="hl-4-7"><a class="lnlinks" href="#hl-4-7">7</a>
+</span><span class="lnt" id="hl-4-8"><a class="lnlinks" href="#hl-4-8">8</a>
+</span><span class="lnt" id="hl-4-9"><a class="lnlinks" href="#hl-4-9">9</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)):</span>
@@ -512,8 +515,8 @@ if (!doNotTrack) {
 </div><p>保存数据到本地。此时数据全都以字符串保存。缺失值标记为“None”，低于检出限的数据标记为“未检出”，或根据检出限的值标记为“&lt;0.01”或“&lt;0.1”。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-5-1">1</a>
-</span><span class="lnt" id="hl-5-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-5-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a class="lnlinks" href="#hl-5-1">1</a>
+</span><span class="lnt" id="hl-5-2"><a class="lnlinks" href="#hl-5-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">wd</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
@@ -526,11 +529,11 @@ if (!doNotTrack) {
 <p>根据每个月水质监测数据的经纬度信息和水质类别作图。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-1">1</a>
-</span><span class="lnt" id="hl-6-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-2">2</a>
-</span><span class="lnt" id="hl-6-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-3">3</a>
-</span><span class="lnt" id="hl-6-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-4">4</a>
-</span><span class="lnt" id="hl-6-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a class="lnlinks" href="#hl-6-1">1</a>
+</span><span class="lnt" id="hl-6-2"><a class="lnlinks" href="#hl-6-2">2</a>
+</span><span class="lnt" id="hl-6-3"><a class="lnlinks" href="#hl-6-3">3</a>
+</span><span class="lnt" id="hl-6-4"><a class="lnlinks" href="#hl-6-4">4</a>
+</span><span class="lnt" id="hl-6-5"><a class="lnlinks" href="#hl-6-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -543,12 +546,12 @@ if (!doNotTrack) {
 </div><p>查看一下水质类别有哪些分类，执行<code>data['水质类别'].value_counts()</code>，输出：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-7-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-1">1</a>
-</span><span class="lnt" id="hl-7-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-2">2</a>
-</span><span class="lnt" id="hl-7-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-3">3</a>
-</span><span class="lnt" id="hl-7-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-4">4</a>
-</span><span class="lnt" id="hl-7-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-5">5</a>
-</span><span class="lnt" id="hl-7-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-6">6</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-7-1"><a class="lnlinks" href="#hl-7-1">1</a>
+</span><span class="lnt" id="hl-7-2"><a class="lnlinks" href="#hl-7-2">2</a>
+</span><span class="lnt" id="hl-7-3"><a class="lnlinks" href="#hl-7-3">3</a>
+</span><span class="lnt" id="hl-7-4"><a class="lnlinks" href="#hl-7-4">4</a>
+</span><span class="lnt" id="hl-7-5"><a class="lnlinks" href="#hl-7-5">5</a>
+</span><span class="lnt" id="hl-7-6"><a class="lnlinks" href="#hl-7-6">6</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">一类     4082
@@ -562,8 +565,8 @@ if (!doNotTrack) {
 </div><p>将经纬度数据转换成浮点型。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-8-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-8-1">1</a>
-</span><span class="lnt" id="hl-8-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-8-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-8-1"><a class="lnlinks" href="#hl-8-1">1</a>
+</span><span class="lnt" id="hl-8-2"><a class="lnlinks" href="#hl-8-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;实测经度&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;实测经度&#39;</span><span class="p">])</span>
@@ -573,33 +576,33 @@ if (!doNotTrack) {
 </div><p>定义返回某年某月所有监测点坐标的函数。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-9-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-1"> 1</a>
-</span><span class="lnt" id="hl-9-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-2"> 2</a>
-</span><span class="lnt" id="hl-9-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-3"> 3</a>
-</span><span class="lnt" id="hl-9-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-4"> 4</a>
-</span><span class="lnt" id="hl-9-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-5"> 5</a>
-</span><span class="lnt" id="hl-9-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-6"> 6</a>
-</span><span class="lnt" id="hl-9-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-7"> 7</a>
-</span><span class="lnt" id="hl-9-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-8"> 8</a>
-</span><span class="lnt" id="hl-9-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-9"> 9</a>
-</span><span class="lnt" id="hl-9-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-10">10</a>
-</span><span class="lnt" id="hl-9-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-11">11</a>
-</span><span class="lnt" id="hl-9-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-12">12</a>
-</span><span class="lnt" id="hl-9-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-13">13</a>
-</span><span class="lnt" id="hl-9-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-14">14</a>
-</span><span class="lnt" id="hl-9-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-15">15</a>
-</span><span class="lnt" id="hl-9-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-16">16</a>
-</span><span class="lnt" id="hl-9-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-17">17</a>
-</span><span class="lnt" id="hl-9-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-18">18</a>
-</span><span class="lnt" id="hl-9-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-19">19</a>
-</span><span class="lnt" id="hl-9-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-20">20</a>
-</span><span class="lnt" id="hl-9-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-21">21</a>
-</span><span class="lnt" id="hl-9-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-22">22</a>
-</span><span class="lnt" id="hl-9-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-23">23</a>
-</span><span class="lnt" id="hl-9-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-24">24</a>
-</span><span class="lnt" id="hl-9-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-25">25</a>
-</span><span class="lnt" id="hl-9-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-26">26</a>
-</span><span class="lnt" id="hl-9-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-9-27">27</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-9-1"><a class="lnlinks" href="#hl-9-1"> 1</a>
+</span><span class="lnt" id="hl-9-2"><a class="lnlinks" href="#hl-9-2"> 2</a>
+</span><span class="lnt" id="hl-9-3"><a class="lnlinks" href="#hl-9-3"> 3</a>
+</span><span class="lnt" id="hl-9-4"><a class="lnlinks" href="#hl-9-4"> 4</a>
+</span><span class="lnt" id="hl-9-5"><a class="lnlinks" href="#hl-9-5"> 5</a>
+</span><span class="lnt" id="hl-9-6"><a class="lnlinks" href="#hl-9-6"> 6</a>
+</span><span class="lnt" id="hl-9-7"><a class="lnlinks" href="#hl-9-7"> 7</a>
+</span><span class="lnt" id="hl-9-8"><a class="lnlinks" href="#hl-9-8"> 8</a>
+</span><span class="lnt" id="hl-9-9"><a class="lnlinks" href="#hl-9-9"> 9</a>
+</span><span class="lnt" id="hl-9-10"><a class="lnlinks" href="#hl-9-10">10</a>
+</span><span class="lnt" id="hl-9-11"><a class="lnlinks" href="#hl-9-11">11</a>
+</span><span class="lnt" id="hl-9-12"><a class="lnlinks" href="#hl-9-12">12</a>
+</span><span class="lnt" id="hl-9-13"><a class="lnlinks" href="#hl-9-13">13</a>
+</span><span class="lnt" id="hl-9-14"><a class="lnlinks" href="#hl-9-14">14</a>
+</span><span class="lnt" id="hl-9-15"><a class="lnlinks" href="#hl-9-15">15</a>
+</span><span class="lnt" id="hl-9-16"><a class="lnlinks" href="#hl-9-16">16</a>
+</span><span class="lnt" id="hl-9-17"><a class="lnlinks" href="#hl-9-17">17</a>
+</span><span class="lnt" id="hl-9-18"><a class="lnlinks" href="#hl-9-18">18</a>
+</span><span class="lnt" id="hl-9-19"><a class="lnlinks" href="#hl-9-19">19</a>
+</span><span class="lnt" id="hl-9-20"><a class="lnlinks" href="#hl-9-20">20</a>
+</span><span class="lnt" id="hl-9-21"><a class="lnlinks" href="#hl-9-21">21</a>
+</span><span class="lnt" id="hl-9-22"><a class="lnlinks" href="#hl-9-22">22</a>
+</span><span class="lnt" id="hl-9-23"><a class="lnlinks" href="#hl-9-23">23</a>
+</span><span class="lnt" id="hl-9-24"><a class="lnlinks" href="#hl-9-24">24</a>
+</span><span class="lnt" id="hl-9-25"><a class="lnlinks" href="#hl-9-25">25</a>
+</span><span class="lnt" id="hl-9-26"><a class="lnlinks" href="#hl-9-26">26</a>
+</span><span class="lnt" id="hl-9-27"><a class="lnlinks" href="#hl-9-27">27</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">getlongitude</span><span class="p">(</span><span class="n">dataframe</span><span class="p">,</span><span class="n">year</span><span class="p">,</span><span class="n">month</span><span class="p">):</span>
@@ -634,37 +637,37 @@ if (!doNotTrack) {
 </div><p>定义画出某年某月水质类别分布图的函数。将网上找的我国海岸线轮廓作为底图（网上下载下来是shp格式的，但是找到了一个很好的网站，可以将shp图层文件转换成位图 <a href="https://mapshaper.org/">https://mapshaper.org/</a>）。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-10-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-1"> 1</a>
-</span><span class="lnt" id="hl-10-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-2"> 2</a>
-</span><span class="lnt" id="hl-10-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-3"> 3</a>
-</span><span class="lnt" id="hl-10-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-4"> 4</a>
-</span><span class="lnt" id="hl-10-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-5"> 5</a>
-</span><span class="lnt" id="hl-10-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-6"> 6</a>
-</span><span class="lnt" id="hl-10-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-7"> 7</a>
-</span><span class="lnt" id="hl-10-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-8"> 8</a>
-</span><span class="lnt" id="hl-10-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-9"> 9</a>
-</span><span class="lnt" id="hl-10-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-10">10</a>
-</span><span class="lnt" id="hl-10-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-11">11</a>
-</span><span class="lnt" id="hl-10-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-12">12</a>
-</span><span class="lnt" id="hl-10-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-13">13</a>
-</span><span class="lnt" id="hl-10-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-14">14</a>
-</span><span class="lnt" id="hl-10-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-15">15</a>
-</span><span class="lnt" id="hl-10-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-16">16</a>
-</span><span class="lnt" id="hl-10-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-17">17</a>
-</span><span class="lnt" id="hl-10-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-18">18</a>
-</span><span class="lnt" id="hl-10-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-19">19</a>
-</span><span class="lnt" id="hl-10-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-20">20</a>
-</span><span class="lnt" id="hl-10-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-21">21</a>
-</span><span class="lnt" id="hl-10-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-22">22</a>
-</span><span class="lnt" id="hl-10-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-23">23</a>
-</span><span class="lnt" id="hl-10-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-24">24</a>
-</span><span class="lnt" id="hl-10-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-25">25</a>
-</span><span class="lnt" id="hl-10-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-26">26</a>
-</span><span class="lnt" id="hl-10-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-27">27</a>
-</span><span class="lnt" id="hl-10-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-28">28</a>
-</span><span class="lnt" id="hl-10-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-29">29</a>
-</span><span class="lnt" id="hl-10-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-30">30</a>
-</span><span class="lnt" id="hl-10-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-10-31">31</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-10-1"><a class="lnlinks" href="#hl-10-1"> 1</a>
+</span><span class="lnt" id="hl-10-2"><a class="lnlinks" href="#hl-10-2"> 2</a>
+</span><span class="lnt" id="hl-10-3"><a class="lnlinks" href="#hl-10-3"> 3</a>
+</span><span class="lnt" id="hl-10-4"><a class="lnlinks" href="#hl-10-4"> 4</a>
+</span><span class="lnt" id="hl-10-5"><a class="lnlinks" href="#hl-10-5"> 5</a>
+</span><span class="lnt" id="hl-10-6"><a class="lnlinks" href="#hl-10-6"> 6</a>
+</span><span class="lnt" id="hl-10-7"><a class="lnlinks" href="#hl-10-7"> 7</a>
+</span><span class="lnt" id="hl-10-8"><a class="lnlinks" href="#hl-10-8"> 8</a>
+</span><span class="lnt" id="hl-10-9"><a class="lnlinks" href="#hl-10-9"> 9</a>
+</span><span class="lnt" id="hl-10-10"><a class="lnlinks" href="#hl-10-10">10</a>
+</span><span class="lnt" id="hl-10-11"><a class="lnlinks" href="#hl-10-11">11</a>
+</span><span class="lnt" id="hl-10-12"><a class="lnlinks" href="#hl-10-12">12</a>
+</span><span class="lnt" id="hl-10-13"><a class="lnlinks" href="#hl-10-13">13</a>
+</span><span class="lnt" id="hl-10-14"><a class="lnlinks" href="#hl-10-14">14</a>
+</span><span class="lnt" id="hl-10-15"><a class="lnlinks" href="#hl-10-15">15</a>
+</span><span class="lnt" id="hl-10-16"><a class="lnlinks" href="#hl-10-16">16</a>
+</span><span class="lnt" id="hl-10-17"><a class="lnlinks" href="#hl-10-17">17</a>
+</span><span class="lnt" id="hl-10-18"><a class="lnlinks" href="#hl-10-18">18</a>
+</span><span class="lnt" id="hl-10-19"><a class="lnlinks" href="#hl-10-19">19</a>
+</span><span class="lnt" id="hl-10-20"><a class="lnlinks" href="#hl-10-20">20</a>
+</span><span class="lnt" id="hl-10-21"><a class="lnlinks" href="#hl-10-21">21</a>
+</span><span class="lnt" id="hl-10-22"><a class="lnlinks" href="#hl-10-22">22</a>
+</span><span class="lnt" id="hl-10-23"><a class="lnlinks" href="#hl-10-23">23</a>
+</span><span class="lnt" id="hl-10-24"><a class="lnlinks" href="#hl-10-24">24</a>
+</span><span class="lnt" id="hl-10-25"><a class="lnlinks" href="#hl-10-25">25</a>
+</span><span class="lnt" id="hl-10-26"><a class="lnlinks" href="#hl-10-26">26</a>
+</span><span class="lnt" id="hl-10-27"><a class="lnlinks" href="#hl-10-27">27</a>
+</span><span class="lnt" id="hl-10-28"><a class="lnlinks" href="#hl-10-28">28</a>
+</span><span class="lnt" id="hl-10-29"><a class="lnlinks" href="#hl-10-29">29</a>
+</span><span class="lnt" id="hl-10-30"><a class="lnlinks" href="#hl-10-30">30</a>
+</span><span class="lnt" id="hl-10-31"><a class="lnlinks" href="#hl-10-31">31</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">draw_plot</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">month</span><span class="p">,</span><span class="n">longitude_by_level</span><span class="p">,</span><span class="n">latitude_by_level</span><span class="p">):</span>
@@ -703,12 +706,12 @@ if (!doNotTrack) {
 </div><p>生成2020-2021年每月的水质分布图。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-11-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-1">1</a>
-</span><span class="lnt" id="hl-11-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-2">2</a>
-</span><span class="lnt" id="hl-11-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-3">3</a>
-</span><span class="lnt" id="hl-11-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-4">4</a>
-</span><span class="lnt" id="hl-11-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-5">5</a>
-</span><span class="lnt" id="hl-11-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-11-6">6</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-11-1"><a class="lnlinks" href="#hl-11-1">1</a>
+</span><span class="lnt" id="hl-11-2"><a class="lnlinks" href="#hl-11-2">2</a>
+</span><span class="lnt" id="hl-11-3"><a class="lnlinks" href="#hl-11-3">3</a>
+</span><span class="lnt" id="hl-11-4"><a class="lnlinks" href="#hl-11-4">4</a>
+</span><span class="lnt" id="hl-11-5"><a class="lnlinks" href="#hl-11-5">5</a>
+</span><span class="lnt" id="hl-11-6"><a class="lnlinks" href="#hl-11-6">6</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2020&#39;</span><span class="p">,</span><span class="s1">&#39;2021&#39;</span><span class="p">]:</span>
@@ -723,12 +726,12 @@ if (!doNotTrack) {
 <p>将图片拼接成GIF动图。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-12-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-1">1</a>
-</span><span class="lnt" id="hl-12-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-2">2</a>
-</span><span class="lnt" id="hl-12-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-3">3</a>
-</span><span class="lnt" id="hl-12-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-4">4</a>
-</span><span class="lnt" id="hl-12-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-5">5</a>
-</span><span class="lnt" id="hl-12-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-12-6">6</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-12-1"><a class="lnlinks" href="#hl-12-1">1</a>
+</span><span class="lnt" id="hl-12-2"><a class="lnlinks" href="#hl-12-2">2</a>
+</span><span class="lnt" id="hl-12-3"><a class="lnlinks" href="#hl-12-3">3</a>
+</span><span class="lnt" id="hl-12-4"><a class="lnlinks" href="#hl-12-4">4</a>
+</span><span class="lnt" id="hl-12-5"><a class="lnlinks" href="#hl-12-5">5</a>
+</span><span class="lnt" id="hl-12-6"><a class="lnlinks" href="#hl-12-6">6</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">imageio</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
@@ -745,17 +748,17 @@ if (!doNotTrack) {
 <p>以“化学需氧量(mg/L)”为研究数据，考察不同海区/省份之间的海水COD差异性。首先将数据转换为数值类型，标记为“未检出”的数据记为0。由于方差分析适用于正态分布的样本，因此先对数据进行分布检验，变换为接近正态分布的形式后再进行方差分析。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-13-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-1"> 1</a>
-</span><span class="lnt" id="hl-13-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-2"> 2</a>
-</span><span class="lnt" id="hl-13-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-3"> 3</a>
-</span><span class="lnt" id="hl-13-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-4"> 4</a>
-</span><span class="lnt" id="hl-13-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-5"> 5</a>
-</span><span class="lnt" id="hl-13-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-6"> 6</a>
-</span><span class="lnt" id="hl-13-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-7"> 7</a>
-</span><span class="lnt" id="hl-13-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-8"> 8</a>
-</span><span class="lnt" id="hl-13-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-9"> 9</a>
-</span><span class="lnt" id="hl-13-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-10">10</a>
-</span><span class="lnt" id="hl-13-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-13-11">11</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-13-1"><a class="lnlinks" href="#hl-13-1"> 1</a>
+</span><span class="lnt" id="hl-13-2"><a class="lnlinks" href="#hl-13-2"> 2</a>
+</span><span class="lnt" id="hl-13-3"><a class="lnlinks" href="#hl-13-3"> 3</a>
+</span><span class="lnt" id="hl-13-4"><a class="lnlinks" href="#hl-13-4"> 4</a>
+</span><span class="lnt" id="hl-13-5"><a class="lnlinks" href="#hl-13-5"> 5</a>
+</span><span class="lnt" id="hl-13-6"><a class="lnlinks" href="#hl-13-6"> 6</a>
+</span><span class="lnt" id="hl-13-7"><a class="lnlinks" href="#hl-13-7"> 7</a>
+</span><span class="lnt" id="hl-13-8"><a class="lnlinks" href="#hl-13-8"> 8</a>
+</span><span class="lnt" id="hl-13-9"><a class="lnlinks" href="#hl-13-9"> 9</a>
+</span><span class="lnt" id="hl-13-10"><a class="lnlinks" href="#hl-13-10">10</a>
+</span><span class="lnt" id="hl-13-11"><a class="lnlinks" href="#hl-13-11">11</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -775,11 +778,11 @@ if (!doNotTrack) {
 <p>首先读取数据，转换成浮点型。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-14-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-14-1">1</a>
-</span><span class="lnt" id="hl-14-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-14-2">2</a>
-</span><span class="lnt" id="hl-14-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-14-3">3</a>
-</span><span class="lnt" id="hl-14-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-14-4">4</a>
-</span><span class="lnt" id="hl-14-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-14-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-14-1"><a class="lnlinks" href="#hl-14-1">1</a>
+</span><span class="lnt" id="hl-14-2"><a class="lnlinks" href="#hl-14-2">2</a>
+</span><span class="lnt" id="hl-14-3"><a class="lnlinks" href="#hl-14-3">3</a>
+</span><span class="lnt" id="hl-14-4"><a class="lnlinks" href="#hl-14-4">4</a>
+</span><span class="lnt" id="hl-14-5"><a class="lnlinks" href="#hl-14-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">&#39;./Data.pkl&#39;</span><span class="p">)</span>
@@ -792,11 +795,11 @@ if (!doNotTrack) {
 </div><p>从原始数据的直方图大致看一下分布情况。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-15-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-15-1">1</a>
-</span><span class="lnt" id="hl-15-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-15-2">2</a>
-</span><span class="lnt" id="hl-15-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-15-3">3</a>
-</span><span class="lnt" id="hl-15-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-15-4">4</a>
-</span><span class="lnt" id="hl-15-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-15-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-15-1"><a class="lnlinks" href="#hl-15-1">1</a>
+</span><span class="lnt" id="hl-15-2"><a class="lnlinks" href="#hl-15-2">2</a>
+</span><span class="lnt" id="hl-15-3"><a class="lnlinks" href="#hl-15-3">3</a>
+</span><span class="lnt" id="hl-15-4"><a class="lnlinks" href="#hl-15-4">4</a>
+</span><span class="lnt" id="hl-15-5"><a class="lnlinks" href="#hl-15-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -811,9 +814,9 @@ if (!doNotTrack) {
 <p>可以看出样本是明显有偏的，计算样本的偏度（Skewness）和峰度（Kurtosis）。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-16-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-16-1">1</a>
-</span><span class="lnt" id="hl-16-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-16-2">2</a>
-</span><span class="lnt" id="hl-16-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-16-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-16-1"><a class="lnlinks" href="#hl-16-1">1</a>
+</span><span class="lnt" id="hl-16-2"><a class="lnlinks" href="#hl-16-2">2</a>
+</span><span class="lnt" id="hl-16-3"><a class="lnlinks" href="#hl-16-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">cod</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
@@ -823,7 +826,7 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-17-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-17-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-17-1"><a class="lnlinks" href="#hl-17-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">偏度 = 4.58614227400281, 峰度 = 43.47585104239013
@@ -832,12 +835,12 @@ if (!doNotTrack) {
 </div><p>偏度$S&gt;0$，表明样本正偏，数据出现右侧长尾；峰度$K&gt;6$，表明分布陡峭。尝试通过取对数得到接近正态的分布。这里考虑到0的数据比较多，若采用$x&rsquo;=\lg(x+10^{-n})$的转换方法，会在$x=-n$的地方出现一个异常峰，所以决定舍弃0数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-18-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-1">1</a>
-</span><span class="lnt" id="hl-18-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-2">2</a>
-</span><span class="lnt" id="hl-18-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-3">3</a>
-</span><span class="lnt" id="hl-18-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-4">4</a>
-</span><span class="lnt" id="hl-18-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-5">5</a>
-</span><span class="lnt" id="hl-18-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-18-6">6</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-18-1"><a class="lnlinks" href="#hl-18-1">1</a>
+</span><span class="lnt" id="hl-18-2"><a class="lnlinks" href="#hl-18-2">2</a>
+</span><span class="lnt" id="hl-18-3"><a class="lnlinks" href="#hl-18-3">3</a>
+</span><span class="lnt" id="hl-18-4"><a class="lnlinks" href="#hl-18-4">4</a>
+</span><span class="lnt" id="hl-18-5"><a class="lnlinks" href="#hl-18-5">5</a>
+</span><span class="lnt" id="hl-18-6"><a class="lnlinks" href="#hl-18-6">6</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cod2 = pd.Series.copy(cod,deep=True)
@@ -850,11 +853,11 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-19-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-19-1">1</a>
-</span><span class="lnt" id="hl-19-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-19-2">2</a>
-</span><span class="lnt" id="hl-19-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-19-3">3</a>
-</span><span class="lnt" id="hl-19-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-19-4">4</a>
-</span><span class="lnt" id="hl-19-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-19-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-19-1"><a class="lnlinks" href="#hl-19-1">1</a>
+</span><span class="lnt" id="hl-19-2"><a class="lnlinks" href="#hl-19-2">2</a>
+</span><span class="lnt" id="hl-19-3"><a class="lnlinks" href="#hl-19-3">3</a>
+</span><span class="lnt" id="hl-19-4"><a class="lnlinks" href="#hl-19-4">4</a>
+</span><span class="lnt" id="hl-19-5"><a class="lnlinks" href="#hl-19-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -867,9 +870,9 @@ if (!doNotTrack) {
 </div><img src="/images/image-20220424021903070.png" alt="image-20220424021903070" style="zoom:33%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-20-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-20-1">1</a>
-</span><span class="lnt" id="hl-20-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-20-2">2</a>
-</span><span class="lnt" id="hl-20-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-20-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-20-1"><a class="lnlinks" href="#hl-20-1">1</a>
+</span><span class="lnt" id="hl-20-2"><a class="lnlinks" href="#hl-20-2">2</a>
+</span><span class="lnt" id="hl-20-3"><a class="lnlinks" href="#hl-20-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">cod2</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
@@ -879,7 +882,7 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-21-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-21-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-21-1"><a class="lnlinks" href="#hl-21-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">偏度 = 0.08821022006460341, 峰度 = 0.6118708597667646
@@ -892,11 +895,11 @@ if (!doNotTrack) {
 <p>用Q-Q图辅助判断，处理后的数据点更好地分布在对角线上。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-22-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-22-1">1</a>
-</span><span class="lnt" id="hl-22-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-22-2">2</a>
-</span><span class="lnt" id="hl-22-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-22-3">3</a>
-</span><span class="lnt" id="hl-22-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-22-4">4</a>
-</span><span class="lnt" id="hl-22-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-22-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-22-1"><a class="lnlinks" href="#hl-22-1">1</a>
+</span><span class="lnt" id="hl-22-2"><a class="lnlinks" href="#hl-22-2">2</a>
+</span><span class="lnt" id="hl-22-3"><a class="lnlinks" href="#hl-22-3">3</a>
+</span><span class="lnt" id="hl-22-4"><a class="lnlinks" href="#hl-22-4">4</a>
+</span><span class="lnt" id="hl-22-5"><a class="lnlinks" href="#hl-22-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -912,11 +915,11 @@ if (!doNotTrack) {
 <p>获取海区和省份的数据（定类数据），和对数化的COD一起合成data frame。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-23-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-23-1">1</a>
-</span><span class="lnt" id="hl-23-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-23-2">2</a>
-</span><span class="lnt" id="hl-23-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-23-3">3</a>
-</span><span class="lnt" id="hl-23-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-23-4">4</a>
-</span><span class="lnt" id="hl-23-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-23-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-23-1"><a class="lnlinks" href="#hl-23-1">1</a>
+</span><span class="lnt" id="hl-23-2"><a class="lnlinks" href="#hl-23-2">2</a>
+</span><span class="lnt" id="hl-23-3"><a class="lnlinks" href="#hl-23-3">3</a>
+</span><span class="lnt" id="hl-23-4"><a class="lnlinks" href="#hl-23-4">4</a>
+</span><span class="lnt" id="hl-23-5"><a class="lnlinks" href="#hl-23-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">anova_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;海区&#39;</span><span class="p">,</span><span class="s1">&#39;省份&#39;</span><span class="p">,</span><span class="s1">&#39;logCOD&#39;</span><span class="p">])</span>
@@ -929,8 +932,8 @@ if (!doNotTrack) {
 </div><p>先用箱型图看一下四大海区的分布差异。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-24-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-24-1">1</a>
-</span><span class="lnt" id="hl-24-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-24-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-24-1"><a class="lnlinks" href="#hl-24-1">1</a>
+</span><span class="lnt" id="hl-24-2"><a class="lnlinks" href="#hl-24-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -941,9 +944,9 @@ if (!doNotTrack) {
 <p>单因素方差分析。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-25-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-25-1">1</a>
-</span><span class="lnt" id="hl-25-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-25-2">2</a>
-</span><span class="lnt" id="hl-25-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-25-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-25-1"><a class="lnlinks" href="#hl-25-1">1</a>
+</span><span class="lnt" id="hl-25-2"><a class="lnlinks" href="#hl-25-2">2</a>
+</span><span class="lnt" id="hl-25-3"><a class="lnlinks" href="#hl-25-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">&#39;logCOD ~ 海区&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">anova_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
@@ -953,9 +956,9 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-26-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-26-1">1</a>
-</span><span class="lnt" id="hl-26-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-26-2">2</a>
-</span><span class="lnt" id="hl-26-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-26-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-26-1"><a class="lnlinks" href="#hl-26-1">1</a>
+</span><span class="lnt" id="hl-26-2"><a class="lnlinks" href="#hl-26-2">2</a>
+</span><span class="lnt" id="hl-26-3"><a class="lnlinks" href="#hl-26-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">              sum_sq      df           F         PR(&gt;F)
@@ -966,8 +969,8 @@ if (!doNotTrack) {
 </div><p>省份分布差异同理。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-27-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-27-1">1</a>
-</span><span class="lnt" id="hl-27-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-27-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-27-1"><a class="lnlinks" href="#hl-27-1">1</a>
+</span><span class="lnt" id="hl-27-2"><a class="lnlinks" href="#hl-27-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -977,9 +980,9 @@ if (!doNotTrack) {
 </div><img src="/images/image-20220424023106157.png" alt="image-20220424023106157" style="zoom:50%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-28-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-28-1">1</a>
-</span><span class="lnt" id="hl-28-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-28-2">2</a>
-</span><span class="lnt" id="hl-28-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-28-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-28-1"><a class="lnlinks" href="#hl-28-1">1</a>
+</span><span class="lnt" id="hl-28-2"><a class="lnlinks" href="#hl-28-2">2</a>
+</span><span class="lnt" id="hl-28-3"><a class="lnlinks" href="#hl-28-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">&#39;logCOD ~ 省份&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">anova_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
@@ -989,9 +992,9 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-29-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-29-1">1</a>
-</span><span class="lnt" id="hl-29-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-29-2">2</a>
-</span><span class="lnt" id="hl-29-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-29-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-29-1"><a class="lnlinks" href="#hl-29-1">1</a>
+</span><span class="lnt" id="hl-29-2"><a class="lnlinks" href="#hl-29-2">2</a>
+</span><span class="lnt" id="hl-29-3"><a class="lnlinks" href="#hl-29-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">              sum_sq      df           F  PR(&gt;F)
@@ -1004,11 +1007,11 @@ if (!doNotTrack) {
 <p>上面的分析是针对COD（定序变量）和海区/省份（定类变量）之间关系的分析。接下来选取“无机氮(mg/L)”数据，与COD数据进行定序变量的相关性分析。由于Pearson相关性分析要求两个变量均服从正态分布，因此对无机氮数据也要先进行数据清理和转换，取以10为底的对数。Q-Q图依然可以反映出处理前后的正态性变化。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-30-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-30-1">1</a>
-</span><span class="lnt" id="hl-30-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-30-2">2</a>
-</span><span class="lnt" id="hl-30-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-30-3">3</a>
-</span><span class="lnt" id="hl-30-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-30-4">4</a>
-</span><span class="lnt" id="hl-30-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-30-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-30-1"><a class="lnlinks" href="#hl-30-1">1</a>
+</span><span class="lnt" id="hl-30-2"><a class="lnlinks" href="#hl-30-2">2</a>
+</span><span class="lnt" id="hl-30-3"><a class="lnlinks" href="#hl-30-3">3</a>
+</span><span class="lnt" id="hl-30-4"><a class="lnlinks" href="#hl-30-4">4</a>
+</span><span class="lnt" id="hl-30-5"><a class="lnlinks" href="#hl-30-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ni</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;无机氮(mg/L)&#39;</span><span class="p">]</span>
@@ -1020,11 +1023,11 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-31-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-31-1">1</a>
-</span><span class="lnt" id="hl-31-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-31-2">2</a>
-</span><span class="lnt" id="hl-31-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-31-3">3</a>
-</span><span class="lnt" id="hl-31-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-31-4">4</a>
-</span><span class="lnt" id="hl-31-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-31-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-31-1"><a class="lnlinks" href="#hl-31-1">1</a>
+</span><span class="lnt" id="hl-31-2"><a class="lnlinks" href="#hl-31-2">2</a>
+</span><span class="lnt" id="hl-31-3"><a class="lnlinks" href="#hl-31-3">3</a>
+</span><span class="lnt" id="hl-31-4"><a class="lnlinks" href="#hl-31-4">4</a>
+</span><span class="lnt" id="hl-31-5"><a class="lnlinks" href="#hl-31-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -1039,9 +1042,9 @@ if (!doNotTrack) {
 <p>由于有些监测点只有化学需氧量数据，没有无机氮数据，因此需要进行数据清理，将这些监测点删除。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-32-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-32-1">1</a>
-</span><span class="lnt" id="hl-32-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-32-2">2</a>
-</span><span class="lnt" id="hl-32-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-32-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-32-1"><a class="lnlinks" href="#hl-32-1">1</a>
+</span><span class="lnt" id="hl-32-2"><a class="lnlinks" href="#hl-32-2">2</a>
+</span><span class="lnt" id="hl-32-3"><a class="lnlinks" href="#hl-32-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
@@ -1052,8 +1055,8 @@ if (!doNotTrack) {
 </div><p>进行Pearson检验。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-33-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-33-1">1</a>
-</span><span class="lnt" id="hl-33-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-33-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-33-1"><a class="lnlinks" href="#hl-33-1">1</a>
+</span><span class="lnt" id="hl-33-2"><a class="lnlinks" href="#hl-33-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">r</span><span class="p">,</span><span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">ni2</span><span class="p">,</span><span class="n">cod2</span><span class="p">)</span>
@@ -1062,7 +1065,7 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-34-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-34-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-34-1"><a class="lnlinks" href="#hl-34-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Pearson检验，相关系数 = 0.446809, P值 = 0.000000
@@ -1072,13 +1075,13 @@ if (!doNotTrack) {
 <h2 id="线性回归">线性回归<a hidden class="anchor" aria-hidden="true" href="#线性回归">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-35-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-1">1</a>
-</span><span class="lnt" id="hl-35-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-2">2</a>
-</span><span class="lnt" id="hl-35-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-3">3</a>
-</span><span class="lnt" id="hl-35-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-4">4</a>
-</span><span class="lnt" id="hl-35-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-5">5</a>
-</span><span class="lnt" id="hl-35-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-6">6</a>
-</span><span class="lnt" id="hl-35-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-35-7">7</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-35-1"><a class="lnlinks" href="#hl-35-1">1</a>
+</span><span class="lnt" id="hl-35-2"><a class="lnlinks" href="#hl-35-2">2</a>
+</span><span class="lnt" id="hl-35-3"><a class="lnlinks" href="#hl-35-3">3</a>
+</span><span class="lnt" id="hl-35-4"><a class="lnlinks" href="#hl-35-4">4</a>
+</span><span class="lnt" id="hl-35-5"><a class="lnlinks" href="#hl-35-5">5</a>
+</span><span class="lnt" id="hl-35-6"><a class="lnlinks" href="#hl-35-6">6</a>
+</span><span class="lnt" id="hl-35-7"><a class="lnlinks" href="#hl-35-7">7</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -1092,9 +1095,9 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-36-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-36-1">1</a>
-</span><span class="lnt" id="hl-36-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-36-2">2</a>
-</span><span class="lnt" id="hl-36-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-36-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-36-1"><a class="lnlinks" href="#hl-36-1">1</a>
+</span><span class="lnt" id="hl-36-2"><a class="lnlinks" href="#hl-36-2">2</a>
+</span><span class="lnt" id="hl-36-3"><a class="lnlinks" href="#hl-36-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">线性回归斜率： [1.10361078] 
@@ -1104,11 +1107,11 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-37-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-37-1">1</a>
-</span><span class="lnt" id="hl-37-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-37-2">2</a>
-</span><span class="lnt" id="hl-37-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-37-3">3</a>
-</span><span class="lnt" id="hl-37-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-37-4">4</a>
-</span><span class="lnt" id="hl-37-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-37-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-37-1"><a class="lnlinks" href="#hl-37-1">1</a>
+</span><span class="lnt" id="hl-37-2"><a class="lnlinks" href="#hl-37-2">2</a>
+</span><span class="lnt" id="hl-37-3"><a class="lnlinks" href="#hl-37-3">3</a>
+</span><span class="lnt" id="hl-37-4"><a class="lnlinks" href="#hl-37-4">4</a>
+</span><span class="lnt" id="hl-37-5"><a class="lnlinks" href="#hl-37-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -1122,24 +1125,24 @@ if (!doNotTrack) {
 <p>考虑到海水地理位置对相关性的影响，再分海区绘制散点图和回归曲线。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-38-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-1"> 1</a>
-</span><span class="lnt" id="hl-38-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-2"> 2</a>
-</span><span class="lnt" id="hl-38-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-3"> 3</a>
-</span><span class="lnt" id="hl-38-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-4"> 4</a>
-</span><span class="lnt" id="hl-38-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-5"> 5</a>
-</span><span class="lnt" id="hl-38-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-6"> 6</a>
-</span><span class="lnt" id="hl-38-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-7"> 7</a>
-</span><span class="lnt" id="hl-38-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-8"> 8</a>
-</span><span class="lnt" id="hl-38-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-9"> 9</a>
-</span><span class="lnt" id="hl-38-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-10">10</a>
-</span><span class="lnt" id="hl-38-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-11">11</a>
-</span><span class="lnt" id="hl-38-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-12">12</a>
-</span><span class="lnt" id="hl-38-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-13">13</a>
-</span><span class="lnt" id="hl-38-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-14">14</a>
-</span><span class="lnt" id="hl-38-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-15">15</a>
-</span><span class="lnt" id="hl-38-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-16">16</a>
-</span><span class="lnt" id="hl-38-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-17">17</a>
-</span><span class="lnt" id="hl-38-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-38-18">18</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-38-1"><a class="lnlinks" href="#hl-38-1"> 1</a>
+</span><span class="lnt" id="hl-38-2"><a class="lnlinks" href="#hl-38-2"> 2</a>
+</span><span class="lnt" id="hl-38-3"><a class="lnlinks" href="#hl-38-3"> 3</a>
+</span><span class="lnt" id="hl-38-4"><a class="lnlinks" href="#hl-38-4"> 4</a>
+</span><span class="lnt" id="hl-38-5"><a class="lnlinks" href="#hl-38-5"> 5</a>
+</span><span class="lnt" id="hl-38-6"><a class="lnlinks" href="#hl-38-6"> 6</a>
+</span><span class="lnt" id="hl-38-7"><a class="lnlinks" href="#hl-38-7"> 7</a>
+</span><span class="lnt" id="hl-38-8"><a class="lnlinks" href="#hl-38-8"> 8</a>
+</span><span class="lnt" id="hl-38-9"><a class="lnlinks" href="#hl-38-9"> 9</a>
+</span><span class="lnt" id="hl-38-10"><a class="lnlinks" href="#hl-38-10">10</a>
+</span><span class="lnt" id="hl-38-11"><a class="lnlinks" href="#hl-38-11">11</a>
+</span><span class="lnt" id="hl-38-12"><a class="lnlinks" href="#hl-38-12">12</a>
+</span><span class="lnt" id="hl-38-13"><a class="lnlinks" href="#hl-38-13">13</a>
+</span><span class="lnt" id="hl-38-14"><a class="lnlinks" href="#hl-38-14">14</a>
+</span><span class="lnt" id="hl-38-15"><a class="lnlinks" href="#hl-38-15">15</a>
+</span><span class="lnt" id="hl-38-16"><a class="lnlinks" href="#hl-38-16">16</a>
+</span><span class="lnt" id="hl-38-17"><a class="lnlinks" href="#hl-38-17">17</a>
+</span><span class="lnt" id="hl-38-18"><a class="lnlinks" href="#hl-38-18">18</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">sl_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;海区&#39;</span><span class="p">,</span><span class="s1">&#39;logN&#39;</span><span class="p">,</span><span class="s1">&#39;logCOD&#39;</span><span class="p">])</span>
@@ -1164,22 +1167,22 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-39-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-1"> 1</a>
-</span><span class="lnt" id="hl-39-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-2"> 2</a>
-</span><span class="lnt" id="hl-39-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-3"> 3</a>
-</span><span class="lnt" id="hl-39-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-4"> 4</a>
-</span><span class="lnt" id="hl-39-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-5"> 5</a>
-</span><span class="lnt" id="hl-39-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-6"> 6</a>
-</span><span class="lnt" id="hl-39-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-7"> 7</a>
-</span><span class="lnt" id="hl-39-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-8"> 8</a>
-</span><span class="lnt" id="hl-39-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-9"> 9</a>
-</span><span class="lnt" id="hl-39-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-10">10</a>
-</span><span class="lnt" id="hl-39-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-11">11</a>
-</span><span class="lnt" id="hl-39-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-12">12</a>
-</span><span class="lnt" id="hl-39-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-13">13</a>
-</span><span class="lnt" id="hl-39-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-14">14</a>
-</span><span class="lnt" id="hl-39-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-15">15</a>
-</span><span class="lnt" id="hl-39-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-39-16">16</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-39-1"><a class="lnlinks" href="#hl-39-1"> 1</a>
+</span><span class="lnt" id="hl-39-2"><a class="lnlinks" href="#hl-39-2"> 2</a>
+</span><span class="lnt" id="hl-39-3"><a class="lnlinks" href="#hl-39-3"> 3</a>
+</span><span class="lnt" id="hl-39-4"><a class="lnlinks" href="#hl-39-4"> 4</a>
+</span><span class="lnt" id="hl-39-5"><a class="lnlinks" href="#hl-39-5"> 5</a>
+</span><span class="lnt" id="hl-39-6"><a class="lnlinks" href="#hl-39-6"> 6</a>
+</span><span class="lnt" id="hl-39-7"><a class="lnlinks" href="#hl-39-7"> 7</a>
+</span><span class="lnt" id="hl-39-8"><a class="lnlinks" href="#hl-39-8"> 8</a>
+</span><span class="lnt" id="hl-39-9"><a class="lnlinks" href="#hl-39-9"> 9</a>
+</span><span class="lnt" id="hl-39-10"><a class="lnlinks" href="#hl-39-10">10</a>
+</span><span class="lnt" id="hl-39-11"><a class="lnlinks" href="#hl-39-11">11</a>
+</span><span class="lnt" id="hl-39-12"><a class="lnlinks" href="#hl-39-12">12</a>
+</span><span class="lnt" id="hl-39-13"><a class="lnlinks" href="#hl-39-13">13</a>
+</span><span class="lnt" id="hl-39-14"><a class="lnlinks" href="#hl-39-14">14</a>
+</span><span class="lnt" id="hl-39-15"><a class="lnlinks" href="#hl-39-15">15</a>
+</span><span class="lnt" id="hl-39-16"><a class="lnlinks" href="#hl-39-16">16</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">黄海 
@@ -1202,47 +1205,47 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-40-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-1"> 1</a>
-</span><span class="lnt" id="hl-40-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-2"> 2</a>
-</span><span class="lnt" id="hl-40-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-3"> 3</a>
-</span><span class="lnt" id="hl-40-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-4"> 4</a>
-</span><span class="lnt" id="hl-40-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-5"> 5</a>
-</span><span class="lnt" id="hl-40-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-6"> 6</a>
-</span><span class="lnt" id="hl-40-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-7"> 7</a>
-</span><span class="lnt" id="hl-40-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-8"> 8</a>
-</span><span class="lnt" id="hl-40-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-9"> 9</a>
-</span><span class="lnt" id="hl-40-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-10">10</a>
-</span><span class="lnt" id="hl-40-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-11">11</a>
-</span><span class="lnt" id="hl-40-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-12">12</a>
-</span><span class="lnt" id="hl-40-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-13">13</a>
-</span><span class="lnt" id="hl-40-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-14">14</a>
-</span><span class="lnt" id="hl-40-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-15">15</a>
-</span><span class="lnt" id="hl-40-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-16">16</a>
-</span><span class="lnt" id="hl-40-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-17">17</a>
-</span><span class="lnt" id="hl-40-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-18">18</a>
-</span><span class="lnt" id="hl-40-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-19">19</a>
-</span><span class="lnt" id="hl-40-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-20">20</a>
-</span><span class="lnt" id="hl-40-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-21">21</a>
-</span><span class="lnt" id="hl-40-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-22">22</a>
-</span><span class="lnt" id="hl-40-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-23">23</a>
-</span><span class="lnt" id="hl-40-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-24">24</a>
-</span><span class="lnt" id="hl-40-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-25">25</a>
-</span><span class="lnt" id="hl-40-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-26">26</a>
-</span><span class="lnt" id="hl-40-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-27">27</a>
-</span><span class="lnt" id="hl-40-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-28">28</a>
-</span><span class="lnt" id="hl-40-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-29">29</a>
-</span><span class="lnt" id="hl-40-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-30">30</a>
-</span><span class="lnt" id="hl-40-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-31">31</a>
-</span><span class="lnt" id="hl-40-32"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-32">32</a>
-</span><span class="lnt" id="hl-40-33"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-33">33</a>
-</span><span class="lnt" id="hl-40-34"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-34">34</a>
-</span><span class="lnt" id="hl-40-35"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-35">35</a>
-</span><span class="lnt" id="hl-40-36"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-36">36</a>
-</span><span class="lnt" id="hl-40-37"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-37">37</a>
-</span><span class="lnt" id="hl-40-38"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-38">38</a>
-</span><span class="lnt" id="hl-40-39"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-39">39</a>
-</span><span class="lnt" id="hl-40-40"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-40">40</a>
-</span><span class="lnt" id="hl-40-41"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-40-41">41</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-40-1"><a class="lnlinks" href="#hl-40-1"> 1</a>
+</span><span class="lnt" id="hl-40-2"><a class="lnlinks" href="#hl-40-2"> 2</a>
+</span><span class="lnt" id="hl-40-3"><a class="lnlinks" href="#hl-40-3"> 3</a>
+</span><span class="lnt" id="hl-40-4"><a class="lnlinks" href="#hl-40-4"> 4</a>
+</span><span class="lnt" id="hl-40-5"><a class="lnlinks" href="#hl-40-5"> 5</a>
+</span><span class="lnt" id="hl-40-6"><a class="lnlinks" href="#hl-40-6"> 6</a>
+</span><span class="lnt" id="hl-40-7"><a class="lnlinks" href="#hl-40-7"> 7</a>
+</span><span class="lnt" id="hl-40-8"><a class="lnlinks" href="#hl-40-8"> 8</a>
+</span><span class="lnt" id="hl-40-9"><a class="lnlinks" href="#hl-40-9"> 9</a>
+</span><span class="lnt" id="hl-40-10"><a class="lnlinks" href="#hl-40-10">10</a>
+</span><span class="lnt" id="hl-40-11"><a class="lnlinks" href="#hl-40-11">11</a>
+</span><span class="lnt" id="hl-40-12"><a class="lnlinks" href="#hl-40-12">12</a>
+</span><span class="lnt" id="hl-40-13"><a class="lnlinks" href="#hl-40-13">13</a>
+</span><span class="lnt" id="hl-40-14"><a class="lnlinks" href="#hl-40-14">14</a>
+</span><span class="lnt" id="hl-40-15"><a class="lnlinks" href="#hl-40-15">15</a>
+</span><span class="lnt" id="hl-40-16"><a class="lnlinks" href="#hl-40-16">16</a>
+</span><span class="lnt" id="hl-40-17"><a class="lnlinks" href="#hl-40-17">17</a>
+</span><span class="lnt" id="hl-40-18"><a class="lnlinks" href="#hl-40-18">18</a>
+</span><span class="lnt" id="hl-40-19"><a class="lnlinks" href="#hl-40-19">19</a>
+</span><span class="lnt" id="hl-40-20"><a class="lnlinks" href="#hl-40-20">20</a>
+</span><span class="lnt" id="hl-40-21"><a class="lnlinks" href="#hl-40-21">21</a>
+</span><span class="lnt" id="hl-40-22"><a class="lnlinks" href="#hl-40-22">22</a>
+</span><span class="lnt" id="hl-40-23"><a class="lnlinks" href="#hl-40-23">23</a>
+</span><span class="lnt" id="hl-40-24"><a class="lnlinks" href="#hl-40-24">24</a>
+</span><span class="lnt" id="hl-40-25"><a class="lnlinks" href="#hl-40-25">25</a>
+</span><span class="lnt" id="hl-40-26"><a class="lnlinks" href="#hl-40-26">26</a>
+</span><span class="lnt" id="hl-40-27"><a class="lnlinks" href="#hl-40-27">27</a>
+</span><span class="lnt" id="hl-40-28"><a class="lnlinks" href="#hl-40-28">28</a>
+</span><span class="lnt" id="hl-40-29"><a class="lnlinks" href="#hl-40-29">29</a>
+</span><span class="lnt" id="hl-40-30"><a class="lnlinks" href="#hl-40-30">30</a>
+</span><span class="lnt" id="hl-40-31"><a class="lnlinks" href="#hl-40-31">31</a>
+</span><span class="lnt" id="hl-40-32"><a class="lnlinks" href="#hl-40-32">32</a>
+</span><span class="lnt" id="hl-40-33"><a class="lnlinks" href="#hl-40-33">33</a>
+</span><span class="lnt" id="hl-40-34"><a class="lnlinks" href="#hl-40-34">34</a>
+</span><span class="lnt" id="hl-40-35"><a class="lnlinks" href="#hl-40-35">35</a>
+</span><span class="lnt" id="hl-40-36"><a class="lnlinks" href="#hl-40-36">36</a>
+</span><span class="lnt" id="hl-40-37"><a class="lnlinks" href="#hl-40-37">37</a>
+</span><span class="lnt" id="hl-40-38"><a class="lnlinks" href="#hl-40-38">38</a>
+</span><span class="lnt" id="hl-40-39"><a class="lnlinks" href="#hl-40-39">39</a>
+</span><span class="lnt" id="hl-40-40"><a class="lnlinks" href="#hl-40-40">40</a>
+</span><span class="lnt" id="hl-40-41"><a class="lnlinks" href="#hl-40-41">41</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
@@ -1294,25 +1297,25 @@ if (!doNotTrack) {
 <p>为了从多个污染指标的层面上对不同海区的差异进行分析，以“化学需氧量(mg/L)”、“无机氮(mg/L)”、“活性磷酸盐(mg/L)”、“石油类(mg/L)”这四个指标作为自变量，将“海区”作为因变量，尝试用5种不同的模型进行机器学习，并找出预测准确度最高的模型进行进一步分析。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-41-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-1"> 1</a>
-</span><span class="lnt" id="hl-41-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-2"> 2</a>
-</span><span class="lnt" id="hl-41-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-3"> 3</a>
-</span><span class="lnt" id="hl-41-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-4"> 4</a>
-</span><span class="lnt" id="hl-41-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-5"> 5</a>
-</span><span class="lnt" id="hl-41-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-6"> 6</a>
-</span><span class="lnt" id="hl-41-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-7"> 7</a>
-</span><span class="lnt" id="hl-41-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-8"> 8</a>
-</span><span class="lnt" id="hl-41-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-9"> 9</a>
-</span><span class="lnt" id="hl-41-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-10">10</a>
-</span><span class="lnt" id="hl-41-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-11">11</a>
-</span><span class="lnt" id="hl-41-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-12">12</a>
-</span><span class="lnt" id="hl-41-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-13">13</a>
-</span><span class="lnt" id="hl-41-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-14">14</a>
-</span><span class="lnt" id="hl-41-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-15">15</a>
-</span><span class="lnt" id="hl-41-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-16">16</a>
-</span><span class="lnt" id="hl-41-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-17">17</a>
-</span><span class="lnt" id="hl-41-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-18">18</a>
-</span><span class="lnt" id="hl-41-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-41-19">19</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-41-1"><a class="lnlinks" href="#hl-41-1"> 1</a>
+</span><span class="lnt" id="hl-41-2"><a class="lnlinks" href="#hl-41-2"> 2</a>
+</span><span class="lnt" id="hl-41-3"><a class="lnlinks" href="#hl-41-3"> 3</a>
+</span><span class="lnt" id="hl-41-4"><a class="lnlinks" href="#hl-41-4"> 4</a>
+</span><span class="lnt" id="hl-41-5"><a class="lnlinks" href="#hl-41-5"> 5</a>
+</span><span class="lnt" id="hl-41-6"><a class="lnlinks" href="#hl-41-6"> 6</a>
+</span><span class="lnt" id="hl-41-7"><a class="lnlinks" href="#hl-41-7"> 7</a>
+</span><span class="lnt" id="hl-41-8"><a class="lnlinks" href="#hl-41-8"> 8</a>
+</span><span class="lnt" id="hl-41-9"><a class="lnlinks" href="#hl-41-9"> 9</a>
+</span><span class="lnt" id="hl-41-10"><a class="lnlinks" href="#hl-41-10">10</a>
+</span><span class="lnt" id="hl-41-11"><a class="lnlinks" href="#hl-41-11">11</a>
+</span><span class="lnt" id="hl-41-12"><a class="lnlinks" href="#hl-41-12">12</a>
+</span><span class="lnt" id="hl-41-13"><a class="lnlinks" href="#hl-41-13">13</a>
+</span><span class="lnt" id="hl-41-14"><a class="lnlinks" href="#hl-41-14">14</a>
+</span><span class="lnt" id="hl-41-15"><a class="lnlinks" href="#hl-41-15">15</a>
+</span><span class="lnt" id="hl-41-16"><a class="lnlinks" href="#hl-41-16">16</a>
+</span><span class="lnt" id="hl-41-17"><a class="lnlinks" href="#hl-41-17">17</a>
+</span><span class="lnt" id="hl-41-18"><a class="lnlinks" href="#hl-41-18">18</a>
+</span><span class="lnt" id="hl-41-19"><a class="lnlinks" href="#hl-41-19">19</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1339,49 +1342,49 @@ if (!doNotTrack) {
 </div><h2 id="数据清理">数据清理<a hidden class="anchor" aria-hidden="true" href="#数据清理">#</a></h2>
 <p>首先把数据转换为数值类型。将标记为“未检出”、“&lt;0.01”、“&lt;0.1”的数据转换为0。将因变量（海区）数值化，标记成0~3。</p>
 <table>
-<thead>
-<tr>
-<th>海区</th>
-<th>数值化</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>黄海</td>
-<td>0</td>
-</tr>
-<tr>
-<td>渤海</td>
-<td>1</td>
-</tr>
-<tr>
-<td>东海</td>
-<td>2</td>
-</tr>
-<tr>
-<td>南海</td>
-<td>3</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">海区</th>
+          <th style="text-align: left">数值化</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">黄海</td>
+          <td style="text-align: left">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">渤海</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">东海</td>
+          <td style="text-align: left">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">南海</td>
+          <td style="text-align: left">3</td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-42-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-1"> 1</a>
-</span><span class="lnt" id="hl-42-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-2"> 2</a>
-</span><span class="lnt" id="hl-42-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-3"> 3</a>
-</span><span class="lnt" id="hl-42-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-4"> 4</a>
-</span><span class="lnt" id="hl-42-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-5"> 5</a>
-</span><span class="lnt" id="hl-42-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-6"> 6</a>
-</span><span class="lnt" id="hl-42-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-7"> 7</a>
-</span><span class="lnt" id="hl-42-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-8"> 8</a>
-</span><span class="lnt" id="hl-42-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-9"> 9</a>
-</span><span class="lnt" id="hl-42-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-10">10</a>
-</span><span class="lnt" id="hl-42-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-11">11</a>
-</span><span class="lnt" id="hl-42-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-12">12</a>
-</span><span class="lnt" id="hl-42-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-13">13</a>
-</span><span class="lnt" id="hl-42-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-14">14</a>
-</span><span class="lnt" id="hl-42-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-15">15</a>
-</span><span class="lnt" id="hl-42-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-42-16">16</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-42-1"><a class="lnlinks" href="#hl-42-1"> 1</a>
+</span><span class="lnt" id="hl-42-2"><a class="lnlinks" href="#hl-42-2"> 2</a>
+</span><span class="lnt" id="hl-42-3"><a class="lnlinks" href="#hl-42-3"> 3</a>
+</span><span class="lnt" id="hl-42-4"><a class="lnlinks" href="#hl-42-4"> 4</a>
+</span><span class="lnt" id="hl-42-5"><a class="lnlinks" href="#hl-42-5"> 5</a>
+</span><span class="lnt" id="hl-42-6"><a class="lnlinks" href="#hl-42-6"> 6</a>
+</span><span class="lnt" id="hl-42-7"><a class="lnlinks" href="#hl-42-7"> 7</a>
+</span><span class="lnt" id="hl-42-8"><a class="lnlinks" href="#hl-42-8"> 8</a>
+</span><span class="lnt" id="hl-42-9"><a class="lnlinks" href="#hl-42-9"> 9</a>
+</span><span class="lnt" id="hl-42-10"><a class="lnlinks" href="#hl-42-10">10</a>
+</span><span class="lnt" id="hl-42-11"><a class="lnlinks" href="#hl-42-11">11</a>
+</span><span class="lnt" id="hl-42-12"><a class="lnlinks" href="#hl-42-12">12</a>
+</span><span class="lnt" id="hl-42-13"><a class="lnlinks" href="#hl-42-13">13</a>
+</span><span class="lnt" id="hl-42-14"><a class="lnlinks" href="#hl-42-14">14</a>
+</span><span class="lnt" id="hl-42-15"><a class="lnlinks" href="#hl-42-15">15</a>
+</span><span class="lnt" id="hl-42-16"><a class="lnlinks" href="#hl-42-16">16</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
@@ -1406,12 +1409,12 @@ if (!doNotTrack) {
 <p>其中任何一项数据缺失的监测点都删除，最后把清理后的因变量保存为一维数组<code>Y</code>，自变量保存为四维数组<code>X</code>。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-43-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-1">1</a>
-</span><span class="lnt" id="hl-43-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-2">2</a>
-</span><span class="lnt" id="hl-43-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-3">3</a>
-</span><span class="lnt" id="hl-43-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-4">4</a>
-</span><span class="lnt" id="hl-43-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-5">5</a>
-</span><span class="lnt" id="hl-43-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-43-6">6</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-43-1"><a class="lnlinks" href="#hl-43-1">1</a>
+</span><span class="lnt" id="hl-43-2"><a class="lnlinks" href="#hl-43-2">2</a>
+</span><span class="lnt" id="hl-43-3"><a class="lnlinks" href="#hl-43-3">3</a>
+</span><span class="lnt" id="hl-43-4"><a class="lnlinks" href="#hl-43-4">4</a>
+</span><span class="lnt" id="hl-43-5"><a class="lnlinks" href="#hl-43-5">5</a>
+</span><span class="lnt" id="hl-43-6"><a class="lnlinks" href="#hl-43-6">6</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">nanlist</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1426,10 +1429,10 @@ if (!doNotTrack) {
 <p>划分训练集和测试机，特征缩放。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-44-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-44-1">1</a>
-</span><span class="lnt" id="hl-44-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-44-2">2</a>
-</span><span class="lnt" id="hl-44-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-44-3">3</a>
-</span><span class="lnt" id="hl-44-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-44-4">4</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-44-1"><a class="lnlinks" href="#hl-44-1">1</a>
+</span><span class="lnt" id="hl-44-2"><a class="lnlinks" href="#hl-44-2">2</a>
+</span><span class="lnt" id="hl-44-3"><a class="lnlinks" href="#hl-44-3">3</a>
+</span><span class="lnt" id="hl-44-4"><a class="lnlinks" href="#hl-44-4">4</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_train</span><span class="p">,</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">model_selection</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1441,31 +1444,31 @@ if (!doNotTrack) {
 </div><p>用于对比的5种模型分别是：Decision Tree决策树、K-Nearest Neighbors K-最近邻（KNN）、Logistic Regression 逻辑回归、SVM支持向量机 (SVM)、Random Forest Tree随机森林。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-45-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-1"> 1</a>
-</span><span class="lnt" id="hl-45-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-2"> 2</a>
-</span><span class="lnt" id="hl-45-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-3"> 3</a>
-</span><span class="lnt" id="hl-45-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-4"> 4</a>
-</span><span class="lnt" id="hl-45-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-5"> 5</a>
-</span><span class="lnt" id="hl-45-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-6"> 6</a>
-</span><span class="lnt" id="hl-45-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-7"> 7</a>
-</span><span class="lnt" id="hl-45-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-8"> 8</a>
-</span><span class="lnt" id="hl-45-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-9"> 9</a>
-</span><span class="lnt" id="hl-45-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-10">10</a>
-</span><span class="lnt" id="hl-45-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-11">11</a>
-</span><span class="lnt" id="hl-45-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-12">12</a>
-</span><span class="lnt" id="hl-45-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-13">13</a>
-</span><span class="lnt" id="hl-45-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-14">14</a>
-</span><span class="lnt" id="hl-45-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-15">15</a>
-</span><span class="lnt" id="hl-45-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-16">16</a>
-</span><span class="lnt" id="hl-45-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-17">17</a>
-</span><span class="lnt" id="hl-45-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-18">18</a>
-</span><span class="lnt" id="hl-45-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-19">19</a>
-</span><span class="lnt" id="hl-45-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-20">20</a>
-</span><span class="lnt" id="hl-45-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-21">21</a>
-</span><span class="lnt" id="hl-45-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-22">22</a>
-</span><span class="lnt" id="hl-45-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-23">23</a>
-</span><span class="lnt" id="hl-45-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-24">24</a>
-</span><span class="lnt" id="hl-45-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-45-25">25</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-45-1"><a class="lnlinks" href="#hl-45-1"> 1</a>
+</span><span class="lnt" id="hl-45-2"><a class="lnlinks" href="#hl-45-2"> 2</a>
+</span><span class="lnt" id="hl-45-3"><a class="lnlinks" href="#hl-45-3"> 3</a>
+</span><span class="lnt" id="hl-45-4"><a class="lnlinks" href="#hl-45-4"> 4</a>
+</span><span class="lnt" id="hl-45-5"><a class="lnlinks" href="#hl-45-5"> 5</a>
+</span><span class="lnt" id="hl-45-6"><a class="lnlinks" href="#hl-45-6"> 6</a>
+</span><span class="lnt" id="hl-45-7"><a class="lnlinks" href="#hl-45-7"> 7</a>
+</span><span class="lnt" id="hl-45-8"><a class="lnlinks" href="#hl-45-8"> 8</a>
+</span><span class="lnt" id="hl-45-9"><a class="lnlinks" href="#hl-45-9"> 9</a>
+</span><span class="lnt" id="hl-45-10"><a class="lnlinks" href="#hl-45-10">10</a>
+</span><span class="lnt" id="hl-45-11"><a class="lnlinks" href="#hl-45-11">11</a>
+</span><span class="lnt" id="hl-45-12"><a class="lnlinks" href="#hl-45-12">12</a>
+</span><span class="lnt" id="hl-45-13"><a class="lnlinks" href="#hl-45-13">13</a>
+</span><span class="lnt" id="hl-45-14"><a class="lnlinks" href="#hl-45-14">14</a>
+</span><span class="lnt" id="hl-45-15"><a class="lnlinks" href="#hl-45-15">15</a>
+</span><span class="lnt" id="hl-45-16"><a class="lnlinks" href="#hl-45-16">16</a>
+</span><span class="lnt" id="hl-45-17"><a class="lnlinks" href="#hl-45-17">17</a>
+</span><span class="lnt" id="hl-45-18"><a class="lnlinks" href="#hl-45-18">18</a>
+</span><span class="lnt" id="hl-45-19"><a class="lnlinks" href="#hl-45-19">19</a>
+</span><span class="lnt" id="hl-45-20"><a class="lnlinks" href="#hl-45-20">20</a>
+</span><span class="lnt" id="hl-45-21"><a class="lnlinks" href="#hl-45-21">21</a>
+</span><span class="lnt" id="hl-45-22"><a class="lnlinks" href="#hl-45-22">22</a>
+</span><span class="lnt" id="hl-45-23"><a class="lnlinks" href="#hl-45-23">23</a>
+</span><span class="lnt" id="hl-45-24"><a class="lnlinks" href="#hl-45-24">24</a>
+</span><span class="lnt" id="hl-45-25"><a class="lnlinks" href="#hl-45-25">25</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 1. Decision Tree 决策树</span>
@@ -1498,18 +1501,18 @@ if (!doNotTrack) {
 </div><p>分别用accuracy score和F1-score来衡量不同模型的效果。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-46-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-1"> 1</a>
-</span><span class="lnt" id="hl-46-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-2"> 2</a>
-</span><span class="lnt" id="hl-46-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-3"> 3</a>
-</span><span class="lnt" id="hl-46-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-4"> 4</a>
-</span><span class="lnt" id="hl-46-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-5"> 5</a>
-</span><span class="lnt" id="hl-46-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-6"> 6</a>
-</span><span class="lnt" id="hl-46-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-7"> 7</a>
-</span><span class="lnt" id="hl-46-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-8"> 8</a>
-</span><span class="lnt" id="hl-46-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-9"> 9</a>
-</span><span class="lnt" id="hl-46-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-10">10</a>
-</span><span class="lnt" id="hl-46-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-11">11</a>
-</span><span class="lnt" id="hl-46-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-46-12">12</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-46-1"><a class="lnlinks" href="#hl-46-1"> 1</a>
+</span><span class="lnt" id="hl-46-2"><a class="lnlinks" href="#hl-46-2"> 2</a>
+</span><span class="lnt" id="hl-46-3"><a class="lnlinks" href="#hl-46-3"> 3</a>
+</span><span class="lnt" id="hl-46-4"><a class="lnlinks" href="#hl-46-4"> 4</a>
+</span><span class="lnt" id="hl-46-5"><a class="lnlinks" href="#hl-46-5"> 5</a>
+</span><span class="lnt" id="hl-46-6"><a class="lnlinks" href="#hl-46-6"> 6</a>
+</span><span class="lnt" id="hl-46-7"><a class="lnlinks" href="#hl-46-7"> 7</a>
+</span><span class="lnt" id="hl-46-8"><a class="lnlinks" href="#hl-46-8"> 8</a>
+</span><span class="lnt" id="hl-46-9"><a class="lnlinks" href="#hl-46-9"> 9</a>
+</span><span class="lnt" id="hl-46-10"><a class="lnlinks" href="#hl-46-10">10</a>
+</span><span class="lnt" id="hl-46-11"><a class="lnlinks" href="#hl-46-11">11</a>
+</span><span class="lnt" id="hl-46-12"><a class="lnlinks" href="#hl-46-12">12</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -1529,33 +1532,33 @@ if (!doNotTrack) {
 </div><img src="/images/image-20220424025330318.png" alt="image-20220424025330318" style="zoom: 33%;" />
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-47-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-1"> 1</a>
-</span><span class="lnt" id="hl-47-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-2"> 2</a>
-</span><span class="lnt" id="hl-47-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-3"> 3</a>
-</span><span class="lnt" id="hl-47-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-4"> 4</a>
-</span><span class="lnt" id="hl-47-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-5"> 5</a>
-</span><span class="lnt" id="hl-47-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-6"> 6</a>
-</span><span class="lnt" id="hl-47-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-7"> 7</a>
-</span><span class="lnt" id="hl-47-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-8"> 8</a>
-</span><span class="lnt" id="hl-47-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-9"> 9</a>
-</span><span class="lnt" id="hl-47-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-10">10</a>
-</span><span class="lnt" id="hl-47-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-11">11</a>
-</span><span class="lnt" id="hl-47-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-12">12</a>
-</span><span class="lnt" id="hl-47-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-13">13</a>
-</span><span class="lnt" id="hl-47-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-14">14</a>
-</span><span class="lnt" id="hl-47-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-15">15</a>
-</span><span class="lnt" id="hl-47-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-16">16</a>
-</span><span class="lnt" id="hl-47-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-17">17</a>
-</span><span class="lnt" id="hl-47-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-18">18</a>
-</span><span class="lnt" id="hl-47-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-19">19</a>
-</span><span class="lnt" id="hl-47-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-20">20</a>
-</span><span class="lnt" id="hl-47-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-21">21</a>
-</span><span class="lnt" id="hl-47-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-22">22</a>
-</span><span class="lnt" id="hl-47-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-23">23</a>
-</span><span class="lnt" id="hl-47-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-24">24</a>
-</span><span class="lnt" id="hl-47-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-25">25</a>
-</span><span class="lnt" id="hl-47-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-26">26</a>
-</span><span class="lnt" id="hl-47-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-47-27">27</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-47-1"><a class="lnlinks" href="#hl-47-1"> 1</a>
+</span><span class="lnt" id="hl-47-2"><a class="lnlinks" href="#hl-47-2"> 2</a>
+</span><span class="lnt" id="hl-47-3"><a class="lnlinks" href="#hl-47-3"> 3</a>
+</span><span class="lnt" id="hl-47-4"><a class="lnlinks" href="#hl-47-4"> 4</a>
+</span><span class="lnt" id="hl-47-5"><a class="lnlinks" href="#hl-47-5"> 5</a>
+</span><span class="lnt" id="hl-47-6"><a class="lnlinks" href="#hl-47-6"> 6</a>
+</span><span class="lnt" id="hl-47-7"><a class="lnlinks" href="#hl-47-7"> 7</a>
+</span><span class="lnt" id="hl-47-8"><a class="lnlinks" href="#hl-47-8"> 8</a>
+</span><span class="lnt" id="hl-47-9"><a class="lnlinks" href="#hl-47-9"> 9</a>
+</span><span class="lnt" id="hl-47-10"><a class="lnlinks" href="#hl-47-10">10</a>
+</span><span class="lnt" id="hl-47-11"><a class="lnlinks" href="#hl-47-11">11</a>
+</span><span class="lnt" id="hl-47-12"><a class="lnlinks" href="#hl-47-12">12</a>
+</span><span class="lnt" id="hl-47-13"><a class="lnlinks" href="#hl-47-13">13</a>
+</span><span class="lnt" id="hl-47-14"><a class="lnlinks" href="#hl-47-14">14</a>
+</span><span class="lnt" id="hl-47-15"><a class="lnlinks" href="#hl-47-15">15</a>
+</span><span class="lnt" id="hl-47-16"><a class="lnlinks" href="#hl-47-16">16</a>
+</span><span class="lnt" id="hl-47-17"><a class="lnlinks" href="#hl-47-17">17</a>
+</span><span class="lnt" id="hl-47-18"><a class="lnlinks" href="#hl-47-18">18</a>
+</span><span class="lnt" id="hl-47-19"><a class="lnlinks" href="#hl-47-19">19</a>
+</span><span class="lnt" id="hl-47-20"><a class="lnlinks" href="#hl-47-20">20</a>
+</span><span class="lnt" id="hl-47-21"><a class="lnlinks" href="#hl-47-21">21</a>
+</span><span class="lnt" id="hl-47-22"><a class="lnlinks" href="#hl-47-22">22</a>
+</span><span class="lnt" id="hl-47-23"><a class="lnlinks" href="#hl-47-23">23</a>
+</span><span class="lnt" id="hl-47-24"><a class="lnlinks" href="#hl-47-24">24</a>
+</span><span class="lnt" id="hl-47-25"><a class="lnlinks" href="#hl-47-25">25</a>
+</span><span class="lnt" id="hl-47-26"><a class="lnlinks" href="#hl-47-26">26</a>
+</span><span class="lnt" id="hl-47-27"><a class="lnlinks" href="#hl-47-27">27</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -1591,38 +1594,38 @@ if (!doNotTrack) {
 <p>通过混淆矩阵也可以判断不同模型的预测能力，并且比较不同海区的数据被正确判断或误判为其他海区的可能性。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-48-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-1"> 1</a>
-</span><span class="lnt" id="hl-48-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-2"> 2</a>
-</span><span class="lnt" id="hl-48-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-3"> 3</a>
-</span><span class="lnt" id="hl-48-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-4"> 4</a>
-</span><span class="lnt" id="hl-48-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-5"> 5</a>
-</span><span class="lnt" id="hl-48-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-6"> 6</a>
-</span><span class="lnt" id="hl-48-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-7"> 7</a>
-</span><span class="lnt" id="hl-48-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-8"> 8</a>
-</span><span class="lnt" id="hl-48-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-9"> 9</a>
-</span><span class="lnt" id="hl-48-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-10">10</a>
-</span><span class="lnt" id="hl-48-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-11">11</a>
-</span><span class="lnt" id="hl-48-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-12">12</a>
-</span><span class="lnt" id="hl-48-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-13">13</a>
-</span><span class="lnt" id="hl-48-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-14">14</a>
-</span><span class="lnt" id="hl-48-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-15">15</a>
-</span><span class="lnt" id="hl-48-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-16">16</a>
-</span><span class="lnt" id="hl-48-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-17">17</a>
-</span><span class="lnt" id="hl-48-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-18">18</a>
-</span><span class="lnt" id="hl-48-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-19">19</a>
-</span><span class="lnt" id="hl-48-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-20">20</a>
-</span><span class="lnt" id="hl-48-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-21">21</a>
-</span><span class="lnt" id="hl-48-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-22">22</a>
-</span><span class="lnt" id="hl-48-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-23">23</a>
-</span><span class="lnt" id="hl-48-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-24">24</a>
-</span><span class="lnt" id="hl-48-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-25">25</a>
-</span><span class="lnt" id="hl-48-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-26">26</a>
-</span><span class="lnt" id="hl-48-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-27">27</a>
-</span><span class="lnt" id="hl-48-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-28">28</a>
-</span><span class="lnt" id="hl-48-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-29">29</a>
-</span><span class="lnt" id="hl-48-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-30">30</a>
-</span><span class="lnt" id="hl-48-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-31">31</a>
-</span><span class="lnt" id="hl-48-32"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-48-32">32</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-48-1"><a class="lnlinks" href="#hl-48-1"> 1</a>
+</span><span class="lnt" id="hl-48-2"><a class="lnlinks" href="#hl-48-2"> 2</a>
+</span><span class="lnt" id="hl-48-3"><a class="lnlinks" href="#hl-48-3"> 3</a>
+</span><span class="lnt" id="hl-48-4"><a class="lnlinks" href="#hl-48-4"> 4</a>
+</span><span class="lnt" id="hl-48-5"><a class="lnlinks" href="#hl-48-5"> 5</a>
+</span><span class="lnt" id="hl-48-6"><a class="lnlinks" href="#hl-48-6"> 6</a>
+</span><span class="lnt" id="hl-48-7"><a class="lnlinks" href="#hl-48-7"> 7</a>
+</span><span class="lnt" id="hl-48-8"><a class="lnlinks" href="#hl-48-8"> 8</a>
+</span><span class="lnt" id="hl-48-9"><a class="lnlinks" href="#hl-48-9"> 9</a>
+</span><span class="lnt" id="hl-48-10"><a class="lnlinks" href="#hl-48-10">10</a>
+</span><span class="lnt" id="hl-48-11"><a class="lnlinks" href="#hl-48-11">11</a>
+</span><span class="lnt" id="hl-48-12"><a class="lnlinks" href="#hl-48-12">12</a>
+</span><span class="lnt" id="hl-48-13"><a class="lnlinks" href="#hl-48-13">13</a>
+</span><span class="lnt" id="hl-48-14"><a class="lnlinks" href="#hl-48-14">14</a>
+</span><span class="lnt" id="hl-48-15"><a class="lnlinks" href="#hl-48-15">15</a>
+</span><span class="lnt" id="hl-48-16"><a class="lnlinks" href="#hl-48-16">16</a>
+</span><span class="lnt" id="hl-48-17"><a class="lnlinks" href="#hl-48-17">17</a>
+</span><span class="lnt" id="hl-48-18"><a class="lnlinks" href="#hl-48-18">18</a>
+</span><span class="lnt" id="hl-48-19"><a class="lnlinks" href="#hl-48-19">19</a>
+</span><span class="lnt" id="hl-48-20"><a class="lnlinks" href="#hl-48-20">20</a>
+</span><span class="lnt" id="hl-48-21"><a class="lnlinks" href="#hl-48-21">21</a>
+</span><span class="lnt" id="hl-48-22"><a class="lnlinks" href="#hl-48-22">22</a>
+</span><span class="lnt" id="hl-48-23"><a class="lnlinks" href="#hl-48-23">23</a>
+</span><span class="lnt" id="hl-48-24"><a class="lnlinks" href="#hl-48-24">24</a>
+</span><span class="lnt" id="hl-48-25"><a class="lnlinks" href="#hl-48-25">25</a>
+</span><span class="lnt" id="hl-48-26"><a class="lnlinks" href="#hl-48-26">26</a>
+</span><span class="lnt" id="hl-48-27"><a class="lnlinks" href="#hl-48-27">27</a>
+</span><span class="lnt" id="hl-48-28"><a class="lnlinks" href="#hl-48-28">28</a>
+</span><span class="lnt" id="hl-48-29"><a class="lnlinks" href="#hl-48-29">29</a>
+</span><span class="lnt" id="hl-48-30"><a class="lnlinks" href="#hl-48-30">30</a>
+</span><span class="lnt" id="hl-48-31"><a class="lnlinks" href="#hl-48-31">31</a>
+</span><span class="lnt" id="hl-48-32"><a class="lnlinks" href="#hl-48-32">32</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tree_matrix</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">tree_yhat</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="c1"># Decision Tree</span>
@@ -1665,7 +1668,7 @@ if (!doNotTrack) {
 <p>综合以上，认为在当前的参数设置下KNN模型具有最好的解释力。输出KNN模型的分类报告。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-49-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-49-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-49-1"><a class="lnlinks" href="#hl-49-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">knn_yhat</span><span class="p">))</span>
@@ -1673,16 +1676,16 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-50-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-1"> 1</a>
-</span><span class="lnt" id="hl-50-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-2"> 2</a>
-</span><span class="lnt" id="hl-50-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-3"> 3</a>
-</span><span class="lnt" id="hl-50-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-4"> 4</a>
-</span><span class="lnt" id="hl-50-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-5"> 5</a>
-</span><span class="lnt" id="hl-50-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-6"> 6</a>
-</span><span class="lnt" id="hl-50-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-7"> 7</a>
-</span><span class="lnt" id="hl-50-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-8"> 8</a>
-</span><span class="lnt" id="hl-50-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-9"> 9</a>
-</span><span class="lnt" id="hl-50-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-50-10">10</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-50-1"><a class="lnlinks" href="#hl-50-1"> 1</a>
+</span><span class="lnt" id="hl-50-2"><a class="lnlinks" href="#hl-50-2"> 2</a>
+</span><span class="lnt" id="hl-50-3"><a class="lnlinks" href="#hl-50-3"> 3</a>
+</span><span class="lnt" id="hl-50-4"><a class="lnlinks" href="#hl-50-4"> 4</a>
+</span><span class="lnt" id="hl-50-5"><a class="lnlinks" href="#hl-50-5"> 5</a>
+</span><span class="lnt" id="hl-50-6"><a class="lnlinks" href="#hl-50-6"> 6</a>
+</span><span class="lnt" id="hl-50-7"><a class="lnlinks" href="#hl-50-7"> 7</a>
+</span><span class="lnt" id="hl-50-8"><a class="lnlinks" href="#hl-50-8"> 8</a>
+</span><span class="lnt" id="hl-50-9"><a class="lnlinks" href="#hl-50-9"> 9</a>
+</span><span class="lnt" id="hl-50-10"><a class="lnlinks" href="#hl-50-10">10</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">              precision    recall  f1-score   support
@@ -1700,8 +1703,8 @@ if (!doNotTrack) {
 </div><p>本模型采用的是多分类模型，但是传统的ROC曲线和AUC只能用于描述不同于“0-1”分类模型。首先需要将因变量的测试集转换成类似于0-1分类的多维矩阵。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-51-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-51-1">1</a>
-</span><span class="lnt" id="hl-51-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-51-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-51-1"><a class="lnlinks" href="#hl-51-1">1</a>
+</span><span class="lnt" id="hl-51-2"><a class="lnlinks" href="#hl-51-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">y_test0 = np.array([[ 1 if y_test[i]==j else 0 for j in range(4) ] for i in range(len(y_test))], dtype=float)
@@ -1710,13 +1713,13 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-52-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-1">1</a>
-</span><span class="lnt" id="hl-52-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-2">2</a>
-</span><span class="lnt" id="hl-52-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-3">3</a>
-</span><span class="lnt" id="hl-52-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-4">4</a>
-</span><span class="lnt" id="hl-52-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-5">5</a>
-</span><span class="lnt" id="hl-52-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-6">6</a>
-</span><span class="lnt" id="hl-52-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-52-7">7</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-52-1"><a class="lnlinks" href="#hl-52-1">1</a>
+</span><span class="lnt" id="hl-52-2"><a class="lnlinks" href="#hl-52-2">2</a>
+</span><span class="lnt" id="hl-52-3"><a class="lnlinks" href="#hl-52-3">3</a>
+</span><span class="lnt" id="hl-52-4"><a class="lnlinks" href="#hl-52-4">4</a>
+</span><span class="lnt" id="hl-52-5"><a class="lnlinks" href="#hl-52-5">5</a>
+</span><span class="lnt" id="hl-52-6"><a class="lnlinks" href="#hl-52-6">6</a>
+</span><span class="lnt" id="hl-52-7"><a class="lnlinks" href="#hl-52-7">7</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">array([[0., 0., 1., 0.],
@@ -1731,7 +1734,7 @@ if (!doNotTrack) {
 </div><p>将转换后的因变量测试集和自变量测试集都按行展开，例如</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-53-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-53-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-53-1"><a class="lnlinks" href="#hl-53-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y_test0</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
@@ -1739,7 +1742,7 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-54-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-54-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-54-1"><a class="lnlinks" href="#hl-54-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">array([0., 0., 1., ..., 0., 1., 0.])
@@ -1748,24 +1751,24 @@ if (!doNotTrack) {
 </div><p>采用macro方法对多分类数据进行处理，然后再计算ROC曲线和AUC值。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-55-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-1"> 1</a>
-</span><span class="lnt" id="hl-55-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-2"> 2</a>
-</span><span class="lnt" id="hl-55-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-3"> 3</a>
-</span><span class="lnt" id="hl-55-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-4"> 4</a>
-</span><span class="lnt" id="hl-55-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-5"> 5</a>
-</span><span class="lnt" id="hl-55-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-6"> 6</a>
-</span><span class="lnt" id="hl-55-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-7"> 7</a>
-</span><span class="lnt" id="hl-55-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-8"> 8</a>
-</span><span class="lnt" id="hl-55-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-9"> 9</a>
-</span><span class="lnt" id="hl-55-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-10">10</a>
-</span><span class="lnt" id="hl-55-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-11">11</a>
-</span><span class="lnt" id="hl-55-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-12">12</a>
-</span><span class="lnt" id="hl-55-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-13">13</a>
-</span><span class="lnt" id="hl-55-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-14">14</a>
-</span><span class="lnt" id="hl-55-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-15">15</a>
-</span><span class="lnt" id="hl-55-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-16">16</a>
-</span><span class="lnt" id="hl-55-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-17">17</a>
-</span><span class="lnt" id="hl-55-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-55-18">18</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-55-1"><a class="lnlinks" href="#hl-55-1"> 1</a>
+</span><span class="lnt" id="hl-55-2"><a class="lnlinks" href="#hl-55-2"> 2</a>
+</span><span class="lnt" id="hl-55-3"><a class="lnlinks" href="#hl-55-3"> 3</a>
+</span><span class="lnt" id="hl-55-4"><a class="lnlinks" href="#hl-55-4"> 4</a>
+</span><span class="lnt" id="hl-55-5"><a class="lnlinks" href="#hl-55-5"> 5</a>
+</span><span class="lnt" id="hl-55-6"><a class="lnlinks" href="#hl-55-6"> 6</a>
+</span><span class="lnt" id="hl-55-7"><a class="lnlinks" href="#hl-55-7"> 7</a>
+</span><span class="lnt" id="hl-55-8"><a class="lnlinks" href="#hl-55-8"> 8</a>
+</span><span class="lnt" id="hl-55-9"><a class="lnlinks" href="#hl-55-9"> 9</a>
+</span><span class="lnt" id="hl-55-10"><a class="lnlinks" href="#hl-55-10">10</a>
+</span><span class="lnt" id="hl-55-11"><a class="lnlinks" href="#hl-55-11">11</a>
+</span><span class="lnt" id="hl-55-12"><a class="lnlinks" href="#hl-55-12">12</a>
+</span><span class="lnt" id="hl-55-13"><a class="lnlinks" href="#hl-55-13">13</a>
+</span><span class="lnt" id="hl-55-14"><a class="lnlinks" href="#hl-55-14">14</a>
+</span><span class="lnt" id="hl-55-15"><a class="lnlinks" href="#hl-55-15">15</a>
+</span><span class="lnt" id="hl-55-16"><a class="lnlinks" href="#hl-55-16">16</a>
+</span><span class="lnt" id="hl-55-17"><a class="lnlinks" href="#hl-55-17">17</a>
+</span><span class="lnt" id="hl-55-18"><a class="lnlinks" href="#hl-55-18">18</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y_pred</span><span class="o">=</span><span class="n">knn</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">x_test</span><span class="p">)[:,:]</span>
@@ -1819,7 +1822,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

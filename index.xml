@@ -9,16 +9,31 @@
       <link>https://dong2000.xyz/ptr_small.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Aug 2024 19:31:48 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Sep 2024 19:38:09 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>九月底的好消息</title>
+      <link>https://dong2000.xyz/post/good_news_sept/</link>
+      <pubDate>Sat, 28 Sep 2024 19:38:09 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/good_news_sept/</guid>
+      <description>&lt;p&gt;九月发生了两件值得高兴的事情：通过了博士开题答辩，以及进组以来的第一篇论文（综述）见刊了！希望今后再接再厉&amp;#x1f389;&amp;#x1f389;&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;
+	&lt;td&gt;&lt;img src=&#34;https://dong2000.xyz/images/20240928-1.jpg&#34; style=&#34;zoom:60%;&#34; /&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;img src=&#34;https://dong2000.xyz/images/20240928-2.jpg&#34; style=&#34;zoom:60%;&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</description>
+    </item>
+    
     <item>
       <title>2024年8月，长滩</title>
       <link>https://dong2000.xyz/post/longbeach2024/</link>
       <pubDate>Mon, 12 Aug 2024 19:31:48 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/longbeach2024/</guid>
-      <description>长滩的早上通常被浓浓的海雾所笼罩，温度很宜人。穿过downtown街道上隐约的甜腻与骚臭气息，一路向南到海边，再一路往西经过成排的度假酒店和棕榈树，就到了2024 Annual Meeting of the Ecological Society of America的会场。然后在数个不同的会议室之间来回穿梭听报告，直到傍晚再滑着滑板回到旅馆，或者在沿途路边的墨西哥餐车买个torta当晚饭。
-这样子听会议的日子重复了接近一个礼拜，笔记本上的潦草记录也飞速增长了好几页。碰到几位课题感兴趣的教授，冲上去提问交流并在会后发了跟进的邮件——属实是没想到身为I人的自己原来也能social至此。会议的规模很大，分会场的主题也很多。我试图在每一个感兴趣的话题上都了解到一些前沿进展，给自己9月份的博士开题积攒些灵感。期间还参观了当地中产社区里的花园农场，走出学术界听了听当地居民在生活中面临着什么食品问题。
-最后一天只有上午有活动，而我预定了夜里的飞机，于是下午到海边的景区逛了逛。不得不说风景确实很美，彩色的小屋​​、游艇​​、草坪和灯塔在午后晴朗的天空下明净艳丽。可惜没能​去逛水族馆和观​鲸，希望以后有机会再见吧！​</description>
+      <description>&lt;p&gt;长滩的早上通常被浓浓的海雾所笼罩，温度很宜人。穿过downtown街道上隐约的甜腻与骚臭气息，一路向南到海边，再一路往西经过成排的度假酒店和棕榈树，就到了2024 Annual Meeting of the Ecological Society of America的会场。然后在数个不同的会议室之间来回穿梭听报告，直到傍晚再滑着滑板回到旅馆，或者在沿途路边的墨西哥餐车买个torta当晚饭。&lt;/p&gt;
+&lt;p&gt;这样子听会议的日子重复了接近一个礼拜，笔记本上的潦草记录也飞速增长了好几页。碰到几位课题感兴趣的教授，冲上去提问交流并在会后发了跟进的邮件——属实是没想到身为I人的自己原来也能social至此。会议的规模很大，分会场的主题也很多。我试图在每一个感兴趣的话题上都了解到一些前沿进展，给自己9月份的博士开题积攒些灵感。期间还参观了当地中产社区里的花园农场，走出学术界听了听当地居民在生活中面临着什么食品问题。&lt;/p&gt;
+&lt;p&gt;最后一天只有上午有活动，而我预定了夜里的飞机，于是下午到海边的景区逛了逛。不得不说风景确实很美，彩色的小屋​​、游艇​​、草坪和灯塔在午后晴朗的天空下明净艳丽。可惜没能​去逛水族馆和观​鲸，希望以后有机会再见吧！​&lt;/p&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/lb.jpg&#34;/&gt;</description>
     </item>
     
     <item>
@@ -27,11 +42,64 @@
       <pubDate>Fri, 17 May 2024 23:29:36 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/</guid>
-      <description>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
-总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
-需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print(&amp;#39;\n===Averaging all classes===&amp;#39;) print(&amp;#39;AP:&amp;#39;, average_precision) print(&amp;#39;AR:&amp;#39;, average_recall) print(&amp;#39;F1:&amp;#39;, f1) print(&amp;#39;Classes&amp;#39;, dataset.</description>
+      <description>&lt;p&gt;使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的&lt;a href=&#34;https://mmdetection.readthedocs.io/en/latest/user_guides/index.html&#34;&gt;官网文档&lt;/a&gt;里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的&lt;a href=&#34;https://github.com/open-mmlab/mmdetection/issues/6212&#34;&gt;issue#6212&lt;/a&gt;和&lt;a href=&#34;https://github.com/open-mmlab/mmdetection/discussions/8791&#34;&gt;issue#8791&lt;/a&gt;。搜索一番后发现&lt;a href=&#34;https://blog.csdn.net/xiao_9626/article/details/136810538&#34;&gt;CSDN博客&lt;/a&gt;上有人分享了如何通过在&lt;code&gt;tools/analysis_tools/confusion_matrix.py&lt;/code&gt;的&lt;code&gt;main()&lt;/code&gt;函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。&lt;/p&gt;
+&lt;p&gt;总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量&lt;code&gt;FP&lt;/code&gt;、假阳性样本量&lt;code&gt;TP&lt;/code&gt;、假阴性样本量&lt;code&gt;FN&lt;/code&gt;，然后按照公式计算各分类标签的precision和recall。&lt;/p&gt;
+&lt;p&gt;需要注意的是，&lt;code&gt;precision&lt;/code&gt;和&lt;code&gt;recall&lt;/code&gt;的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。&lt;code&gt;precision&lt;/code&gt;和&lt;code&gt;recall&lt;/code&gt;的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。&lt;/p&gt;
+&lt;center&gt;&lt;figure&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/12907710/140513068-994cdbf4-3a4a-48f0-8fd8-2830d93fd963.png&#34; alt=&#34;normalized confusion matrix, from MMDetection documents&#34;  /&gt;
+&lt;figcaption&gt;MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/center&gt;
+&lt;p&gt;需要在&lt;code&gt;main()&lt;/code&gt;函数末尾添加的代码为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt; 1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt; 2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-3&#34;&gt; 3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-4&#34;&gt; 4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-5&#34;&gt; 5&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-6&#34;&gt; 6&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-7&#34;&gt; 7&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-8&#34;&gt; 8&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-9&#34;&gt; 9&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-10&#34;&gt;10&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-11&#34;&gt;11&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-12&#34;&gt;12&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-13&#34;&gt;13&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-14&#34;&gt;14&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-15&#34;&gt;15&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-16&#34;&gt;16&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-17&#34;&gt;17&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;diag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;FP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;axis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;FN&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;axis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;precision&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FP&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;recall&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TP&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;average_precision&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;precision&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;average_recall&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;recall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;f1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;average_precision&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;average_recall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;average_precision&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;average_recall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;===Averaging all classes===&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;AP:&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;average_precision&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;AR:&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;average_recall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;F1:&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Classes&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dataset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;metainfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;classes&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;background&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Precision&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;precision&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Recall&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;recall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后按照官方文档的说明，正常运行代码就可以输出结果了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;python&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tools&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;analysis_tools&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CONFIG&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DETECTION_RESULTS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SAVE_DIR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;打印内容形如：&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,9 +135,19 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
-      <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
-Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
-Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+      <description>&lt;p&gt;本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;121&lt;/em&gt;(4), e2311025121. &lt;a href=&#34;https://doi.org/10.1073/pnas.2311025121&#34;&gt;https://doi.org/10.1073/pnas.2311025121&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on heat wave effects on honeybees&lt;/li&gt;
+&lt;li&gt;Honeybees avoid overheating by &lt;strong&gt;lowering wingbeat frequency&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reducing metabolic heat production is the result of lowering wingbeat frequency. Should not be mentioned separately as two mechanisms here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Many flying insects generate aerodynamic force by using a combination of mechanisms, including the sweeping motion of the wing (i.e., &lt;strong&gt;wing translation&lt;/strong&gt;) and by creation of &lt;strong&gt;rotational vortices&lt;/strong&gt; when the wings rotate before reversing direction. Insects that fly with a large &lt;strong&gt;stroke amplitude&lt;/strong&gt; generate the bulk of their force from the wing translation phase, while those that fly with a small stroke amplitude primarily generate significant forces during wing rotation.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,9 +156,11 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
       <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
-      <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
-Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+      <description>&lt;p&gt;这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” &lt;em&gt;Science&lt;/em&gt;, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, &lt;a href=&#34;https://doi.org/10.1126/science.1144004&#34;&gt;https://doi.org/10.1126/science.1144004&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units. They also exhibit &lt;strong&gt;nonlinear dynamics&lt;/strong&gt; with &lt;strong&gt;thresholds&lt;/strong&gt;, &lt;strong&gt;reciprocal feedback loops&lt;/strong&gt;, &lt;strong&gt;time lags&lt;/strong&gt;, &lt;strong&gt;resilience&lt;/strong&gt;, &lt;strong&gt;heterogeneity&lt;/strong&gt;, and &lt;strong&gt;surprises&lt;/strong&gt;. Furthermore, past couplings have legacy effects on present conditions and future possibilities.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,11 +169,11 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
       <pubDate>Fri, 16 Feb 2024 19:57:19 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/diary-2024-02-16/</guid>
-      <description>一晃眼距离上次更新已经过去将近四个月了，我们从2023来到2024，几乎就要跨过了整个冬天。我当然可以为这四个月的断更找出很多理由。比如做实验的工作量和心理压力太大，没有精力来管理博客；比如所有的产出工作都花在了写论文上面，并没有什么适合分享到博客上的内容；又或者，单纯地因为想要偷懒。
-我很难想象应该用什么样的方式进行重启——随着断更的时间越来越长，这种通过某些仪式性的行为来宣告回归的需求就越来越强烈，因而重启的难度似乎也在越来越大。我反复地期待着生活中的“重大新闻”，期待着以它为契机重启一切。而当这些事件真实来临的时候，我又以各种理由错过了它们。有时是因为忙于处理各类意外，有时是觉得自己状态不佳，有时是觉得事件本身平淡如水，并不如我所期待的那般具有足够的震撼力。总之，四个月过去了，我最后甚至都快忘了自己在互联网上还有着这一亩三分地。
-现在回想起来，生命中的很多方面都在以类似的规律荒废。已经很久没有锻炼了，小肚子上似乎日渐积起天然保暖层；总是忘记剃胡子，每天洗脸时也懒得正脸看一看镜子里的自己；家里很久没有好好清扫，各个角落里堆起了灰尘；作息极其不稳定地变化着，有时睡过大半个白天然后半夜起来工作；朋友圈上的动态定格在夏天的末尾……很多地方都需要重启，但是我缺乏全部推翻重来的勇气，往往只从简单处试探着改变，然后又很快地缩回到一路丢盔弃甲的道路上继续下滑。
-“那些东西都是转瞬的，虚无的。只有成果才是会永恒留下来的东西，所以只要不顾一切地为了成果狂奔就可以了。”我有时候会这样说服自己。他们不会在意你在生活中是一个什么样的人，他们只会看到你留下了什么样的东西。但不得不承认，这个冬天的科研工作同样不尽人意。即便考虑到大量的试错是科学探索中必不可少的一部分，我也依然觉得自己并没有做到投入足够的努力和智慧，并因此感到后悔。尽人事后方能坦然听从天命。我因为愧于不曾竭尽自己所能，而不敢将挫折归咎于命运。
-不如先开始好好生活。糟糕的生活或许是理想的绊脚石，但是认真而积极的生活就能变成理想的助推器。打理自己的网站并不是充分条件，但至少是必要条件。尽管我没有利用上什么生活中的”重要新闻“，但是身处这个初春的时节，本就是重启的大好时机不是吗？</description>
+      <description>&lt;p&gt;一晃眼距离上次更新已经过去将近四个月了，我们从2023来到2024，几乎就要跨过了整个冬天。我当然可以为这四个月的断更找出很多理由。比如做实验的工作量和心理压力太大，没有精力来管理博客；比如所有的产出工作都花在了写论文上面，并没有什么适合分享到博客上的内容；又或者，单纯地因为想要偷懒。&lt;/p&gt;
+&lt;p&gt;我很难想象应该用什么样的方式进行重启——随着断更的时间越来越长，这种通过某些仪式性的行为来宣告回归的需求就越来越强烈，因而重启的难度似乎也在越来越大。我反复地期待着生活中的“重大新闻”，期待着以它为契机重启一切。而当这些事件真实来临的时候，我又以各种理由错过了它们。有时是因为忙于处理各类意外，有时是觉得自己状态不佳，有时是觉得事件本身平淡如水，并不如我所期待的那般具有足够的震撼力。总之，四个月过去了，我最后甚至都快忘了自己在互联网上还有着这一亩三分地。&lt;/p&gt;
+&lt;p&gt;现在回想起来，生命中的很多方面都在以类似的规律荒废。已经很久没有锻炼了，小肚子上似乎日渐积起天然保暖层；总是忘记剃胡子，每天洗脸时也懒得正脸看一看镜子里的自己；家里很久没有好好清扫，各个角落里堆起了灰尘；作息极其不稳定地变化着，有时睡过大半个白天然后半夜起来工作；朋友圈上的动态定格在夏天的末尾……很多地方都需要重启，但是我缺乏全部推翻重来的勇气，往往只从简单处试探着改变，然后又很快地缩回到一路丢盔弃甲的道路上继续下滑。&lt;/p&gt;
+&lt;p&gt;“那些东西都是转瞬的，虚无的。只有成果才是会永恒留下来的东西，所以只要不顾一切地为了成果狂奔就可以了。”我有时候会这样说服自己。他们不会在意你在生活中是一个什么样的人，他们只会看到你留下了什么样的东西。但不得不承认，这个冬天的科研工作同样不尽人意。即便考虑到大量的试错是科学探索中必不可少的一部分，我也依然觉得自己并没有做到投入足够的努力和智慧，并因此感到后悔。&lt;strong&gt;尽人事后方能坦然听从天命&lt;/strong&gt;。我因为愧于不曾竭尽自己所能，而不敢将挫折归咎于命运。&lt;/p&gt;
+&lt;p&gt;不如先开始好好生活。糟糕的生活或许是理想的绊脚石，但是认真而积极的生活就能变成理想的助推器。打理自己的网站并不是充分条件，但至少是必要条件。尽管我没有利用上什么生活中的”重要新闻“，但是身处这个初春的时节，本就是重启的大好时机不是吗？&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,8 +191,8 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
       <pubDate>Tue, 03 Oct 2023 21:02:53 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/learning-abm/</guid>
-      <description>In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
-I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.</description>
+      <description>&lt;p&gt;In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.&lt;/p&gt;
+&lt;p&gt;I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they&amp;rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -269,7 +349,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 15 Jan 2023 14:12:44 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/snow-in-hangzhou/</guid>
-      <description>&lt;p&gt;昨晚气温骤降，徘徊在0℃附近。下午出发去实验室时，发现小龟的挡风被和坐垫上碎散了一层雪花❄️，才意识到雪已经若有若无的下了一小阵子了。&lt;/p&gt;</description>
+      <description>&lt;p&gt;昨晚气温骤降，徘徊在0℃附近。下午出发去实验室时，发现小龟的挡风被和坐垫上碎散了一层雪花&amp;#x2744;&amp;#xfe0f;，才意识到雪已经若有若无的下了一小阵子了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -346,7 +426,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       
       <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）&lt;/p&gt;
+&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -397,16 +477,16 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sat, 01 Oct 2022 23:00:01 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/moving_my_blog/</guid>
-      <description>如果你曾经访问过我的小网站，你可能会注意到我的域名已经从dongsheng2000.gitee.io变成了shengdong00.github.io。
-搬迁的原因很简单：我的网站内容被Gitee判为违禁违规了。
-当然被判违禁违规也不是第一次了。虽然我认为这个以学习生活记录博客没有任何罪过，但是偶尔因为一两个敏感词语而被ban也完全是可以理解的事情。之前在Sci-Hub + Python爬虫实现文献批量下载这篇记录中因为出现了“非法”一词，曾经被ban过一回。虽然这里并无任何“违反法律”的含义，但是找一个替换词也并不是多大难事。但是前几天的违禁违规问题就没有那么简单了。
-首先，系统提示内容违规的内容是大半个月前就已经发布的再读《社会-经济-自然复合生态系统》，在发布该博客之后我又进行了若干次重新部署，一直没有提示违规，直到国庆前夕的这一次更新才出现问题。其次，我不认为这篇博客内容中有任何暴恐、色情、政治敏感的内容。经过简单排查发现，违规内容来自于后半部分（并且不止一处），只不过是对马世骏先生早年论文的部分引用而已。由此我认为，违规问题的出现，归咎于平台在10月到来之前更新了检测系统，并且新上线的检测系统敏感到了草木皆兵的离谱程度。
-我起初试图修改内容以通过审核。由于平台并不会提示具体是哪一段文本违规，而我凭借自己的直觉、以及网上的各种违禁违规AI检测工具，都无法解决问题，因此我只能在二分法的基本思想下一点点排查。反复检查的结论是，只有几乎将后一半内容完全砍掉，这篇内容才能通过审核，但这是我所不能接受的。我宁可直接将它删掉，也不愿意看到一段被阉割至二分之一的文字。但是，删掉它并不意味着麻烦的结束，因为平台接着判定我的另一篇内容，系统科学与工程复习整理，违禁违规了……
-如果说前一篇内容还和什么社会什么政策扯一些边，违规还算能理解（不合理，但是能解释）的话，后一篇纯纯是课程复习资料的东西都不能幸免，那我是真的无话可说了。即使我搞定了这两篇的违规内容（不论是阉割还是删除），我也有充足的理由相信还会有第三个受害者出现。
-至此，这个问题已经消耗了我大半天的时间和大量的精力。在反复迭代排查的过程中，每一次修改内容、上传部署、审核打回的轮回都需要5~10分钟的时间，整个过程异常枯燥，而我则时时刻刻陷入“难道这玩意儿也是敏感内容”的灵魂拷问之中。最后我放弃修改了，睡觉之前到Gitee官方的页面里提了一个issue，询问部署违禁违规的问题。或许是因为语气冲了一点（当时整个人真的很恼火），用了一些反问句；又或许是因为我复制引用了平台自己的审查规则描述（形如”禁止出现xx内容“之类），从而引入了某些敏感词——总之，第二天醒来的时候，我发现我提的issue也TM的给ban了！😡
-于是就有了今天删库跑路，溜到GitHub上边建仓的事情。
-本来这一次更新是为了提交一份微信公众平台JS接口安全域名的认证文件，以便于之后需要分享链接到票圈里。这下被迫从Gitee转移到了GitHub上边。这下要在微信公众平台上通过认证，还需要先完成域名绑定、网站备案等等一系列工作。考虑到时间上的经济性，短期内我也不会再去做这件事情了。虽然都说在境内访问GitHub的稳定性时好时坏，但是相比于其他选项来看，这也是最好的情况了。
-以前一直觉得互联网的一墙之隔并没有多大的影响，只要我自己进出自由，那么它的存在似乎也无可厚非。现在我不这么觉得了。</description>
+      <description>&lt;p&gt;如果你曾经访问过我的小网站，你可能会注意到我的域名已经从dongsheng2000.gitee.io变成了shengdong00.github.io。&lt;/p&gt;
+&lt;p&gt;搬迁的原因很简单：我的网站内容被Gitee判为违禁违规了。&lt;/p&gt;
+&lt;p&gt;当然被判违禁违规也不是第一次了。虽然我认为这个以学习生活记录博客没有任何罪过，但是偶尔因为一两个敏感词语而被ban也完全是可以理解的事情。之前在&lt;a href=&#34;https://shengdong00.github.io/2022/05/18/Sci-Hub-+-Python%E7%88%AC%E8%99%AB%E5%AE%9E%E7%8E%B0%E6%96%87%E7%8C%AE%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/&#34;&gt;&lt;em&gt;Sci-Hub + Python爬虫实现文献批量下载&lt;/em&gt;&lt;/a&gt;这篇记录中因为出现了“非法”一词，曾经被ban过一回。虽然这里并无任何“违反法律”的含义，但是找一个替换词也并不是多大难事。但是前几天的违禁违规问题就没有那么简单了。&lt;/p&gt;
+&lt;p&gt;首先，系统提示内容违规的内容是大半个月前就已经发布的&lt;a href=&#34;https://shengdong00.github.io/2022/09/18/%E5%86%8D%E8%AF%BB%E3%80%8A%E7%A4%BE%E4%BC%9A-%E7%BB%8F%E6%B5%8E-%E8%87%AA%E7%84%B6%E5%A4%8D%E5%90%88%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F%E3%80%8B/&#34;&gt;&lt;em&gt;再读《社会-经济-自然复合生态系统》&lt;/em&gt;&lt;/a&gt;，在发布该博客之后我又进行了若干次重新部署，一直没有提示违规，直到国庆前夕的这一次更新才出现问题。其次，我不认为这篇博客内容中有任何暴恐、色情、政治敏感的内容。经过简单排查发现，违规内容来自于后半部分（并且不止一处），只不过是对马世骏先生早年论文的部分引用而已。由此我认为，违规问题的出现，归咎于平台在10月到来之前更新了检测系统，并且新上线的检测系统敏感到了草木皆兵的离谱程度。&lt;/p&gt;
+&lt;p&gt;我起初试图修改内容以通过审核。由于平台并不会提示具体是哪一段文本违规，而我凭借自己的直觉、以及网上的各种违禁违规AI检测工具，都无法解决问题，因此我只能在二分法的基本思想下一点点排查。反复检查的结论是，只有几乎将后一半内容完全砍掉，这篇内容才能通过审核，但这是我所不能接受的。我宁可直接将它删掉，也不愿意看到一段被阉割至二分之一的文字。但是，删掉它并不意味着麻烦的结束，因为平台接着判定我的另一篇内容，&lt;a href=&#34;https://shengdong00.github.io/2022/06/12/%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/&#34;&gt;&lt;em&gt;系统科学与工程复习整理&lt;/em&gt;&lt;/a&gt;，违禁违规了……&lt;/p&gt;
+&lt;p&gt;如果说前一篇内容还和什么社会什么政策扯一些边，违规还算能理解（不合理，但是能解释）的话，后一篇纯纯是课程复习资料的东西都不能幸免，那我是真的无话可说了。即使我搞定了这两篇的违规内容（不论是阉割还是删除），我也有充足的理由相信还会有第三个受害者出现。&lt;/p&gt;
+&lt;p&gt;至此，这个问题已经消耗了我大半天的时间和大量的精力。在反复迭代排查的过程中，每一次修改内容、上传部署、审核打回的轮回都需要5~10分钟的时间，整个过程异常枯燥，而我则时时刻刻陷入“难道这玩意儿也是敏感内容”的灵魂拷问之中。最后我放弃修改了，睡觉之前到Gitee官方的页面里提了一个issue，询问部署违禁违规的问题。或许是因为语气冲了一点（当时整个人真的很恼火），用了一些反问句；又或许是因为我复制引用了平台自己的审查规则描述（形如”禁止出现xx内容“之类），从而引入了某些敏感词——总之，第二天醒来的时候，我发现我提的issue也TM的给ban了！&amp;#x1f621;&lt;/p&gt;
+&lt;p&gt;于是就有了今天删库跑路，溜到GitHub上边建仓的事情。&lt;/p&gt;
+&lt;p&gt;本来这一次更新是为了提交一份微信公众平台JS接口安全域名的认证文件，以便于之后需要分享链接到票圈里。这下被迫从Gitee转移到了GitHub上边。这下要在微信公众平台上通过认证，还需要先完成域名绑定、网站备案等等一系列工作。考虑到时间上的经济性，短期内我也不会再去做这件事情了。虽然都说在境内访问GitHub的稳定性时好时坏，但是相比于其他选项来看，这也是最好的情况了。&lt;/p&gt;
+&lt;p&gt;以前一直觉得互联网的一墙之隔并没有多大的影响，只要我自己进出自由，那么它的存在似乎也无可厚非。现在我不这么觉得了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -429,7 +509,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 18 Sep 2022 16:16:51 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/on_socio_economic_natural_system/</guid>
-      <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开💡的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
+      <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开&amp;#x1f4a1;的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
     </item>
     
@@ -439,7 +519,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 11 Sep 2022 01:21:19 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/applying_phd/</guid>
-      <description>&lt;p&gt;🎓最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&amp;#x1f393;最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -453,7 +533,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
 &lt;li&gt;指标实际可取值具有上边界；&lt;/li&gt;
 &lt;li&gt;不同指标之间存在重要性差异。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。📐&lt;/p&gt;</description>
+&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。&amp;#x1f4d0;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -462,23 +542,52 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Wed, 10 Aug 2022 23:00:38 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/undesirable_sbm_in_python/</guid>
-      <description>带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
-这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
-数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
-每个$DMU$有$m$种投入，记为$X_i(i=1,2,\dots,m)$，每种投入的权重为$v_i$；
-有$q$种产出，记为$Y_r(r=1,2,\dots,q)$，每种产出的权重为$u_r$.
-对第$k$个可比决策单元而言，其投入产出比（技术效率）为
-$$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
-限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
-$$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
-令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
-$$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
-从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）</description>
+      <description>&lt;p&gt;带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是&lt;strong&gt;投入&lt;/strong&gt;、&lt;strong&gt;期望产出&lt;/strong&gt;和&lt;strong&gt;非期望产出&lt;/strong&gt;三方权衡的问题。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。&lt;/p&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220822150334401.png&#34; alt=&#34;image-20220822150334401&#34; style=&#34;zoom: 25%;&#34; /&gt;
+&lt;h1 id=&#34;数学原理&#34;&gt;数学原理&lt;/h1&gt;
+&lt;h2 id=&#34;dea模型ccr模型&#34;&gt;DEA模型/CCR模型&lt;/h2&gt;
+&lt;h3 id=&#34;dea&#34;&gt;DEA&lt;/h3&gt;
+&lt;p&gt;SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；&lt;/p&gt;
+&lt;p&gt;每个$DMU$有$m$种投入，记为$X_i(i=1,2,\dots,m)$，每种投入的权重为$v_i$；&lt;/p&gt;
+&lt;p&gt;有$q$种产出，记为$Y_r(r=1,2,\dots,q)$，每种产出的权重为$u_r$.&lt;/p&gt;
+&lt;p&gt;对第$k$个可比决策单元而言，其投入产出比（技术效率）为&lt;/p&gt;
+&lt;p&gt;$$
+H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}，
+$$&lt;/p&gt;
+&lt;p&gt;限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型：
+$$
+\begin{aligned}
+\max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\
+s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\
+&amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为
+$$
+s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0;
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;投入导向ccr&#34;&gt;投入导向CCR&lt;/h3&gt;
+&lt;p&gt;令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为&lt;/p&gt;
+&lt;p&gt;$$
+\max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk},
+$$&lt;/p&gt;
+&lt;p&gt;令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到&lt;/p&gt;
+&lt;p&gt;$$
+s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0.
+$$&lt;/p&gt;
+&lt;p&gt;从而将非线性规划模型转换为线性规划模型：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\
+s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\
+&amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\
+&amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n
+\end{aligned}
+$$&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -546,7 +655,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Sun, 08 May 2022 23:10:55 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/on_icm_2022/</guid>
-      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。🐶&lt;/p&gt;</description>
+      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。&amp;#x1f436;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -559,7 +668,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;amp;program=ccgg&amp;amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -607,7 +716,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>
@@ -633,8 +742,1502 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dong2000.xyz/emoji_cheating_sheet/</guid>
-      <description>Complete list of github markdown emoji markup
-People :bowtie: :bowtie: 😄 😄 😆 😆 😊 😊 😃 😃 ☺️ ☺️ 😏 😏 😍 😍 😘 😘 😚 😚 😳 😳 😌 😌 😆 😆 😁 😁 😉 😉 😜 😜 😝 😝 😀 😀 😗 😗 😙 😙 😛 😛 😴 😴 😟 😟 😦 😦 😧 😧 😮 😮 😬 😬 😕 😕 😯 😯 😑 😑 😒 😒 😅 😅 😓 😓 😥 😥 😩 😩 😔 😔 😞 😞 😖 😖 😨 😨 😰 😰 😣 😣 😢 😢 😭 😭 😂 😂 😲 😲 😱 😱 :neckbeard: :neckbeard: 😫 😫 😠 😠 😡 😡 😤 😤 😪 😪 😋 😋 😷 😷 😎 😎 😵 😵 👿 👿 😈 😈 😐 😐 😶 😶 😇 😇 👽 👽 💛 💛 💙 💙 💜 💜 ❤️ ❤️ 💚 💚 💔 💔 💓 💓 💗 💗 💕 💕 💞 💞 💘 💘 💖 💖 ✨ ✨ ⭐ ⭐ 🌟 🌟 💫 💫 💥 💥 💥 💥 💢 💢 ❗ ❗ ❓ ❓ ❕ ❕ ❔ ❔ 💤 💤 💨 💨 💦 💦 🎶 🎶 🎵 🎵 🔥 🔥 💩 💩 💩 💩 💩 💩 👍 👍 👍 👍 👎 👎 👎 👎 👌 👌 👊 👊 👊 👊 ✊ ✊ ✌️ ✌️ 👋 👋 ✋ ✋ ✋ ✋ 👐 👐 ☝️ ☝️ 👇 👇 👈 👈 👉 👉 🙌 🙌 🙏 🙏 👆 👆 👏 👏 💪 💪 🤘 🤘 🖕 🖕 🚶‍♂️ 🚶‍♂️ 🏃‍♂️ 🏃‍♂️ 🏃 🏃 👫 👫 👨‍👩‍👦 👨‍👩‍👦 👬 👬 👭 👭 💃 💃 👯‍♀️ 👯‍♀️ 🙆‍♀️ 🙆‍♀️ 🙅‍♀️ 🙅‍♀️ 💁‍♀️ 💁‍♀️ 🙋‍♀️ 🙋‍♀️ 👰 👰 🙎‍♀️ 🙎‍♀️ 🙍‍♀️ 🙍‍♀️ 🙇 🙇 💏 💏 💑 💑 💆‍♀️ 💆‍♀️ 💇‍♀️ 💇‍♀️ 💅 💅 👦 👦 👧 👧 👩 👩 👨 👨 👶 👶 👵 👵 👴 👴 👱‍♂️ 👱‍♂️ 👲 👲 👳‍♂️ 👳‍♂️ 👷‍♂️ 👷‍♂️ 👮‍♂️ 👮‍♂️ 👼 👼 👸 👸 😺 😺 😸 😸 😻 😻 😽 😽 😼 😼 🙀 🙀 😿 😿 😹 😹 😾 😾 👹 👹 👺 👺 🙈 🙈 🙉 🙉 🙊 🙊 💂‍♂️ 💂‍♂️ 💀 💀 🐾 🐾 👄 👄 💋 💋 💧 💧 👂 👂 👀 👀 👃 👃 👅 👅 💌 💌 👤 👤 👥 👥 💬 💬 💭 💭 :feelsgood: :feelsgood: :finnadie: :finnadie: :goberserk: :goberserk: :godmode: :godmode: :hurtrealbad: :hurtrealbad: :rage1: :rage1: :rage2: :rage2: :rage3: :rage3: :rage4: :rage4: :suspect: :suspect: :trollface: :trollface: Nature ☀️ ☀️ ☂️ ☂️ ☁️ ☁️ ❄️ ❄️ ☃️ ☃️ ⚡ ⚡ 🌀 🌀 🌁 🌁 🌊 🌊 🐱 🐱 🐶 🐶 🐭 🐭 🐹 🐹 🐰 🐰 🐺 🐺 🐸 🐸 🐯 🐯 🐨 🐨 🐻 🐻 🐷 🐷 🐽 🐽 🐮 🐮 🐗 🐗 🐵 🐵 🐒 🐒 🐴 🐴 🐎 🐎 🐫 🐫 🐑 🐑 🐘 🐘 🐼 🐼 🐍 🐍 🐦 🐦 🐤 🐤 🐥 🐥 🐣 🐣 🐔 🐔 🐧 🐧 🐢 🐢 🐛 🐛 🐝 🐝 🐜 🐜 🪲 🪲 🐌 🐌 🐙 🐙 🐠 🐠 🐟 🐟 🐳 🐳 🐋 🐋 🐬 🐬 🐄 🐄 🐏 🐏 🐀 🐀 🐃 🐃 🐅 🐅 🐇 🐇 🐉 🐉 🐐 🐐 🐓 🐓 🐕 🐕 🐖 🐖 🐁 🐁 🐂 🐂 🐲 🐲 🐡 🐡 🐊 🐊 🐪 🐪 🐆 🐆 🐈 🐈 🐩 🐩 🐾 🐾 💐 💐 🌸 🌸 🌷 🌷 🍀 🍀 🌹 🌹 🌻 🌻 🌺 🌺 🍁 🍁 🍃 🍃 🍂 🍂 🌿 🌿 🍄 🍄 🌵 🌵 🌴 🌴 🌲 🌲 🌳 🌳 🌰 🌰 🌱 🌱 🌼 🌼 🌾 🌾 🐚 🐚 🌐 🌐 🌞 🌞 🌝 🌝 🌚 🌚 🌑 🌑 🌒 🌒 🌓 🌓 🌔 🌔 🌕 🌕 🌖 🌖 🌗 🌗 🌘 🌘 🌜 🌜 🌛 🌛 🌔 🌔 🌍 🌍 🌎 🌎 🌏 🌏 🌋 🌋 🌌 🌌 ⛅ ⛅ :octocat: :octocat: :squirrel: :squirrel: Objects 🎍 🎍 💝 💝 🎎 🎎 🎒 🎒 🎓 🎓 🎏 🎏 🎆 🎆 🎇 🎇 🎐 🎐 🎑 🎑 🎃 🎃 👻 👻 🎅 🎅 🎄 🎄 🎁 🎁 🔔 🔔 🔕 🔕 🎋 🎋 🎉 🎉 🎊 🎊 🎈 🎈 🔮 🔮 💿 💿 📀 📀 💾 💾 📷 📷 📹 📹 🎥 🎥 💻 💻 📺 📺 📱 📱 ☎️ ☎️ ☎ ☎ 📞 📞 📟 📟 📠 📠 💽 💽 📼 📼 🔉 🔉 🔈 🔈 🔇 🔇 📢 📢 📣 📣 ⌛ ⌛ ⏳ ⏳ ⏰ ⏰ ⌚ ⌚ 📻 📻 🛰️ 🛰️ ➿ ➿ 🔍 🔍 🔎 🔎 🔓 🔓 🔒 🔒 🔏 🔏 🔐 🔐 🔑 🔑 💡 💡 🔦 🔦 🔆 🔆 🔅 🔅 🔌 🔌 🔋 🔋 📲 📲 ✉️ ✉️ 📫 📫 📮 📮 🛀 🛀 🛁 🛁 🚿 🚿 🚽 🚽 🔧 🔧 🔩 🔩 🔨 🔨 💺 💺 💰 💰 💴 💴 💵 💵 💷 💷 💶 💶 💳 💳 💸 💸 📧 📧 📥 📥 📤 📤 ✉ ✉ 📨 📨 📯 📯 📪 📪 📬 📬 📭 📭 🚪 🚪 🚬 🚬 💣 💣 🔫 🔫 🔪 🔪 💊 💊 💉 💉 📄 📄 📃 📃 📑 📑 📊 📊 📈 📈 📉 📉 📜 📜 📋 📋 📆 📆 📅 📅 📇 📇 📁 📁 📂 📂 ✂️ ✂️ 📌 📌 📎 📎 ✒️ ✒️ ✏️ ✏️ 📏 📏 📐 📐 📕 📕 📗 📗 📘 📘 📙 📙 📓 📓 📔 📔 📒 📒 📚 📚 🔖 🔖 📛 📛 🔬 🔬 🔭 🔭 📰 📰 🏈 🏈 🏀 🏀 ⚽ ⚽ ⚾ ⚾ 🎾 🎾 🎱 🎱 🏉 🏉 🎳 🎳 ⛳ ⛳ 🚵‍♂️ 🚵‍♂️ 🚴‍♂️ 🚴‍♂️ 🏇 🏇 🏂 🏂 🏊‍♂️ 🏊‍♂️ 🏄‍♂️ 🏄‍♂️ 🎿 🎿 ♠️ ♠️ ♥️ ♥️ ♣️ ♣️ ♦️ ♦️ 💎 💎 💍 💍 🏆 🏆 🎼 🎼 🎹 🎹 🎻 🎻 👾 👾 🎮 🎮 🃏 🃏 🎴 🎴 🎲 🎲 🎯 🎯 🀄 🀄 🎬 🎬 📝 📝 ✏ ✏ 📖 📖 🎨 🎨 🎤 🎤 🎧 🎧 🎺 🎺 🎷 🎷 🎸 🎸 👞 👞 👡 👡 👠 👠 💄 💄 👢 👢 👕 👕 👕 👕 👔 👔 👚 👚 👗 👗 🎽 🎽 👖 👖 👘 👘 👙 👙 🎀 🎀 🎩 🎩 👑 👑 👒 👒 👞 👞 🌂 🌂 💼 💼 👜 👜 👝 👝 👛 👛 👓 👓 🎣 🎣 ☕ ☕ 🍵 🍵 🍶 🍶 🍼 🍼 🍺 🍺 🍻 🍻 🍸 🍸 🍹 🍹 🍷 🍷 🍴 🍴 🍕 🍕 🍔 🍔 🍟 🍟 🍗 🍗 🍖 🍖 🍝 🍝 🍛 🍛 🍤 🍤 🍱 🍱 🍣 🍣 🍥 🍥 🍙 🍙 🍘 🍘 🍚 🍚 🍜 🍜 🍲 🍲 🍢 🍢 🍡 🍡 🥚 🥚 🍞 🍞 🍩 🍩 🍮 🍮 🍦 🍦 🍨 🍨 🍧 🍧 🎂 🎂 🍰 🍰 🍪 🍪 🍫 🍫 🍬 🍬 🍭 🍭 🍯 🍯 🍎 🍎 🍏 🍏 🍊 🍊 🍋 🍋 🍒 🍒 🍇 🍇 🍉 🍉 🍓 🍓 🍑 🍑 🍈 🍈 🍌 🍌 🍐 🍐 🍍 🍍 🍠 🍠 🍆 🍆 🍅 🍅 🌽 🌽 Places 🏠 🏠 🏡 🏡 🏫 🏫 🏢 🏢 🏣 🏣 🏥 🏥 🏦 🏦 🏪 🏪 🏩 🏩 🏨 🏨 💒 💒 ⛪ ⛪ 🏬 🏬 🏤 🏤 🌇 🌇 🌆 🌆 🏯 🏯 🏰 🏰 ⛺ ⛺ 🏭 🏭 🗼 🗼 🗾 🗾 🗻 🗻 🌄 🌄 🌅 🌅 🌠 🌠 🗽 🗽 🌉 🌉 🎠 🎠 🌈 🌈 🎡 🎡 ⛲ ⛲ 🎢 🎢 🚢 🚢 🚤 🚤 ⛵ ⛵ ⛵ ⛵ 🚣‍♂️ 🚣‍♂️ ⚓ ⚓ 🚀 🚀 ✈️ ✈️ 🚁 🚁 🚂 🚂 🚊 🚊 🚞 🚞 🚲 🚲 🚡 🚡 🚟 🚟 🚠 🚠 🚜 🚜 🚙 🚙 🚘 🚘 🚗 🚗 🚗 🚗 🚕 🚕 🚖 🚖 🚛 🚛 🚌 🚌 🚍 🚍 🚨 🚨 🚓 🚓 🚔 🚔 🚒 🚒 🚑 🚑 🚐 🚐 🚚 🚚 🚋 🚋 🚉 🚉 🚆 🚆 🚅 🚅 🚄 🚄 🚈 🚈 🚝 🚝 🚃 🚃 🚎 🚎 🎫 🎫 ⛽ ⛽ 🚦 🚦 🚥 🚥 ⚠️ ⚠️ 🚧 🚧 🔰 🔰 🏧 🏧 🎰 🎰 🚏 🚏 💈 💈 ♨️ ♨️ 🏁 🏁 🎌 🎌 🏮 🏮 🗿 🗿 🎪 🎪 🎭 🎭 📍 📍 🚩 🚩 🇯🇵 🇯🇵 🇰🇷 🇰🇷 🇨🇳 🇨🇳 🇺🇸 🇺🇸 🇫🇷 🇫🇷 🇪🇸 🇪🇸 🇮🇹 🇮🇹 🇷🇺 🇷🇺 🇬🇧 🇬🇧 🇬🇧 🇬🇧 🇩🇪 🇩🇪 Symbols 1️⃣ 1️⃣ 2️⃣ 2️⃣ 3️⃣ 3️⃣ 4️⃣ 4️⃣ 5️⃣ 5️⃣ 6️⃣ 6️⃣ 7️⃣ 7️⃣ 8️⃣ 8️⃣ 9️⃣ 9️⃣ 🔟 🔟 🔢 🔢 0️⃣ 0️⃣ #️⃣ #️⃣ 🔣 🔣 ◀️ ◀️ ⬇️ ⬇️ ▶️ ▶️ ⬅️ ⬅️ 🔠 🔠 🔡 🔡 🔤 🔤 ↙️ ↙️ ↘️ ↘️ ➡️ ➡️ ⬆️ ⬆️ ↖️ ↖️ ↗️ ↗️ ⏬ ⏬ ⏫ ⏫ 🔽 🔽 ⤵️ ⤵️ ⤴️ ⤴️ ↩️ ↩️ ↪️ ↪️ ↔️ ↔️ ↕️ ↕️ 🔼 🔼 🔃 🔃 🔄 🔄 ⏪ ⏪ ⏩ ⏩ ℹ️ ℹ️ 🆗 🆗 🔀 🔀 🔁 🔁 🔂 🔂 🆕 🆕 🔝 🔝 🆙 🆙 🆒 🆒 🆓 🆓 🆖 🆖 🎦 🎦 🈁 🈁 📶 📶 🈹 🈹 🈴 🈴 🈺 🈺 🈯 🈯 🈷️ 🈷️ 🈶 🈶 🈵 🈵 🈚 🈚 🈸 🈸 🈳 🈳 🈲 🈲 🈂️ 🈂️ 🚻 🚻 🚹 🚹 🚺 🚺 🚼 🚼 🚭 🚭 🅿️ 🅿️ ♿ ♿ 🚇 🚇 🛄 🛄 🉑 🉑 🚾 🚾 🚰 🚰 🚮 🚮 ㊙️ ㊙️ ㊗️ ㊗️ ⓜ️ ⓜ️ 🛂 🛂 🛅 🛅 🛃 🛃 🉐 🉐 🆑 🆑 🆘 🆘 🆔 🆔 🚫 🚫 🔞 🔞 📵 📵 🚯 🚯 🚱 🚱 🚳 🚳 🚷 🚷 🚸 🚸 ⛔ ⛔ ✳️ ✳️ ✴️ ✴️ 💟 💟 🆚 🆚 📳 📳 📴 📴 💹 💹 💱 💱 ♈ ♈ ♉ ♉ ♊ ♊ ♋ ♋ ♌ ♌ ♍ ♍ ♎ ♎ ♏ ♏ ♐ ♐ ♑ ♑ ♒ ♒ ♓ ♓ ⛎ ⛎ 🔯 🔯 ❎ ❎ 🅰️ 🅰️ 🅱️ 🅱️ 🆎 🆎 🅾️ 🅾️ 💠 💠 ♻️ ♻️ 🔚 🔚 🔛 🔛 🔜 🔜 🕐 🕐 🕜 🕜 🕙 🕙 🕥 🕥 🕚 🕚 🕦 🕦 🕛 🕛 🕧 🕧 🕑 🕑 🕝 🕝 🕒 🕒 🕞 🕞 🕓 🕓 🕟 🕟 🕔 🕔 🕠 🕠 🕕 🕕 🕡 🕡 🕖 🕖 🕢 🕢 🕗 🕗 🕣 🕣 🕘 🕘 🕤 🕤 💲 💲 ©️ ©️ ®️ ®️ ™️ ™️ ❌ ❌ ❗ ❗ ‼️ ‼️ ⁉️ ⁉️ ⭕ ⭕ ✖️ ✖️ ➕ ➕ ➖ ➖ ➗ ➗ 💮 💮 💯 💯 ✔️ ✔️ ☑️ ☑️ 🔘 🔘 🔗 🔗 ➰ ➰ 〰️ 〰️ 〽️ 〽️ 🔱 🔱 :black_square: :black_square: :white_square: :white_square: ✅ ✅ 🔲 🔲 🔳 🔳 ⚫ ⚫ ⚪ ⚪ 🔴 🔴 🔵 🔵 🔷 🔷 🔶 🔶 🔹 🔹 🔸 🔸 🔺 🔺 🔻 🔻 :shipit: :shipit: </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gist.github.com/rxaviers/7360908&#34;&gt;Complete list of github markdown emoji markup&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;people&#34;&gt;People&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;:bowtie: &lt;code&gt;:bowtie:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f604; &lt;code&gt;:smile:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f606; &lt;code&gt;:laughing:&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60a; &lt;code&gt;:blush:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f603; &lt;code&gt;:smiley:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x263a;&amp;#xfe0f; &lt;code&gt;:relaxed:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60f; &lt;code&gt;:smirk:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60d; &lt;code&gt;:heart_eyes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f618; &lt;code&gt;:kissing_heart:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61a; &lt;code&gt;:kissing_closed_eyes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f633; &lt;code&gt;:flushed:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60c; &lt;code&gt;:relieved:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f606; &lt;code&gt;:satisfied:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f601; &lt;code&gt;:grin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f609; &lt;code&gt;:wink:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61c; &lt;code&gt;:stuck_out_tongue_winking_eye:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61d; &lt;code&gt;:stuck_out_tongue_closed_eyes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f600; &lt;code&gt;:grinning:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f617; &lt;code&gt;:kissing:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f619; &lt;code&gt;:kissing_smiling_eyes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61b; &lt;code&gt;:stuck_out_tongue:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f634; &lt;code&gt;:sleeping:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61f; &lt;code&gt;:worried:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f626; &lt;code&gt;:frowning:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f627; &lt;code&gt;:anguished:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62e; &lt;code&gt;:open_mouth:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62c; &lt;code&gt;:grimacing:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f615; &lt;code&gt;:confused:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62f; &lt;code&gt;:hushed:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f611; &lt;code&gt;:expressionless:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f612; &lt;code&gt;:unamused:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f605; &lt;code&gt;:sweat_smile:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f613; &lt;code&gt;:sweat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f625; &lt;code&gt;:disappointed_relieved:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f629; &lt;code&gt;:weary:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f614; &lt;code&gt;:pensive:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f61e; &lt;code&gt;:disappointed:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f616; &lt;code&gt;:confounded:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f628; &lt;code&gt;:fearful:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f630; &lt;code&gt;:cold_sweat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f623; &lt;code&gt;:persevere:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f622; &lt;code&gt;:cry:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62d; &lt;code&gt;:sob:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f602; &lt;code&gt;:joy:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f632; &lt;code&gt;:astonished:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f631; &lt;code&gt;:scream:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:neckbeard: &lt;code&gt;:neckbeard:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62b; &lt;code&gt;:tired_face:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f620; &lt;code&gt;:angry:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f621; &lt;code&gt;:rage:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f624; &lt;code&gt;:triumph:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f62a; &lt;code&gt;:sleepy:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60b; &lt;code&gt;:yum:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f637; &lt;code&gt;:mask:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f60e; &lt;code&gt;:sunglasses:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f635; &lt;code&gt;:dizzy_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47f; &lt;code&gt;:imp:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f608; &lt;code&gt;:smiling_imp:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f610; &lt;code&gt;:neutral_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f636; &lt;code&gt;:no_mouth:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f607; &lt;code&gt;:innocent:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47d; &lt;code&gt;:alien:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f49b; &lt;code&gt;:yellow_heart:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f499; &lt;code&gt;:blue_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f49c; &lt;code&gt;:purple_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2764;&amp;#xfe0f; &lt;code&gt;:heart:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f49a; &lt;code&gt;:green_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f494; &lt;code&gt;:broken_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f493; &lt;code&gt;:heartbeat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f497; &lt;code&gt;:heartpulse:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f495; &lt;code&gt;:two_hearts:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f49e; &lt;code&gt;:revolving_hearts:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f498; &lt;code&gt;:cupid:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f496; &lt;code&gt;:sparkling_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2728; &lt;code&gt;:sparkles:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2b50; &lt;code&gt;:star:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31f; &lt;code&gt;:star2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ab; &lt;code&gt;:dizzy:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a5; &lt;code&gt;:boom:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a5; &lt;code&gt;:collision:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a2; &lt;code&gt;:anger:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2757; &lt;code&gt;:exclamation:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2753; &lt;code&gt;:question:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2755; &lt;code&gt;:grey_exclamation:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2754; &lt;code&gt;:grey_question:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a4; &lt;code&gt;:zzz:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a8; &lt;code&gt;:dash:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a6; &lt;code&gt;:sweat_drops:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b6; &lt;code&gt;:notes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b5; &lt;code&gt;:musical_note:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f525; &lt;code&gt;:fire:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a9; &lt;code&gt;:hankey:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a9; &lt;code&gt;:poop:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a9; &lt;code&gt;:shit:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44d; &lt;code&gt;:+1:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44d; &lt;code&gt;:thumbsup:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44e; &lt;code&gt;:-1:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44e; &lt;code&gt;:thumbsdown:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44c; &lt;code&gt;:ok_hand:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44a; &lt;code&gt;:punch:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44a; &lt;code&gt;:facepunch:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x270a; &lt;code&gt;:fist:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x270c;&amp;#xfe0f; &lt;code&gt;:v:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44b; &lt;code&gt;:wave:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x270b; &lt;code&gt;:hand:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x270b; &lt;code&gt;:raised_hand:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f450; &lt;code&gt;:open_hands:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x261d;&amp;#xfe0f; &lt;code&gt;:point_up:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f447; &lt;code&gt;:point_down:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f448; &lt;code&gt;:point_left:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f449; &lt;code&gt;:point_right:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f64c; &lt;code&gt;:raised_hands:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f64f; &lt;code&gt;:pray:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f446; &lt;code&gt;:point_up_2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f44f; &lt;code&gt;:clap:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4aa; &lt;code&gt;:muscle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f918; &lt;code&gt;:metal:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f595; &lt;code&gt;:fu:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b6; &lt;code&gt;:walking:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c3; &lt;code&gt;:runner:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c3; &lt;code&gt;:running:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46b; &lt;code&gt;:couple:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46a; &lt;code&gt;:family:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46c; &lt;code&gt;:two_men_holding_hands:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46d; &lt;code&gt;:two_women_holding_hands:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f483; &lt;code&gt;:dancer:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46f; &lt;code&gt;:dancers:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f646;&amp;zwj;&amp;#x2640;&amp;#xfe0f; &lt;code&gt;:ok_woman:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f645; &lt;code&gt;:no_good:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f481; &lt;code&gt;:information_desk_person:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f64b; &lt;code&gt;:raising_hand:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f470;&amp;zwj;&amp;#x2640;&amp;#xfe0f; &lt;code&gt;:bride_with_veil:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:person_with_pouting_face: &lt;code&gt;:person_with_pouting_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:person_frowning: &lt;code&gt;:person_frowning:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f647; &lt;code&gt;:bow:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48f; &lt;code&gt;:couplekiss:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f491; &lt;code&gt;:couple_with_heart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f486; &lt;code&gt;:massage:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f487; &lt;code&gt;:haircut:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f485; &lt;code&gt;:nail_care:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f466; &lt;code&gt;:boy:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f467; &lt;code&gt;:girl:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f469; &lt;code&gt;:woman:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f468; &lt;code&gt;:man:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f476; &lt;code&gt;:baby:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f475; &lt;code&gt;:older_woman:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f474; &lt;code&gt;:older_man:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:person_with_blond_hair: &lt;code&gt;:person_with_blond_hair:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f472; &lt;code&gt;:man_with_gua_pi_mao:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f473;&amp;zwj;&amp;#x2642;&amp;#xfe0f; &lt;code&gt;:man_with_turban:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f477; &lt;code&gt;:construction_worker:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f46e; &lt;code&gt;:cop:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47c; &lt;code&gt;:angel:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f478; &lt;code&gt;:princess:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63a; &lt;code&gt;:smiley_cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f638; &lt;code&gt;:smile_cat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63b; &lt;code&gt;:heart_eyes_cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63d; &lt;code&gt;:kissing_cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63c; &lt;code&gt;:smirk_cat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f640; &lt;code&gt;:scream_cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63f; &lt;code&gt;:crying_cat_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f639; &lt;code&gt;:joy_cat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f63e; &lt;code&gt;:pouting_cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f479; &lt;code&gt;:japanese_ogre:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47a; &lt;code&gt;:japanese_goblin:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f648; &lt;code&gt;:see_no_evil:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f649; &lt;code&gt;:hear_no_evil:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f64a; &lt;code&gt;:speak_no_evil:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f482;&amp;zwj;&amp;#x2642;&amp;#xfe0f; &lt;code&gt;:guardsman:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f480; &lt;code&gt;:skull:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43e; &lt;code&gt;:feet:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f444; &lt;code&gt;:lips:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48b; &lt;code&gt;:kiss:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a7; &lt;code&gt;:droplet:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f442; &lt;code&gt;:ear:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f440; &lt;code&gt;:eyes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f443; &lt;code&gt;:nose:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f445; &lt;code&gt;:tongue:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48c; &lt;code&gt;:love_letter:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f464; &lt;code&gt;:bust_in_silhouette:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f465; &lt;code&gt;:busts_in_silhouette:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ac; &lt;code&gt;:speech_balloon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ad; &lt;code&gt;:thought_balloon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:feelsgood: &lt;code&gt;:feelsgood:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:finnadie: &lt;code&gt;:finnadie:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:goberserk: &lt;code&gt;:goberserk:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:godmode: &lt;code&gt;:godmode:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:hurtrealbad: &lt;code&gt;:hurtrealbad:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:rage1: &lt;code&gt;:rage1:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:rage2: &lt;code&gt;:rage2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:rage3: &lt;code&gt;:rage3:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:rage4: &lt;code&gt;:rage4:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:suspect: &lt;code&gt;:suspect:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:trollface: &lt;code&gt;:trollface:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;nature&#34;&gt;Nature&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x2600;&amp;#xfe0f; &lt;code&gt;:sunny:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x2614; &lt;code&gt;:umbrella:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x2601;&amp;#xfe0f; &lt;code&gt;:cloud:&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2744;&amp;#xfe0f; &lt;code&gt;:snowflake:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26c4; &lt;code&gt;:snowman:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26a1; &lt;code&gt;:zap:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f300; &lt;code&gt;:cyclone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f301; &lt;code&gt;:foggy:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30a; &lt;code&gt;:ocean:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f431; &lt;code&gt;:cat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f436; &lt;code&gt;:dog:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42d; &lt;code&gt;:mouse:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f439; &lt;code&gt;:hamster:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f430; &lt;code&gt;:rabbit:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43a; &lt;code&gt;:wolf:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f438; &lt;code&gt;:frog:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42f; &lt;code&gt;:tiger:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f428; &lt;code&gt;:koala:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43b; &lt;code&gt;:bear:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f437; &lt;code&gt;:pig:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43d; &lt;code&gt;:pig_nose:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42e; &lt;code&gt;:cow:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f417; &lt;code&gt;:boar:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f435; &lt;code&gt;:monkey_face:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f412; &lt;code&gt;:monkey:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f434; &lt;code&gt;:horse:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40e; &lt;code&gt;:racehorse:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42b; &lt;code&gt;:camel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f411; &lt;code&gt;:sheep:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f418; &lt;code&gt;:elephant:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43c; &lt;code&gt;:panda_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40d; &lt;code&gt;:snake:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f426; &lt;code&gt;:bird:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f424; &lt;code&gt;:baby_chick:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f425; &lt;code&gt;:hatched_chick:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f423; &lt;code&gt;:hatching_chick:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f414; &lt;code&gt;:chicken:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f427; &lt;code&gt;:penguin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f422; &lt;code&gt;:turtle:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f41b; &lt;code&gt;:bug:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f41d; &lt;code&gt;:honeybee:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f41c; &lt;code&gt;:ant:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1fab2; &lt;code&gt;:beetle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40c; &lt;code&gt;:snail:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f419; &lt;code&gt;:octopus:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f420; &lt;code&gt;:tropical_fish:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f41f; &lt;code&gt;:fish:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f433; &lt;code&gt;:whale:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40b; &lt;code&gt;:whale2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42c; &lt;code&gt;:dolphin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f404; &lt;code&gt;:cow2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40f; &lt;code&gt;:ram:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f400; &lt;code&gt;:rat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f403; &lt;code&gt;:water_buffalo:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f405; &lt;code&gt;:tiger2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f407; &lt;code&gt;:rabbit2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f409; &lt;code&gt;:dragon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f410; &lt;code&gt;:goat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f413; &lt;code&gt;:rooster:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f415; &lt;code&gt;:dog2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f416; &lt;code&gt;:pig2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f401; &lt;code&gt;:mouse2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f402; &lt;code&gt;:ox:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f432; &lt;code&gt;:dragon_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f421; &lt;code&gt;:blowfish:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f40a; &lt;code&gt;:crocodile:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f42a; &lt;code&gt;:dromedary_camel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f406; &lt;code&gt;:leopard:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f408; &lt;code&gt;:cat2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f429; &lt;code&gt;:poodle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f43e; &lt;code&gt;:paw_prints:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f490; &lt;code&gt;:bouquet:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f338; &lt;code&gt;:cherry_blossom:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f337; &lt;code&gt;:tulip:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f340; &lt;code&gt;:four_leaf_clover:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f339; &lt;code&gt;:rose:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33b; &lt;code&gt;:sunflower:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33a; &lt;code&gt;:hibiscus:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f341; &lt;code&gt;:maple_leaf:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f343; &lt;code&gt;:leaves:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f342; &lt;code&gt;:fallen_leaf:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33f; &lt;code&gt;:herb:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f344; &lt;code&gt;:mushroom:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f335; &lt;code&gt;:cactus:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f334; &lt;code&gt;:palm_tree:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f332; &lt;code&gt;:evergreen_tree:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f333; &lt;code&gt;:deciduous_tree:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f330; &lt;code&gt;:chestnut:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f331; &lt;code&gt;:seedling:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33c; &lt;code&gt;:blossom:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33e; &lt;code&gt;:ear_of_rice:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f41a; &lt;code&gt;:shell:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f310; &lt;code&gt;:globe_with_meridians:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31e; &lt;code&gt;:sun_with_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31d; &lt;code&gt;:full_moon_with_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31a; &lt;code&gt;:new_moon_with_face:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f311; &lt;code&gt;:new_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f312; &lt;code&gt;:waxing_crescent_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f313; &lt;code&gt;:first_quarter_moon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f314; &lt;code&gt;:waxing_gibbous_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f315; &lt;code&gt;:full_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f316; &lt;code&gt;:waning_gibbous_moon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f317; &lt;code&gt;:last_quarter_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f318; &lt;code&gt;:waning_crescent_moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31c; &lt;code&gt;:last_quarter_moon_with_face:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f31b; &lt;code&gt;:first_quarter_moon_with_face:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f314; &lt;code&gt;:moon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30d; &lt;code&gt;:earth_africa:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30e; &lt;code&gt;:earth_americas:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30f; &lt;code&gt;:earth_asia:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30b; &lt;code&gt;:volcano:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f30c; &lt;code&gt;:milky_way:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26c5; &lt;code&gt;:partly_sunny:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:octocat: &lt;code&gt;:octocat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:squirrel: &lt;code&gt;:squirrel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;objects&#34;&gt;Objects&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f38d; &lt;code&gt;:bamboo:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f49d; &lt;code&gt;:gift_heart:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f38e; &lt;code&gt;:dolls:&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f392; &lt;code&gt;:school_satchel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f393; &lt;code&gt;:mortar_board:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f38f; &lt;code&gt;:flags:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f386; &lt;code&gt;:fireworks:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f387; &lt;code&gt;:sparkler:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f390; &lt;code&gt;:wind_chime:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f391; &lt;code&gt;:rice_scene:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f383; &lt;code&gt;:jack_o_lantern:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47b; &lt;code&gt;:ghost:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f385; &lt;code&gt;:santa:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f384; &lt;code&gt;:christmas_tree:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f381; &lt;code&gt;:gift:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f514; &lt;code&gt;:bell:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f515; &lt;code&gt;:no_bell:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f38b; &lt;code&gt;:tanabata_tree:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f389; &lt;code&gt;:tada:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f38a; &lt;code&gt;:confetti_ball:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f388; &lt;code&gt;:balloon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52e; &lt;code&gt;:crystal_ball:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4bf; &lt;code&gt;:cd:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c0; &lt;code&gt;:dvd:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4be; &lt;code&gt;:floppy_disk:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f7; &lt;code&gt;:camera:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f9; &lt;code&gt;:video_camera:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a5; &lt;code&gt;:movie_camera:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4bb; &lt;code&gt;:computer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4fa; &lt;code&gt;:tv:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f1; &lt;code&gt;:iphone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x260e;&amp;#xfe0f; &lt;code&gt;:phone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x260e;&amp;#xfe0f; &lt;code&gt;:telephone:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4de; &lt;code&gt;:telephone_receiver:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4df; &lt;code&gt;:pager:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e0; &lt;code&gt;:fax:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4bd; &lt;code&gt;:minidisc:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4fc; &lt;code&gt;:vhs:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f509; &lt;code&gt;:sound:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f508; &lt;code&gt;:speaker:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f507; &lt;code&gt;:mute:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e2; &lt;code&gt;:loudspeaker:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e3; &lt;code&gt;:mega:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x231b; &lt;code&gt;:hourglass:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23f3; &lt;code&gt;:hourglass_flowing_sand:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23f0; &lt;code&gt;:alarm_clock:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x231a; &lt;code&gt;:watch:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4fb; &lt;code&gt;:radio:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e1; &lt;code&gt;:satellite:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x27bf; &lt;code&gt;:loop:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f50d; &lt;code&gt;:mag:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f50e; &lt;code&gt;:mag_right:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f513; &lt;code&gt;:unlock:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f512; &lt;code&gt;:lock:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f50f; &lt;code&gt;:lock_with_ink_pen:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f510; &lt;code&gt;:closed_lock_with_key:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f511; &lt;code&gt;:key:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a1; &lt;code&gt;:bulb:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f526; &lt;code&gt;:flashlight:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f506; &lt;code&gt;:high_brightness:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f505; &lt;code&gt;:low_brightness:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f50c; &lt;code&gt;:electric_plug:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f50b; &lt;code&gt;:battery:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f2; &lt;code&gt;:calling:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e7; &lt;code&gt;:email:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4eb; &lt;code&gt;:mailbox:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ee; &lt;code&gt;:postbox:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c0; &lt;code&gt;:bath:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c1; &lt;code&gt;:bathtub:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6bf; &lt;code&gt;:shower:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6bd; &lt;code&gt;:toilet:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f527; &lt;code&gt;:wrench:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f529; &lt;code&gt;:nut_and_bolt:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f528; &lt;code&gt;:hammer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ba; &lt;code&gt;:seat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b0; &lt;code&gt;:moneybag:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b4; &lt;code&gt;:yen:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b5; &lt;code&gt;:dollar:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b7; &lt;code&gt;:pound:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b6; &lt;code&gt;:euro:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b3; &lt;code&gt;:credit_card:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b8; &lt;code&gt;:money_with_wings:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e7; &lt;code&gt;:e-mail:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e5; &lt;code&gt;:inbox_tray:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e4; &lt;code&gt;:outbox_tray:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2709;&amp;#xfe0f; &lt;code&gt;:envelope:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4e8; &lt;code&gt;:incoming_envelope:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ef; &lt;code&gt;:postal_horn:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ea; &lt;code&gt;:mailbox_closed:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ec; &lt;code&gt;:mailbox_with_mail:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ed; &lt;code&gt;:mailbox_with_no_mail:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6aa; &lt;code&gt;:door:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6ac; &lt;code&gt;:smoking:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a3; &lt;code&gt;:bomb:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52b; &lt;code&gt;:gun:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52a; &lt;code&gt;:hocho:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48a; &lt;code&gt;:pill:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f489; &lt;code&gt;:syringe:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c4; &lt;code&gt;:page_facing_up:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c3; &lt;code&gt;:page_with_curl:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d1; &lt;code&gt;:bookmark_tabs:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ca; &lt;code&gt;:bar_chart:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c8; &lt;code&gt;:chart_with_upwards_trend:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c9; &lt;code&gt;:chart_with_downwards_trend:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4dc; &lt;code&gt;:scroll:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4cb; &lt;code&gt;:clipboard:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c6; &lt;code&gt;:calendar:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c5; &lt;code&gt;:date:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c7; &lt;code&gt;:card_index:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c1; &lt;code&gt;:file_folder:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4c2; &lt;code&gt;:open_file_folder:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2702;&amp;#xfe0f; &lt;code&gt;:scissors:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4cc; &lt;code&gt;:pushpin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ce; &lt;code&gt;:paperclip:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2712;&amp;#xfe0f; &lt;code&gt;:black_nib:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x270f;&amp;#xfe0f; &lt;code&gt;:pencil2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4cf; &lt;code&gt;:straight_ruler:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d0; &lt;code&gt;:triangular_ruler:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d5; &lt;code&gt;:closed_book:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d7; &lt;code&gt;:green_book:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d8; &lt;code&gt;:blue_book:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d9; &lt;code&gt;:orange_book:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d3; &lt;code&gt;:notebook:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d4; &lt;code&gt;:notebook_with_decorative_cover:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d2; &lt;code&gt;:ledger:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4da; &lt;code&gt;:books:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f516; &lt;code&gt;:bookmark:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4db; &lt;code&gt;:name_badge:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52c; &lt;code&gt;:microscope:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52d; &lt;code&gt;:telescope:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f0; &lt;code&gt;:newspaper:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c8; &lt;code&gt;:football:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c0; &lt;code&gt;:basketball:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26bd; &lt;code&gt;:soccer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26be; &lt;code&gt;:baseball:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3be; &lt;code&gt;:tennis:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b1; &lt;code&gt;:8ball:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c9; &lt;code&gt;:rugby_football:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b3; &lt;code&gt;:bowling:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26f3; &lt;code&gt;:golf:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b5; &lt;code&gt;:mountain_bicyclist:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b4; &lt;code&gt;:bicyclist:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c7; &lt;code&gt;:horse_racing:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c2; &lt;code&gt;:snowboarder:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ca; &lt;code&gt;:swimmer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c4; &lt;code&gt;:surfer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3bf; &lt;code&gt;:ski:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2660;&amp;#xfe0f; &lt;code&gt;:spades:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2665;&amp;#xfe0f; &lt;code&gt;:hearts:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2663;&amp;#xfe0f; &lt;code&gt;:clubs:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2666;&amp;#xfe0f; &lt;code&gt;:diamonds:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48e; &lt;code&gt;:gem:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f48d; &lt;code&gt;:ring:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c6; &lt;code&gt;:trophy:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3bc; &lt;code&gt;:musical_score:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b9; &lt;code&gt;:musical_keyboard:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3bb; &lt;code&gt;:violin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f47e; &lt;code&gt;:space_invader:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ae; &lt;code&gt;:video_game:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f0cf; &lt;code&gt;:black_joker:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b4; &lt;code&gt;:flower_playing_cards:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b2; &lt;code&gt;:game_die:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3af; &lt;code&gt;:dart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f004; &lt;code&gt;:mahjong:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ac; &lt;code&gt;:clapper:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4dd; &lt;code&gt;:memo:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4dd; &lt;code&gt;:pencil:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4d6; &lt;code&gt;:book:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a8; &lt;code&gt;:art:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a4; &lt;code&gt;:microphone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a7; &lt;code&gt;:headphones:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ba; &lt;code&gt;:trumpet:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b7; &lt;code&gt;:saxophone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b8; &lt;code&gt;:guitar:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45e; &lt;code&gt;:shoe:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f461; &lt;code&gt;:sandal:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f460; &lt;code&gt;:high_heel:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f484; &lt;code&gt;:lipstick:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f462; &lt;code&gt;:boot:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f455; &lt;code&gt;:shirt:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f455; &lt;code&gt;:tshirt:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f454; &lt;code&gt;:necktie:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45a; &lt;code&gt;:womans_clothes:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f457; &lt;code&gt;:dress:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3bd; &lt;code&gt;:running_shirt_with_sash:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f456; &lt;code&gt;:jeans:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f458; &lt;code&gt;:kimono:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f459; &lt;code&gt;:bikini:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f380; &lt;code&gt;:ribbon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a9; &lt;code&gt;:tophat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f451; &lt;code&gt;:crown:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f452; &lt;code&gt;:womans_hat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45e; &lt;code&gt;:mans_shoe:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f302; &lt;code&gt;:closed_umbrella:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4bc; &lt;code&gt;:briefcase:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45c; &lt;code&gt;:handbag:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45d; &lt;code&gt;:pouch:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f45b; &lt;code&gt;:purse:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f453; &lt;code&gt;:eyeglasses:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a3; &lt;code&gt;:fishing_pole_and_fish:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2615; &lt;code&gt;:coffee:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f375; &lt;code&gt;:tea:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f376; &lt;code&gt;:sake:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f37c; &lt;code&gt;:baby_bottle:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f37a; &lt;code&gt;:beer:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f37b; &lt;code&gt;:beers:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f378; &lt;code&gt;:cocktail:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f379; &lt;code&gt;:tropical_drink:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f377; &lt;code&gt;:wine_glass:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f374; &lt;code&gt;:fork_and_knife:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f355; &lt;code&gt;:pizza:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f354; &lt;code&gt;:hamburger:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35f; &lt;code&gt;:fries:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f357; &lt;code&gt;:poultry_leg:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f356; &lt;code&gt;:meat_on_bone:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35d; &lt;code&gt;:spaghetti:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35b; &lt;code&gt;:curry:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f364; &lt;code&gt;:fried_shrimp:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f371; &lt;code&gt;:bento:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f363; &lt;code&gt;:sushi:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f365; &lt;code&gt;:fish_cake:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f359; &lt;code&gt;:rice_ball:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f358; &lt;code&gt;:rice_cracker:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35a; &lt;code&gt;:rice:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35c; &lt;code&gt;:ramen:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f372; &lt;code&gt;:stew:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f362; &lt;code&gt;:oden:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f361; &lt;code&gt;:dango:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f95a; &lt;code&gt;:egg:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f35e; &lt;code&gt;:bread:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f369; &lt;code&gt;:doughnut:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36e; &lt;code&gt;:custard:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f366; &lt;code&gt;:icecream:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f368; &lt;code&gt;:ice_cream:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f367; &lt;code&gt;:shaved_ice:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f382; &lt;code&gt;:birthday:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f370; &lt;code&gt;:cake:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36a; &lt;code&gt;:cookie:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36b; &lt;code&gt;:chocolate_bar:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36c; &lt;code&gt;:candy:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36d; &lt;code&gt;:lollipop:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f36f; &lt;code&gt;:honey_pot:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34e; &lt;code&gt;:apple:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34f; &lt;code&gt;:green_apple:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34a; &lt;code&gt;:tangerine:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34b; &lt;code&gt;:lemon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f352; &lt;code&gt;:cherries:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f347; &lt;code&gt;:grapes:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f349; &lt;code&gt;:watermelon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f353; &lt;code&gt;:strawberry:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f351; &lt;code&gt;:peach:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f348; &lt;code&gt;:melon:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34c; &lt;code&gt;:banana:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f350; &lt;code&gt;:pear:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f34d; &lt;code&gt;:pineapple:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f360; &lt;code&gt;:sweet_potato:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f346; &lt;code&gt;:eggplant:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f345; &lt;code&gt;:tomato:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f33d; &lt;code&gt;:corn:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;places&#34;&gt;Places&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f3e0; &lt;code&gt;:house:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f3e1; &lt;code&gt;:house_with_garden:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x1f3eb; &lt;code&gt;:school:&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e2; &lt;code&gt;:office:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e3; &lt;code&gt;:post_office:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e5; &lt;code&gt;:hospital:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e6; &lt;code&gt;:bank:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ea; &lt;code&gt;:convenience_store:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e9; &lt;code&gt;:love_hotel:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e8; &lt;code&gt;:hotel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f492; &lt;code&gt;:wedding:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26ea; &lt;code&gt;:church:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ec; &lt;code&gt;:department_store:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e4; &lt;code&gt;:european_post_office:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f307; &lt;code&gt;:city_sunrise:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f306; &lt;code&gt;:city_sunset:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ef; &lt;code&gt;:japanese_castle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3f0; &lt;code&gt;:european_castle:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26fa; &lt;code&gt;:tent:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ed; &lt;code&gt;:factory:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f5fc; &lt;code&gt;:tokyo_tower:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f5fe; &lt;code&gt;:japan:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f5fb; &lt;code&gt;:mount_fuji:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f304; &lt;code&gt;:sunrise_over_mountains:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f305; &lt;code&gt;:sunrise:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f320; &lt;code&gt;:stars:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f5fd; &lt;code&gt;:statue_of_liberty:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f309; &lt;code&gt;:bridge_at_night:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a0; &lt;code&gt;:carousel_horse:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f308; &lt;code&gt;:rainbow:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a1; &lt;code&gt;:ferris_wheel:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26f2; &lt;code&gt;:fountain:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a2; &lt;code&gt;:roller_coaster:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a2; &lt;code&gt;:ship:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a4; &lt;code&gt;:speedboat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26f5; &lt;code&gt;:boat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26f5; &lt;code&gt;:sailboat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a3; &lt;code&gt;:rowboat:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2693; &lt;code&gt;:anchor:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f680; &lt;code&gt;:rocket:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2708;&amp;#xfe0f; &lt;code&gt;:airplane:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f681; &lt;code&gt;:helicopter:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f682; &lt;code&gt;:steam_locomotive:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68a; &lt;code&gt;:tram:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69e; &lt;code&gt;:mountain_railway:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b2; &lt;code&gt;:bike:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a1; &lt;code&gt;:aerial_tramway:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69f; &lt;code&gt;:suspension_railway:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a0; &lt;code&gt;:mountain_cableway:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69c; &lt;code&gt;:tractor:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f699; &lt;code&gt;:blue_car:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f698; &lt;code&gt;:oncoming_automobile:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f697; &lt;code&gt;:car:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f697; &lt;code&gt;:red_car:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f695; &lt;code&gt;:taxi:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f696; &lt;code&gt;:oncoming_taxi:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69b; &lt;code&gt;:articulated_lorry:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68c; &lt;code&gt;:bus:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68d; &lt;code&gt;:oncoming_bus:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a8; &lt;code&gt;:rotating_light:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f693; &lt;code&gt;:police_car:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f694; &lt;code&gt;:oncoming_police_car:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f692; &lt;code&gt;:fire_engine:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f691; &lt;code&gt;:ambulance:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f690; &lt;code&gt;:minibus:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69a; &lt;code&gt;:truck:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68b; &lt;code&gt;:train:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f689; &lt;code&gt;:station:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f686; &lt;code&gt;:train2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f685; &lt;code&gt;:bullettrain_front:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f684; &lt;code&gt;:bullettrain_side:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f688; &lt;code&gt;:light_rail:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f69d; &lt;code&gt;:monorail:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f683; &lt;code&gt;:railway_car:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68e; &lt;code&gt;:trolleybus:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ab; &lt;code&gt;:ticket:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26fd; &lt;code&gt;:fuelpump:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a6; &lt;code&gt;:vertical_traffic_light:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a5; &lt;code&gt;:traffic_light:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26a0;&amp;#xfe0f; &lt;code&gt;:warning:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a7; &lt;code&gt;:construction:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f530; &lt;code&gt;:beginner:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3e7; &lt;code&gt;:atm:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3b0; &lt;code&gt;:slot_machine:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f68f; &lt;code&gt;:busstop:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f488; &lt;code&gt;:barber:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2668;&amp;#xfe0f; &lt;code&gt;:hotsprings:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3c1; &lt;code&gt;:checkered_flag:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f38c; &lt;code&gt;:crossed_flags:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ee; &lt;code&gt;:izakaya_lantern:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f5ff; &lt;code&gt;:moyai:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3aa; &lt;code&gt;:circus_tent:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3ad; &lt;code&gt;:performing_arts:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4cd; &lt;code&gt;:round_pushpin:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6a9; &lt;code&gt;:triangular_flag_on_post:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1ef;&amp;#x1f1f5; &lt;code&gt;:jp:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1f0;&amp;#x1f1f7; &lt;code&gt;:kr:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1e8;&amp;#x1f1f3; &lt;code&gt;:cn:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1fa;&amp;#x1f1f8; &lt;code&gt;:us:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1eb;&amp;#x1f1f7; &lt;code&gt;:fr:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1ea;&amp;#x1f1f8; &lt;code&gt;:es:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1ee;&amp;#x1f1f9; &lt;code&gt;:it:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1f7;&amp;#x1f1fa; &lt;code&gt;:ru:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1ec;&amp;#x1f1e7; &lt;code&gt;:gb:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1ec;&amp;#x1f1e7; &lt;code&gt;:uk:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f1e9;&amp;#x1f1ea; &lt;code&gt;:de:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;symbols&#34;&gt;Symbols&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x31;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:one:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x32;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:two:&lt;/code&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&amp;#x33;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:three:&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x34;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:four:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x35;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:five:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x36;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:six:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x37;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:seven:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x38;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:eight:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x39;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:nine:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51f; &lt;code&gt;:keycap_ten:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f522; &lt;code&gt;:1234:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x30;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:zero:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23;&amp;#xfe0f;&amp;#x20e3; &lt;code&gt;:hash:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f523; &lt;code&gt;:symbols:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x25c0;&amp;#xfe0f; &lt;code&gt;:arrow_backward:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2b07;&amp;#xfe0f; &lt;code&gt;:arrow_down:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x25b6;&amp;#xfe0f; &lt;code&gt;:arrow_forward:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2b05;&amp;#xfe0f; &lt;code&gt;:arrow_left:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f520; &lt;code&gt;:capital_abcd:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f521; &lt;code&gt;:abcd:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f524; &lt;code&gt;:abc:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2199;&amp;#xfe0f; &lt;code&gt;:arrow_lower_left:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2198;&amp;#xfe0f; &lt;code&gt;:arrow_lower_right:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x27a1;&amp;#xfe0f; &lt;code&gt;:arrow_right:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2b06;&amp;#xfe0f; &lt;code&gt;:arrow_up:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2196;&amp;#xfe0f; &lt;code&gt;:arrow_upper_left:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2197;&amp;#xfe0f; &lt;code&gt;:arrow_upper_right:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23ec; &lt;code&gt;:arrow_double_down:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23eb; &lt;code&gt;:arrow_double_up:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f53d; &lt;code&gt;:arrow_down_small:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2935;&amp;#xfe0f; &lt;code&gt;:arrow_heading_down:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2934;&amp;#xfe0f; &lt;code&gt;:arrow_heading_up:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x21a9;&amp;#xfe0f; &lt;code&gt;:leftwards_arrow_with_hook:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x21aa;&amp;#xfe0f; &lt;code&gt;:arrow_right_hook:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2194;&amp;#xfe0f; &lt;code&gt;:left_right_arrow:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2195;&amp;#xfe0f; &lt;code&gt;:arrow_up_down:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f53c; &lt;code&gt;:arrow_up_small:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f503; &lt;code&gt;:arrows_clockwise:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f504; &lt;code&gt;:arrows_counterclockwise:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23ea; &lt;code&gt;:rewind:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x23e9; &lt;code&gt;:fast_forward:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2139;&amp;#xfe0f; &lt;code&gt;:information_source:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f197; &lt;code&gt;:ok:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f500; &lt;code&gt;:twisted_rightwards_arrows:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f501; &lt;code&gt;:repeat:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f502; &lt;code&gt;:repeat_one:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f195; &lt;code&gt;:new:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51d; &lt;code&gt;:top:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f199; &lt;code&gt;:up:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f192; &lt;code&gt;:cool:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f193; &lt;code&gt;:free:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f196; &lt;code&gt;:ng:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f3a6; &lt;code&gt;:cinema:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f201; &lt;code&gt;:koko:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f6; &lt;code&gt;:signal_strength:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f239; &lt;code&gt;:u5272:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f234; &lt;code&gt;:u5408:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f23a; &lt;code&gt;:u55b6:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f22f; &lt;code&gt;:u6307:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f237;&amp;#xfe0f; &lt;code&gt;:u6708:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f236; &lt;code&gt;:u6709:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f235; &lt;code&gt;:u6e80:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f21a; &lt;code&gt;:u7121:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f238; &lt;code&gt;:u7533:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f233; &lt;code&gt;:u7a7a:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f232; &lt;code&gt;:u7981:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f202;&amp;#xfe0f; &lt;code&gt;:sa:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6bb; &lt;code&gt;:restroom:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b9; &lt;code&gt;:mens:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6ba; &lt;code&gt;:womens:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6bc; &lt;code&gt;:baby_symbol:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6ad; &lt;code&gt;:no_smoking:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f17f;&amp;#xfe0f; &lt;code&gt;:parking:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x267f; &lt;code&gt;:wheelchair:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f687; &lt;code&gt;:metro:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c4; &lt;code&gt;:baggage_claim:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f251; &lt;code&gt;:accept:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6be; &lt;code&gt;:wc:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b0; &lt;code&gt;:potable_water:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6ae; &lt;code&gt;:put_litter_in_its_place:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x3299;&amp;#xfe0f; &lt;code&gt;:secret:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x3297;&amp;#xfe0f; &lt;code&gt;:congratulations:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x24c2;&amp;#xfe0f; &lt;code&gt;:m:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c2; &lt;code&gt;:passport_control:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c5; &lt;code&gt;:left_luggage:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6c3; &lt;code&gt;:customs:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f250; &lt;code&gt;:ideograph_advantage:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f191; &lt;code&gt;:cl:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f198; &lt;code&gt;:sos:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f194; &lt;code&gt;:id:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6ab; &lt;code&gt;:no_entry_sign:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51e; &lt;code&gt;:underage:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f5; &lt;code&gt;:no_mobile_phones:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6af; &lt;code&gt;:do_not_litter:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b1; &lt;code&gt;:non-potable_water:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b3; &lt;code&gt;:no_bicycles:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b7; &lt;code&gt;:no_pedestrians:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f6b8; &lt;code&gt;:children_crossing:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26d4; &lt;code&gt;:no_entry:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2733;&amp;#xfe0f; &lt;code&gt;:eight_spoked_asterisk:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2734;&amp;#xfe0f; &lt;code&gt;:eight_pointed_black_star:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f49f; &lt;code&gt;:heart_decoration:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f19a; &lt;code&gt;:vs:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f3; &lt;code&gt;:vibration_mode:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4f4; &lt;code&gt;:mobile_phone_off:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b9; &lt;code&gt;:chart:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b1; &lt;code&gt;:currency_exchange:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2648; &lt;code&gt;:aries:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2649; &lt;code&gt;:taurus:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264a; &lt;code&gt;:gemini:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264b; &lt;code&gt;:cancer:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264c; &lt;code&gt;:leo:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264d; &lt;code&gt;:virgo:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264e; &lt;code&gt;:libra:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x264f; &lt;code&gt;:scorpius:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2650; &lt;code&gt;:sagittarius:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2651; &lt;code&gt;:capricorn:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2652; &lt;code&gt;:aquarius:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2653; &lt;code&gt;:pisces:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26ce; &lt;code&gt;:ophiuchus:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f52f; &lt;code&gt;:six_pointed_star:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x274e; &lt;code&gt;:negative_squared_cross_mark:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f170;&amp;#xfe0f; &lt;code&gt;:a:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f171;&amp;#xfe0f; &lt;code&gt;:b:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f18e; &lt;code&gt;:ab:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f17e;&amp;#xfe0f; &lt;code&gt;:o2:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4a0; &lt;code&gt;:diamond_shape_with_a_dot_inside:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x267b;&amp;#xfe0f; &lt;code&gt;:recycle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51a; &lt;code&gt;:end:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51b; &lt;code&gt;:on:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f51c; &lt;code&gt;:soon:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f550; &lt;code&gt;:clock1:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55c; &lt;code&gt;:clock130:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f559; &lt;code&gt;:clock10:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f565; &lt;code&gt;:clock1030:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55a; &lt;code&gt;:clock11:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f566; &lt;code&gt;:clock1130:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55b; &lt;code&gt;:clock12:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f567; &lt;code&gt;:clock1230:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f551; &lt;code&gt;:clock2:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55d; &lt;code&gt;:clock230:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f552; &lt;code&gt;:clock3:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55e; &lt;code&gt;:clock330:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f553; &lt;code&gt;:clock4:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f55f; &lt;code&gt;:clock430:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f554; &lt;code&gt;:clock5:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f560; &lt;code&gt;:clock530:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f555; &lt;code&gt;:clock6:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f561; &lt;code&gt;:clock630:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f556; &lt;code&gt;:clock7:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f562; &lt;code&gt;:clock730:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f557; &lt;code&gt;:clock8:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f563; &lt;code&gt;:clock830:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f558; &lt;code&gt;:clock9:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f564; &lt;code&gt;:clock930:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4b2; &lt;code&gt;:heavy_dollar_sign:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#xa9;&amp;#xfe0f; &lt;code&gt;:copyright:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#xae;&amp;#xfe0f; &lt;code&gt;:registered:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2122;&amp;#xfe0f; &lt;code&gt;:tm:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x274c; &lt;code&gt;:x:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2757; &lt;code&gt;:heavy_exclamation_mark:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x203c;&amp;#xfe0f; &lt;code&gt;:bangbang:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2049;&amp;#xfe0f; &lt;code&gt;:interrobang:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2b55; &lt;code&gt;:o:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2716;&amp;#xfe0f; &lt;code&gt;:heavy_multiplication_x:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2795; &lt;code&gt;:heavy_plus_sign:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2796; &lt;code&gt;:heavy_minus_sign:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2797; &lt;code&gt;:heavy_division_sign:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4ae; &lt;code&gt;:white_flower:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f4af; &lt;code&gt;:100:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2714;&amp;#xfe0f; &lt;code&gt;:heavy_check_mark:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2611;&amp;#xfe0f; &lt;code&gt;:ballot_box_with_check:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f518; &lt;code&gt;:radio_button:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f517; &lt;code&gt;:link:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x27b0; &lt;code&gt;:curly_loop:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x3030;&amp;#xfe0f; &lt;code&gt;:wavy_dash:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x303d;&amp;#xfe0f; &lt;code&gt;:part_alternation_mark:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f531; &lt;code&gt;:trident:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:black_square: &lt;code&gt;:black_square:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:white_square: &lt;code&gt;:white_square:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x2705; &lt;code&gt;:white_check_mark:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f532; &lt;code&gt;:black_square_button:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f533; &lt;code&gt;:white_square_button:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26ab; &lt;code&gt;:black_circle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x26aa; &lt;code&gt;:white_circle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f534; &lt;code&gt;:red_circle:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f535; &lt;code&gt;:large_blue_circle:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f537; &lt;code&gt;:large_blue_diamond:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f536; &lt;code&gt;:large_orange_diamond:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f539; &lt;code&gt;:small_blue_diamond:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f538; &lt;code&gt;:small_orange_diamond:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f53a; &lt;code&gt;:small_red_triangle:&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;#x1f53b; &lt;code&gt;:small_red_triangle_down:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;:shipit: &lt;code&gt;:shipit:&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     
@@ -644,7 +2247,247 @@ People :bowtie: :bowtie: 😄 😄 😆 😆 😊 😊 😃 😃 ☺️ ☺️ �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dong2000.xyz/profile/cv/</guid>
-      <description> [Previous]&amp;nbsp; [Next] &amp;nbsp; &amp;nbsp; / &amp;nbsp; &amp;nbsp; [Download PDF] View the PDF file here. </description>
+      <description>&lt;script type=&#34;text/javascript&#34; src= &#39;/js/pdf-js/build/pdf.js&#39;&gt;&lt;/script&gt;
+
+&lt;style&gt;
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  &lt;/style&gt;&lt;div class=&#34;embed-pdf-container&#34; id=&#34;embed-pdf-container-50027105&#34;&gt;
+    &lt;div class=&#34;pdf-loadingWrapper&#34; id=&#34;pdf-loadingWrapper-50027105&#34;&gt;
+        &lt;div class=&#34;pdf-loading&#34; id=&#34;pdf-loading-50027105&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;canvas class=&#34;pdf-canvas&#34; id=&#34;pdf-canvas-50027105&#34;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;pdf-paginator&#34; id=&#34;pdf-paginator-50027105&#34;&gt;
+    &lt;button id=&#34;pdf-prev-50027105&#34;&gt;[Previous]&lt;/button&gt;&amp;nbsp;
+    &lt;button id=&#34;pdf-next-50027105&#34;&gt;[Next]&lt;/button&gt; &amp;nbsp; &amp;nbsp;
+    &lt;span&gt;
+      &lt;span class=&#34;pdf-pagenum&#34; id=&#34;pdf-pagenum-50027105&#34;&gt;&lt;/span&gt; / &lt;span class=&#34;pdf-pagecount&#34; id=&#34;pdf-pagecount-50027105&#34;&gt;&lt;/span&gt;
+    &lt;/span&gt;&amp;nbsp; &amp;nbsp;
+    &lt;a class=&#34;pdf-source&#34; id=&#34;pdf-source-50027105&#34; href=&#34;https://dong2000.xyz/files/CV_ShengDong.pdf&#34;&gt;[Download PDF]&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;noscript&gt;
+View the PDF file &lt;a class=&#34;pdf-source&#34; id=&#34;pdf-source-noscript-50027105&#34; href=&#34;https://dong2000.xyz/files/CV_ShengDong.pdf&#34;&gt;here&lt;/a&gt;.
+&lt;/noscript&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+    (function(){
+    var url = &#39;\/files\/CV_ShengDong.pdf&#39;;
+
+    var hidePaginator = &#34;&#34; === &#34;true&#34;;
+    var hideLoader = &#34;false&#34; === &#34;true&#34;;
+    var selectedPageNum = parseInt(&#34;&#34;) || 1;
+
+    
+    var pdfjsLib = window[&#39;pdfjs-dist/build/pdf&#39;];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == &#39;&#39;)
+      pdfjsLib.GlobalWorkerOptions.workerSrc = &#34;https:\/\/dong2000.xyz\/&#34; + &#39;/js/pdf-js/build/pdf.worker.js&#39;;
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById(&#39;pdf-canvas-50027105&#39;),
+        ctx = canvas.getContext(&#39;2d&#39;),
+        paginator = document.getElementById(&#34;pdf-paginator-50027105&#34;),
+        loadingWrapper = document.getElementById(&#39;pdf-loadingWrapper-50027105&#39;);
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById(&#39;pdf-pagenum-50027105&#39;).textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = &#39;none&#39;;
+      canvas.style.display = &#39;block&#39;;
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = &#39;flex&#39;;
+      canvas.style.display = &#39;none&#39;;
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = &#39;block&#39;;
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum &lt;= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById(&#39;pdf-prev-50027105&#39;).addEventListener(&#39;click&#39;, onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum &gt;= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById(&#39;pdf-next-50027105&#39;).addEventListener(&#39;click&#39;, onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById(&#39;pdf-pagecount-50027105&#39;).textContent = numPages;
+
+      
+      if(pageNum &gt; numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+&lt;/script&gt;</description>
     </item>
     
     <item>

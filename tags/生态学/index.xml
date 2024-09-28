@@ -9,6 +9,7 @@
       <link>https://dong2000.xyz/ptr_small.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2024 09:52:09 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%94%9F%E6%80%81%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献阅读 [April 3rd]</title>
@@ -16,9 +17,19 @@
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
-      <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
-Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
-Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+      <description>&lt;p&gt;本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;121&lt;/em&gt;(4), e2311025121. &lt;a href=&#34;https://doi.org/10.1073/pnas.2311025121&#34;&gt;https://doi.org/10.1073/pnas.2311025121&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on heat wave effects on honeybees&lt;/li&gt;
+&lt;li&gt;Honeybees avoid overheating by &lt;strong&gt;lowering wingbeat frequency&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reducing metabolic heat production is the result of lowering wingbeat frequency. Should not be mentioned separately as two mechanisms here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Many flying insects generate aerodynamic force by using a combination of mechanisms, including the sweeping motion of the wing (i.e., &lt;strong&gt;wing translation&lt;/strong&gt;) and by creation of &lt;strong&gt;rotational vortices&lt;/strong&gt; when the wings rotate before reversing direction. Insects that fly with a large &lt;strong&gt;stroke amplitude&lt;/strong&gt; generate the bulk of their force from the wing translation phase, while those that fly with a small stroke amplitude primarily generate significant forces during wing rotation.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
   </channel>

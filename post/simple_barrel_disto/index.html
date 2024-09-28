@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="简单理想情形下的Barrel distortion" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="简单理想情形下的Barrel distortion" />
 <meta property="og:description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dong2000.xyz/post/simple_barrel_disto/" /><meta property="og:image" content="https://dong2000.xyz/ptr_small.jpg"/><meta property="article:section" content="post" />
@@ -86,16 +89,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "简单理想情形下的Barrel distortion",
       "item": "https://dong2000.xyz/post/simple_barrel_disto/"
     }
@@ -177,7 +180,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -246,11 +249,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       简单理想情形下的Barrel distortion
     </h1>
-    <div class="post-meta"><span title='2022-11-16 22:37:16 +0800 CST'>November 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2022-11-16 22:37:16 &#43;0800 CST&#39;&gt;November 16, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> 
@@ -303,7 +306,7 @@ $$
 }
 $$</p>
 <p>通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\leftrightarrow C_1$。</p>
-<p>📷之后有时间的话，希望能够写成代码检验一下这个算法的适用性🐶</p>
+<p>&#x1f4f7;之后有时间的话，希望能够写成代码检验一下这个算法的适用性&#x1f436;</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -319,7 +322,7 @@ $$</p>
     <ul class="post-tags">
       <li><a href="https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%A1%B6%E5%BD%A2%E7%95%B8%E5%8F%98/">桶形畸变</a></li>
-      <li><a href="https://dong2000.xyz/tags/barrel-distortion/">Barrel distortion</a></li>
+      <li><a href="https://dong2000.xyz/tags/barrel-distortion/">Barrel Distortion</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a></li>
     </ul>
 <nav class="paginav">
@@ -340,7 +343,7 @@ $$</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

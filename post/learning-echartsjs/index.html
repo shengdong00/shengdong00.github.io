@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="在Hugo &#43; Papermod中添加Echartsjs" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="在Hugo &#43; Papermod中添加Echartsjs" />
 <meta property="og:description" content="参照Echarts的官方入门文档，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为Papermod)。以后需要放图表的时候就不用再傻乎乎地截图了。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dong2000.xyz/post/learning-echartsjs/" />
@@ -86,16 +89,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "在Hugo + Papermod中添加Echartsjs",
       "item": "https://dong2000.xyz/post/learning-echartsjs/"
     }
@@ -159,7 +162,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -228,11 +231,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       在Hugo &#43; Papermod中添加Echartsjs
     </h1>
-    <div class="post-meta"><span title='2023-03-12 01:38:43 +0800 CST'>March 12, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2023-03-12 01:38:43 &#43;0800 CST&#39;&gt;March 12, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> 
@@ -243,10 +246,10 @@ if (!doNotTrack) {
 <p>在主题文件夹中，<code>layouts/partials/head.html</code>的文档末尾加上：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2">2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3">3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4">4</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3">3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4">4</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if .Params.echarts }}
@@ -259,9 +262,9 @@ if (!doNotTrack) {
 <p>如果在某篇博客里需要使用echarts渲染，需要在头部使用声明：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1">1</a>
-</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2">2</a>
-</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3">3</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2">2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3">3</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
@@ -272,33 +275,33 @@ if (!doNotTrack) {
 </div><p>尝试一下渲染入门文档给的例程（为了避免移动端浏览时容器的宽度溢出，所以把宽度从<code>600px</code>改成了<code>auto</code>）：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1"> 1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2"> 2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3"> 3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4"> 4</a>
-</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5"> 5</a>
-</span><span class="lnt" id="hl-2-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-6"> 6</a>
-</span><span class="lnt" id="hl-2-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-7"> 7</a>
-</span><span class="lnt" id="hl-2-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-8"> 8</a>
-</span><span class="lnt" id="hl-2-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-9"> 9</a>
-</span><span class="lnt" id="hl-2-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-10">10</a>
-</span><span class="lnt" id="hl-2-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-11">11</a>
-</span><span class="lnt" id="hl-2-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-12">12</a>
-</span><span class="lnt" id="hl-2-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-13">13</a>
-</span><span class="lnt" id="hl-2-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-14">14</a>
-</span><span class="lnt" id="hl-2-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-15">15</a>
-</span><span class="lnt" id="hl-2-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-16">16</a>
-</span><span class="lnt" id="hl-2-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-17">17</a>
-</span><span class="lnt" id="hl-2-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-18">18</a>
-</span><span class="lnt" id="hl-2-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-19">19</a>
-</span><span class="lnt" id="hl-2-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-20">20</a>
-</span><span class="lnt" id="hl-2-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-21">21</a>
-</span><span class="lnt" id="hl-2-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-22">22</a>
-</span><span class="lnt" id="hl-2-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-23">23</a>
-</span><span class="lnt" id="hl-2-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-24">24</a>
-</span><span class="lnt" id="hl-2-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-25">25</a>
-</span><span class="lnt" id="hl-2-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-26">26</a>
-</span><span class="lnt" id="hl-2-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-27">27</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1"> 1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2"> 2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3"> 3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4"> 4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5"> 5</a>
+</span><span class="lnt" id="hl-2-6"><a class="lnlinks" href="#hl-2-6"> 6</a>
+</span><span class="lnt" id="hl-2-7"><a class="lnlinks" href="#hl-2-7"> 7</a>
+</span><span class="lnt" id="hl-2-8"><a class="lnlinks" href="#hl-2-8"> 8</a>
+</span><span class="lnt" id="hl-2-9"><a class="lnlinks" href="#hl-2-9"> 9</a>
+</span><span class="lnt" id="hl-2-10"><a class="lnlinks" href="#hl-2-10">10</a>
+</span><span class="lnt" id="hl-2-11"><a class="lnlinks" href="#hl-2-11">11</a>
+</span><span class="lnt" id="hl-2-12"><a class="lnlinks" href="#hl-2-12">12</a>
+</span><span class="lnt" id="hl-2-13"><a class="lnlinks" href="#hl-2-13">13</a>
+</span><span class="lnt" id="hl-2-14"><a class="lnlinks" href="#hl-2-14">14</a>
+</span><span class="lnt" id="hl-2-15"><a class="lnlinks" href="#hl-2-15">15</a>
+</span><span class="lnt" id="hl-2-16"><a class="lnlinks" href="#hl-2-16">16</a>
+</span><span class="lnt" id="hl-2-17"><a class="lnlinks" href="#hl-2-17">17</a>
+</span><span class="lnt" id="hl-2-18"><a class="lnlinks" href="#hl-2-18">18</a>
+</span><span class="lnt" id="hl-2-19"><a class="lnlinks" href="#hl-2-19">19</a>
+</span><span class="lnt" id="hl-2-20"><a class="lnlinks" href="#hl-2-20">20</a>
+</span><span class="lnt" id="hl-2-21"><a class="lnlinks" href="#hl-2-21">21</a>
+</span><span class="lnt" id="hl-2-22"><a class="lnlinks" href="#hl-2-22">22</a>
+</span><span class="lnt" id="hl-2-23"><a class="lnlinks" href="#hl-2-23">23</a>
+</span><span class="lnt" id="hl-2-24"><a class="lnlinks" href="#hl-2-24">24</a>
+</span><span class="lnt" id="hl-2-25"><a class="lnlinks" href="#hl-2-25">25</a>
+</span><span class="lnt" id="hl-2-26"><a class="lnlinks" href="#hl-2-26">26</a>
+</span><span class="lnt" id="hl-2-27"><a class="lnlinks" href="#hl-2-27">27</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 为ECharts准备一个具备大小（宽高）的Dom --&gt;</span>
@@ -383,7 +386,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

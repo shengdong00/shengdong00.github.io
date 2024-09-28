@@ -62,17 +62,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="自回归滑动平均模型预测全球CO2浓度变化" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="自回归滑动平均模型预测全球CO2浓度变化" />
 <meta property="og:description" content="自回归滑动平均模型（Autoregressive moving average model，ARMA）是研究时间序列的重要方法，以由自回归模型（简称AR模型）与移动平均模型（简称MA模型）为基础“混合”构成。用AMRA模型预测了在当前趋势下，未来二十年内全球二氧化碳浓度的变化趋势。
 
 分析过程
@@ -98,16 +101,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "自回归滑动平均模型预测全球CO2浓度变化",
       "item": "https://dong2000.xyz/post/amra_co2/"
     }
@@ -168,7 +171,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -237,11 +240,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       自回归滑动平均模型预测全球CO2浓度变化
     </h1>
-    <div class="post-meta"><span title='2022-04-27 03:03:57 +0000 UTC'>April 27, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2022-04-27 03:03:57 &#43;0000 UTC&#39;&gt;April 27, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
@@ -327,7 +330,7 @@ if (!doNotTrack) {
 <img src="/images/image-20220427030941064.png" alt="image-20220427030941064" style="zoom: 33%;" />
 <h1 id="分析过程">分析过程<a hidden class="anchor" aria-hidden="true" href="#分析过程">#</a></h1>
 <p>数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据</p>
-<p><a href="https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts">数据来源网址</a></p>
+<p><a href="https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&program=ccgg&type=ts">数据来源网址</a></p>
 <img src="/images/image-20220427030844684.png" alt="image-20220427030844684" style="zoom:50%;" />
 <p>用ARMA模型进行分析，估计出模型参数，并预测未来10年内的二氧化碳浓度变化。由于前7年数据有缺失，从1976年开始才有逐月连续的数据，所以时间序列上从1976年开始。</p>
 <p>对数据取一阶差分，通过ADF检验和KPSS检验，认为数据平稳。</p>
@@ -344,49 +347,49 @@ if (!doNotTrack) {
 <h1 id="matlab脚本">MATLAB脚本<a hidden class="anchor" aria-hidden="true" href="#matlab脚本">#</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1"> 1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2"> 2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3"> 3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4"> 4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5"> 5</a>
-</span><span class="lnt" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6"> 6</a>
-</span><span class="lnt" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7"> 7</a>
-</span><span class="lnt" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8"> 8</a>
-</span><span class="lnt" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9"> 9</a>
-</span><span class="lnt" id="hl-0-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-10">10</a>
-</span><span class="lnt" id="hl-0-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-11">11</a>
-</span><span class="lnt" id="hl-0-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-12">12</a>
-</span><span class="lnt" id="hl-0-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-13">13</a>
-</span><span class="lnt" id="hl-0-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-14">14</a>
-</span><span class="lnt" id="hl-0-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-15">15</a>
-</span><span class="lnt" id="hl-0-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-16">16</a>
-</span><span class="lnt" id="hl-0-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-17">17</a>
-</span><span class="lnt" id="hl-0-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-18">18</a>
-</span><span class="lnt" id="hl-0-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-19">19</a>
-</span><span class="lnt" id="hl-0-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-20">20</a>
-</span><span class="lnt" id="hl-0-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-21">21</a>
-</span><span class="lnt" id="hl-0-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-22">22</a>
-</span><span class="lnt" id="hl-0-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-23">23</a>
-</span><span class="lnt" id="hl-0-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-24">24</a>
-</span><span class="lnt" id="hl-0-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-25">25</a>
-</span><span class="lnt" id="hl-0-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-26">26</a>
-</span><span class="lnt" id="hl-0-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-27">27</a>
-</span><span class="lnt" id="hl-0-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-28">28</a>
-</span><span class="lnt" id="hl-0-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-29">29</a>
-</span><span class="lnt" id="hl-0-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-30">30</a>
-</span><span class="lnt" id="hl-0-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-31">31</a>
-</span><span class="lnt" id="hl-0-32"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-32">32</a>
-</span><span class="lnt" id="hl-0-33"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-33">33</a>
-</span><span class="lnt" id="hl-0-34"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-34">34</a>
-</span><span class="lnt" id="hl-0-35"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-35">35</a>
-</span><span class="lnt" id="hl-0-36"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-36">36</a>
-</span><span class="lnt" id="hl-0-37"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-37">37</a>
-</span><span class="lnt" id="hl-0-38"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-38">38</a>
-</span><span class="lnt" id="hl-0-39"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-39">39</a>
-</span><span class="lnt" id="hl-0-40"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-40">40</a>
-</span><span class="lnt" id="hl-0-41"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-41">41</a>
-</span><span class="lnt" id="hl-0-42"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-42">42</a>
-</span><span class="lnt" id="hl-0-43"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-43">43</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1"> 1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2"> 2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3"> 3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4"> 4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5"> 5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6"> 6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7"> 7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8"> 8</a>
+</span><span class="lnt" id="hl-0-9"><a class="lnlinks" href="#hl-0-9"> 9</a>
+</span><span class="lnt" id="hl-0-10"><a class="lnlinks" href="#hl-0-10">10</a>
+</span><span class="lnt" id="hl-0-11"><a class="lnlinks" href="#hl-0-11">11</a>
+</span><span class="lnt" id="hl-0-12"><a class="lnlinks" href="#hl-0-12">12</a>
+</span><span class="lnt" id="hl-0-13"><a class="lnlinks" href="#hl-0-13">13</a>
+</span><span class="lnt" id="hl-0-14"><a class="lnlinks" href="#hl-0-14">14</a>
+</span><span class="lnt" id="hl-0-15"><a class="lnlinks" href="#hl-0-15">15</a>
+</span><span class="lnt" id="hl-0-16"><a class="lnlinks" href="#hl-0-16">16</a>
+</span><span class="lnt" id="hl-0-17"><a class="lnlinks" href="#hl-0-17">17</a>
+</span><span class="lnt" id="hl-0-18"><a class="lnlinks" href="#hl-0-18">18</a>
+</span><span class="lnt" id="hl-0-19"><a class="lnlinks" href="#hl-0-19">19</a>
+</span><span class="lnt" id="hl-0-20"><a class="lnlinks" href="#hl-0-20">20</a>
+</span><span class="lnt" id="hl-0-21"><a class="lnlinks" href="#hl-0-21">21</a>
+</span><span class="lnt" id="hl-0-22"><a class="lnlinks" href="#hl-0-22">22</a>
+</span><span class="lnt" id="hl-0-23"><a class="lnlinks" href="#hl-0-23">23</a>
+</span><span class="lnt" id="hl-0-24"><a class="lnlinks" href="#hl-0-24">24</a>
+</span><span class="lnt" id="hl-0-25"><a class="lnlinks" href="#hl-0-25">25</a>
+</span><span class="lnt" id="hl-0-26"><a class="lnlinks" href="#hl-0-26">26</a>
+</span><span class="lnt" id="hl-0-27"><a class="lnlinks" href="#hl-0-27">27</a>
+</span><span class="lnt" id="hl-0-28"><a class="lnlinks" href="#hl-0-28">28</a>
+</span><span class="lnt" id="hl-0-29"><a class="lnlinks" href="#hl-0-29">29</a>
+</span><span class="lnt" id="hl-0-30"><a class="lnlinks" href="#hl-0-30">30</a>
+</span><span class="lnt" id="hl-0-31"><a class="lnlinks" href="#hl-0-31">31</a>
+</span><span class="lnt" id="hl-0-32"><a class="lnlinks" href="#hl-0-32">32</a>
+</span><span class="lnt" id="hl-0-33"><a class="lnlinks" href="#hl-0-33">33</a>
+</span><span class="lnt" id="hl-0-34"><a class="lnlinks" href="#hl-0-34">34</a>
+</span><span class="lnt" id="hl-0-35"><a class="lnlinks" href="#hl-0-35">35</a>
+</span><span class="lnt" id="hl-0-36"><a class="lnlinks" href="#hl-0-36">36</a>
+</span><span class="lnt" id="hl-0-37"><a class="lnlinks" href="#hl-0-37">37</a>
+</span><span class="lnt" id="hl-0-38"><a class="lnlinks" href="#hl-0-38">38</a>
+</span><span class="lnt" id="hl-0-39"><a class="lnlinks" href="#hl-0-39">39</a>
+</span><span class="lnt" id="hl-0-40"><a class="lnlinks" href="#hl-0-40">40</a>
+</span><span class="lnt" id="hl-0-41"><a class="lnlinks" href="#hl-0-41">41</a>
+</span><span class="lnt" id="hl-0-42"><a class="lnlinks" href="#hl-0-42">42</a>
+</span><span class="lnt" id="hl-0-43"><a class="lnlinks" href="#hl-0-43">43</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">Data</span> <span class="p">=</span> <span class="n">xlsread</span><span class="p">(</span><span class="s">&#39;历年CO2数据.xlsx&#39;</span><span class="p">);</span> <span class="c">% 读入数据</span>
@@ -446,7 +449,7 @@ if (!doNotTrack) {
       <li><a href="https://dong2000.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6/">系统科学</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96/">气候变化</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/">时间序列分析</a></li>
-      <li><a href="https://dong2000.xyz/tags/matlab/">MATLAB</a></li>
+      <li><a href="https://dong2000.xyz/tags/matlab/">Matlab</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://dong2000.xyz/post/on_icm_2022/">
@@ -466,7 +469,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

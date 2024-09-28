@@ -72,17 +72,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Sci-Hub &#43; Python爬虫实现文献批量下载" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Sci-Hub &#43; Python爬虫实现文献批量下载" />
 <meta property="og:description" content="
 
 
@@ -128,16 +131,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "Sci-Hub + Python爬虫实现文献批量下载",
       "item": "https://dong2000.xyz/post/crawl_papers_from_scihub/"
     }
@@ -198,7 +201,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -267,11 +270,11 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       Sci-Hub &#43; Python爬虫实现文献批量下载
     </h1>
-    <div class="post-meta"><span title='2022-05-18 19:27:46 +0000 UTC'>May 18, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sheng, D.
+    <div class="post-meta">&lt;span title=&#39;2022-05-18 19:27:46 &#43;0000 UTC&#39;&gt;May 18, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;Sheng, D.
 
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
@@ -417,11 +420,11 @@ if (!doNotTrack) {
 <p>A crawler to do mass downloading based on reference table (from Web of Science) and Sci-Hub database.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2">2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3">3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4">4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5">5</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3">3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4">4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5">5</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -433,19 +436,19 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1"> 1</a>
-</span><span class="lnt" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2"> 2</a>
-</span><span class="lnt" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3"> 3</a>
-</span><span class="lnt" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4"> 4</a>
-</span><span class="lnt" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5"> 5</a>
-</span><span class="lnt" id="hl-1-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-6"> 6</a>
-</span><span class="lnt" id="hl-1-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-7"> 7</a>
-</span><span class="lnt" id="hl-1-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-8"> 8</a>
-</span><span class="lnt" id="hl-1-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-9"> 9</a>
-</span><span class="lnt" id="hl-1-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-10">10</a>
-</span><span class="lnt" id="hl-1-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-11">11</a>
-</span><span class="lnt" id="hl-1-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-12">12</a>
-</span><span class="lnt" id="hl-1-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-13">13</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1"> 1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2"> 2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3"> 3</a>
+</span><span class="lnt" id="hl-1-4"><a class="lnlinks" href="#hl-1-4"> 4</a>
+</span><span class="lnt" id="hl-1-5"><a class="lnlinks" href="#hl-1-5"> 5</a>
+</span><span class="lnt" id="hl-1-6"><a class="lnlinks" href="#hl-1-6"> 6</a>
+</span><span class="lnt" id="hl-1-7"><a class="lnlinks" href="#hl-1-7"> 7</a>
+</span><span class="lnt" id="hl-1-8"><a class="lnlinks" href="#hl-1-8"> 8</a>
+</span><span class="lnt" id="hl-1-9"><a class="lnlinks" href="#hl-1-9"> 9</a>
+</span><span class="lnt" id="hl-1-10"><a class="lnlinks" href="#hl-1-10">10</a>
+</span><span class="lnt" id="hl-1-11"><a class="lnlinks" href="#hl-1-11">11</a>
+</span><span class="lnt" id="hl-1-12"><a class="lnlinks" href="#hl-1-12">12</a>
+</span><span class="lnt" id="hl-1-13"><a class="lnlinks" href="#hl-1-13">13</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;Full record.xlsx&#39;</span><span class="p">,</span><span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;savedrecs&#39;</span><span class="p">)</span>
@@ -465,33 +468,33 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1"> 1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2"> 2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3"> 3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4"> 4</a>
-</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5"> 5</a>
-</span><span class="lnt" id="hl-2-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-6"> 6</a>
-</span><span class="lnt" id="hl-2-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-7"> 7</a>
-</span><span class="lnt" id="hl-2-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-8"> 8</a>
-</span><span class="lnt" id="hl-2-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-9"> 9</a>
-</span><span class="lnt" id="hl-2-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-10">10</a>
-</span><span class="lnt" id="hl-2-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-11">11</a>
-</span><span class="lnt" id="hl-2-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-12">12</a>
-</span><span class="lnt" id="hl-2-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-13">13</a>
-</span><span class="lnt" id="hl-2-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-14">14</a>
-</span><span class="lnt" id="hl-2-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-15">15</a>
-</span><span class="lnt" id="hl-2-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-16">16</a>
-</span><span class="lnt" id="hl-2-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-17">17</a>
-</span><span class="lnt" id="hl-2-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-18">18</a>
-</span><span class="lnt" id="hl-2-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-19">19</a>
-</span><span class="lnt" id="hl-2-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-20">20</a>
-</span><span class="lnt" id="hl-2-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-21">21</a>
-</span><span class="lnt" id="hl-2-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-22">22</a>
-</span><span class="lnt" id="hl-2-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-23">23</a>
-</span><span class="lnt" id="hl-2-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-24">24</a>
-</span><span class="lnt" id="hl-2-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-25">25</a>
-</span><span class="lnt" id="hl-2-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-26">26</a>
-</span><span class="lnt" id="hl-2-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-27">27</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1"> 1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2"> 2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3"> 3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4"> 4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5"> 5</a>
+</span><span class="lnt" id="hl-2-6"><a class="lnlinks" href="#hl-2-6"> 6</a>
+</span><span class="lnt" id="hl-2-7"><a class="lnlinks" href="#hl-2-7"> 7</a>
+</span><span class="lnt" id="hl-2-8"><a class="lnlinks" href="#hl-2-8"> 8</a>
+</span><span class="lnt" id="hl-2-9"><a class="lnlinks" href="#hl-2-9"> 9</a>
+</span><span class="lnt" id="hl-2-10"><a class="lnlinks" href="#hl-2-10">10</a>
+</span><span class="lnt" id="hl-2-11"><a class="lnlinks" href="#hl-2-11">11</a>
+</span><span class="lnt" id="hl-2-12"><a class="lnlinks" href="#hl-2-12">12</a>
+</span><span class="lnt" id="hl-2-13"><a class="lnlinks" href="#hl-2-13">13</a>
+</span><span class="lnt" id="hl-2-14"><a class="lnlinks" href="#hl-2-14">14</a>
+</span><span class="lnt" id="hl-2-15"><a class="lnlinks" href="#hl-2-15">15</a>
+</span><span class="lnt" id="hl-2-16"><a class="lnlinks" href="#hl-2-16">16</a>
+</span><span class="lnt" id="hl-2-17"><a class="lnlinks" href="#hl-2-17">17</a>
+</span><span class="lnt" id="hl-2-18"><a class="lnlinks" href="#hl-2-18">18</a>
+</span><span class="lnt" id="hl-2-19"><a class="lnlinks" href="#hl-2-19">19</a>
+</span><span class="lnt" id="hl-2-20"><a class="lnlinks" href="#hl-2-20">20</a>
+</span><span class="lnt" id="hl-2-21"><a class="lnlinks" href="#hl-2-21">21</a>
+</span><span class="lnt" id="hl-2-22"><a class="lnlinks" href="#hl-2-22">22</a>
+</span><span class="lnt" id="hl-2-23"><a class="lnlinks" href="#hl-2-23">23</a>
+</span><span class="lnt" id="hl-2-24"><a class="lnlinks" href="#hl-2-24">24</a>
+</span><span class="lnt" id="hl-2-25"><a class="lnlinks" href="#hl-2-25">25</a>
+</span><span class="lnt" id="hl-2-26"><a class="lnlinks" href="#hl-2-26">26</a>
+</span><span class="lnt" id="hl-2-27"><a class="lnlinks" href="#hl-2-27">27</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">scihub_get</span><span class="p">(</span><span class="n">dois</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -525,35 +528,35 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-1"> 1</a>
-</span><span class="lnt" id="hl-3-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-2"> 2</a>
-</span><span class="lnt" id="hl-3-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-3"> 3</a>
-</span><span class="lnt" id="hl-3-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-4"> 4</a>
-</span><span class="lnt" id="hl-3-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-5"> 5</a>
-</span><span class="lnt" id="hl-3-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-6"> 6</a>
-</span><span class="lnt" id="hl-3-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-7"> 7</a>
-</span><span class="lnt" id="hl-3-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-8"> 8</a>
-</span><span class="lnt" id="hl-3-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-9"> 9</a>
-</span><span class="lnt" id="hl-3-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-10">10</a>
-</span><span class="lnt" id="hl-3-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-11">11</a>
-</span><span class="lnt" id="hl-3-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-12">12</a>
-</span><span class="lnt" id="hl-3-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-13">13</a>
-</span><span class="lnt" id="hl-3-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-14">14</a>
-</span><span class="lnt" id="hl-3-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-15">15</a>
-</span><span class="lnt" id="hl-3-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-16">16</a>
-</span><span class="lnt" id="hl-3-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-17">17</a>
-</span><span class="lnt" id="hl-3-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-18">18</a>
-</span><span class="lnt" id="hl-3-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-19">19</a>
-</span><span class="lnt" id="hl-3-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-20">20</a>
-</span><span class="lnt" id="hl-3-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-21">21</a>
-</span><span class="lnt" id="hl-3-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-22">22</a>
-</span><span class="lnt" id="hl-3-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-23">23</a>
-</span><span class="lnt" id="hl-3-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-24">24</a>
-</span><span class="lnt" id="hl-3-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-25">25</a>
-</span><span class="lnt" id="hl-3-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-26">26</a>
-</span><span class="lnt" id="hl-3-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-27">27</a>
-</span><span class="lnt" id="hl-3-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-28">28</a>
-</span><span class="lnt" id="hl-3-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-3-29">29</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1"> 1</a>
+</span><span class="lnt" id="hl-3-2"><a class="lnlinks" href="#hl-3-2"> 2</a>
+</span><span class="lnt" id="hl-3-3"><a class="lnlinks" href="#hl-3-3"> 3</a>
+</span><span class="lnt" id="hl-3-4"><a class="lnlinks" href="#hl-3-4"> 4</a>
+</span><span class="lnt" id="hl-3-5"><a class="lnlinks" href="#hl-3-5"> 5</a>
+</span><span class="lnt" id="hl-3-6"><a class="lnlinks" href="#hl-3-6"> 6</a>
+</span><span class="lnt" id="hl-3-7"><a class="lnlinks" href="#hl-3-7"> 7</a>
+</span><span class="lnt" id="hl-3-8"><a class="lnlinks" href="#hl-3-8"> 8</a>
+</span><span class="lnt" id="hl-3-9"><a class="lnlinks" href="#hl-3-9"> 9</a>
+</span><span class="lnt" id="hl-3-10"><a class="lnlinks" href="#hl-3-10">10</a>
+</span><span class="lnt" id="hl-3-11"><a class="lnlinks" href="#hl-3-11">11</a>
+</span><span class="lnt" id="hl-3-12"><a class="lnlinks" href="#hl-3-12">12</a>
+</span><span class="lnt" id="hl-3-13"><a class="lnlinks" href="#hl-3-13">13</a>
+</span><span class="lnt" id="hl-3-14"><a class="lnlinks" href="#hl-3-14">14</a>
+</span><span class="lnt" id="hl-3-15"><a class="lnlinks" href="#hl-3-15">15</a>
+</span><span class="lnt" id="hl-3-16"><a class="lnlinks" href="#hl-3-16">16</a>
+</span><span class="lnt" id="hl-3-17"><a class="lnlinks" href="#hl-3-17">17</a>
+</span><span class="lnt" id="hl-3-18"><a class="lnlinks" href="#hl-3-18">18</a>
+</span><span class="lnt" id="hl-3-19"><a class="lnlinks" href="#hl-3-19">19</a>
+</span><span class="lnt" id="hl-3-20"><a class="lnlinks" href="#hl-3-20">20</a>
+</span><span class="lnt" id="hl-3-21"><a class="lnlinks" href="#hl-3-21">21</a>
+</span><span class="lnt" id="hl-3-22"><a class="lnlinks" href="#hl-3-22">22</a>
+</span><span class="lnt" id="hl-3-23"><a class="lnlinks" href="#hl-3-23">23</a>
+</span><span class="lnt" id="hl-3-24"><a class="lnlinks" href="#hl-3-24">24</a>
+</span><span class="lnt" id="hl-3-25"><a class="lnlinks" href="#hl-3-25">25</a>
+</span><span class="lnt" id="hl-3-26"><a class="lnlinks" href="#hl-3-26">26</a>
+</span><span class="lnt" id="hl-3-27"><a class="lnlinks" href="#hl-3-27">27</a>
+</span><span class="lnt" id="hl-3-28"><a class="lnlinks" href="#hl-3-28">28</a>
+</span><span class="lnt" id="hl-3-29"><a class="lnlinks" href="#hl-3-29">29</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">rename_file</span><span class="p">(</span><span class="n">dois</span><span class="p">,</span> <span class="n">finished</span><span class="p">,</span> <span class="n">auths</span><span class="p">,</span> <span class="n">years</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -589,14 +592,14 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-1">1</a>
-</span><span class="lnt" id="hl-4-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-2">2</a>
-</span><span class="lnt" id="hl-4-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-3">3</a>
-</span><span class="lnt" id="hl-4-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-4">4</a>
-</span><span class="lnt" id="hl-4-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-5">5</a>
-</span><span class="lnt" id="hl-4-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-6">6</a>
-</span><span class="lnt" id="hl-4-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-7">7</a>
-</span><span class="lnt" id="hl-4-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-4-8">8</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a class="lnlinks" href="#hl-4-1">1</a>
+</span><span class="lnt" id="hl-4-2"><a class="lnlinks" href="#hl-4-2">2</a>
+</span><span class="lnt" id="hl-4-3"><a class="lnlinks" href="#hl-4-3">3</a>
+</span><span class="lnt" id="hl-4-4"><a class="lnlinks" href="#hl-4-4">4</a>
+</span><span class="lnt" id="hl-4-5"><a class="lnlinks" href="#hl-4-5">5</a>
+</span><span class="lnt" id="hl-4-6"><a class="lnlinks" href="#hl-4-6">6</a>
+</span><span class="lnt" id="hl-4-7"><a class="lnlinks" href="#hl-4-7">7</a>
+</span><span class="lnt" id="hl-4-8"><a class="lnlinks" href="#hl-4-8">8</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">article_get</span><span class="p">(</span><span class="n">dois</span><span class="p">,</span> <span class="n">finished</span><span class="p">,</span> <span class="n">auths</span><span class="p">,</span> <span class="n">years</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -611,8 +614,8 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-5-1">1</a>
-</span><span class="lnt" id="hl-5-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-5-2">2</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a class="lnlinks" href="#hl-5-1">1</a>
+</span><span class="lnt" id="hl-5-2"><a class="lnlinks" href="#hl-5-2">2</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span> <span class="c1">#len(dois)):</span>
@@ -621,22 +624,22 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-1"> 1</a>
-</span><span class="lnt" id="hl-6-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-2"> 2</a>
-</span><span class="lnt" id="hl-6-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-3"> 3</a>
-</span><span class="lnt" id="hl-6-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-4"> 4</a>
-</span><span class="lnt" id="hl-6-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-5"> 5</a>
-</span><span class="lnt" id="hl-6-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-6"> 6</a>
-</span><span class="lnt" id="hl-6-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-7"> 7</a>
-</span><span class="lnt" id="hl-6-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-8"> 8</a>
-</span><span class="lnt" id="hl-6-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-9"> 9</a>
-</span><span class="lnt" id="hl-6-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-10">10</a>
-</span><span class="lnt" id="hl-6-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-11">11</a>
-</span><span class="lnt" id="hl-6-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-12">12</a>
-</span><span class="lnt" id="hl-6-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-13">13</a>
-</span><span class="lnt" id="hl-6-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-14">14</a>
-</span><span class="lnt" id="hl-6-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-15">15</a>
-</span><span class="lnt" id="hl-6-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-6-16">16</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a class="lnlinks" href="#hl-6-1"> 1</a>
+</span><span class="lnt" id="hl-6-2"><a class="lnlinks" href="#hl-6-2"> 2</a>
+</span><span class="lnt" id="hl-6-3"><a class="lnlinks" href="#hl-6-3"> 3</a>
+</span><span class="lnt" id="hl-6-4"><a class="lnlinks" href="#hl-6-4"> 4</a>
+</span><span class="lnt" id="hl-6-5"><a class="lnlinks" href="#hl-6-5"> 5</a>
+</span><span class="lnt" id="hl-6-6"><a class="lnlinks" href="#hl-6-6"> 6</a>
+</span><span class="lnt" id="hl-6-7"><a class="lnlinks" href="#hl-6-7"> 7</a>
+</span><span class="lnt" id="hl-6-8"><a class="lnlinks" href="#hl-6-8"> 8</a>
+</span><span class="lnt" id="hl-6-9"><a class="lnlinks" href="#hl-6-9"> 9</a>
+</span><span class="lnt" id="hl-6-10"><a class="lnlinks" href="#hl-6-10">10</a>
+</span><span class="lnt" id="hl-6-11"><a class="lnlinks" href="#hl-6-11">11</a>
+</span><span class="lnt" id="hl-6-12"><a class="lnlinks" href="#hl-6-12">12</a>
+</span><span class="lnt" id="hl-6-13"><a class="lnlinks" href="#hl-6-13">13</a>
+</span><span class="lnt" id="hl-6-14"><a class="lnlinks" href="#hl-6-14">14</a>
+</span><span class="lnt" id="hl-6-15"><a class="lnlinks" href="#hl-6-15">15</a>
+</span><span class="lnt" id="hl-6-16"><a class="lnlinks" href="#hl-6-16">16</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># try a new round for missing articles</span>
@@ -659,27 +662,27 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-7-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-1"> 1</a>
-</span><span class="lnt" id="hl-7-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-2"> 2</a>
-</span><span class="lnt" id="hl-7-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-3"> 3</a>
-</span><span class="lnt" id="hl-7-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-4"> 4</a>
-</span><span class="lnt" id="hl-7-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-5"> 5</a>
-</span><span class="lnt" id="hl-7-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-6"> 6</a>
-</span><span class="lnt" id="hl-7-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-7"> 7</a>
-</span><span class="lnt" id="hl-7-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-8"> 8</a>
-</span><span class="lnt" id="hl-7-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-9"> 9</a>
-</span><span class="lnt" id="hl-7-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-10">10</a>
-</span><span class="lnt" id="hl-7-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-11">11</a>
-</span><span class="lnt" id="hl-7-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-12">12</a>
-</span><span class="lnt" id="hl-7-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-13">13</a>
-</span><span class="lnt" id="hl-7-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-14">14</a>
-</span><span class="lnt" id="hl-7-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-15">15</a>
-</span><span class="lnt" id="hl-7-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-16">16</a>
-</span><span class="lnt" id="hl-7-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-17">17</a>
-</span><span class="lnt" id="hl-7-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-18">18</a>
-</span><span class="lnt" id="hl-7-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-19">19</a>
-</span><span class="lnt" id="hl-7-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-20">20</a>
-</span><span class="lnt" id="hl-7-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-7-21">21</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-7-1"><a class="lnlinks" href="#hl-7-1"> 1</a>
+</span><span class="lnt" id="hl-7-2"><a class="lnlinks" href="#hl-7-2"> 2</a>
+</span><span class="lnt" id="hl-7-3"><a class="lnlinks" href="#hl-7-3"> 3</a>
+</span><span class="lnt" id="hl-7-4"><a class="lnlinks" href="#hl-7-4"> 4</a>
+</span><span class="lnt" id="hl-7-5"><a class="lnlinks" href="#hl-7-5"> 5</a>
+</span><span class="lnt" id="hl-7-6"><a class="lnlinks" href="#hl-7-6"> 6</a>
+</span><span class="lnt" id="hl-7-7"><a class="lnlinks" href="#hl-7-7"> 7</a>
+</span><span class="lnt" id="hl-7-8"><a class="lnlinks" href="#hl-7-8"> 8</a>
+</span><span class="lnt" id="hl-7-9"><a class="lnlinks" href="#hl-7-9"> 9</a>
+</span><span class="lnt" id="hl-7-10"><a class="lnlinks" href="#hl-7-10">10</a>
+</span><span class="lnt" id="hl-7-11"><a class="lnlinks" href="#hl-7-11">11</a>
+</span><span class="lnt" id="hl-7-12"><a class="lnlinks" href="#hl-7-12">12</a>
+</span><span class="lnt" id="hl-7-13"><a class="lnlinks" href="#hl-7-13">13</a>
+</span><span class="lnt" id="hl-7-14"><a class="lnlinks" href="#hl-7-14">14</a>
+</span><span class="lnt" id="hl-7-15"><a class="lnlinks" href="#hl-7-15">15</a>
+</span><span class="lnt" id="hl-7-16"><a class="lnlinks" href="#hl-7-16">16</a>
+</span><span class="lnt" id="hl-7-17"><a class="lnlinks" href="#hl-7-17">17</a>
+</span><span class="lnt" id="hl-7-18"><a class="lnlinks" href="#hl-7-18">18</a>
+</span><span class="lnt" id="hl-7-19"><a class="lnlinks" href="#hl-7-19">19</a>
+</span><span class="lnt" id="hl-7-20"><a class="lnlinks" href="#hl-7-20">20</a>
+</span><span class="lnt" id="hl-7-21"><a class="lnlinks" href="#hl-7-21">21</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># output information of all missing articles</span>
@@ -737,7 +740,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

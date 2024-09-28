@@ -57,17 +57,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Python" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Python" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dong2000.xyz/tags/python/" /><meta property="og:image" content="https://dong2000.xyz/ptr_small.jpg"/>
@@ -99,7 +102,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="Ꮄ𐒅𐒢𐒐Ⳓ (Alt + H)">
                 <img src="https://dong2000.xyz/ptr_small.jpg" alt="" aria-label="logo"
                     height="35">Ꮄ𐒅𐒢𐒐Ⳓ</a>
             <div class="logo-switches">
@@ -165,7 +168,7 @@ if (!doNotTrack) {
         </ul>
     </nav>
 </header><main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/tags/">Tags</a></div>
   <h1>
     Python
     <a href="index.xml" title="RSS" aria-label="RSS">
@@ -188,7 +191,7 @@ if (!doNotTrack) {
     <p>通过一个图像合成视频的脚本案例测试了一下Python3在单线程、多线程和多进程下的运行速度。发现多线程可以一定程度上提高运行速度（将1个线程拆为4个线程，提速大约83%），但是不能达到完全的并行运算，据说是因为threading模块并不能真正调用多个处理器。在多进程下运行，可以接近完全平行的运算速度。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-12-16 14:11:55 +0800 CST'>December 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-12-16 14:11:55 &#43;0800 CST&#39;&gt;December 16, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sheng, D.</footer>
   <a class="entry-link" aria-label="post link to Python多线程和多进程的运行速度比较" href="https://dong2000.xyz/post/python-threads-processes/"></a>
 </article>
 
@@ -214,9 +217,9 @@ $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
 $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）...</p>
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-08-10 23:00:38 +0000 UTC'>August 10, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-08-10 23:00:38 &#43;0000 UTC&#39;&gt;August 10, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;7 min&amp;nbsp;·&amp;nbsp;Sheng, D.</footer>
   <a class="entry-link" aria-label="post link to 非期望产出SBM模型的数学推演及Python实现" href="https://dong2000.xyz/post/undesirable_sbm_in_python/"></a>
 </article>
 
@@ -228,7 +231,7 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
   <div class="entry-content">
     <p> 操作思路 在Web of Science或者其他学术搜索引擎上查找所需要的文献，然后将全体检索结果的信息导出成Excel（包括作者、标题、出版年份、期刊、DOI号等等） 以DOI号为检索条件，到Sci-Hub下载文献，将这一过程写成爬虫进行批量处理 导出DOI号序列，写成循环来逐个爬取 以DOI号检索文献，进入下载页面，查找到保存按钮对应的元素，下载到本地 将下载的PDF文件按照自己的标准重命名 手动补全无法在Sci-Hub上得到的文献 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-05-18 19:27:46 +0000 UTC'>May 18, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-05-18 19:27:46 &#43;0000 UTC&#39;&gt;May 18, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;Sheng, D.</footer>
   <a class="entry-link" aria-label="post link to Sci-Hub &#43; Python爬虫实现文献批量下载" href="https://dong2000.xyz/post/crawl_papers_from_scihub/"></a>
 </article>
 
@@ -241,7 +244,7 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
     <p>环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。
 通过爬虫获取我国沿海海水水质的监测数据； 以散点图直观反映水质类别的分布和随时间变化情况； 将化学需氧量数据转换为正态分布，以海区/省份为分类变量进行单因素方差分析； 将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性； 利用机器学习，从多个污染指标数据预测海区分类。 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-04-24 01:36:16 +0000 UTC'>April 24, 2022</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-04-24 01:36:16 &#43;0000 UTC&#39;&gt;April 24, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;10 min&amp;nbsp;·&amp;nbsp;Sheng, D.</footer>
   <a class="entry-link" aria-label="post link to 我国海水水质数据分析" href="https://dong2000.xyz/post/china_sea_water_data/"></a>
 </article>
 
@@ -256,13 +259,13 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
 正则表达式在线测试工具：在线正则表达式测试 (oschina.net)（非必要）
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-18 11:01:32 +0000 UTC'>March 18, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sheng, D.</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-03-18 11:01:32 &#43;0000 UTC&#39;&gt;March 18, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sheng, D.</footer>
   <a class="entry-link" aria-label="post link to 用Python爬虫爬取高校教师邮箱" href="https://dong2000.xyz/post/get_email_by_python_crawler/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2024 <a href="https://dong2000.xyz">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
+    <span>&copy; 2022-2024 <a href="https://dong2000.xyz/">Ꮄ𐒅𐒢𐒐Ⳓ</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
