@@ -2,24 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2024-12-02T00:23:02+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/</loc>
-    <lastmod>2024-12-02T00:23:02+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="profile"
-                href="https://dong2000.xyz/profile/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dong2000.xyz/"
-                />
-  </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
-    <lastmod>2024-09-28T19:38:09+08:00</lastmod>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -31,17 +15,11 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
-    <loc>https://dong2000.xyz/post/good_news_sept/</loc>
-    <lastmod>2024-09-28T19:38:09+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2024-09-28T19:38:09+08:00</lastmod>
-  </url><url>
-    <loc>https://dong2000.xyz/post/longbeach2024/</loc>
-    <lastmod>2024-08-12T19:31:48+08:00</lastmod>
+    <loc>https://dong2000.xyz/post/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
-    <lastmod>2024-08-12T19:31:48+08:00</lastmod>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -52,6 +30,40 @@
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="profile"
+                href="https://dong2000.xyz/profile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dong2000.xyz/"
+                />
+  </url><url>
+    <loc>https://dong2000.xyz/post/a-glimpse-at-east-asia/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/categories/%E5%8E%86%E7%A8%8B/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E6%9C%BA%E5%9C%BA/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/tags/%E9%9F%A9%E5%9B%BD/</loc>
+    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/good_news_sept/</loc>
+    <lastmod>2024-09-28T19:38:09+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/longbeach2024/</loc>
+    <lastmod>2024-08-12T19:31:48+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/%E5%AD%A6%E6%9C%AF%E4%BC%9A%E8%AE%AE/</loc>
     <lastmod>2024-08-12T19:31:48+08:00</lastmod>
