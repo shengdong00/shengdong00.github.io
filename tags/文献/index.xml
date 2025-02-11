@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>文献 on Ⲋⲏⲉⲛⳋ</title>
+    <title>文献 on Sheng Dong&#39;s website</title>
     <link>https://dong2000.xyz/tags/%E6%96%87%E7%8C%AE/</link>
-    <description>Recent content in 文献 on Ⲋⲏⲉⲛⳋ</description>
+    <description>Recent content in 文献 on Sheng Dong&#39;s website</description>
     <image>
       <url>https://dong2000.xyz/ptr.png</url>
       <link>https://dong2000.xyz/ptr.png</link>
@@ -17,19 +17,9 @@
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
-      <description>&lt;p&gt;本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;121&lt;/em&gt;(4), e2311025121. &lt;a href=&#34;https://doi.org/10.1073/pnas.2311025121&#34;&gt;https://doi.org/10.1073/pnas.2311025121&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Focus on heat wave effects on honeybees&lt;/li&gt;
-&lt;li&gt;Honeybees avoid overheating by &lt;strong&gt;lowering wingbeat frequency&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Reducing metabolic heat production is the result of lowering wingbeat frequency. Should not be mentioned separately as two mechanisms here.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Many flying insects generate aerodynamic force by using a combination of mechanisms, including the sweeping motion of the wing (i.e., &lt;strong&gt;wing translation&lt;/strong&gt;) and by creation of &lt;strong&gt;rotational vortices&lt;/strong&gt; when the wings rotate before reversing direction. Insects that fly with a large &lt;strong&gt;stroke amplitude&lt;/strong&gt; generate the bulk of their force from the wing translation phase, while those that fly with a small stroke amplitude primarily generate significant forces during wing rotation.&amp;rdquo;&lt;/p&gt;</description>
+      <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
+Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
+Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
     </item>
     
     <item>
@@ -38,11 +28,9 @@
       <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
-      <description>&lt;p&gt;这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” &lt;em&gt;Science&lt;/em&gt;, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, &lt;a href=&#34;https://doi.org/10.1126/science.1144004&#34;&gt;https://doi.org/10.1126/science.1144004&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units. They also exhibit &lt;strong&gt;nonlinear dynamics&lt;/strong&gt; with &lt;strong&gt;thresholds&lt;/strong&gt;, &lt;strong&gt;reciprocal feedback loops&lt;/strong&gt;, &lt;strong&gt;time lags&lt;/strong&gt;, &lt;strong&gt;resilience&lt;/strong&gt;, &lt;strong&gt;heterogeneity&lt;/strong&gt;, and &lt;strong&gt;surprises&lt;/strong&gt;. Furthermore, past couplings have legacy effects on present conditions and future possibilities.&lt;/p&gt;</description>
+      <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
+Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
     </item>
     
     <item>

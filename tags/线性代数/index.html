@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>线性代数 | Ⲋⲏⲉⲛⳋ</title>
+<title>线性代数 | Sheng Dong&#39;s website</title>
 <meta name="keywords" content="">
 <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
-<meta name="author" content="Sheng, D.">
+<meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://dong2000.xyz/ptr_head.png">
@@ -57,20 +57,17 @@
 
     </style>
 </noscript>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MT6FEG7LK4');
-        }
-      </script><meta property="og:title" content="线性代数" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="线性代数" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dong2000.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/>
@@ -102,9 +99,9 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="Ⲋⲏⲉⲛⳋ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
-                    height="35">Ⲋⲏⲉⲛⳋ</a>
+                    height="40">波忒利</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -138,11 +135,6 @@
             <li>
                 <a href="https://dong2000.xyz/archives/" title="Archive">
                     <span>Archive</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://dong2000.xyz/categories/" title="Categ.">
-                    <span>Categ.</span>
                 </a>
             </li>
             <li>
@@ -189,7 +181,7 @@
   </div>
   <footer class="entry-footer">
 
-<span title='2022-09-07 09:31:54 +0000 UTC'>September 7, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sheng, D.&nbsp;·&nbsp;</footer>
+<span title='2022-09-07 09:31:54 +0000 UTC'>September 7, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
   <a class="entry-link" aria-label="post link to 在SBM模型中引入上边界和指标权重" href="https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/"></a>
 </article>
 
@@ -215,17 +207,17 @@ $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
 $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-...</p>
+其对偶模型为（对偶模型求解过程见文末）...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2022-08-10 23:00:38 +0000 UTC'>August 10, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sheng, D.&nbsp;·&nbsp;</footer>
+<span title='2022-08-10 23:00:38 +0000 UTC'>August 10, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
   <a class="entry-link" aria-label="post link to 非期望产出SBM模型的数学推演及Python实现" href="https://dong2000.xyz/post/undesirable_sbm_in_python/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Ⲋⲏⲉⲛⳋ</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

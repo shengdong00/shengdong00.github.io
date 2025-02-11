@@ -26,18 +26,6 @@
                 href="https://dong2000.xyz/profile/series/"
                 />
   </url><url>
-    <loc>https://dong2000.xyz/profile/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dong2000.xyz/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="profile"
-                href="https://dong2000.xyz/profile/tags/"
-                />
-  </url><url>
     <loc>https://dong2000.xyz/profile/</loc>
     <xhtml:link
                 rel="alternate"
@@ -48,6 +36,18 @@
                 rel="alternate"
                 hreflang="profile"
                 href="https://dong2000.xyz/profile/"
+                />
+  </url><url>
+    <loc>https://dong2000.xyz/profile/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dong2000.xyz/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="profile"
+                href="https://dong2000.xyz/profile/tags/"
                 />
   </url>
 </urlset>

@@ -2,6 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dong2000.xyz/post/</loc>
+    <lastmod>2025-02-12T00:11:47+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/</loc>
+    <lastmod>2025-02-12T00:11:47+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="profile"
+                href="https://dong2000.xyz/profile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dong2000.xyz/"
+                />
+  </url><url>
+    <loc>https://dong2000.xyz/post/liu-lang-cang-qiong/</loc>
+    <lastmod>2025-02-12T00:11:47+08:00</lastmod>
+  </url><url>
     <loc>https://dong2000.xyz/categories/</loc>
     <lastmod>2024-12-16T02:04:31+08:00</lastmod>
     <xhtml:link
@@ -15,9 +34,6 @@
                 href="https://dong2000.xyz/categories/"
                 />
   </url><url>
-    <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
     <lastmod>2024-12-16T02:04:31+08:00</lastmod>
     <xhtml:link
@@ -29,19 +45,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dong2000.xyz/tags/"
-                />
-  </url><url>
-    <loc>https://dong2000.xyz/</loc>
-    <lastmod>2024-12-16T02:04:31+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="profile"
-                href="https://dong2000.xyz/profile/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dong2000.xyz/"
                 />
   </url><url>
     <loc>https://dong2000.xyz/post/a-glimpse-at-east-asia/</loc>

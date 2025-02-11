@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>目标检测 | Ⲋⲏⲉⲛⳋ</title>
+<title>目标检测 | Sheng Dong&#39;s website</title>
 <meta name="keywords" content="">
 <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
-<meta name="author" content="Sheng, D.">
+<meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://dong2000.xyz/ptr_head.png">
@@ -57,20 +57,17 @@
 
     </style>
 </noscript>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MT6FEG7LK4');
-        }
-      </script><meta property="og:title" content="目标检测" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="目标检测" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/>
@@ -102,9 +99,9 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="Ⲋⲏⲉⲛⳋ (Alt + H)">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
-                    height="35">Ⲋⲏⲉⲛⳋ</a>
+                    height="40">波忒利</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -138,11 +135,6 @@
             <li>
                 <a href="https://dong2000.xyz/archives/" title="Archive">
                     <span>Archive</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://dong2000.xyz/categories/" title="Categ.">
-                    <span>Categ.</span>
                 </a>
             </li>
             <li>
@@ -187,13 +179,11 @@
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
 MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset.metainfo[&#39;classes&#39;] &#43; (&#39;background&#39;, )) print(&#39;Precision&#39;, precision) print(&#39;Recall&#39;, recall) 然后按照官方文档的说明，正常运行代码就可以输出结果了。
-1 python tools/analysis_tools/confusion_matrix.py ${CONFIG} ${DETECTION_RESULTS} ${SAVE_DIR} --show 打印内容形如：
-...</p>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset....</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2024-05-17 23:29:36 +0800 CST'>May 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.&nbsp;·&nbsp;</footer>
+<span title='2024-05-17 23:29:36 +0800 CST'>May 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
   <a class="entry-link" aria-label="post link to 自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR" href="https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/"></a>
 </article>
 
@@ -208,13 +198,13 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
   </div>
   <footer class="entry-footer">
 
-<span title='2023-08-28 11:11:41 +0800 CST'>August 28, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sheng, D.&nbsp;·&nbsp;</footer>
+<span title='2023-08-28 11:11:41 +0800 CST'>August 28, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
   <a class="entry-link" aria-label="post link to MMDetection目标检测入门笔记" href="https://dong2000.xyz/post/notes-on-mmdet/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Ⲋⲏⲉⲛⳋ</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
