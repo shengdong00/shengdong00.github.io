@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>简单理想情形下的Barrel distortion | Sheng Dong&#39;s website</title>
+<meta name="keywords" content="数学建模, 桶形畸变, Barrel distortion, 机器视觉">
+<meta name="description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。">
+<meta name="author" content="Sʜᴇɴɢ Dong">
+<link rel="canonical" href="https://dong2000.xyz/post/simple_barrel_disto/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dong2000.xyz/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/simple_barrel_disto/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="简单理想情形下的Barrel distortion" />
+<meta property="og:description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dong2000.xyz/post/simple_barrel_disto/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-16T22:37:16+08:00" />
+<meta property="article:modified_time" content="2022-11-16T22:37:16+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dong2000.xyz/ptr.png"/>
+
+<meta name="twitter:title" content="简单理想情形下的Barrel distortion"/>
+<meta name="twitter:description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://dong2000.xyz/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "简单理想情形下的Barrel distortion",
+      "item": "https://dong2000.xyz/post/simple_barrel_disto/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "简单理想情形下的Barrel distortion",
+  "name": "简单理想情形下的Barrel distortion",
+  "description": "Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。\n",
+  "keywords": [
+    "数学建模", "桶形畸变", "Barrel distortion", "机器视觉"
+  ],
+  "articleBody": "Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。\n网上找到对Barrel distortion的描述如下。\nBarrel distortion: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.1\n为了便于理解Barrel distortion并尝试自行解决问题，我构建了一个极其简化的理想模型：\n将相机理想化为一个点，其到实物平面的垂足为$O(0,0)$，距离为$h$。平面上某一点相对于$O$的坐标为$P_1(x_1, y_1)$，该点对应的相机视野张角为$\\theta_1$。则 $$ \\tan{\\frac{\\theta_1}{2}}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n而在成像端，该点在感光芯片上成像像素点相对于中心点的坐标记为$D_1(x_{1d}, y_{1d})$，单位是px。如果认为成像端的像素坐标和角度是成正比的（这一点存疑），那么 $$ \\frac{\\theta_1/2}{\\sqrt{x_{1d}^2+y_{1d}^2}}\\equiv K\\rm （常数）. $$\n$$ \\therefore ~\\tan{\\left(K\\cdot\\sqrt{x_{1d}^2+y_{1d}^2}\\right)}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n在进行图像校正之前，我们先给出参考用的“锚定点”，即成像点像素位置保持不变的点，$P_{0X}(x_0,0)$ ~ $D_{0X}(x_{0d},0)$，$P_{0Y}(0,y_0)$ ~ $D_{0Y}(0,y_{0d})$。经过校正之后，像素点移动到新的位置， $$ \\begin{aligned} D_1(x_{1d},y_{1d})\u0026\\rightarrow C_1(x_{1c},y_{1c}),\\\\ D_{0X}(x_{0d},0)\u0026\\rightarrow C_{0X}(x_{0c},0),\\\\ D_{0Y}(0,y_{0d})\u0026\\rightarrow C_{0Y}(0,y_{0c}). \\end{aligned} $$\n但是“锚定点”事实上位置保持不变，即$x_{0d}=x_{0c},y_{0d}=y_{0c}$。经过校正之后应当满足：$\\triangle C_{0X}C_1C_{0Y}$相似于$\\triangle P_{0X}P_1P_{0Y}$，或者说$(C_{0X}C_1\\parallel{P_{0X}P_1})$且$({C_{0Y}C_1}\\parallel{P_{0Y}P_1})$， $$ \\displaylines{ \\left\\{ \\begin{aligned} \u0026\\frac{x_{1c}-x_{0d}}{y_{1c}-0}=\\frac{x_1-x_0}{y_1-0}\\\\ \u0026\\frac{x_{1c}-0}{y_{1c}-y_{0d}}=\\frac{x_1-0}{y_1-y_0} \\end{aligned} \\right. \\Rightarrow \\left\\{ \\begin{aligned} \u0026x_{1c}=\\frac{(x_1-x_0)y_{0d}+x_{0d}y_1}{x_1y_1-(x_1-x_0)(y_1-y_0)}\\\\ \u0026y_{1c}=\\frac{(y_1-y_0)x_{0d}+x_1y_{0d}}{x_1y_1-(x_1-x_0)(y_1-y_0)} \\end{aligned} \\right. } $$\n通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\\leftrightarrow C_1$。\n📷之后有时间的话，希望能够写成代码检验一下这个算法的适用性🐶\nMansurov, N. (July 5, 2020). What is Lens Distortion? photography life. Retrieved on Nov 16, 2022. Link ↩︎\n",
+  "wordCount" : "154",
+  "inLanguage": "en",
+  "datePublished": "2022-11-16T22:37:16+08:00",
+  "dateModified": "2022-11-16T22:37:16+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sʜᴇɴɢ Dong"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dong2000.xyz/post/simple_barrel_disto/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sheng Dong's website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dong2000.xyz/ptr.png"
+    }
+  }
+}
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+                    height="40">波忒利</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                            aria-label="Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dong2000.xyz/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <h1 class="post-title">
+      简单理想情形下的Barrel distortion
+    </h1>
+    <div class="post-meta">
+
+<span title='2022-11-16 22:37:16 +0800 CST'>November 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;
+
+</div>
+  </header> 
+  <div class="post-content"><p>Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。</p>
+<p>网上找到对Barrel distortion的描述如下。</p>
+<blockquote>
+<p><strong>Barrel distortion</strong>: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<center><img src="/images/image-20221116224413837.png" alt="image-20221116224413837" style="zoom: 67%;" /></center>
+<p>为了便于理解Barrel distortion并尝试自行解决问题，我构建了一个极其简化的理想模型：</p>
+<p>将相机理想化为一个点，其到实物平面的垂足为$O(0,0)$，距离为$h$。平面上某一点相对于$O$的坐标为$P_1(x_1, y_1)$，该点对应的相机视野张角为$\theta_1$。则
+$$
+\tan{\frac{\theta_1}{2}}=\frac{\sqrt{x_1^2+y_1^2}}{h}.
+$$</p>
+<!--<center><img src="/post/simple_barrel_disto/image-20221117000849366.png" alt="image-20221117000849366" style="zoom:40%;" /></center>-->
+<center><img src = 'https://s3.bmp.ovh/imgs/2023/01/18/dd2e77cd3c49abbc.png' ></center>
+<p>而在成像端，该点在感光芯片上成像像素点相对于中心点的坐标记为$D_1(x_{1d}, y_{1d})$，单位是px。如果认为成像端的像素坐标和角度是成正比的（这一点存疑），那么
+$$
+\frac{\theta_1/2}{\sqrt{x_{1d}^2+y_{1d}^2}}\equiv K\rm （常数）.
+$$</p>
+<p>$$
+\therefore ~\tan{\left(K\cdot\sqrt{x_{1d}^2+y_{1d}^2}\right)}=\frac{\sqrt{x_1^2+y_1^2}}{h}.
+$$</p>
+<p>在进行图像校正之前，我们先给出参考用的“锚定点”，即成像点像素位置保持不变的点，$P_{0X}(x_0,0)$ ~ $D_{0X}(x_{0d},0)$，$P_{0Y}(0,y_0)$ ~ $D_{0Y}(0,y_{0d})$。经过校正之后，像素点移动到新的位置，
+$$
+\begin{aligned}
+D_1(x_{1d},y_{1d})&amp;\rightarrow C_1(x_{1c},y_{1c}),\\
+D_{0X}(x_{0d},0)&amp;\rightarrow C_{0X}(x_{0c},0),\\
+D_{0Y}(0,y_{0d})&amp;\rightarrow C_{0Y}(0,y_{0c}).
+\end{aligned}
+$$</p>
+<!--<center><img src="/post/simple_barrel_disto/image-20221117024445959.png" alt="image-20221117024445959" style="zoom:40%;" /></center>-->
+<center><img src = 'https://s3.bmp.ovh/imgs/2023/01/18/7c7b893349b95d15.png' ></center>
+<p>但是“锚定点”事实上位置保持不变，即$x_{0d}=x_{0c},y_{0d}=y_{0c}$。经过校正之后应当满足：$\triangle C_{0X}C_1C_{0Y}$相似于$\triangle P_{0X}P_1P_{0Y}$，或者说$(C_{0X}C_1\parallel{P_{0X}P_1})$且$({C_{0Y}C_1}\parallel{P_{0Y}P_1})$，
+$$
+\displaylines{
+\left\{
+\begin{aligned}
+&amp;\frac{x_{1c}-x_{0d}}{y_{1c}-0}=\frac{x_1-x_0}{y_1-0}\\
+&amp;\frac{x_{1c}-0}{y_{1c}-y_{0d}}=\frac{x_1-0}{y_1-y_0}
+\end{aligned}
+\right.
+\Rightarrow
+\left\{
+\begin{aligned}
+&amp;x_{1c}=\frac{(x_1-x_0)y_{0d}+x_{0d}y_1}{x_1y_1-(x_1-x_0)(y_1-y_0)}\\
+&amp;y_{1c}=\frac{(y_1-y_0)x_{0d}+x_1y_{0d}}{x_1y_1-(x_1-x_0)(y_1-y_0)}
+\end{aligned}
+\right.
+}
+$$</p>
+<p>通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\leftrightarrow C_1$。</p>
+<p>&#x1f4f7;之后有时间的话，希望能够写成代码检验一下这个算法的适用性&#x1f436;</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Mansurov, N. (July 5, 2020). What is Lens Distortion? <em>photography life</em>. Retrieved on Nov 16, 2022. <a href="https://photographylife.com/what-is-distortion">Link</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></li>
+      <li><a href="https://dong2000.xyz/tags/%E6%A1%B6%E5%BD%A2%E7%95%B8%E5%8F%98/">桶形畸变</a></li>
+      <li><a href="https://dong2000.xyz/tags/barrel-distortion/">Barrel Distortion</a></li>
+      <li><a href="https://dong2000.xyz/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://dong2000.xyz/post/my_web-count/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>在Hugo &#43; PaperMod主题下添加不蒜子网站统计</span>
+  </a>
+  <a class="next" href="https://dong2000.xyz/post/test/">
+    <span class="title">Next »</span>
+    <br>
+    <span>HugoBlog Test</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span id="busuanzi_container_site_count">
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>.
+    
+    
+        
+        &nbsp;&nbsp;本页访问量=<span id="busuanzi_value_page_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+
+</html>

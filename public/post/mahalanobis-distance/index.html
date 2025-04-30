@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>偶识Mahalanobis Distance | Sheng Dong&#39;s website</title>
+<meta name="keywords" content="统计, 马氏距离, Mahalanobis Distance, 数据处理">
+<meta name="description" content="
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
+">
+<meta name="author" content="Sʜᴇɴɢ Dong">
+<link rel="canonical" href="https://dong2000.xyz/post/mahalanobis-distance/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dong2000.xyz/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/mahalanobis-distance/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="偶识Mahalanobis Distance" />
+<meta property="og:description" content="
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dong2000.xyz/post/mahalanobis-distance/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-10-30T01:20:00+08:00" />
+<meta property="article:modified_time" content="2022-10-30T01:20:00+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dong2000.xyz/ptr.png"/>
+
+<meta name="twitter:title" content="偶识Mahalanobis Distance"/>
+<meta name="twitter:description" content="
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
+"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://dong2000.xyz/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "偶识Mahalanobis Distance",
+      "item": "https://dong2000.xyz/post/mahalanobis-distance/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "偶识Mahalanobis Distance",
+  "name": "偶识Mahalanobis Distance",
+  "description": " 糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完\u0026#x1f622;）\n",
+  "keywords": [
+    "统计", "马氏距离", "Mahalanobis Distance", "数据处理"
+  ],
+  "articleBody": " 糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）\n定义 马氏距离(Mahalanobis distance)是由印度统计学家马哈拉诺比斯(P. C. Mahalanobis)提出的，表示点与一个分布之间的距离，也可以定义为两个服从同一分布并且其协方差矩阵为$\\Sigma$的随机变量之间的差异程度1。马氏距离独立于数据的测量尺度。\n根据第一种定义给出的公式： $$ d=\\sqrt{ \\left(x-\\mu\\right)’\\Sigma^{-1}\\left(x-\\mu\\right) }, $$ 其中$x$是点的向量，$\\mu$是分布的均值，$\\Sigma$是分布的协方差矩阵。\n根据第二种定义给出的公式： $$ d=\\sqrt{ \\left(x_1-x_2\\right)’\\Sigma^{-1}\\left(x_1-x_2\\right) }, $$ 其中$x_1,x_2$是服从同一分布的两个点。\n从马氏距离所联想到的 在第一种定义下的马氏距离可以用作“无偏差的假设检验”这么描述好像不太准确——点到不同样本分布的马氏距离可以用于判断该点更可能归属于哪个分布集合。这和假设检验似乎有一些类似的地方，但是不存在对不同假设的偏好差异。\n顺带着就复习自学了一下假设检验……啥都不记得了，我大学三年到底学了些什么东西？？？\n在传统的假设检验中，原假设$H_0$相较于备择假设$H_1$是更加受到保护的（这里并不强求二者必然形成互补的关系）：当$H_0$条件下的小概率事件发生概率超过阈值(显著性水平)$\\alpha$时，$H_0$即被证伪。如果$H_0$和$H_1$分别在这里代表着两种分\n布的话，那么有可能$x$虽然处于$H_0$的置信区间内，但是在$H_1$条件下出现$x$事件的概率(密度)更高。这也就会导致第二类错误的发生。\n但是在进行马氏距离比较时，则不会面临这一问题。为了和以上描述保持一致，我们这里采用一维变量下的马氏距离公式： $$ d_0=\\frac{x-\\mu_0}{\\sigma_0},~~d_1=\\frac{x-\\mu_1}{\\sigma_1}. $$ 选择$H_0$还是$H_1$完全取决于$d_0$和$d_1$的相对大小，二者的地位是等同的。\n但是马氏距离还是不能替代假设检验。即使马氏距离的比较必然能对现有的两个分布做出取舍，但是它并不直接反映出$x$在所选择的分布条件下是否处于置信区间内。马氏距离或许可以用于辅助判断是否发生了第二类错误。\n暴力演算 试图把协方差逆矩阵的元素算出来的二哈行为\n某$m$维分布的协方差矩阵记为$\\Sigma=[c_{ij}]\\in R^{m\\times m}$，$\\Sigma$是对称矩阵，其对角线元素$c_{ii}$是第$i$维上的方差。\n协方差逆矩阵$\\Sigma^{-1}=[b_{ij}]\\in R^{m\\times m}$满足： $$ \\Sigma \\Sigma^{-1}=E_0 $$ 得到约束方程：\n$$ c_{1k}b_{k1}+c_{2k}b_{k2}+\\dots+c_{mk}b_{km}=1,k\\in[1,m] $$\n$$ c_{1i}b_{j1}+c_{2i}b_{j2}+\\dots +c_{mi}b_{jm}=0,i\\neq j,i,j\\in[1,m] $$\n$$ c_{ij}=c_{ji}, i,j\\in[1,m] $$\n在$m=2$的简单情形下， $$ \\begin{aligned} b_{11}\u0026=\\frac{c_{22}}{c_{11}c_{22}-c_{12}^2}\\\\ b_{22}\u0026=\\frac{c_{11}}{c_{11}c_{22}-c_{12}^2}\\\\ b_{12}=b_{21}\u0026=\\frac{c_{12}}{c_{12}^2-c_{11}c_{22}} \\end{aligned} $$ 更高纬度的一般性解还没有搞清楚，待以后有空的时候再来研究吧！\n百度百科: 马氏距离. Retrieved on October 30th, 2022. ↩︎\n",
+  "wordCount" : "72",
+  "inLanguage": "en",
+  "datePublished": "2022-10-30T01:20:00+08:00",
+  "dateModified": "2022-10-30T01:20:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sʜᴇɴɢ Dong"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dong2000.xyz/post/mahalanobis-distance/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sheng Dong's website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dong2000.xyz/ptr.png"
+    }
+  }
+}
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+                    height="40">波忒利</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                            aria-label="Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dong2000.xyz/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <h1 class="post-title">
+      偶识Mahalanobis Distance
+    </h1>
+    <div class="post-meta">
+
+<span title='2022-10-30 01:20:00 +0800 CST'>October 30, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;
+
+</div>
+  </header> 
+  <div class="post-content"><blockquote>
+<p>糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）</p>
+</blockquote>
+<h1 id="定义">定义<a hidden class="anchor" aria-hidden="true" href="#定义">#</a></h1>
+<p>马氏距离(Mahalanobis distance)是由印度统计学家马哈拉诺比斯(P. C. Mahalanobis)提出的，表示点与一个分布之间的距离，也可以定义为两个服从同一分布并且其协方差矩阵为$\Sigma$的随机变量之间的差异程度<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。马氏距离独立于数据的测量尺度。</p>
+<p>根据第一种定义给出的公式：
+$$
+d=\sqrt{
+\left(x-\mu\right)&rsquo;\Sigma^{-1}\left(x-\mu\right)
+},
+$$
+其中$x$是点的向量，$\mu$是分布的均值，$\Sigma$是分布的协方差矩阵。</p>
+<p>根据第二种定义给出的公式：
+$$
+d=\sqrt{
+\left(x_1-x_2\right)&rsquo;\Sigma^{-1}\left(x_1-x_2\right)
+},
+$$
+其中$x_1,x_2$是服从同一分布的两个点。</p>
+<h1 id="从马氏距离所联想到的">从马氏距离所联想到的<a hidden class="anchor" aria-hidden="true" href="#从马氏距离所联想到的">#</a></h1>
+<p>在第一种定义下的马氏距离可以用作“无偏差的假设检验”<sub>这么描述好像不太准确</sub>——点到不同样本分布的马氏距离可以用于判断该点更可能归属于哪个分布集合。这和假设检验似乎有一些类似的地方，但是不存在对不同假设的偏好差异。</p>
+<p>顺带着就复习<s>自学</s>了一下假设检验……<sub>啥都不记得了，我大学三年到底学了些什么东西？？？</sub></p>
+<p>在传统的假设检验中，原假设$H_0$相较于备择假设$H_1$是更加受到保护的（这里并不强求二者必然形成互补的关系）：当$H_0$条件下的小概率事件发生概率超过阈值(显著性水平)$\alpha$时，$H_0$即被证伪。如果$H_0$和$H_1$分别在这里代表着两种分</p>
+<p>布的话，那么有可能$x$虽然处于$H_0$的置信区间内，但是在$H_1$条件下出现$x$事件的概率(密度)更高。这也就会导致<strong>第二类错误</strong>的发生。</p>
+<center>
+<img src="/images/image-20221030021043784.png" alt="image-20221030021043784" style="zoom:33%;" />
+</center>
+<p>但是在进行马氏距离比较时，则不会面临这一问题。为了和以上描述保持一致，我们这里采用一维变量下的马氏距离公式：
+$$
+d_0=\frac{x-\mu_0}{\sigma_0},~~d_1=\frac{x-\mu_1}{\sigma_1}.
+$$
+选择$H_0$还是$H_1$完全取决于$d_0$和$d_1$的相对大小，二者的地位是等同的。</p>
+<p>但是马氏距离还是不能替代假设检验。即使马氏距离的比较必然能对现有的两个分布做出取舍，但是它并不直接反映出$x$在所选择的分布条件下是否处于置信区间内。马氏距离或许可以用于辅助判断是否发生了第二类错误。</p>
+<h1 id="暴力演算">暴力演算<a hidden class="anchor" aria-hidden="true" href="#暴力演算">#</a></h1>
+<p><s>试图把协方差逆矩阵的元素算出来的二哈行为</s></p>
+<p>某$m$维分布的协方差矩阵记为$\Sigma=[c_{ij}]\in R^{m\times m}$，$\Sigma$是对称矩阵，其对角线元素$c_{ii}$是第$i$维上的方差。</p>
+<p>协方差逆矩阵$\Sigma^{-1}=[b_{ij}]\in R^{m\times m}$满足：
+$$
+\Sigma \Sigma^{-1}=E_0
+$$
+得到约束方程：</p>
+<p>$$
+c_{1k}b_{k1}+c_{2k}b_{k2}+\dots+c_{mk}b_{km}=1,k\in[1,m]
+$$</p>
+<p>$$
+c_{1i}b_{j1}+c_{2i}b_{j2}+\dots +c_{mi}b_{jm}=0,i\neq j,i,j\in[1,m]
+$$</p>
+<p>$$
+c_{ij}=c_{ji}, i,j\in[1,m]
+$$</p>
+<p>在$m=2$的简单情形下，
+$$
+\begin{aligned}
+b_{11}&amp;=\frac{c_{22}}{c_{11}c_{22}-c_{12}^2}\\
+b_{22}&amp;=\frac{c_{11}}{c_{11}c_{22}-c_{12}^2}\\
+b_{12}=b_{21}&amp;=\frac{c_{12}}{c_{12}^2-c_{11}c_{22}}
+\end{aligned}
+$$
+更高纬度的一般性解还没有搞清楚，待以后有空的时候再来研究吧！</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://baike.baidu.com/item/%E9%A9%AC%E6%B0%8F%E8%B7%9D%E7%A6%BB/8927833">百度百科: 马氏距离. Retrieved on October 30th, 2022.</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dong2000.xyz/tags/%E7%BB%9F%E8%AE%A1/">统计</a></li>
+      <li><a href="https://dong2000.xyz/tags/%E9%A9%AC%E6%B0%8F%E8%B7%9D%E7%A6%BB/">马氏距离</a></li>
+      <li><a href="https://dong2000.xyz/tags/mahalanobis-distance/">Mahalanobis Distance</a></li>
+      <li><a href="https://dong2000.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://dong2000.xyz/post/test/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>HugoBlog Test</span>
+  </a>
+  <a class="next" href="https://dong2000.xyz/post/esg-hangzhou-v5/">
+    <span class="title">Next »</span>
+    <br>
+    <span>ESG杭州会客厅(Vol.5)所见</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span id="busuanzi_container_site_count">
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>.
+    
+    
+        
+        &nbsp;&nbsp;本页访问量=<span id="busuanzi_value_page_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+
+</html>

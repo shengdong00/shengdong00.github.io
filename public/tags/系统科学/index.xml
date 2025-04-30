@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>系统科学 on Sheng Dong&#39;s website</title>
+    <link>https://dong2000.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6/</link>
+    <description>Recent content in 系统科学 on Sheng Dong&#39;s website</description>
+    <image>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Mar 2024 02:56:58 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读 [March 6th]——人与自然耦合系统</title>
+      <link>https://dong2000.xyz/post/reading-note-20240306/</link>
+      <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
+      <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
+Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+    </item>
+    
+    <item>
+      <title>系统科学与工程复习整理</title>
+      <link>https://dong2000.xyz/post/system_sci_review/</link>
+      <pubDate>Sun, 12 Jun 2022 01:30:13 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/system_sci_review/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;来自老师的课程资料，请勿商用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;绪论&#34;&gt;绪论&lt;/h1&gt;
+&lt;h2 id=&#34;系统和系统科学&#34;&gt;系统和系统科学&lt;/h2&gt;
+&lt;h3 id=&#34;系统的定义&#34;&gt;系统的定义&lt;/h3&gt;
+&lt;p&gt;现代系统研究开创者贝塔朗菲对系统的定义：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;系统是&lt;strong&gt;相互作用&lt;/strong&gt;的&lt;strong&gt;多元素&lt;/strong&gt;的复合体。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;该定义的精确说法是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果一个对象集合中至少有两个可以区分的对象，所有对象按照可以辨认的特有方式相互联系在一起，就称该集合为一个系统。集合中包含的对象成为系统的组成部分（组分），最小的、不需要再细分的组分称为系统的元素或要素。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;重点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;至少两个元素——系统的多元性&lt;/li&gt;
+&lt;li&gt;组成部分相互作用——矛盾的统一&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>自回归滑动平均模型预测全球CO2浓度变化</title>
+      <link>https://dong2000.xyz/post/amra_co2/</link>
+      <pubDate>Wed, 27 Apr 2022 03:03:57 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/amra_co2/</guid>
+      <description>&lt;p&gt;自回归滑动平均模型（Autoregressive moving average model，ARMA）是研究时间序列的重要方法，以由自回归模型（简称AR模型）与移动平均模型（简称MA模型）为基础“混合”构成。用AMRA模型预测了在当前趋势下，未来二十年内全球二氧化碳浓度的变化趋势。&lt;/p&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
+&lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>梳理系统科学发展历程</title>
+      <link>https://dong2000.xyz/post/hostory_of_system_sci/</link>
+      <pubDate>Fri, 18 Mar 2022 09:37:41 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/hostory_of_system_sci/</guid>
+      <description>&lt;h1 id=&#34;系统问题的提出&#34;&gt;系统问题的提出&lt;/h1&gt;
+&lt;p&gt;关于系统、组织和复杂性的性质的问题并不是现代所特有的。正如国际系统工程委员会 (INCOSE) 的先驱和前国际系统科学学会 （ISSS）主席约翰·沃菲尔德所说，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Virtually every important concept that backs up the key ideas emergent in systems literature is found in ancient literature and in the centuries that follow.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然而，直到20世纪中叶，人们才越来越意识到采用一种科学方法来解决“系统科学”中的组织和复杂性问题的必要性和可能性。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
