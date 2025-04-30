@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Learning notes on agent-based modelling (ABM) | Sheng Dong&#39;s website</title>
+<meta name="keywords" content="ABM">
+<meta name="description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.">
+<meta name="author" content="Sʜᴇɴɢ Dong">
+<link rel="canonical" href="https://dong2000.xyz/post/learning-abm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dong2000.xyz/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/learning-abm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Learning notes on agent-based modelling (ABM)" />
+<meta property="og:description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dong2000.xyz/post/learning-abm/" />
+<meta property="og:image" content="https://dong2000.xyz/images/abm_cover.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-10-03T21:02:53+08:00" />
+<meta property="article:modified_time" content="2023-10-03T21:02:53+08:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://dong2000.xyz/images/abm_cover.jpg" />
+<meta name="twitter:title" content="Learning notes on agent-based modelling (ABM)"/>
+<meta name="twitter:description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://dong2000.xyz/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Learning notes on agent-based modelling (ABM)",
+      "item": "https://dong2000.xyz/post/learning-abm/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Learning notes on agent-based modelling (ABM)",
+  "name": "Learning notes on agent-based modelling (ABM)",
+  "description": "In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.\nI will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.",
+  "keywords": [
+    "ABM"
+  ],
+  "articleBody": "In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.\nI will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they’re quite interesting examples and then we can see how it can be applied in ecological related topics.\n1. General introduction We need to start with the term “complex systems”2. This term it became very popular since the 2000s. However, the term “complex” almost sounds like an empty term to some degree because the real world is very complex by itself and every system, if it’s related to the reality, is complex in its nature. But when we talk about the word “complex”, there are some unique and particular characteristics.\nA complex system exists “on the edge of chaos”, which means it has some irregular behaviors or patterns, but still the whole system is very unpredictable and can change quite dramatically with some minor input variations (for example the climate system).\nAnother basic but also important idea is that we need to get rid of the idea of reductionism, which means to breakdown a topic or problem into different parts and by the process of breaking it, we will eventually get a full understanding of the whole picture. People in the past, especially those well trained with a Newtonian framework believed in this idea. But this reductionism idea has been criticized because people realized that when different parts are constructed in a certain way, we will observe some emergent characteristics which can’t be deducted from parts of the system.\nThere have been a lot of different theories to describe or study complex systems. By 2021, at least 76 theories3 have been formally constructed to solve complexity problems across different realms. Many of these theories, very sadly, conflicts with each other.\nAgent-based modelling belongs to one type of these different complex systems theories. Agent-based models (ABM) are computer simulations used to study the interactions between people, things, places, and time. They are stochastic models built from the bottom up, meaning individual agents are assigned certain attributes. The agents are programmed to behave and interact with other agents and the environment in certain ways. These interactions produce emergent effects that may differ from effects of individual agents4.\nIn some cases, ABM might be the only practical method when the interaction of the agents is contingent on past experience, and especially when the agents continually adapt to that experience, thus mathematical analysis is typically very limited in its ability to derive the dynamic consequences1.\nSimulation approaches, such as ABM, is regarded as a third way for scientific researches apart from deduction and induction. Scientists use deduction to derive theorems from assumptions, and induction to find patterns in empirical data. Simulation, like deduction, starts with a rigorously specified set of assumptions regarding an actual or proposed system of interest; but, unlike deduction, simulation does not prove theorems with generality. Rather, simulation generates data suitable for analysis by induction. In contrast to typical induction, however, the simulated data comes from controlled experiments rather than from direct measurements of the real world1.\nThere are the four goals that people usually seek when doing ABN researches.\nEmpirical understanding. We want to know why there are so many types of regularities that would occur when we don’t have top down control. By conducting ABM researches, we can get some general understanding of the mechanism that leads to these general regulations. Normative understanding. A typical example for this goal is policy making. We cannot take the risk to to conduct every policy option and test it for ten years to see whether the results are good or bad. That’s why we need agent-based modelling before actually applying the policies. And we can, at least to some degree, find out what is the best policy or strategies for the good of the society. Heuristic. In this case we we aim to get some greater insights for fundamental mechanisms that would emerge with large scale effects. With limited brain power, we usually cannot see the entire picture of a complex problem. But with the help of agent-based modelling and with the computers, we may get some new perspectives that we can’t see by ourselves. Better methods/tools. Researches keep looking for improvements in agent-based models, from methodological principles to programming, visualization, and empirical validation tools. 2. Modelling examples In this section I will talk about several classical (also interesting) modelling examples.\n2.1. The game of life 5 This might not be exactly an agent-based model, but quite similar. This is called “the game of life”. It was invented by a mathematician, John Conway from Princeton University, in 1970. It’s an example of a cellular automation, in which rules are applied to cells and their neighbors in a regular grid. Life is played on a grid of square cells–like a chess board but extending infinitely in every direction. A cell can be alive or dead. A live cell is shown by putting a marker on its square. A dead cell is shown by leaving the square empty. Each cell in the grid has a neighborhood consisting of the eight cells in every direction including diagonals.\nTo apply one step of the rules, we count the number of live neighbors for each cell. What happens next depends on this number.\nA dead cell with exactly three live neighbors becomes a live cell (birth). A live cell with two or three live neighbors stays alive (survival). In all other cases, a cell dies or remains dead (overcrowding or loneliness). Life is one of the simplest examples of what is sometimes called “emergent complexity” or “self-organizing systems.” In Life, as in nature, we observe many fascinating phenomena, including static life patterns, oscillators, gliders, etc.\nstatic life patterns oscillators glider An online laboratory for conducting the game of life experiments can be found at https://playgameoflife.com/.\n2.2. Modelling civil violence 6 Here is another example of agent-based modelling. The model is used to represent civil violence development with different level of police power.\nA central authority uses “cops” to arrest (remove) actively rebelling citizens from the society for a specified jail term. In each time step, each agent (cop or citizen) randomly moves to a new unoccupied site within its limited vision. A rebelling citizen’s estimated arrest probability is assumed to fall as the ratio of actively rebelling citizens to cops that the citizen perceives in its vicinity increases. Each citizen in each time step decides whether to actively rebel or not depending on this perceived ratio.\nIn a multi-ethnic scenario, two different and hostile ethnic groups (blue and green, respectively) are mixed in the community. Red dots in the graph represent active events (violent conflicts between the two groups). When we don’t have police power as peace keepers, the mixture of two ethnic groups would lead to mass violent activities and eventually genocide, where one ethnic group is completely wiped out by the other. A peaceful haven is only possible when enough amount of police power (black dots) are deployed in the community and form a protective fence that loosely separates these two hostile groups.\n2.3. Fish emotion systems 7 There are also a lot of ABM researches related to biology and ecology. For instance, there is a research on the phenotype and genotype development of the emotion systems of fish. They constructed a hierarchical model that shows how different genotypes trigger various organismal responses to certain environmental messages, and reacts accordingly. These reactions leads to different survival rates according to natural selection. By conducting modelling experiments, they found that in a given environment, phenotype frequency distributions are predictable while gene pools are not due. This result provides a lot of mechanism information on convergent evolution and the organismal level of selection.\n2.3. BEEHAVE 8 I also found a quite professional and open source software used for honeybee agent based models. BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes.\nThe purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.\nThe design of BEEHAVE is based on empirical data, expert knowledge, and earlier honeybee models, but BEEHAVE is the first model that integrates within-hive processes with an explicit representation of foraging in heterogeneous and dynamic landscapes.\nAn introduction video from the BEEAHVE website can be found at here.\n3. Constraints and new opportunities 9 The number of scholars who developed or used ABMs has been steadily increasing at an exponential rate since the mid-1990s, reaching a climax in the 2000s. However, this hype faded with time because progress in agent-based modeling has been slower than initially anticipated. Challenges that ABM researches face may be concluded as:\nBasic difficulties in model development, communication, understanding, verification, and validation; Difficulties regarding coherence because of the substantial variation in platforms, programming languages, model details and sophistication, and modeler’s preferences; Difficulties in computational efficiency as most ABMs are developed on personal computers; Inadequate model/module transparency and reusability, which partially contributes to the challenge of verifying, validating, and analyzing model outcomes, including model sensitivity; Difficulties in generalizing findings and scaling them across scales. However, recent advances in artificial intelligence, unique new forms of data, and data science will substantially help address these challenges.\n%%{init: {'theme': 'neutral', 'fill': 'white', 'securitylevel': 'loose' } }%% graph LR A{{\"Artificial intelligence\"}} B{{\"Big data\"}} Q{{Qualitative data}} D{{\"Data science\"}} d[Data processing assisted by machine learning] i1[Intelligent agents with neural networks] r[Real-time data incorporation] i2[Improved model structures] c[\"Calibration \u0026 validation\"] A--\u003ed A--\u003ei1 B--\u003ei1 B--\u003er B--\u003ei2 D--\u003ei2 D--\u003ec Q--\u003ei2 Axelrod, R., \u0026 Tesfatsion, L. (2023, March 24). On-Line Guide for Newcomers to Agent-Based modelling in the Social Sciences. http://www2.econ.iastate.edu/tesfatsi/abmread.htm ↩︎ ↩︎ ↩︎\nVicsek, T. (2002). Complexity: The bigger picture. Nature, 418(6894), 131–131. https://doi.org/10.1038/418131a ↩︎\nCastellani, B., \u0026 Gerrits, L. (2023, May 10). 2021 Map of the complexity sciences [Https://www.art-sciencefactory.com/complexity-map_feb09.html]. ↩︎\nColumbia University Irving Medical Center. (n.d.). Agent-Based modelling: Overview. https://www.publichealth.columbia.edu/research/population-health-methods/agent-based-modelling ↩︎\nCallahan, P. (n.d.). What is the Game of Life? http://www.math.com/students/wonders/life/life.html ↩︎\nEpstein, J. M. (2002). Modeling civil violence: An agent-based computational approach. Proceedings of the National Academy of Sciences, 99(suppl_3), 7243–7250. https://doi.org/10.1073/pnas.092080199 ↩︎\nGiske, J., Eliassen, S., Fiksen, Ø., Jakobsen, P. J., Aksnes, D. L., Mangel, M., \u0026 Jørgensen, C. (2014). The emotion system promotes diversity and evolvability. Proceedings of the Royal Society B: Biological Sciences, 281(1791), 20141096. https://doi.org/10.1098/rspb.2014.1096 ↩︎\nThe University of Exeter, Matthias Becher. (n.d.). BEEHAVE. https://beehave-model.net/ ↩︎\nAn, L., Grimm, V., Sullivan, A., Turner II, B. L., Malleson, N., Heppenstall, A., Vincenot, C., Robinson, D., Ye, X., Liu, J., Lindkvist, E., \u0026 Tang, W. (2021). Challenges, tasks, and opportunities in modeling agent-based complex systems. Ecological Modelling, 457, 109685. https://doi.org/10.1016/j.ecolmodel.2021.109685 ↩︎\n",
+  "wordCount" : "1888",
+  "inLanguage": "en",
+  "image":"https://dong2000.xyz/images/abm_cover.jpg","datePublished": "2023-10-03T21:02:53+08:00",
+  "dateModified": "2023-10-03T21:02:53+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sʜᴇɴɢ Dong"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dong2000.xyz/post/learning-abm/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sheng Dong's website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dong2000.xyz/ptr.png"
+    }
+  }
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.3/mermaid.min.js" integrity="sha512-kxc8+BGu0/ESUMiK6Q/goKwwcoIoFVcXZ4GwMoGupMA/qTGx19BcNn1uiebOZO5f85ZD0oTdvlRKdeNh3RTnVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    
+    Array.from(document.getElementsByClassName("language-mermaid")).forEach(
+        (el) => {
+            el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
+        }
+    );
+</script>
+<style>
+     
+    .mermaid svg {
+        display: block;
+        margin: auto;
+    }
+</style>
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+                    height="40">波忒利</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                            aria-label="Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dong2000.xyz/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <h1 class="post-title">
+      Learning notes on agent-based modelling (ABM)
+    </h1>
+    <div class="post-meta">
+
+<span title='2023-10-03 21:02:53 +0800 CST'>October 3, 2023</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://dong2000.xyz/images/abm_cover.jpg" alt="Cover image from www.complexityexplorer.org">
+        <p>Cover image from <a href="https://www.complexityexplorer.org">www.complexityexplorer.org</a></p>
+</figure><aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#1-general-introduction" aria-label="1. General introduction">1. General introduction</a></li>
+                    <li>
+                        <a href="#2-modelling-examples" aria-label="2. Modelling examples">2. Modelling examples</a><ul>
+                            
+                    <li>
+                        <a href="#21-the-game-of-life-gol" aria-label="2.1. The game of life 5">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></a></li>
+                    <li>
+                        <a href="#22-modelling-civil-violence-mcv" aria-label="2.2. Modelling civil violence 6">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></a></li>
+                    <li>
+                        <a href="#23-fish-emotion-systems-fes" aria-label="2.3. Fish emotion systems 7">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></a></li>
+                    <li>
+                        <a href="#23-beehave-bh" aria-label="2.3. BEEHAVE 8">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#3-constraints-and-new-opportunities-cano" aria-label="3. Constraints and new opportunities 9">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+  <div class="post-content"><p>In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.</p>
+<p>I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they&rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics.</p>
+<h3 id="1-general-introduction">1. General introduction<a hidden class="anchor" aria-hidden="true" href="#1-general-introduction">#</a></h3>
+<p>We need to start with the term &ldquo;complex systems&rdquo;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This term it became very popular since the 2000s. However, the term &ldquo;complex&rdquo; almost sounds like an empty term to some degree because the real world is very complex by itself and every system, if it&rsquo;s related to the reality, is complex in its nature. But when we talk about the word &ldquo;complex&rdquo;, there are some unique and particular characteristics.</p>
+<p>A complex system exists &ldquo;on the edge of chaos&rdquo;, which means it has some irregular behaviors or patterns, but still the whole system is very unpredictable and can change quite dramatically with some minor input variations (for example the climate system).</p>
+<p>Another basic but also important idea is that we need to get rid of the idea of reductionism, which means to breakdown a topic or problem into different parts and by the process of breaking it, we will eventually get a full understanding of the whole picture. People in the past, especially those well trained with a Newtonian framework believed in this idea. But this reductionism idea has been criticized because people realized that when different parts are constructed in a certain way, we will observe some emergent characteristics which can&rsquo;t be deducted from parts of the system.</p>
+<p>There have been a lot of different theories to describe or study complex systems. By 2021, at least 76 theories<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> have been formally constructed to solve complexity problems across different realms. Many of these theories, very sadly, conflicts with each other.</p>
+<p>Agent-based modelling belongs to one type of these different complex systems theories. Agent-based models (ABM) are computer simulations used to study the interactions between people, things, places, and time. They are stochastic models built from the bottom up, meaning individual agents are assigned certain attributes. The agents are programmed to behave and interact with other agents and the environment in certain ways. These interactions produce emergent effects that may differ from effects of individual agents<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>In some cases, ABM might be the only practical method when the interaction of the agents is contingent on past experience, and especially when the agents continually adapt to that experience, thus mathematical analysis is typically very limited in its ability to derive the dynamic consequences<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Simulation approaches, such as ABM, is regarded as a third way for scientific researches apart from deduction and induction. Scientists use deduction to derive theorems from assumptions, and induction to find patterns in empirical data. Simulation, like deduction, starts with a rigorously specified set of assumptions regarding an actual or proposed system of interest; but, unlike deduction, simulation does not prove theorems with generality. Rather, simulation generates data suitable for analysis by induction. In contrast to typical induction, however, the simulated data comes from controlled experiments rather than from direct measurements of the real world<sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>There are the four goals that people usually seek when doing ABN researches.</p>
+<ol>
+<li>Empirical understanding. We want to know why there are so many types of regularities that would occur when we don&rsquo;t have top down control. By conducting ABM researches, we can get some general understanding of the mechanism that leads to these general regulations.</li>
+<li>Normative understanding. A typical example for this goal is policy making. We cannot take the risk to to conduct every policy option and test it for ten years to see whether the results are good or bad. That&rsquo;s why we need agent-based modelling before actually applying the policies. And we can, at least to some degree, find out what is the best policy or strategies  for the good of the society.</li>
+<li>Heuristic. In this case we we aim to get some greater insights for fundamental mechanisms that would emerge with large scale effects. With limited brain power, we usually cannot see the entire picture of a complex problem. But with the help of agent-based modelling and with the computers, we may get some new perspectives that we can&rsquo;t see by ourselves.</li>
+<li>Better methods/tools. Researches keep looking for improvements in agent-based models, from methodological principles to programming, visualization, and empirical validation tools.</li>
+</ol>
+<h3 id="2-modelling-examples">2. Modelling examples<a hidden class="anchor" aria-hidden="true" href="#2-modelling-examples">#</a></h3>
+<p>In this section I will talk about several classical (also interesting) modelling examples.</p>
+<h4 id="21-the-game-of-life-gol">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><a hidden class="anchor" aria-hidden="true" href="#21-the-game-of-life-gol">#</a></h4>
+<p>This might not be exactly an agent-based model, but quite similar. This is called &ldquo;the game of life&rdquo;. It was invented by a mathematician, John Conway from Princeton University, in 1970. It&rsquo;s an example of a cellular automation, in which rules are applied to cells and their neighbors in a regular grid. Life is played on a grid of square cells&ndash;like a chess board but extending infinitely in every direction. A cell can be alive or dead. A live cell is shown by putting a marker on its square. A dead cell is shown by leaving the square empty. Each cell in the grid has a neighborhood consisting of the eight cells in every direction including diagonals.</p>
+<p>To apply one step of the rules, we count the number of live neighbors for each cell. What happens next depends on this number.</p>
+<ul>
+<li>A dead cell with exactly three live neighbors becomes a live cell (birth).</li>
+<li>A live cell with two or three live neighbors stays alive (survival).</li>
+<li>In all other cases, a cell dies or remains dead (overcrowding or loneliness).</li>
+</ul>
+<p>Life is one of the simplest examples of what is sometimes called &ldquo;emergent complexity&rdquo; or &ldquo;self-organizing systems.&rdquo; In Life, as in nature, we observe many fascinating phenomena, including static life patterns, oscillators, gliders, etc.</p>
+<table>
+  <tr>
+    <td>static life patterns</td>
+    <td><img src="/images/block.gif"/></td>
+    <td><img src="/images/beehive.gif"/></td>
+    <td><img src="/images/boat.gif"/></td>
+  </tr>
+  <tr>
+    <td>oscillators<td>
+    <td><img src="/images/blinker.gif"/></td>
+    <td><img src="/images/toad.gif"/></td>
+  </tr>
+  <tr>
+    <td>glider</td>
+    <td><img src="/images/glider.gif"/></td>
+  </tr>
+</table>
+<p>An online laboratory for conducting the game of life experiments can be found at <a href="https://playgameoflife.com/">https://playgameoflife.com/</a>.</p>
+<h4 id="22-modelling-civil-violence-mcv">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><a hidden class="anchor" aria-hidden="true" href="#22-modelling-civil-violence-mcv">#</a></h4>
+<p>Here is another example of agent-based modelling. The model is used to represent civil violence development with different level of police power.</p>
+<p>A central authority uses &ldquo;cops&rdquo; to arrest (remove) actively rebelling citizens from the society for a specified jail term. In each time step, each agent (cop or citizen) randomly moves to a new unoccupied site within its limited vision. A rebelling citizen&rsquo;s estimated arrest probability is assumed to fall as the ratio of actively rebelling citizens to cops that the citizen perceives in its vicinity increases. Each citizen in each time step decides whether to actively rebel or not depending on this perceived ratio.</p>
+<p>In a multi-ethnic scenario, two different and hostile ethnic groups (blue and green, respectively) are mixed in the community. Red dots in the graph represent active events (violent conflicts between the two groups). When we don&rsquo;t have police power as peace keepers, the mixture of two ethnic groups would lead to mass violent activities and eventually genocide, where one ethnic group is completely wiped out by the other. A peaceful haven is only possible when enough amount of police power (black dots) are deployed in the community and form a protective fence that loosely separates these two hostile groups.</p>
+<center><img src="/images/image-20231003184754915.jpg" /></center>
+<h4 id="23-fish-emotion-systems-fes">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-fish-emotion-systems-fes">#</a></h4>
+<p>There are also a lot of ABM researches related to biology and ecology. For instance, there is a research on the phenotype and genotype development of the emotion systems of fish. They constructed a hierarchical model that shows how different genotypes trigger various organismal responses to certain environmental messages, and reacts accordingly. These reactions leads to different survival rates according to natural selection. By conducting modelling experiments, they found that in a given environment, phenotype frequency distributions are predictable while gene pools are not due. This result provides a lot of mechanism information on convergent evolution and the organismal level of selection.</p>
+<center><img src="/images/image-20231003190016387.jpg"/></center>
+<h4 id="23-beehave-bh">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-beehave-bh">#</a></h4>
+<p>I also found a quite professional and open source software used for honeybee agent based models. BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes.</p>
+<p>The purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.</p>
+<p>The design of BEEHAVE is based on empirical data, expert knowledge, and earlier honeybee models, but BEEHAVE is the first model that integrates within-hive processes with an explicit representation of foraging in heterogeneous and dynamic landscapes.</p>
+<p>An introduction video from the BEEAHVE website can be found at <a href="https://www.youtube.com/watch?v=j5AZhaYEt5U">here</a>.</p>
+<h3 id="3-constraints-and-new-opportunities-cano">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><a hidden class="anchor" aria-hidden="true" href="#3-constraints-and-new-opportunities-cano">#</a></h3>
+<p>The number of scholars who developed or used ABMs has been steadily increasing at an exponential rate since the mid-1990s, reaching a climax in the 2000s. However, this hype faded with time because progress in agent-based modeling has been slower than initially anticipated. Challenges that ABM researches face may be concluded as:</p>
+<ol>
+<li>Basic difficulties in model development, communication, understanding, verification, and validation;</li>
+<li>Difficulties regarding coherence because of the substantial variation in platforms, programming languages, model details and sophistication, and modeler&rsquo;s preferences;</li>
+<li>Difficulties in computational efficiency as most ABMs are developed on personal computers;</li>
+<li>Inadequate model/module transparency and reusability, which partially contributes to the challenge of verifying, validating, and analyzing model outcomes, including model sensitivity;</li>
+<li>Difficulties in generalizing findings and scaling them across scales.</li>
+</ol>
+<p>However, recent advances in artificial intelligence, unique new forms of data, and data science will substantially help address these challenges.</p>
+<div class="mermaid">
+%%{init: {'theme': 'neutral', 'fill': 'white', 'securitylevel': 'loose' } }%%
+graph LR
+A{{"Artificial intelligence"}}
+B{{"Big data"}}
+Q{{Qualitative data}}
+D{{"Data science"}}
+d[Data processing assisted by machine learning]
+i1[Intelligent agents with neural networks]
+r[Real-time data incorporation]
+i2[Improved model structures]
+c["Calibration & validation"]
+A-->d
+A-->i1
+B-->i1
+B-->r
+B-->i2
+D-->i2
+D-->c
+Q-->i2
+</div>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Axelrod, R., &amp; Tesfatsion, L. (2023, March 24). <em>On-Line Guide for Newcomers to Agent-Based modelling in the Social Sciences</em>. <a href="http://www2.econ.iastate.edu/tesfatsi/abmread.htm">http://www2.econ.iastate.edu/tesfatsi/abmread.htm</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Vicsek, T. (2002). Complexity: The bigger picture. <em>Nature</em>, <em>418</em>(6894), 131–131. <a href="https://doi.org/10.1038/418131a">https://doi.org/10.1038/418131a</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Castellani, B., &amp; Gerrits, L. (2023, May 10). <em>2021 Map of the complexity sciences</em> [Https://www.art-sciencefactory.com/complexity-map_feb09.html].&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Columbia University Irving Medical Center. (n.d.). <em>Agent-Based modelling: Overview</em>. <a href="https://www.publichealth.columbia.edu/research/population-health-methods/agent-based-modelling">https://www.publichealth.columbia.edu/research/population-health-methods/agent-based-modelling</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Callahan, P. (n.d.). <em>What is the Game of Life?</em> <a href="http://www.math.com/students/wonders/life/life.html">http://www.math.com/students/wonders/life/life.html</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Epstein, J. M. (2002). Modeling civil violence: An agent-based computational approach. <em>Proceedings of the National Academy of Sciences</em>, <em>99</em>(suppl_3), 7243–7250. <a href="https://doi.org/10.1073/pnas.092080199">https://doi.org/10.1073/pnas.092080199</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>Giske, J., Eliassen, S., Fiksen, Ø., Jakobsen, P. J., Aksnes, D. L., Mangel, M., &amp; Jørgensen, C. (2014). The emotion system promotes diversity and evolvability. <em>Proceedings of the Royal Society B: Biological Sciences</em>, <em>281</em>(1791), 20141096. <a href="https://doi.org/10.1098/rspb.2014.1096">https://doi.org/10.1098/rspb.2014.1096</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>The University of Exeter, Matthias Becher. (n.d.). <em>BEEHAVE</em>. <a href="https://beehave-model.net/">https://beehave-model.net/</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p>An, L., Grimm, V., Sullivan, A., Turner II, B. L., Malleson, N., Heppenstall, A., Vincenot, C., Robinson, D., Ye, X., Liu, J., Lindkvist, E., &amp; Tang, W. (2021). Challenges, tasks, and opportunities in modeling agent-based complex systems. Ecological Modelling, 457, 109685. <a href="https://doi.org/10.1016/j.ecolmodel.2021.109685">https://doi.org/10.1016/j.ecolmodel.2021.109685</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dong2000.xyz/tags/abm/">ABM</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://dong2000.xyz/post/science-philosophy/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>不适</span>
+  </a>
+  <a class="next" href="https://dong2000.xyz/post/notes-on-mmdet/">
+    <span class="title">Next »</span>
+    <br>
+    <span>MMDetection目标检测入门笔记</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span id="busuanzi_container_site_count">
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>.
+    
+    
+        
+        &nbsp;&nbsp;本页访问量=<span id="busuanzi_value_page_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+
+</html>

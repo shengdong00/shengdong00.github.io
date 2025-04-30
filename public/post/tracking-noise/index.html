@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tracking Noise with Smartphones | Sheng Dong&#39;s website</title>
+<meta name="keywords" content="噪声污染, noise, Fourier transformation">
+<meta name="description" content="Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.
+So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.">
+<meta name="author" content="Sʜᴇɴɢ Dong">
+<link rel="canonical" href="https://dong2000.xyz/post/tracking-noise/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dong2000.xyz/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/tracking-noise/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Tracking Noise with Smartphones" />
+<meta property="og:description" content="Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.
+So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dong2000.xyz/post/tracking-noise/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-07-16T13:22:19+08:00" />
+<meta property="article:modified_time" content="2023-07-16T13:22:19+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dong2000.xyz/ptr.png"/>
+
+<meta name="twitter:title" content="Tracking Noise with Smartphones"/>
+<meta name="twitter:description" content="Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.
+So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://dong2000.xyz/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tracking Noise with Smartphones",
+      "item": "https://dong2000.xyz/post/tracking-noise/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tracking Noise with Smartphones",
+  "name": "Tracking Noise with Smartphones",
+  "description": "Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.\nSo here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.\n",
+  "keywords": [
+    "噪声污染", "noise", "Fourier transformation"
+  ],
+  "articleBody": "Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.\nSo here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.\nThe noise in our bio lab is supposed to be the result of some structures causing standing waves as the ventilation system drives air through the room and into the duct. So the key to solve that noise pollution would be to find the most powerful standing waves, and alter related structures. Once these structures are altered, hopefully we won’t have any annoying standing waves.\nSampling To track standing waves we need some noise samples. However, we don’t have a proper device to record the noise, and the only thing available at had was my smartphone. Microphones in smartphones are good at recording human voice, but I’m not confident at their ability to record low-frequency noises. Sampling accuracy may be influenced by microphone sensitivity and other systematic bias caused by the smartphone structure.\nSo I found a way to (partly) compensate for this unreliability. I used 3 smartphones of different brands (vivo, Honor and iPhone), 2 of which borrowed from my colleagues Marcel \u0026 Lin Wei. I recorded 3 pieces of noise samples, each lasting for roughly 15 seconds (sample_A.m4a, sample_B.m4a, sample_C.m4a). sample_A.m4a and sample_B.m4a both had 2 channels, while sample_C.m4a had a single channel. The sampling rates were all 48000 Hz.\nFourier transform In order to find dominant frequencies, I used MATLAB to do Fourier transform. Sample sections (from the 4th second to the 12th second) were used to avoid disturbance at the beginning and end of noise records.\nNoise sample sections (8 seconds) recorded with 3 smartphones.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone. Then I used fft() function to do fast Fourier transform for these 5 channels. It’s clear that the 3 phones showed very different performance in recording noise samples. Channel 1-2 (Hornor) showed a high peak at 320 Hz, and one of its channel had a second peak at 95 Hz. Channel 3-4 (vivo) had their 1st peak at 97 Hz, and 2nd peak at 37 Hz. Channel 5 (iPhone) peaked at 48 Hz.\nPower-frequency curves, zoomed in 20-2000 Hz.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone. The results were quite a bit mess, but to some degree that’s exactly what I had expected. Some of the peaks make a lot of sense, e.g., the 97/95 Hz peaks indicate a wavelenght of 3.5 m, which is exactly the width of our bio lab - so this is a standing wave with its nodes attached to 2 opposite walls of the room.\nConclusion It’s fairly simple to remove that standing wave - just put some sound-absorbing cotton on related walls and it will be gone. But it’s also not so simple since we have to make sure that these sound-absorbing cotton will not bring other risks to our bio lab, e.g., undesired volatile chemicals or fire-proof/safety standards that are not met. Another pretty simple way is to lower the power of ventilation and thus the energy of vibration will also drop to an acceptable level, hopefully. Let’s wait and see what people from construction/decoration departments would suggest.\nMeanwhile, we’ve learned from this experience that it is never recommended to analyze frequency spectrums with smartphones - professional vibration meters are expensive for a good reason.\n",
+  "wordCount" : "590",
+  "inLanguage": "en",
+  "datePublished": "2023-07-16T13:22:19+08:00",
+  "dateModified": "2023-07-16T13:22:19+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sʜᴇɴɢ Dong"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dong2000.xyz/post/tracking-noise/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sheng Dong's website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dong2000.xyz/ptr.png"
+    }
+  }
+}
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+                    height="40">波忒利</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                            aria-label="Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dong2000.xyz/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <h1 class="post-title">
+      Tracking Noise with Smartphones
+    </h1>
+    <div class="post-meta">
+
+<span title='2023-07-16 13:22:19 +0800 CST'>July 16, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;
+
+</div>
+  </header> 
+  <div class="post-content"><p>Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.</p>
+<p>So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.</p>
+<p>The noise in our bio lab is supposed to be the result of some structures causing standing waves as the ventilation system drives air through the room and into the duct. So the key to solve that noise pollution would be to find the most powerful standing waves, and alter related structures. Once these structures are altered, hopefully we won&rsquo;t have any annoying standing waves.</p>
+<h1 id="sampling">Sampling<a hidden class="anchor" aria-hidden="true" href="#sampling">#</a></h1>
+<p>To track standing waves we need some noise samples. However, we don&rsquo;t have a proper device to record the noise, and the only thing available at had was my smartphone. Microphones in smartphones are good at recording human voice, but I&rsquo;m not confident at their ability to record low-frequency noises. Sampling accuracy may be influenced by microphone sensitivity and other systematic bias caused by the smartphone structure.</p>
+<p>So I found a way to (partly) compensate for this unreliability. I used 3 smartphones of different brands (vivo, Honor and iPhone), 2 of which borrowed from my colleagues Marcel &amp; Lin Wei. I recorded 3 pieces of noise samples, each lasting for roughly 15 seconds (<code>sample_A.m4a</code>, <code>sample_B.m4a</code>, <code>sample_C.m4a</code>). <code>sample_A.m4a</code> and <code>sample_B.m4a</code> both had 2 channels, while <code>sample_C.m4a</code> had a single channel. The sampling rates were all 48000 Hz.</p>
+<h1 id="fourier-transform">Fourier transform<a hidden class="anchor" aria-hidden="true" href="#fourier-transform">#</a></h1>
+<p>In order to find dominant frequencies, I used MATLAB to do Fourier transform. Sample sections (from the 4<sup>th</sup> second to the 12<sup>th</sup> second) were used to avoid disturbance at the beginning and end of noise records.</p>
+<center><figure>
+<img src="/images/noise-amplitude.jpg" alt="noise-amplitude" style="zoom:80%;" /><figcaption>Noise sample sections (8 seconds) recorded with 3 smartphones.<br>Channel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone.</figcaption>
+</figure></center>
+<p>Then I used <code>fft()</code> function to do fast Fourier transform for these 5 channels. It&rsquo;s clear that the 3  phones showed very different performance in recording noise samples. Channel 1-2 (Hornor) showed a high peak at 320 Hz, and one of its channel had a second peak at 95 Hz. Channel 3-4 (vivo) had their 1<sup>st</sup> peak at 97 Hz, and 2<sup>nd</sup> peak at 37 Hz. Channel 5 (iPhone) peaked at 48 Hz.</p>
+<center><figure>
+<img src="/images/fft.jpg" alt="fft" style="zoom:100%;" />
+<figcaption>Power-frequency curves, zoomed in 20-2000 Hz.<br>Channel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone.</figcaption>
+</figure></center>
+<p>The results were quite a bit mess, but to some degree that&rsquo;s exactly what I had expected. Some of the peaks make a lot of sense, e.g., the 97/95 Hz peaks indicate a wavelenght of 3.5 m, which is <strong>exactly</strong> the width of our bio lab - so this is a standing wave with its nodes attached to 2 opposite walls of the room.</p>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<p>It&rsquo;s fairly simple to remove that standing wave - just put some sound-absorbing cotton on related walls and it will be gone. But it&rsquo;s also not so simple since we have to make sure that these sound-absorbing cotton will not bring other risks to our bio lab, e.g., undesired volatile chemicals or fire-proof/safety standards that are not met. Another pretty simple way is to lower the power of ventilation and thus the energy of vibration will also drop to an acceptable level, hopefully. Let&rsquo;s wait and see what people from construction/decoration departments would suggest.</p>
+<p>Meanwhile, we&rsquo;ve learned from this experience that it is never recommended to analyze frequency spectrums with smartphones - professional vibration meters are expensive for a good reason.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dong2000.xyz/tags/%E5%99%AA%E5%A3%B0%E6%B1%A1%E6%9F%93/">噪声污染</a></li>
+      <li><a href="https://dong2000.xyz/tags/noise/">Noise</a></li>
+      <li><a href="https://dong2000.xyz/tags/fourier-transformation/">Fourier Transformation</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://dong2000.xyz/post/summer-camp-2023/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>二十分钟的老师</span>
+  </a>
+  <a class="next" href="https://dong2000.xyz/post/equivalent-diameter-error/">
+    <span class="title">Next »</span>
+    <br>
+    <span>纤维状颗粒的空气动力学直径误差传递公式</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span id="busuanzi_container_site_count">
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>.
+    
+    
+        
+        &nbsp;&nbsp;本页访问量=<span id="busuanzi_value_page_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+
+</html>

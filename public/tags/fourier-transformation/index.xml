@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fourier Transformation on Sheng Dong&#39;s website</title>
+    <link>https://dong2000.xyz/tags/fourier-transformation/</link>
+    <description>Recent content in Fourier Transformation on Sheng Dong&#39;s website</description>
+    <image>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jul 2023 13:22:19 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/fourier-transformation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracking Noise with Smartphones</title>
+      <link>https://dong2000.xyz/post/tracking-noise/</link>
+      <pubDate>Sun, 16 Jul 2023 13:22:19 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/tracking-noise/</guid>
+      <description>&lt;p&gt;Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.&lt;/p&gt;
+&lt;p&gt;So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

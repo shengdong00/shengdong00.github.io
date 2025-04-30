@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>爬虫 on Sheng Dong&#39;s website</title>
+    <link>https://dong2000.xyz/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on Sheng Dong&#39;s website</description>
+    <image>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 May 2022 19:27:46 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
+      <link>https://dong2000.xyz/post/crawl_papers_from_scihub/</link>
+      <pubDate>Wed, 18 May 2022 19:27:46 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/crawl_papers_from_scihub/</guid>
+      <description>&lt;center&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;/center&gt;
+&lt;h1 id=&#34;操作思路&#34;&gt;操作思路&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;在Web of Science或者其他学术搜索引擎上查找所需要的文献，然后将全体检索结果的信息导出成Excel（包括作者、标题、出版年份、期刊、DOI号等等）&lt;/li&gt;
+&lt;li&gt;以DOI号为检索条件，到Sci-Hub下载文献，将这一过程写成爬虫进行批量处理
+&lt;ul&gt;
+&lt;li&gt;导出DOI号序列，写成循环来逐个爬取&lt;/li&gt;
+&lt;li&gt;以DOI号检索文献，进入下载页面，查找到保存按钮对应的元素，下载到本地&lt;/li&gt;
+&lt;li&gt;将下载的PDF文件按照自己的标准重命名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;手动补全无法在Sci-Hub上得到的文献&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>我国海水水质数据分析</title>
+      <link>https://dong2000.xyz/post/china_sea_water_data/</link>
+      <pubDate>Sun, 24 Apr 2022 01:36:16 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/china_sea_water_data/</guid>
+      <description>&lt;p&gt;环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通过爬虫获取我国沿海海水水质的监测数据；&lt;/li&gt;
+&lt;li&gt;以散点图直观反映水质类别的分布和随时间变化情况；&lt;/li&gt;
+&lt;li&gt;将化学需氧量数据转换为正态分布，以海区/省份为分类变量进行单因素方差分析；&lt;/li&gt;
+&lt;li&gt;将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性；&lt;/li&gt;
+&lt;li&gt;利用机器学习，从多个污染指标数据预测海区分类。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
+    </item>
+    
+    <item>
+      <title>用Python爬虫爬取高校教师邮箱</title>
+      <link>https://dong2000.xyz/post/get_email_by_python_crawler/</link>
+      <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
+&lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
+&lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
+&lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

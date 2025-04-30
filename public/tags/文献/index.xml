@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文献 on Sheng Dong&#39;s website</title>
+    <link>https://dong2000.xyz/tags/%E6%96%87%E7%8C%AE/</link>
+    <description>Recent content in 文献 on Sheng Dong&#39;s website</description>
+    <image>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Apr 2024 09:52:09 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E6%96%87%E7%8C%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读 [April 3rd]</title>
+      <link>https://dong2000.xyz/post/reading-note-20240403/</link>
+      <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
+      <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
+Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
+Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+    </item>
+    
+    <item>
+      <title>文献阅读 [March 6th]——人与自然耦合系统</title>
+      <link>https://dong2000.xyz/post/reading-note-20240306/</link>
+      <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
+      <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
+Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+    </item>
+    
+    <item>
+      <title>再读《社会-经济-自然复合生态系统》</title>
+      <link>https://dong2000.xyz/post/on_socio_economic_natural_system/</link>
+      <pubDate>Sun, 18 Sep 2022 16:16:51 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/on_socio_economic_natural_system/</guid>
+      <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开&amp;#x1f4a1;的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
+      <link>https://dong2000.xyz/post/crawl_papers_from_scihub/</link>
+      <pubDate>Wed, 18 May 2022 19:27:46 +0000</pubDate>
+      
+      <guid>https://dong2000.xyz/post/crawl_papers_from_scihub/</guid>
+      <description>&lt;center&gt;
+&lt;img src=&#34;https://dong2000.xyz/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;/center&gt;
+&lt;h1 id=&#34;操作思路&#34;&gt;操作思路&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;在Web of Science或者其他学术搜索引擎上查找所需要的文献，然后将全体检索结果的信息导出成Excel（包括作者、标题、出版年份、期刊、DOI号等等）&lt;/li&gt;
+&lt;li&gt;以DOI号为检索条件，到Sci-Hub下载文献，将这一过程写成爬虫进行批量处理
+&lt;ul&gt;
+&lt;li&gt;导出DOI号序列，写成循环来逐个爬取&lt;/li&gt;
+&lt;li&gt;以DOI号检索文献，进入下载页面，查找到保存按钮对应的元素，下载到本地&lt;/li&gt;
+&lt;li&gt;将下载的PDF文件按照自己的标准重命名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;手动补全无法在Sci-Hub上得到的文献&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

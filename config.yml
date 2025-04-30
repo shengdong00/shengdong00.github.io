@@ -1,0 +1,254 @@
+baseURL: "https://dong2000.xyz" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: "Sheng Dong's website"
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+googleAnalytics: G-MT6FEG7LK4
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+  en:
+    languageName: Blog
+    menu:
+        main:
+            - name: Archive
+              url: archives/
+              weight: 5
+            # - name: Categ.
+            #   url: categories/
+            #   weight: 10
+            # - name: Tags
+            #   url: tags/
+              weight: 10
+            - name: About
+              url: about/
+            - name: Links
+              url: links/
+            - name: Search
+              url: search/
+    params:
+      env: production # to enable google analytics, opengraph, twitter-cards and schema.
+      description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+      author: "Sʜᴇɴɢ Dong"
+      # author: ["Me", "You"] # multiple authors
+      defaultTheme: auto
+      # disableThemeToggle: true
+      ShowShareButtons: false
+      ShowReadingTime: true
+      # disableSpecial1stPost: true
+      displayFullLangName: true
+      ShowPostNavLinks: true
+      ShowBreadCrumbs: true
+      ShowCodeCopyButtons: true
+      ShowRssButtonInSectionTermList: true
+      ShowToc: true
+      comments: false
+      images: ["ptr.png"]
+      profileMode:
+          enabled: false
+  profile:
+    params:
+      profileMode:
+          enabled: true
+          title: Sʜᴇɴɢ Dong <a style="font-size:0.9em">盛 东</a>
+          subtitle: >
+              <b>PhD candidate</b><br>
+              School of Engineering, Westlake University<br>
+              Hangzhou, China<br>
+          imageUrl: "profile4.jpg"
+          imageTitle: avatar
+          imageWidth: 200
+          imageHeight: 200
+          buttons:
+              - name: CV
+                # url: cv/
+                url: CV_ShengDong.pdf
+              # - name: intro (cn)
+              #   url: intro_cn/
+              - name: Outputs
+                url: /profile/net/
+              - name: Blog
+                url: /
+      socialIcons:
+        - name: email
+          url: mailto:sheng_dong@foxmail.com
+        - name: Rss
+          url: "index.xml"
+        - name: github
+          url: https://github.com/shengdong00
+        - name: researchgate
+          url: https://www.researchgate.net/profile/Dong-Sheng-5
+        - name: googlescholar
+          url: https://scholar.google.com/citations?user=YwrjVjoAAAAJ
+        - name: linkedin
+          url: https://www.linkedin.com/in/dong-sheng-8903a1288/
+        - name: ORCID
+          url: https://orcid.org/0000-0001-5658-5771
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: "Sheng, D."
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    comments: false
+    images: ["ptr.png"]
+
+    # profileMode:
+    #     enabled: false
+    #     title: Sheng Dong
+    #     subtitle: >
+    #         <b>Ph.D.</b> candidate @ SASE LAB<br>School of Engineering, Westlake University
+
+    #     imageUrl: "ptr_small.jpg"
+    #     imageTitle: avatar
+    #     imageWidth: 200
+    #     imageHeight: 200
+    #     buttons:
+    #         - name: Blog 博客
+    #           url: archives
+    #         - name: About 关于
+    #           url: about
+
+    homeInfoParams:
+        Title: "波忒利的博客"
+        
+        Content: >
+          <font size=4em>
+          <p align="left"><i>\"If knowledge can create problems, it is not through ignorance that we can solve them.\"</i></p>
+          <p align="right">Issac Asimov</p>
+          </font>
+
+    socialIcons:
+        - name: email
+          url: mailto:sheng_dong@foxmail.com
+        - name: Rss
+          url: "index.xml"
+        - name: github
+          url: https://github.com/shengdong00
+        - name: researchgate
+          url: https://www.researchgate.net/profile/Dong-Sheng-5
+        - name: googlescholar
+          url: https://scholar.google.com/citations?user=YwrjVjoAAAAJ
+        - name: linkedin
+          url: https://www.linkedin.com/in/dong-sheng-8903a1288/
+        - name: ORCID
+          url: https://orcid.org/0000-0001-5658-5771
+        # - name: X
+        #   url: https://x.com/ShengDong00
+        # - name: zhihu
+        #   url: https://www.zhihu.com/people/piao-bo-qiu-shi-ying
+        - name: bilibili
+          url: https://space.bilibili.com/485957570
+
+    label:
+        text: "波忒利"
+        icon: ptr.png
+        iconHeight: 40
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "G-MT6FEG7LK4"
+
+    assets:
+        disableHLJS: false
+        favicon: "ptr.png"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: false # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        style: monokai
+    # highlight:
+    #   anchorLineNos: false
+    #   codeFences: true
+    #   guessSyntax: true
+    #   hl_Lines: ""
+    #   hl_inline: false
+    #   lineAnchors: ""
+    #   lineNoStart: 1
+    #   lineNos: false
+    #   lineNumbersInTable: true
+    #   noClasses: true
+    #   noHl: false
+    #   style: monokai
+    #   tabWidth: 4
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
