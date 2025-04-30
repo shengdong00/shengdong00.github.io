@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://dong2000.xyz/sitemap.xml
