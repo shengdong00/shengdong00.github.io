@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>计算机视觉 on Sheng Dong&#39;s website</title>
-    <link>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</link>
+    <link>https://dong2000.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</link>
     <description>Recent content in 计算机视觉 on Sheng Dong&#39;s website</description>
     <image>
-      <url>http://localhost:1313/ptr.png</url>
-      <link>http://localhost:1313/ptr.png</link>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 11:11:41 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 11:11:41 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MMDetection目标检测入门笔记</title>
-      <link>http://localhost:1313/post/notes-on-mmdet/</link>
+      <link>https://dong2000.xyz/post/notes-on-mmdet/</link>
       <pubDate>Mon, 28 Aug 2023 11:11:41 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/notes-on-mmdet/</guid>
+      <guid>https://dong2000.xyz/post/notes-on-mmdet/</guid>
       <description>&lt;p&gt;本篇是MMDetection学习应用过程中的踩坑记录，随学习情况更新。&lt;/p&gt;</description>
     </item>
     

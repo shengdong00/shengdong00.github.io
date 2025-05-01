@@ -25,7 +25,7 @@ function initECharts() {
 
         },
         legend: {
-            data: ['Research paper', 'Review paper', 'Presentation', 'Patent/software', 'Media coverage']  // 图例数据
+            data: ['Research paper', 'Review paper', 'Patent/software', 'Presentation', 'Media coverage']  // 图例数据
 
         },
         series: [{

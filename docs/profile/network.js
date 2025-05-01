@@ -25,7 +25,7 @@ function initECharts() {
 
         },
         legend: {
-            data: ['Research paper', 'Review paper', 'Presentation', 'Patent/software', 'Media coverage']  // 图例数据
+            data: ['Research paper', 'Review paper', 'Patent/software', 'Presentation', 'Media coverage']  // 图例数据
 
         },
         series: [{
@@ -49,7 +49,7 @@ function initECharts() {
 
                 { name: 'Sheng, 2024', symbolSize: 80, category: 'Review paper', remark: 'Plastic pollution in agricultural landscapes.', url: 'https://www.nature.com/articles/s41467-024-52734-3'},
                 { name: 'Sheng, 2024b', symbolSize: 40, category: 'Presentation', remark: 'Latebreaking Poster at ESA 2024', url: 'https://www.esa.org/longbeach2024/'},
-                { name: 'Sheng, 2024c', symbolSize: 30, category: 'Presentation', remark: '西湖大学可持续发展与环境前沿交叉论坛 海报展示'},
+                { name: 'Sheng, 2024c', symbolSize: 20, category: 'Presentation', remark: '西湖大学可持续发展与环境前沿交叉论坛 海报展示'},
                 { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks (in prep)'},
                 { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (in process)'},
                 { name: 'Washington Post', symbolSize: 20, category: 'Media coverage', remark: 'Washington Post', url: 'https://www.washingtonpost.com/science/2025/04/27/bees-pollination-microplastics-colony-collapse/'},
