@@ -18,7 +18,6 @@ function initECharts() {
                     return params.data.value;  // 显示边的value
                 } else if (params.data && params.data.remark) {
                     return params.data.remark;  // 显示备注文本
-
                 }
                 return params.name;  // 默认显示节点名字
 
@@ -48,11 +47,11 @@ function initECharts() {
             data: [
                 { name: 'Sheng, 2022', symbolSize: 30, category: 'Research paper', remark: 'nZVI and PAHs effects on bacterial community', url: 'https://www.sciencedirect.com/science/article/abs/pii/S0269749122011071'},
 
-                { name: 'Sheng, 2024', symbolSize: 80, category: 'Review paper', remark: 'Plastic pollution in agricultural landscapes', url: 'https://www.nature.com/articles/s41467-024-52734-3'},
+                { name: 'Sheng, 2024', symbolSize: 80, category: 'Review paper', remark: 'Plastic pollution in agricultural landscapes.', url: 'https://www.nature.com/articles/s41467-024-52734-3'},
                 { name: 'Sheng, 2024b', symbolSize: 40, category: 'Presentation', remark: 'Latebreaking Poster at ESA 2024', url: 'https://www.esa.org/longbeach2024/'},
                 { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks (in prep)'},
                 { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (in process)'},
-                { name: 'Zaraska, 2025', symbolSize: 20, category: 'Media coverage', remark: 'Washington Post', url: 'https://www.washingtonpost.com/science/2025/04/27/bees-pollination-microplastics-colony-collapse/'},
+                { name: 'Washington Post', symbolSize: 20, category: 'Media coverage', remark: 'Washington Post', url: 'https://www.washingtonpost.com/science/2025/04/27/bees-pollination-microplastics-colony-collapse/'},
                 
                 { name: 'Xu, 2024', symbolSize: 50, category: 'Research paper', remark: 'Identifying Cocoa Pollinators', url: 'https://arxiv.org/abs/2412.19915'},
                 { name: 'Darras, 2024', symbolSize: 40, category: 'Research paper', remark: 'Eyes on nature', url: 'https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14436'},
@@ -63,7 +62,7 @@ function initECharts() {
                 { source: 'Darras, 2024', target: 'Sheng, 2025', value: 'Computer vision' },
                 { source: 'Sheng, 2025', target: 'Sheng, 2024b', value: 'Priliminary findings' },
                 { source: 'Sheng, 2025', target: 'Wanger, 2023', value: 'Software' },
-                { source: 'Sheng, 2024', target: 'Zaraska, 2025', value: 'Interview with Wanger' },
+                { source: 'Sheng, 2024', target: 'Washington Post', value: 'Interview with Wanger' },
             ],
             // #a4c2db, #73b1c9, #4a9ab0, #2b7e9c, #1b5b7e
             categories: [
@@ -88,7 +87,7 @@ function initECharts() {
             },
             lineStyle: {
                 color: 'target',
-                curveness: 0.1,
+                curveness: 0,
                 width: 2,
                 opacity: 1
               }
