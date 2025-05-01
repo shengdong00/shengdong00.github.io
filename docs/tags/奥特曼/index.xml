@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>奥特曼 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/</link>
+    <link>http://localhost:1313/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/</link>
     <description>Recent content in 奥特曼 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Oct 2022 03:23:28 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Oct 2022 03:23:28 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《新·奥特曼》中关于贝塔系统的论文</title>
-      <link>https://dong2000.xyz/post/beta-system_shin_ultraman/</link>
+      <link>http://localhost:1313/post/beta-system_shin_ultraman/</link>
       <pubDate>Tue, 11 Oct 2022 03:23:28 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/beta-system_shin_ultraman/</guid>
+      <guid>http://localhost:1313/post/beta-system_shin_ultraman/</guid>
       <description>&lt;p&gt;看痞子的新曼电影时，瞥到了神永新二留给泷明久的论文（解释了贝塔系统的原理），突发奇想将论文的第一页（影片中有一两秒的特写）给扒了下来。&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;所以看了这个东西之后我可以造出变身器吗？&lt;/s&gt;&lt;/p&gt;</description>
     </item>

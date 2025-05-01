@@ -49,6 +49,7 @@ function initECharts() {
 
                 { name: 'Sheng, 2024', symbolSize: 80, category: 'Review paper', remark: 'Plastic pollution in agricultural landscapes.', url: 'https://www.nature.com/articles/s41467-024-52734-3'},
                 { name: 'Sheng, 2024b', symbolSize: 40, category: 'Presentation', remark: 'Latebreaking Poster at ESA 2024', url: 'https://www.esa.org/longbeach2024/'},
+                { name: 'Sheng, 2024c', symbolSize: 30, category: 'Presentation', remark: '西湖大学可持续发展与环境前沿交叉论坛 海报展示'},
                 { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks (in prep)'},
                 { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (in process)'},
                 { name: 'Washington Post', symbolSize: 20, category: 'Media coverage', remark: 'Washington Post', url: 'https://www.washingtonpost.com/science/2025/04/27/bees-pollination-microplastics-colony-collapse/'},
@@ -60,17 +61,19 @@ function initECharts() {
                 { source: 'Darras, 2024', target: 'Xu, 2024', value: 'Embedded vision camera' },
                 { source: 'Sheng, 2024', target: 'Sheng, 2025', value: 'Microplastics, pollinators' },
                 { source: 'Darras, 2024', target: 'Sheng, 2025', value: 'Computer vision' },
+                { source: 'Darras, 2024', target: 'Wanger, 2023', value: 'Computer vision' },
                 { source: 'Sheng, 2025', target: 'Sheng, 2024b', value: 'Priliminary findings' },
                 { source: 'Sheng, 2025', target: 'Wanger, 2023', value: 'Software' },
                 { source: 'Sheng, 2024', target: 'Washington Post', value: 'Interview with Wanger' },
+                { source: 'Sheng, 2024', target: 'Sheng, 2024c', value: '-' },
             ],
-            // #a4c2db, #73b1c9, #4a9ab0, #2b7e9c, #1b5b7e
+            // #a1a1ce, #94bcbc, #83a7d2, #2b7e9c, #1b5b7e
             categories: [
                 { name: 'Research paper', itemStyle: { color: '#1b5b7e' } },
                 { name: 'Review paper', itemStyle: { color: '#2b7e9c' } },
-                { name: 'Presentation', itemStyle: { color: '#4a9ab0' } },
-                { name: 'Patent/software', itemStyle: { color: '#73b1c9' } },
-                { name: 'Media coverage', itemStyle: { color: '#a4c2db' } }
+                { name: 'Patent/software', itemStyle: { color: '#83a7d2' } },
+                { name: 'Presentation', itemStyle: { color: '#94bcbc' } },
+                { name: 'Media coverage', itemStyle: { color: '#a1a1ce' } }
             ],
             force: {
                 // repulsion: 1000,
