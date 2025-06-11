@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SETAR on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/setar/</link>
+    <link>http://localhost:1313/tags/setar/</link>
     <description>Recent content in SETAR on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Apr 2023 20:50:34 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/setar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 20:50:34 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/setar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SETAR Model</title>
-      <link>https://dong2000.xyz/post/setar-model/</link>
+      <link>http://localhost:1313/post/setar-model/</link>
       <pubDate>Sat, 29 Apr 2023 20:50:34 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/setar-model/</guid>
+      <guid>http://localhost:1313/post/setar-model/</guid>
       <description>&lt;p&gt;SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</description>
     </item>
     
