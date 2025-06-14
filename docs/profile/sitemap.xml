@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/profile/categories/</loc>
+    <loc>https://dong2000.xyz/profile/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://dong2000.xyz/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
-                href="http://localhost:1313/profile/categories/"
+                href="https://dong2000.xyz/profile/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/profile/series/</loc>
+    <loc>https://dong2000.xyz/profile/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://dong2000.xyz/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
-                href="http://localhost:1313/profile/series/"
+                href="https://dong2000.xyz/profile/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/profile/</loc>
+    <loc>https://dong2000.xyz/profile/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://dong2000.xyz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
-                href="http://localhost:1313/profile/"
+                href="https://dong2000.xyz/profile/"
                 />
   </url><url>
-    <loc>http://localhost:1313/profile/tags/</loc>
+    <loc>https://dong2000.xyz/profile/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://dong2000.xyz/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
-                href="http://localhost:1313/profile/tags/"
+                href="https://dong2000.xyz/profile/tags/"
                 />
   </url>
 </urlset>
