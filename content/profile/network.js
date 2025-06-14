@@ -51,9 +51,7 @@ function initECharts() {
                 { name: 'Sheng, 2024b', symbolSize: 40, category: 'Presentation', remark: 'Latebreaking Poster at ESA 2024', url: 'https://www.esa.org/longbeach2024/'},
                 { name: 'Sheng, 2024c', symbolSize: 20, category: 'Presentation', remark: '西湖大学可持续发展与环境前沿交叉论坛 海报展示'},
                 { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks (in prep)'},
-                { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (in process)'},
-                { name: 'Washington Post', symbolSize: 20, category: 'Media coverage', remark: 'Washington Post', url: 'https://www.washingtonpost.com/science/2025/04/27/bees-pollination-microplastics-colony-collapse/'},
-                
+                { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (CN120124651A)'},
                 { name: 'Xu, 2024', symbolSize: 50, category: 'Research paper', remark: 'Identifying Cocoa Pollinators', url: 'https://arxiv.org/abs/2412.19915'},
                 { name: 'Darras, 2024', symbolSize: 40, category: 'Research paper', remark: 'Eyes on nature', url: 'https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14436'},
             ],
@@ -64,7 +62,6 @@ function initECharts() {
                 { source: 'Darras, 2024', target: 'Wanger, 2023', value: 'Computer vision' },
                 { source: 'Sheng, 2025', target: 'Sheng, 2024b', value: 'Priliminary findings' },
                 { source: 'Sheng, 2025', target: 'Wanger, 2023', value: 'Software' },
-                { source: 'Sheng, 2024', target: 'Washington Post', value: 'Interview with Wanger' },
                 { source: 'Sheng, 2024', target: 'Sheng, 2024c', value: '-' },
             ],
             // #a1a1ce, #94bcbc, #83a7d2, #2b7e9c, #1b5b7e
