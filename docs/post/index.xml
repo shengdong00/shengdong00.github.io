@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 21:43:12 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jul 2025 18:16:47 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>路过乐园</title>
-      <link>https://dong2000.xyz/post/leyuanshudian/</link>
+      <link>http://localhost:1313/post/leyuanshudian/</link>
       <pubDate>Thu, 08 May 2025 21:43:12 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/leyuanshudian/</guid>
+      <guid>http://localhost:1313/post/leyuanshudian/</guid>
       <description>&lt;p&gt;偶然在小红书上刷到一家独立书店即将闭店的消息，决定在五四青年节那晚去逛一逛。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于气候变化的危机疲劳</title>
-      <link>https://dong2000.xyz/post/climate-fatigue/</link>
+      <link>http://localhost:1313/post/climate-fatigue/</link>
       <pubDate>Tue, 04 Mar 2025 01:13:15 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/climate-fatigue/</guid>
+      <guid>http://localhost:1313/post/climate-fatigue/</guid>
       <description>今天读到了两篇很有意思的关于气候变化的博客，在此分享。
 先说一些新近的背景信息。第29届联合国气候变化大会于去年在阿塞拜疆举行，结果喜忧参半。虽然大会对气候融资形成了一些宽松的约定，但各国未能就如何推进已有的一些共识达成协议，包括摆脱化石燃料转型的关键承诺，而是将决定推迟到明年1。美国新任政府对传统能源的重视也为接下来几年的全球气候行动蒙上了阴影。此外，地球的平均温度在 2024 年首次攀升至比工业化前水平高出 1.5 °C 以上，而后者正是世界各国在《巴黎气候协定》中所设定的限制全球变暖的阈值2。虽然这一阈值是基于多年连续的平均温差而设定的，但是过去一年的突破仍然具有极强的象征意义。很多人对于控制全球变暖的前景感到忧虑，包括科学家们和关心该议题的普通民众，以致于Wikipedia专门为此创立了一个词条climate grief/ecological grief。我们通常会觉得这种压力应该具有一定的积极效果，能够促使全球各国推进减少温室气体排放、应对全球变暖的行动——所谓生于忧患。但其实这种压力也潜藏着危险。
 首先是对于所谓 1.5 ℃ 阈值的错误理解，也是 Kate Yoder 在 Alert fatigue: The phrase that defined our climate in 2024 这篇文章中总结的内容3。这个数值很容易被大众误解成某种系统崩毁与存续的临界点。仿佛只要气温上升超过了这个限度，地球就会进入一个可怕的新阶段，气候变化的危害将发生质的改变；反之只要我们成功地躲在阈值以下，一切就都会没事的。实际上这一阈值的政治象征意义大于其实际的科学价值。《巴黎协定》设立 1.5 ℃ 这个数字（以及早先的 2 ℃ 的承诺）的目的是表明世界各国对于致力于控制气候变化的态度。它可以是 1.5，也可以是 0.5、3.5，具体的数值则是博弈和妥协的结果。越过 1.5 ℃ 之后，一切不会分崩离析；在越过 1.5 ℃ 之前也并非万事大吉。随着观测数据越来越逼近 1.5，这种“最后期限”式的宣传的弊端也会显现。它将人们的注意力从气候变化的具体风险转移到了抽象的读数上，虚假地营造一种恐惧的气氛。当阈值正真被超越的时候，这种被刺激出来的短期热情就会变成毒药。一些人会觉得已经世界已经 game over，控制气候变暖的努力以失败告终，climate grief 会演变成 climate despair。另一些人则会以此作为否认气候变化存在的胜利信号——“看吧，过了这条线后什么也没发生。”无论哪种反应都无利于对气候控制和能源转型的冷静思考，玩弄情绪的终将被情绪玩弄。
@@ -37,19 +37,19 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
     
     <item>
       <title>从《流浪苍穹》想到的</title>
-      <link>https://dong2000.xyz/post/liu-lang-cang-qiong/</link>
+      <link>http://localhost:1313/post/liu-lang-cang-qiong/</link>
       <pubDate>Wed, 12 Feb 2025 00:11:47 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/liu-lang-cang-qiong/</guid>
+      <guid>http://localhost:1313/post/liu-lang-cang-qiong/</guid>
       <description>&lt;p&gt;“这是个常常被人忽略的常识：进化的尽头不是极端，而是恰到好处。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>东北亚一瞥</title>
-      <link>https://dong2000.xyz/post/a-glimpse-at-east-asia/</link>
+      <link>http://localhost:1313/post/a-glimpse-at-east-asia/</link>
       <pubDate>Mon, 16 Dec 2024 02:04:31 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/a-glimpse-at-east-asia/</guid>
+      <guid>http://localhost:1313/post/a-glimpse-at-east-asia/</guid>
       <description>&lt;p&gt;对东京的惊鸿一瞥似乎让刻板印象有增无减。&lt;/p&gt;
 &lt;p&gt;落地前，空乘提醒大家可以从左侧舷窗看到富士山。夕阳下有一个锥形的庞然大物拔地而起，耸立云端。黑色的岩体和山尖的积雪都蒙上了一层金黄。直到飞机降落，还是一眼就能在天边看到富士山突兀地站着，显得脚底下的一切高楼和丘陵都与平地无异。以前一直觉得《富士山下》里所谓 “富士山爱情论” 是很烂的比喻&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，总觉得这喻体有些莫名其妙。现在总算明白为什么偏要硬扯上富士山——因为它的轮廓真的是一抬头就能看到，如影随形。难怪它成为如此著名的日本的文化符号。&lt;/p&gt;
 &lt;p&gt;本想落地后找个好的角度再拍照，可惜夜幕已经完全降临。但又有别的收获。从羽田机场看过去的东京建成区，是一片密密麻麻的红光。我印象里从未见过如此密集的警示灯，将城市的天际线勾勒得如此清晰——似乎所有高的矮的宽的窄的都并非房屋，而是仅仅由红色光点组成的阵列，在黑暗里形成天和地的轮廓。科幻作品里的那个赛博朋克的城市似乎又在向我招手。&lt;/p&gt;
@@ -58,7 +58,7 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
 &lt;p&gt;想起高中的几个同窗正在东京读书，可惜转机时间紧迫，也没有办过境签，不能顺道小聚。&lt;/p&gt;
 &lt;p&gt;再次起飞后，终于看到了建成区发出暖黄色或白色的灯光，勾勒出道路、建筑、河流和公园。富士山早已隐入夜幕，我也辨别不出东京塔在哪里，现在的夜景倒是似与其他的城市别无二致了。&lt;/p&gt;
 &lt;center&gt;&lt;figure&gt;
-    &lt;img src=&#34;https://dong2000.xyz/images/fuji.jpg&#34; style=&#34;zoom: 100%;&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/images/fuji.jpg&#34; style=&#34;zoom: 100%;&#34; /&gt;
     &lt;figcaption&gt;从左至右：透过舷窗看到日落时的富士山；东京都市圈夜景俯瞰；仁川机场的文化宣传海报&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/center&gt;
 &lt;br&gt;
@@ -67,19 +67,19 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
     
     <item>
       <title>九月底的好消息</title>
-      <link>https://dong2000.xyz/post/good_news_sept/</link>
+      <link>http://localhost:1313/post/good_news_sept/</link>
       <pubDate>Sat, 28 Sep 2024 19:38:09 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/good_news_sept/</guid>
+      <guid>http://localhost:1313/post/good_news_sept/</guid>
       <description>九月发生了两件值得高兴的事情：通过了博士开题答辩，以及进组以来的第一篇论文（综述）见刊了！希望今后再接再厉&amp;#x1f389;&amp;#x1f389;</description>
     </item>
     
     <item>
       <title>2024年8月，长滩</title>
-      <link>https://dong2000.xyz/post/longbeach2024/</link>
+      <link>http://localhost:1313/post/longbeach2024/</link>
       <pubDate>Mon, 12 Aug 2024 19:31:48 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/longbeach2024/</guid>
+      <guid>http://localhost:1313/post/longbeach2024/</guid>
       <description>长滩的早上通常被浓浓的海雾所笼罩，温度很宜人。穿过downtown街道上隐约的甜腻与骚臭气息，一路向南到海边，再一路往西经过成排的度假酒店和棕榈树，就到了2024 Annual Meeting of the Ecological Society of America的会场。然后在数个不同的会议室之间来回穿梭听报告，直到傍晚再滑着滑板回到旅馆，或者在沿途路边的墨西哥餐车买个torta当晚饭。
 这样子听会议的日子重复了接近一个礼拜，笔记本上的潦草记录也飞速增长了好几页。碰到几位课题感兴趣的教授，冲上去提问交流并在会后发了跟进的邮件——属实是没想到身为I人的自己原来也能social至此。会议的规模很大，分会场的主题也很多。我试图在每一个感兴趣的话题上都了解到一些前沿进展，给自己9月份的博士开题积攒些灵感。期间还参观了当地中产社区里的花园农场，走出学术界听了听当地居民在生活中面临着什么食品问题。
 最后一天只有上午有活动，而我预定了夜里的飞机，于是下午到海边的景区逛了逛。不得不说风景确实很美，彩色的小屋​​、游艇​​、草坪和灯塔在午后晴朗的天空下明净艳丽。可惜没能​去逛水族馆和观​鲸，希望以后有机会再见吧！​</description>
@@ -87,10 +87,10 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
     
     <item>
       <title>自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR</title>
-      <link>https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/</link>
+      <link>http://localhost:1313/post/mmdet_object_detection_model_evaluation/</link>
       <pubDate>Fri, 17 May 2024 23:29:36 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/</guid>
+      <guid>http://localhost:1313/post/mmdet_object_detection_model_evaluation/</guid>
       <description>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
@@ -100,37 +100,37 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
     
     <item>
       <title>拆机加硬盘，新电脑已是老油条了</title>
-      <link>https://dong2000.xyz/post/install_ssd/</link>
+      <link>http://localhost:1313/post/install_ssd/</link>
       <pubDate>Mon, 29 Apr 2024 01:36:50 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/install_ssd/</guid>
+      <guid>http://localhost:1313/post/install_ssd/</guid>
       <description>&lt;p&gt;凭借曾经在E志者学到的功夫，拆开笔记本并添加了一条固态硬盘(SSD)。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>果味VC-日落(cover)</title>
-      <link>https://dong2000.xyz/post/guoweivc-riluo/</link>
+      <link>http://localhost:1313/post/guoweivc-riluo/</link>
       <pubDate>Tue, 09 Apr 2024 02:07:56 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/guoweivc-riluo/</guid>
+      <guid>http://localhost:1313/post/guoweivc-riluo/</guid>
       <description>&lt;p&gt;“这欲望的湖泊，很多人都在溺爱它。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>记Westlake SEE Annual Meeting</title>
-      <link>https://dong2000.xyz/post/my_1st_poster/</link>
+      <link>http://localhost:1313/post/my_1st_poster/</link>
       <pubDate>Sat, 06 Apr 2024 16:46:45 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/my_1st_poster/</guid>
+      <guid>http://localhost:1313/post/my_1st_poster/</guid>
       <description>&lt;p&gt;三月的最后一个周末，西湖大学举办了“可持续发展与环境前沿交叉论坛”，有挺多院士大牛来站台支持，场面还是挺盛大的。尤其是亲眼见到了陶澍等久仰大名的重量级人物。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>文献阅读 [April 3rd]</title>
-      <link>https://dong2000.xyz/post/reading-note-20240403/</link>
+      <link>http://localhost:1313/post/reading-note-20240403/</link>
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
+      <guid>http://localhost:1313/post/reading-note-20240403/</guid>
       <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
 Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
 Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
@@ -138,10 +138,10 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
     
     <item>
       <title>文献阅读 [March 6th]——人与自然耦合系统</title>
-      <link>https://dong2000.xyz/post/reading-note-20240306/</link>
+      <link>http://localhost:1313/post/reading-note-20240306/</link>
       <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
+      <guid>http://localhost:1313/post/reading-note-20240306/</guid>
       <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
 Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
 Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
@@ -149,10 +149,10 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
     
     <item>
       <title>初春的碎碎念</title>
-      <link>https://dong2000.xyz/post/diary-2024-02-16/</link>
+      <link>http://localhost:1313/post/diary-2024-02-16/</link>
       <pubDate>Fri, 16 Feb 2024 19:57:19 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/diary-2024-02-16/</guid>
+      <guid>http://localhost:1313/post/diary-2024-02-16/</guid>
       <description>一晃眼距离上次更新已经过去将近四个月了，我们从2023来到2024，几乎就要跨过了整个冬天。我当然可以为这四个月的断更找出很多理由。比如做实验的工作量和心理压力太大，没有精力来管理博客；比如所有的产出工作都花在了写论文上面，并没有什么适合分享到博客上的内容；又或者，单纯地因为想要偷懒。
 我很难想象应该用什么样的方式进行重启——随着断更的时间越来越长，这种通过某些仪式性的行为来宣告回归的需求就越来越强烈，因而重启的难度似乎也在越来越大。我反复地期待着生活中的“重大新闻”，期待着以它为契机重启一切。而当这些事件真实来临的时候，我又以各种理由错过了它们。有时是因为忙于处理各类意外，有时是觉得自己状态不佳，有时是觉得事件本身平淡如水，并不如我所期待的那般具有足够的震撼力。总之，四个月过去了，我最后甚至都快忘了自己在互联网上还有着这一亩三分地。
 现在回想起来，生命中的很多方面都在以类似的规律荒废。已经很久没有锻炼了，小肚子上似乎日渐积起天然保暖层；总是忘记剃胡子，每天洗脸时也懒得正脸看一看镜子里的自己；家里很久没有好好清扫，各个角落里堆起了灰尘；作息极其不稳定地变化着，有时睡过大半个白天然后半夜起来工作；朋友圈上的动态定格在夏天的末尾……很多地方都需要重启，但是我缺乏全部推翻重来的勇气，往往只从简单处试探着改变，然后又很快地缩回到一路丢盔弃甲的道路上继续下滑。
@@ -162,66 +162,66 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
     
     <item>
       <title>不适</title>
-      <link>https://dong2000.xyz/post/science-philosophy/</link>
+      <link>http://localhost:1313/post/science-philosophy/</link>
       <pubDate>Sun, 22 Oct 2023 22:49:25 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/science-philosophy/</guid>
+      <guid>http://localhost:1313/post/science-philosophy/</guid>
       <description>&lt;p&gt;这学期选修了《复杂系统理论》这门课。实际的课程内容完全超出了预料的方向——我本以为是各种复杂系统的数学推演和建模，结果讲了好几个礼拜的还原论、本体论和mind-body problem之类的哲学话题。起初我也并不排斥这样的讨论，但随着课堂进行，我开始有越来越强烈的不适感。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Learning notes on agent-based modelling (ABM)</title>
-      <link>https://dong2000.xyz/post/learning-abm/</link>
+      <link>http://localhost:1313/post/learning-abm/</link>
       <pubDate>Tue, 03 Oct 2023 21:02:53 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/learning-abm/</guid>
+      <guid>http://localhost:1313/post/learning-abm/</guid>
       <description>In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
 I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.</description>
     </item>
     
     <item>
       <title>MMDetection目标检测入门笔记</title>
-      <link>https://dong2000.xyz/post/notes-on-mmdet/</link>
+      <link>http://localhost:1313/post/notes-on-mmdet/</link>
       <pubDate>Mon, 28 Aug 2023 11:11:41 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/notes-on-mmdet/</guid>
+      <guid>http://localhost:1313/post/notes-on-mmdet/</guid>
       <description>&lt;p&gt;本篇是MMDetection学习应用过程中的踩坑记录，随学习情况更新。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>重访成都</title>
-      <link>https://dong2000.xyz/post/revisit-chengdu/</link>
+      <link>http://localhost:1313/post/revisit-chengdu/</link>
       <pubDate>Mon, 28 Aug 2023 02:30:22 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/revisit-chengdu/</guid>
+      <guid>http://localhost:1313/post/revisit-chengdu/</guid>
       <description>&lt;p&gt;大学期间我一直没有到长三角以外的地方旅游过。高三的暑假里和同学一起去了成都，大四毕业后又和女朋友一起去了成都——这座城市就这样机缘巧合地将我过去的四年包裹起来，仿佛一段诗句篇章quote。然而我自己也从来说不清为什么偏偏是成都。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二十分钟的老师</title>
-      <link>https://dong2000.xyz/post/summer-camp-2023/</link>
+      <link>http://localhost:1313/post/summer-camp-2023/</link>
       <pubDate>Wed, 26 Jul 2023 23:42:36 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/summer-camp-2023/</guid>
+      <guid>http://localhost:1313/post/summer-camp-2023/</guid>
       <description>&lt;p&gt;上周发生了一件值得炫耀的事情——我登上了西湖大学官方公众号的推文&lt;a href=&#34;https://mp.weixin.qq.com/s/5HF3FwYhY9awbN86IJ1TWA&#34;&gt;“中美41名高中生的西湖实验”&lt;/a&gt;。虽然并不是什么巨大的荣誉，但以后说起来也是在官推上有过大名的人了，这玩意儿可以拿来吹一年。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tracking Noise with Smartphones</title>
-      <link>https://dong2000.xyz/post/tracking-noise/</link>
+      <link>http://localhost:1313/post/tracking-noise/</link>
       <pubDate>Sun, 16 Jul 2023 13:22:19 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/tracking-noise/</guid>
+      <guid>http://localhost:1313/post/tracking-noise/</guid>
       <description>&lt;p&gt;Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.&lt;/p&gt;
 &lt;p&gt;So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>纤维状颗粒的空气动力学直径误差传递公式</title>
-      <link>https://dong2000.xyz/post/equivalent-diameter-error/</link>
+      <link>http://localhost:1313/post/equivalent-diameter-error/</link>
       <pubDate>Sun, 09 Jul 2023 17:05:28 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/equivalent-diameter-error/</guid>
+      <guid>http://localhost:1313/post/equivalent-diameter-error/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;基于Prodi et al (1982)的纤维颗粒空气动力学等效直径计算公式推导出以纤维颗粒的长度、直径为直接测量变量的等效直径误差传递公式。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -229,47 +229,47 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>浅试Biorender</title>
-      <link>https://dong2000.xyz/post/try-biorender/</link>
+      <link>http://localhost:1313/post/try-biorender/</link>
       <pubDate>Thu, 06 Jul 2023 09:29:42 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/try-biorender/</guid>
+      <guid>http://localhost:1313/post/try-biorender/</guid>
       <description>&lt;p&gt;在写一篇综述论文的时候被推荐了&lt;a href=&#34;https://www.biorender.com/&#34;&gt;BioRender&lt;/a&gt;这一作图工具，尝试了一下发现确实很好用，可以让生物领域的插图制作如有神助。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>本科毕业了！</title>
-      <link>https://dong2000.xyz/post/bsc-graduation/</link>
+      <link>http://localhost:1313/post/bsc-graduation/</link>
       <pubDate>Tue, 04 Jul 2023 11:11:26 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/bsc-graduation/</guid>
+      <guid>http://localhost:1313/post/bsc-graduation/</guid>
       <description>&lt;p&gt;已经一个多月没有发布新博客了，来更新一下自己的状态。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>被驱使的日子</title>
-      <link>https://dong2000.xyz/post/rushing-days/</link>
+      <link>http://localhost:1313/post/rushing-days/</link>
       <pubDate>Wed, 17 May 2023 18:42:18 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/rushing-days/</guid>
+      <guid>http://localhost:1313/post/rushing-days/</guid>
       <description>&lt;p&gt;提交毕业论文之后的我似乎并没有得到太多喘息和自由的机会。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>City of Machines</title>
-      <link>https://dong2000.xyz/post/city-of-machines/</link>
+      <link>http://localhost:1313/post/city-of-machines/</link>
       <pubDate>Thu, 11 May 2023 22:47:06 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/city-of-machines/</guid>
+      <guid>http://localhost:1313/post/city-of-machines/</guid>
       <description>&lt;p&gt;城市和机器是一组被紧密捆绑的意象。&lt;/p&gt;
 &lt;p&gt;高中的时候很喜欢郝景芳的《北京折叠》，里边关于城市翻转过程的描写让我印象深刻。“晨光熹微中，一座城市折叠自身，向地面收拢。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Shitty Competition</title>
-      <link>https://dong2000.xyz/post/shitty-competition/</link>
+      <link>http://localhost:1313/post/shitty-competition/</link>
       <pubDate>Tue, 09 May 2023 15:37:59 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/shitty-competition/</guid>
+      <guid>http://localhost:1313/post/shitty-competition/</guid>
       <description>byd这创赛搞得难受死了，不吐不快。搞不明白为啥要在创业大赛里弄一个学术论文赛道，却又以商业项目的风格来要求参赛作品。更搞不懂我一臭搞科研的大四狗为啥还要掺和这玩意儿。&amp;#x1f620; &amp;#x1f595;
 咱也不嫌得罪人了，索性从头到尾喷个遍。先挖个坑，以后回来填。
 更新于2023.6.19
@@ -281,28 +281,28 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>SETAR Model</title>
-      <link>https://dong2000.xyz/post/setar-model/</link>
+      <link>http://localhost:1313/post/setar-model/</link>
       <pubDate>Sat, 29 Apr 2023 20:50:34 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/setar-model/</guid>
+      <guid>http://localhost:1313/post/setar-model/</guid>
       <description>&lt;p&gt;SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在Hugo &#43; Papermod中添加Echartsjs</title>
-      <link>https://dong2000.xyz/post/learning-echartsjs/</link>
+      <link>http://localhost:1313/post/learning-echartsjs/</link>
       <pubDate>Sun, 12 Mar 2023 01:38:43 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/learning-echartsjs/</guid>
+      <guid>http://localhost:1313/post/learning-echartsjs/</guid>
       <description>&lt;p&gt;参照Echarts的&lt;a href=&#34;https://echarts.apache.org/handbook/zh/get-started/&#34;&gt;官方入门文档&lt;/a&gt;，给Hugo框架的博客网站添加使用Echarts渲染的功能（主题为&lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;Papermod&lt;/a&gt;)。以后需要放图表的时候就不用再傻乎乎地截图了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>什么在影响着碳排放交易？</title>
-      <link>https://dong2000.xyz/post/carbon-price-data/</link>
+      <link>http://localhost:1313/post/carbon-price-data/</link>
       <pubDate>Sat, 11 Mar 2023 14:26:37 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/carbon-price-data/</guid>
+      <guid>http://localhost:1313/post/carbon-price-data/</guid>
       <description>&lt;p&gt;这是一年多以前关于深圳碳排放交易所交易数据的一些分析，作为一门经济学课程的作业。分析手段和解读难免肤浅，聊供自娱。&lt;/p&gt;
 &lt;p&gt;过去一年来，俄乌冲突以及随之而来的能源危机想必显著地冲击到了欧洲的碳排放权交易市场，后者又在全球碳排放权交易体系中具有举足轻重的地位，因此我也很好奇最新的碳排放市场情况。只是最近都没有时间和精力花在这件事情上面了。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -312,10 +312,10 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>“可控核冬天”vs全球变暖？</title>
-      <link>https://dong2000.xyz/post/stratospheric-aerosol-injection/</link>
+      <link>http://localhost:1313/post/stratospheric-aerosol-injection/</link>
       <pubDate>Sun, 26 Feb 2023 16:23:26 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/stratospheric-aerosol-injection/</guid>
+      <guid>http://localhost:1313/post/stratospheric-aerosol-injection/</guid>
       <description>&lt;p&gt;全球变暖程度超出《巴黎协定》所设立的1.5℃限度越来越成为一件板上钉钉的事情。推动全球能源产业减排转型本就不是一件易事，其中牵扯到太多的利益纠葛和政治冲突。近年来随着疫情和战争冲击，忙于生存的人们更加无暇顾及未来的福祉。长痛不如短痛，与漫长的产业转型相比，一场人造且可控的“核冬天”看上去是一个更有诱惑力的捷径。&lt;/p&gt;
 &lt;p&gt;在核冬天的设想里，大量烟和微尘上升到对流层中上层并截断太阳辐射，引起地面上的漫长寒冷和黑暗。所谓太阳能地球工程，同样是通过各种手段对太阳辐射进行削弱，以期减缓乃至消除温室气体排放带来的全球变暖效应。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -325,29 +325,29 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>失败者应该缄默，像种子</title>
-      <link>https://dong2000.xyz/post/on-pilote-de-guerre/</link>
+      <link>http://localhost:1313/post/on-pilote-de-guerre/</link>
       <pubDate>Fri, 27 Jan 2023 00:02:18 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/on-pilote-de-guerre/</guid>
+      <guid>http://localhost:1313/post/on-pilote-de-guerre/</guid>
       <description>&lt;p&gt;——读《空军飞行员》（圣-埃克絮佩里）。&lt;/p&gt;
 &lt;p&gt;像大多数人一样，我对圣-埃克絮佩里的印象来源于他那篇家喻户晓的《小王子》。可惜那时候年龄尚小，理解有限；而各类阅读理解、名著导读等等又早已把《小王子》反复解读，将它的深层含义解剖出来并以标准（却并不诱人）的方式呈现在了面前。因此，我真正为圣-埃克絮佩里的文字所震撼到，是偶然读到他的《夜航》。虽然小说中所描述的航班🛩以死亡作为其失败的结局，但飞行员在坠毁前的最后一刻冲出乌云，在灿烂夜空下宛如流星🌠一般的谢幕，在我的心中留下了无法磨灭的画面。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>杭城沙雪</title>
-      <link>https://dong2000.xyz/post/snow-in-hangzhou/</link>
+      <link>http://localhost:1313/post/snow-in-hangzhou/</link>
       <pubDate>Sun, 15 Jan 2023 14:12:44 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/snow-in-hangzhou/</guid>
+      <guid>http://localhost:1313/post/snow-in-hangzhou/</guid>
       <description>&lt;p&gt;昨晚气温骤降，徘徊在0℃附近。下午出发去实验室时，发现小龟的挡风被和坐垫上碎散了一层雪花&amp;#x2744;&amp;#xfe0f;，才意识到雪已经若有若无的下了一小阵子了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The conceptual evolution of green building in the 21st century – textual changes in LEED</title>
-      <link>https://dong2000.xyz/post/textual-analysis-on-leed/</link>
+      <link>http://localhost:1313/post/textual-analysis-on-leed/</link>
       <pubDate>Tue, 03 Jan 2023 14:37:30 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/textual-analysis-on-leed/</guid>
+      <guid>http://localhost:1313/post/textual-analysis-on-leed/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;The conceptual evolution of green building is reflected in historical versions of green building rating tools. Computational text analysis on historical versions of LEED revealed changes in the category systems and textual contents, which reflects how LEED’s green building concept has evolved in the 21st century.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -356,56 +356,56 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>Python多线程和多进程的运行速度比较</title>
-      <link>https://dong2000.xyz/post/python-threads-processes/</link>
+      <link>http://localhost:1313/post/python-threads-processes/</link>
       <pubDate>Fri, 16 Dec 2022 14:11:55 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/python-threads-processes/</guid>
+      <guid>http://localhost:1313/post/python-threads-processes/</guid>
       <description>&lt;p&gt;通过一个图像合成视频的脚本案例测试了一下Python3在单线程、多线程和多进程下的运行速度。发现多线程可以一定程度上提高运行速度（将1个线程拆为4个线程，提速大约83%），但是不能达到完全的并行运算，据说是因为&lt;code&gt;threading&lt;/code&gt;模块并不能真正调用多个处理器。在多进程下运行，可以接近完全平行的运算速度。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Elimination of 3 years?</title>
-      <link>https://dong2000.xyz/post/epidemic-memory/</link>
+      <link>http://localhost:1313/post/epidemic-memory/</link>
       <pubDate>Sat, 10 Dec 2022 19:46:06 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/epidemic-memory/</guid>
+      <guid>http://localhost:1313/post/epidemic-memory/</guid>
       <description>&lt;p&gt;This post of &lt;strong&gt;nonsense&lt;/strong&gt; is written in English to avoid potential censorship of speech&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. I write this post as a personal record of the chaos at the end(?) of the strict COVID regulation &amp;ldquo;era&amp;rdquo;, as well as a witness of an ongoing elimination(?) of public discussion. NOTE: I&amp;rsquo;m not quoting any factual sources here, so all will be my personal opinions.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在Hugo &#43; PaperMod主题下添加不蒜子网站统计</title>
-      <link>https://dong2000.xyz/post/my_web-count/</link>
+      <link>http://localhost:1313/post/my_web-count/</link>
       <pubDate>Thu, 01 Dec 2022 01:34:50 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/my_web-count/</guid>
+      <guid>http://localhost:1313/post/my_web-count/</guid>
       <description>&lt;p&gt;之前在使用Hexo平台 + NexT主题搭建博客的时候，自带不蒜子&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的网站访问统计。现在的这个主题下需要自行添加统计功能。最终还是决定使用不蒜子来实现，便于直接显示在网站页面上&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。唯一的缺点就是目前没办法自定义初始值，所以域名更换后数据就从零开始了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>简单理想情形下的Barrel distortion</title>
-      <link>https://dong2000.xyz/post/simple_barrel_disto/</link>
+      <link>http://localhost:1313/post/simple_barrel_disto/</link>
       <pubDate>Wed, 16 Nov 2022 22:37:16 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/simple_barrel_disto/</guid>
+      <guid>http://localhost:1313/post/simple_barrel_disto/</guid>
       <description>&lt;p&gt;Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HugoBlog Test</title>
-      <link>https://dong2000.xyz/post/test/</link>
+      <link>http://localhost:1313/post/test/</link>
       <pubDate>Tue, 01 Nov 2022 15:31:58 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/test/</guid>
+      <guid>http://localhost:1313/post/test/</guid>
       <description>&lt;h1 id=&#34;this-is-a-test-page&#34;&gt;This is a test page&lt;/h1&gt;
 &lt;p&gt;本页面用于测试网站的显示格式，以及不同模块的渲染情况。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>偶识Mahalanobis Distance</title>
-      <link>https://dong2000.xyz/post/mahalanobis-distance/</link>
+      <link>http://localhost:1313/post/mahalanobis-distance/</link>
       <pubDate>Sun, 30 Oct 2022 01:20:00 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
+      <guid>http://localhost:1313/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -413,28 +413,28 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>ESG杭州会客厅(Vol.5)所见</title>
-      <link>https://dong2000.xyz/post/esg-hangzhou-v5/</link>
+      <link>http://localhost:1313/post/esg-hangzhou-v5/</link>
       <pubDate>Fri, 28 Oct 2022 21:19:45 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/esg-hangzhou-v5/</guid>
+      <guid>http://localhost:1313/post/esg-hangzhou-v5/</guid>
       <description>&lt;p&gt;起初我以为这是一场典型的讲座，就像之前在学校里听到的许许多多学术大咖的讲座一样。&lt;sub&gt;所以还有些纳闷为什么要跑到一个商业中心来举办……&lt;/sub&gt;到现场之后发现并不是。事实上如果我事先查一下活动主题中”ESG“这个缩写的含义，或许就会早点搞明白这是一场把企业、学界、NGO等等所有stakeholders聚到一个屋子内进行交流的事情。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在Matlab中使用进度条</title>
-      <link>https://dong2000.xyz/post/matlab_bar/</link>
+      <link>http://localhost:1313/post/matlab_bar/</link>
       <pubDate>Sat, 15 Oct 2022 16:17:15 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/matlab_bar/</guid>
+      <guid>http://localhost:1313/post/matlab_bar/</guid>
       <description>&lt;p&gt;最近经常要跑一些很耗时的matlab脚本，命令行窗口里又需要不断输出信息，不方便直接看运行进度。需要搞一个独立的进度条来显示告诉我们脚本运行的情况。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>几种常见的微塑料污染物</title>
-      <link>https://dong2000.xyz/post/common_microplastics/</link>
+      <link>http://localhost:1313/post/common_microplastics/</link>
       <pubDate>Sat, 15 Oct 2022 03:23:45 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/common_microplastics/</guid>
+      <guid>http://localhost:1313/post/common_microplastics/</guid>
       <description>&lt;p&gt;在Balzani等人关于微塑料对蜜蜂毒害作用的一篇论文&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;中，有这样对微塑料污染物的定义：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Microplastics (MPs) are a class of ubiquitous pollutants grouping persistent polymeric particles smaller than 5 mm in diameter, regardless of their shape and chemical composition. They include polyester (PL), polystyrene (PS), polyethylene (PE), polypropylene (PP) and polyvinylchloride (PVC) particles, among others (Ng et al., 2018).&lt;/p&gt;
@@ -444,20 +444,20 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>《新·奥特曼》中关于贝塔系统的论文</title>
-      <link>https://dong2000.xyz/post/beta-system_shin_ultraman/</link>
+      <link>http://localhost:1313/post/beta-system_shin_ultraman/</link>
       <pubDate>Tue, 11 Oct 2022 03:23:28 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/beta-system_shin_ultraman/</guid>
+      <guid>http://localhost:1313/post/beta-system_shin_ultraman/</guid>
       <description>&lt;p&gt;看痞子的新曼电影时，瞥到了神永新二留给泷明久的论文（解释了贝塔系统的原理），突发奇想将论文的第一页（影片中有一两秒的特写）给扒了下来。&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;所以看了这个东西之后我可以造出变身器吗？&lt;/s&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>记一次博客托管迁移经历</title>
-      <link>https://dong2000.xyz/post/moving_my_blog/</link>
+      <link>http://localhost:1313/post/moving_my_blog/</link>
       <pubDate>Sat, 01 Oct 2022 23:00:01 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/moving_my_blog/</guid>
+      <guid>http://localhost:1313/post/moving_my_blog/</guid>
       <description>如果你曾经访问过我的小网站，你可能会注意到我的域名已经从dongsheng2000.gitee.io变成了shengdong00.github.io。
 搬迁的原因很简单：我的网站内容被Gitee判为违禁违规了。
 当然被判违禁违规也不是第一次了。虽然我认为这个以学习生活记录博客没有任何罪过，但是偶尔因为一两个敏感词语而被ban也完全是可以理解的事情。之前在Sci-Hub + Python爬虫实现文献批量下载这篇记录中因为出现了“非法”一词，曾经被ban过一回。虽然这里并无任何“违反法律”的含义，但是找一个替换词也并不是多大难事。但是前几天的违禁违规问题就没有那么简单了。
@@ -472,43 +472,43 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>转-MH370写给2014年的一封信</title>
-      <link>https://dong2000.xyz/post/mh370-to-2014/</link>
+      <link>http://localhost:1313/post/mh370-to-2014/</link>
       <pubDate>Tue, 20 Sep 2022 23:36:02 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/mh370-to-2014/</guid>
+      <guid>http://localhost:1313/post/mh370-to-2014/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;2014年的一篇文章如今又被很多人翻出来讨论。重读了一遍感觉确实挺有意思的，八年前所隐射的事情，如今又有多少终于成为了光天化日之下的常识。有人相信这是当时对真相的隐忍和委婉表达。我不知道在我的有生之年是否会看到见证谜团解开的时刻，亦或者它最终会被某些人带进坟墓永远埋葬。不过从文中可以感受到，如今路人皆知的“凉意”，八年前已然弥散。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220920235941075.png&#34; alt=&#34;image-20220920235941075&#34; style=&#34;zoom:33%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220920235941075.png&#34; alt=&#34;image-20220920235941075&#34; style=&#34;zoom:33%;&#34; /&gt;
 &lt;p&gt;&lt;strong&gt;原标题：MH370写给2014年的一封信&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;来源：新华网 思客；作者：何帆；&lt;a href=&#34;http://politics.people.com.cn/n/2014/1211/c70731-26188881.html&#34;&gt;人民网转载链接&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>再读《社会-经济-自然复合生态系统》</title>
-      <link>https://dong2000.xyz/post/on_socio_economic_natural_system/</link>
+      <link>http://localhost:1313/post/on_socio_economic_natural_system/</link>
       <pubDate>Sun, 18 Sep 2022 16:16:51 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/on_socio_economic_natural_system/</guid>
+      <guid>http://localhost:1313/post/on_socio_economic_natural_system/</guid>
       <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开&amp;#x1f4a1;的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>申博二三事</title>
-      <link>https://dong2000.xyz/post/applying_phd/</link>
+      <link>http://localhost:1313/post/applying_phd/</link>
       <pubDate>Sun, 11 Sep 2022 01:21:19 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/applying_phd/</guid>
+      <guid>http://localhost:1313/post/applying_phd/</guid>
       <description>&lt;p&gt;&amp;#x1f393;最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在SBM模型中引入上边界和指标权重</title>
-      <link>https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/</link>
+      <link>http://localhost:1313/post/upper_bounds_and_weights_in_sbm/</link>
       <pubDate>Wed, 07 Sep 2022 09:31:54 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/</guid>
+      <guid>http://localhost:1313/post/upper_bounds_and_weights_in_sbm/</guid>
       <description>&lt;p&gt;在实际应用SBM模型分析绿色发展效率的时候，发现面临着以下两个困难：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;指标实际可取值具有上边界；&lt;/li&gt;
@@ -519,10 +519,10 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>非期望产出SBM模型的数学推演及Python实现</title>
-      <link>https://dong2000.xyz/post/undesirable_sbm_in_python/</link>
+      <link>http://localhost:1313/post/undesirable_sbm_in_python/</link>
       <pubDate>Wed, 10 Aug 2022 23:00:38 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/undesirable_sbm_in_python/</guid>
+      <guid>http://localhost:1313/post/undesirable_sbm_in_python/</guid>
       <description>带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
 这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
 数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
@@ -544,19 +544,19 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>（伪）期末小记</title>
-      <link>https://dong2000.xyz/post/at_end_of_term/</link>
+      <link>http://localhost:1313/post/at_end_of_term/</link>
       <pubDate>Fri, 08 Jul 2022 00:09:04 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/at_end_of_term/</guid>
+      <guid>http://localhost:1313/post/at_end_of_term/</guid>
       <description>&lt;p&gt;这篇期末小记从建立文章题目到真正开始动笔之间过了一个月之久。考试周那段天天熬夜通宵，昏天黑地的日子，也已经在半个月前随着最后一场考试的交卷而结束了。这一个月里发生了很多变化。完成了本科期间最后一门专业课考试，告别了相伴两年的工高班的同学，半只脚踏进了西湖大学的实验室……虽然没有正式毕业，但是我的本科生活——或者说，那些和同学一起坐在教室里听老师们讲课的生活——似乎真的已经结束了。一个月前我就知道将发生很多变化，那时隐隐或许期待着改变后的焕然新生；一个月后，这些变化都如预期一样地发生了，却是以一种忙碌中略带麻木的方式。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>系统科学与工程复习整理</title>
-      <link>https://dong2000.xyz/post/system_sci_review/</link>
+      <link>http://localhost:1313/post/system_sci_review/</link>
       <pubDate>Sun, 12 Jun 2022 01:30:13 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/system_sci_review/</guid>
+      <guid>http://localhost:1313/post/system_sci_review/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;来自老师的课程资料，请勿商用&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -580,12 +580,12 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
-      <link>https://dong2000.xyz/post/crawl_papers_from_scihub/</link>
+      <link>http://localhost:1313/post/crawl_papers_from_scihub/</link>
       <pubDate>Wed, 18 May 2022 19:27:46 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/crawl_papers_from_scihub/</guid>
+      <guid>http://localhost:1313/post/crawl_papers_from_scihub/</guid>
       <description>&lt;center&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;/center&gt;
 &lt;h1 id=&#34;操作思路&#34;&gt;操作思路&lt;/h1&gt;
 &lt;ul&gt;
@@ -603,21 +603,21 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>2022美赛纪念</title>
-      <link>https://dong2000.xyz/post/on_icm_2022/</link>
+      <link>http://localhost:1313/post/on_icm_2022/</link>
       <pubDate>Sun, 08 May 2022 23:10:55 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/on_icm_2022/</guid>
+      <guid>http://localhost:1313/post/on_icm_2022/</guid>
       <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。&amp;#x1f436;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>自回归滑动平均模型预测全球CO2浓度变化</title>
-      <link>https://dong2000.xyz/post/amra_co2/</link>
+      <link>http://localhost:1313/post/amra_co2/</link>
       <pubDate>Wed, 27 Apr 2022 03:03:57 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/amra_co2/</guid>
+      <guid>http://localhost:1313/post/amra_co2/</guid>
       <description>&lt;p&gt;自回归滑动平均模型（Autoregressive moving average model，ARMA）是研究时间序列的重要方法，以由自回归模型（简称AR模型）与移动平均模型（简称MA模型）为基础“混合”构成。用AMRA模型预测了在当前趋势下，未来二十年内全球二氧化碳浓度的变化趋势。&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
@@ -625,10 +625,10 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>我国海水水质数据分析</title>
-      <link>https://dong2000.xyz/post/china_sea_water_data/</link>
+      <link>http://localhost:1313/post/china_sea_water_data/</link>
       <pubDate>Sun, 24 Apr 2022 01:36:16 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/china_sea_water_data/</guid>
+      <guid>http://localhost:1313/post/china_sea_water_data/</guid>
       <description>&lt;p&gt;环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;通过爬虫获取我国沿海海水水质的监测数据；&lt;/li&gt;
@@ -637,37 +637,37 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
 &lt;li&gt;将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性；&lt;/li&gt;
 &lt;li&gt;利用机器学习，从多个污染指标数据预测海区分类。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>Markdown-mermaid画流程图、甘特图和饼图</title>
-      <link>https://dong2000.xyz/post/markdown-mermaid/</link>
+      <link>http://localhost:1313/post/markdown-mermaid/</link>
       <pubDate>Sun, 20 Mar 2022 01:07:53 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/markdown-mermaid/</guid>
+      <guid>http://localhost:1313/post/markdown-mermaid/</guid>
       <description>&lt;p&gt;在很多支持Markdown语法的编辑器（例如Typora, 印象笔记）中，可以通过mermaid代码块的方式，实现流程图、时序图等图表的绘制。它是一种基于 Javascript 的图表和图表工具，提供标记启发的文本定义，以动态创建和修改图表。&lt;/p&gt;
 &lt;p&gt;以下是除了普通的&lt;code&gt;graph&lt;/code&gt;流程图以外，常用的一些mermaid功能。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Outlook on a balanced &amp; regenerative Anthropocene</title>
-      <link>https://dong2000.xyz/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
+      <link>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
       <pubDate>Sat, 19 Mar 2022 00:40:15 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
+      <guid>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
       <description>&lt;p&gt;This is a draft version of course essay from Berkeley Summer Session 2021 (EPS-80).&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Huge environmental changes in my hometown have taken place for the past two decades of fast economic growth and industrialization, which is seen as a rough miniature of entering the Anthropocene. Using examples from class materials, my own experience and the book &lt;em&gt;Under a White Sky&lt;/em&gt;, several key aspects of anthropogenic actions are analyzed briefly, including land use, agriculture, soil remediation and green house gas management. Finally some personal insights and preparations are mentioned.&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>用Python爬虫爬取高校教师邮箱</title>
-      <link>https://dong2000.xyz/post/get_email_by_python_crawler/</link>
+      <link>http://localhost:1313/post/get_email_by_python_crawler/</link>
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
+      <guid>http://localhost:1313/post/get_email_by_python_crawler/</guid>
       <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
@@ -676,10 +676,10 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>梳理系统科学发展历程</title>
-      <link>https://dong2000.xyz/post/hostory_of_system_sci/</link>
+      <link>http://localhost:1313/post/hostory_of_system_sci/</link>
       <pubDate>Fri, 18 Mar 2022 09:37:41 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/hostory_of_system_sci/</guid>
+      <guid>http://localhost:1313/post/hostory_of_system_sci/</guid>
       <description>&lt;h1 id=&#34;系统问题的提出&#34;&gt;系统问题的提出&lt;/h1&gt;
 &lt;p&gt;关于系统、组织和复杂性的性质的问题并不是现代所特有的。正如国际系统工程委员会 (INCOSE) 的先驱和前国际系统科学学会 （ISSS）主席约翰·沃菲尔德所说，&lt;/p&gt;
 &lt;blockquote&gt;

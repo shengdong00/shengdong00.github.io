@@ -50,9 +50,9 @@ function initECharts() {
                 { name: 'Sheng, 2024', symbolSize: 80, category: 'Review paper', remark: 'Plastic pollution in agricultural landscapes.', url: 'https://www.nature.com/articles/s41467-024-52734-3'},
                 { name: 'Sheng, 2024b', symbolSize: 40, category: 'Presentation', remark: 'Latebreaking Poster at ESA 2024', url: 'https://www.esa.org/longbeach2024/'},
                 { name: 'Sheng, 2024c', symbolSize: 20, category: 'Presentation', remark: '西湖大学可持续发展与环境前沿交叉论坛 海报展示'},
-                { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks (in prep)'},
-                { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (CN120124651A)'},
-                { name: 'Xu, 2024', symbolSize: 50, category: 'Research paper', remark: 'Identifying Cocoa Pollinators', url: 'https://arxiv.org/abs/2412.19915'},
+                { name: 'Sheng, 2025', symbolSize: 60, category: 'Research paper', remark: 'Long-term exposure to microplastics and heat affects <br>bumblebee colony development, behavior patterns and social networks', url:'https://www.biorxiv.org/content/10.1101/2025.07.24.666509v1'},
+                { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (CN120124651A/US20250190729A1)', url:'https://patents.google.com/patent/US20250190729A1'},
+                { name: 'Xu, 2024', symbolSize: 50, category: 'Research paper', remark: 'Identifying Cocoa Pollinators', url: 'https://www.nature.com/articles/s41597-025-05631-3'},
                 { name: 'Darras, 2024', symbolSize: 40, category: 'Research paper', remark: 'Eyes on nature', url: 'https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14436'},
             ],
             links: [
