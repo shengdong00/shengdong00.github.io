@@ -13,10 +13,9 @@ summary:
 ---
 
 
-
 I am a 3rd year PhD student at Westlake University (joint program with Zhejiang University). I am also a visiting student at Agroscope (Changins). My research interest lies in the sustainability and environmental pressures on agricultural systems. I am passionate about applying cutting-edge technologies such as artificial intelligence to the quantitative analysis of ecological and environmental issues. I believe that knowledge and conscience are the keys in our essential quest to understand the relationship between humanity and nature.
 
-My work is supervised by Thomas Cherico Wanger (group leader at Agroscope) and [Ling Li](https://en.westlake.edu.cn/faculty/ling-li.html) (chair professor at Westlake University). Currently, I'm working on the modelling of micropalstic fragmentation and source estimation in agricultural soils. I have published several papers on top/high tier journals such as *Nature Communications*. For details please see my CV [here](https://dong2000.xyz/profile/CV_ShengDong.pdf).
+My work is supervised by Thomas Cherico Wanger (group leader at Agroscope) and Ling Li (chair professor at Westlake University). Currently, I'm working on the modelling of micropalstic fragmentation and source estimation in agricultural soils. I have published several papers on top/high tier journals such as *Nature Communications*. For details please **see my CV [here](https://dong2000.xyz/profile/CV_ShengDong.pdf)**.
 
 In my leisure time, I enjoy spending time with my partner, movies, skateboards,  guitars, and books. My favorite ones include Huxley's *Brave New World*, Fitzgerald's *The Great Gatsby*, and Asimov's *Foundation* series.
 
