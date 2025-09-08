@@ -66,28 +66,25 @@ languages:
           subtitle: >
               <b>PhD candidate</b><br>
               School of Engineering, Westlake University<br>
-              Hangzhou, China<br>
+              Agroscope (Changins)
           imageUrl: "profile4.jpg"
           imageTitle: avatar
           imageWidth: 200
           imageHeight: 200
           buttons:
-              - name: CV
-                # url: cv/
+              - name: About me
+                url: /profile/about/
+              - name: Curriculum Vitae
                 url: CV_ShengDong.pdf
-              # - name: intro (cn)
-              #   url: intro_cn/
-              - name: Outputs
-                url: /profile/net/
               - name: Blog
                 url: /
       socialIcons:
         - name: email
-          url: mailto:sheng_dong@foxmail.com
+          url: mailto:sheng-dong@outlook.com
         - name: Rss
           url: "index.xml"
-        - name: github
-          url: https://github.com/shengdong00
+        # - name: github
+        #   url: https://github.com/shengdong00
         - name: researchgate
           url: https://www.researchgate.net/profile/Dong-Sheng-5
         - name: googlescholar
@@ -101,11 +98,11 @@ taxonomies:
   tag: tags
   series: series
 
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+# outputs:
+#     home:
+#         - HTML
+#         - RSS
+#         - JSON
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -153,26 +150,28 @@ params:
           </font>
 
     socialIcons:
-        - name: email
-          url: mailto:sheng_dong@foxmail.com
+        # - name: email
+        #   url: mailto:sheng_dong@foxmail.com
         - name: Rss
           url: "index.xml"
         - name: github
           url: https://github.com/shengdong00
-        - name: researchgate
-          url: https://www.researchgate.net/profile/Dong-Sheng-5
-        - name: googlescholar
-          url: https://scholar.google.com/citations?user=YwrjVjoAAAAJ
+        # - name: researchgate
+        #   url: https://www.researchgate.net/profile/Dong-Sheng-5
+        # - name: googlescholar
+        #   url: https://scholar.google.com/citations?user=YwrjVjoAAAAJ
         - name: linkedin
           url: https://www.linkedin.com/in/dong-sheng-8903a1288/
-        - name: ORCID
-          url: https://orcid.org/0000-0001-5658-5771
+        # - name: ORCID
+        #   url: https://orcid.org/0000-0001-5658-5771
         # - name: X
         #   url: https://x.com/ShengDong00
-        # - name: zhihu
-        #   url: https://www.zhihu.com/people/piao-bo-qiu-shi-ying
+        - name: zhihu
+          url: https://www.zhihu.com/people/fnqovtblcoa
         - name: bilibili
           url: https://space.bilibili.com/485957570
+        - name: xiaohongshu
+          url: https://www.xiaohongshu.com/user/profile/6310b3c8000000001b002628
 
     label:
         text: "波忒利"

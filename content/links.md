@@ -8,7 +8,20 @@ ShowToc: false
 
 
 
-## :art: 收藏
+### 组 织 :office:
+
+{{<friend name="西湖大学工学院" url="https://engineering.westlake.edu.cn/" logo="https://engineering.westlake.edu.cn/favicon.ico" word="School of Engineering, Westlake University">}}
+
+{{<friend name="瑞士联邦生态农业研究所" url="https://www.agroscope.admin.ch/agroscope/en/home.html/" logo="https://www.agroscope.admin.ch/favicon.ico" word="Agroscope">}}
+
+{{<friend name="浙江大学学生E志者协会" url="https://a.zjueva.net/#/" logo="https://a.zjueva.net/static/media/background.f7f9bf62.png" word="E我世界，志我人生">}}
+
+{{<friend name="十年之约" url="https://www.foreverblog.cn/" logo="https://www.foreverblog.cn/favicon.ico" word="一个人的寂寞，一群人的狂欢。">}}
+
+
+---
+
+### 收 藏 :art: 
 
 {{<friend name="earth : : " url="https://earth.nullschool.net/zh-cn/" logo="https://earth.nullschool.net/favicon.ico" word="风、气象、海洋状况的全球地图">}}
 
@@ -18,14 +31,14 @@ ShowToc: false
 
 {{<friend name="2021 Map of the Complexity Sciences" url="https://www.art-sciencefactory.com/complexity-map_feb09.html" logo="https://1.bp.blogspot.com/-HDAOI4P4bNc/YUHA3w8-BJI/AAAAAAAAA8A/eXP0eZSStigEa59s1jml-OKULXZa7U5OQCLcBGAsYHQ/w400-h225/MAP2021.jpg" word="">}}
 
-{{<friend name="麦田艺术" url="https://www.nbfox.com/" logo="https://www.nbfox.com/favicon.ico" word="Art is a way of survival.">}}
+{{<friend name="麦田艺术" url="https://www.nbfox.com/" logo="https://file.nbfox.com/wp-content/uploads/2024/05/214090-000-800px.jpg" word="Art is a way of survival.">}}
 
 {{<friend name="USGS bee photographs" url="https://www.flickr.com/people/usgsbiml/" logo="https://live.staticflickr.com/7222/buddyicons/54563451@N08_r.jpg" word="Sam Droege from USGS Bee Inventory and Monitoring Lab.">}}
 
 
 ---
 
-## :flight_departure: 朋友们
+### 网上的朋友们 :feet:
 
 {{<friend name="Idealclover" url="https://idealclover.top/" logo="https://image.idealclover.cn/blog/assets/icon.png" word="Stay simple, stay naive.">}}
 
@@ -47,25 +60,18 @@ ShowToc: false
 
 {{<friend name="Tsum" url="https://tsumgo.github.io/" logo="https://tsumgo.github.io/medias/avatar.jpg" word="青青子衿，悠悠我心">}}
 
-{{<friend name="Oddyti" url="https://www.oddyti.com/" logo="https://www.oddyti.com/img/snoopy_hu17586886958625409136.jpg" word="是谁来自山川湖海，却囿于昼夜厨房与爱。">}}
+{{<friend name="Oddyti" url="https://www.oddyti.com/" logo="https://www.oddyti.com/favicon.ico" word="是谁来自山川湖海，却囿于昼夜厨房与爱。">}}
 
 {{<friend name="pyrwalker" url="https://pyrwalker.top/" logo="https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/obsidianicons8%E6%9C%88%E4%BA%AE%E7%AC%A6%E5%8F%B7.png" word="我深怕自己本非美玉，故而不敢加以刻苦琢磨">}}
 
 {{<friend name="Ponyboy" url="https://ponyboy2005.github.io/" logo="https://s2.loli.net/2025/02/06/F3tk6dCEMUB45Qn.png" word="Stay alive">}}
 
+{{<friend name="idealclover 友链屋" url="https://blogroll.icl.moe/" logo="https://blogroll.icl.moe/assets/logo.81fa7aa3.png" word="">}}
+
 <sub>如需添加友链，请发送邮件至[sheng_dong@foxmail.com](mailto:sheng_dong@foxmail.com)。</sub>
 
 ---
 
-## :cityscape: 组 织
 
-{{<friend name="(Former) SASE Lab" url="https://www.tomcwanger.com/" logo="https://dong2000.xyz/images/SASE_logo.jpg" word="(原)西湖大学可持续农业科学与技术实验室">}}
-
-{{<friend name="浙江大学学生E志者协会" url="https://a.zjueva.net/#/" logo="https://a.zjueva.net/static/media/background.f7f9bf62.png" word="E我世界，志我人生">}}
-
-{{<friend name="十年之约" url="https://www.foreverblog.cn/" logo="https://www.foreverblog.cn/favicon.ico" word="一个人的寂寞，一群人的狂欢。">}}
-
-
----
 
 <center><a href="https://www.foreverblog.cn/go.html" target="_blank"><img src="https://img.foreverblog.cn/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机跳转到十年之约正式成员的博客"></a></center>

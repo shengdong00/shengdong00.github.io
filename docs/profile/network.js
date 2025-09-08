@@ -54,6 +54,7 @@ function initECharts() {
                 { name: 'Wanger, 2023', symbolSize: 30, category: 'Patent/software', remark: 'Tracking system patent (CN120124651A/US20250190729A1)', url:'https://patents.google.com/patent/US20250190729A1'},
                 { name: 'Xu, 2024', symbolSize: 50, category: 'Research paper', remark: 'Identifying Cocoa Pollinators', url: 'https://www.nature.com/articles/s41597-025-05631-3'},
                 { name: 'Darras, 2024', symbolSize: 40, category: 'Research paper', remark: 'Eyes on nature', url: 'https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14436'},
+                { name: 'Feng, 2023', symbolSize: 15, category: 'Media coverage', remark: '中美41名高中生的西湖实验 | 记2023西湖大学高中生夏校', url: 'https://www.westlake.edu.cn/news_events/westlakenews/UniversityNews/202307/t20230726_30065.shtml'},
             ],
             links: [
                 { source: 'Darras, 2024', target: 'Xu, 2024', value: 'Embedded vision camera' },
@@ -63,6 +64,7 @@ function initECharts() {
                 { source: 'Sheng, 2025', target: 'Sheng, 2024b', value: 'Priliminary findings' },
                 { source: 'Sheng, 2025', target: 'Wanger, 2023', value: 'Software' },
                 { source: 'Sheng, 2024', target: 'Sheng, 2024c', value: '-' },
+                { source: 'Darras, 2024', target: 'Feng, 2023', value: 'A summer camp presentation'},
             ],
             // #a1a1ce, #94bcbc, #83a7d2, #2b7e9c, #1b5b7e
             categories: [
