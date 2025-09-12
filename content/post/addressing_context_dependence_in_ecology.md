@@ -27,8 +27,8 @@ cover:
 
 
 <center><figure>
-    <img src="https://www.cell.com/cms/10.1016/j.tree.2021.09.007/asset/e13c9cbf-1a23-4ab3-b5f9-06c3c8f00140/main.assets/gr2.jpg" style="zoom: 33%;" />
-    <figcaption>Source: TREE | CellPress</figcaption>
+    <img src="/images/gr2_lrg.jpg" style="zoom: 100%;" />
+    <figcaption>Source: Trends in Ecology and Evolution | CellPress</figcaption>
 </figure></center>
 
 
