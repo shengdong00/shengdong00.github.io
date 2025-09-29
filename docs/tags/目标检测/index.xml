@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>目标检测 on Sheng Dong&#39;s website</title>
-    <link>http://localhost:1313/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
+    <link>https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
     <description>Recent content in 目标检测 on Sheng Dong&#39;s website</description>
     <image>
-      <url>http://localhost:1313/ptr.png</url>
-      <link>http://localhost:1313/ptr.png</link>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 May 2024 23:29:36 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 May 2024 23:29:36 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR</title>
-      <link>http://localhost:1313/post/mmdet_object_detection_model_evaluation/</link>
+      <link>https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/</link>
       <pubDate>Fri, 17 May 2024 23:29:36 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/mmdet_object_detection_model_evaluation/</guid>
+      <guid>https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/</guid>
       <description>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
@@ -26,10 +26,10 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
     
     <item>
       <title>MMDetection目标检测入门笔记</title>
-      <link>http://localhost:1313/post/notes-on-mmdet/</link>
+      <link>https://dong2000.xyz/post/notes-on-mmdet/</link>
       <pubDate>Mon, 28 Aug 2023 11:11:41 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/notes-on-mmdet/</guid>
+      <guid>https://dong2000.xyz/post/notes-on-mmdet/</guid>
       <description>&lt;p&gt;本篇是MMDetection学习应用过程中的踩坑记录，随学习情况更新。&lt;/p&gt;</description>
     </item>
     
