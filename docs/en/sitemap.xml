@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dong2000.xyz/post/addressing_context_dependence_in_ecology/</loc>
-    <lastmod>2025-09-08T18:16:47+08:00</lastmod>
-  </url><url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2025-09-08T18:16:47+08:00</lastmod>
+    <lastmod>2025-09-29T20:10:08+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2025-09-08T18:16:47+08:00</lastmod>
+    <lastmod>2025-09-29T20:10:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -20,6 +17,12 @@
                 hreflang="en"
                 href="https://dong2000.xyz/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/post/secc_quick_guide/</loc>
+    <lastmod>2025-09-29T20:10:08+08:00</lastmod>
+  </url><url>
+    <loc>https://dong2000.xyz/post/addressing_context_dependence_in_ecology/</loc>
+    <lastmod>2025-09-08T18:16:47+08:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/post/leyuanshudian/</loc>
     <lastmod>2025-05-08T21:43:12+08:00</lastmod>
@@ -585,10 +588,13 @@
     <lastmod>2022-03-18T09:37:41+00:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/emoji_cheating_sheet/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://dong2000.xyz/profile/about/</loc>
   </url><url>
     <loc>https://dong2000.xyz/archives/</loc>
+  </url><url>
+    <loc>https://dong2000.xyz/secc_quick_guide/</loc>
   </url><url>
     <loc>https://dong2000.xyz/links/</loc>
   </url><url>

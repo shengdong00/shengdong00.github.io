@@ -9,7 +9,6 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Fri, 16 Dec 2022 14:11:55 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python多线程和多进程的运行速度比较</title>
@@ -35,14 +34,13 @@
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+ 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+ 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
     </item>
     
     <item>
@@ -91,7 +89,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>

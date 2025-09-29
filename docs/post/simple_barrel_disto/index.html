@@ -10,8 +10,8 @@
 <meta name="description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。">
 <meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/post/simple_barrel_disto/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://dong2000.xyz/ptr.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
@@ -86,16 +86,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "简单理想情形下的Barrel distortion",
       "item": "https://dong2000.xyz/post/simple_barrel_disto/"
     }
@@ -112,8 +112,8 @@ if (!doNotTrack) {
   "keywords": [
     "数学建模", "桶形畸变", "Barrel distortion", "机器视觉"
   ],
-  "articleBody": "Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。\n网上找到对Barrel distortion的描述如下。\nBarrel distortion: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.1\n为了便于理解Barrel distortion并尝试自行解决问题，我构建了一个极其简化的理想模型：\n将相机理想化为一个点，其到实物平面的垂足为$O(0,0)$，距离为$h$。平面上某一点相对于$O$的坐标为$P_1(x_1, y_1)$，该点对应的相机视野张角为$\\theta_1$。则 $$ \\tan{\\frac{\\theta_1}{2}}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n而在成像端，该点在感光芯片上成像像素点相对于中心点的坐标记为$D_1(x_{1d}, y_{1d})$，单位是px。如果认为成像端的像素坐标和角度是成正比的（这一点存疑），那么 $$ \\frac{\\theta_1/2}{\\sqrt{x_{1d}^2+y_{1d}^2}}\\equiv K\\rm （常数）. $$\n$$ \\therefore ~\\tan{\\left(K\\cdot\\sqrt{x_{1d}^2+y_{1d}^2}\\right)}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n在进行图像校正之前，我们先给出参考用的“锚定点”，即成像点像素位置保持不变的点，$P_{0X}(x_0,0)$ ~ $D_{0X}(x_{0d},0)$，$P_{0Y}(0,y_0)$ ~ $D_{0Y}(0,y_{0d})$。经过校正之后，像素点移动到新的位置， $$ \\begin{aligned} D_1(x_{1d},y_{1d})\u0026\\rightarrow C_1(x_{1c},y_{1c}),\\\\ D_{0X}(x_{0d},0)\u0026\\rightarrow C_{0X}(x_{0c},0),\\\\ D_{0Y}(0,y_{0d})\u0026\\rightarrow C_{0Y}(0,y_{0c}). \\end{aligned} $$\n但是“锚定点”事实上位置保持不变，即$x_{0d}=x_{0c},y_{0d}=y_{0c}$。经过校正之后应当满足：$\\triangle C_{0X}C_1C_{0Y}$相似于$\\triangle P_{0X}P_1P_{0Y}$，或者说$(C_{0X}C_1\\parallel{P_{0X}P_1})$且$({C_{0Y}C_1}\\parallel{P_{0Y}P_1})$， $$ \\displaylines{ \\left\\{ \\begin{aligned} \u0026\\frac{x_{1c}-x_{0d}}{y_{1c}-0}=\\frac{x_1-x_0}{y_1-0}\\\\ \u0026\\frac{x_{1c}-0}{y_{1c}-y_{0d}}=\\frac{x_1-0}{y_1-y_0} \\end{aligned} \\right. \\Rightarrow \\left\\{ \\begin{aligned} \u0026x_{1c}=\\frac{(x_1-x_0)y_{0d}+x_{0d}y_1}{x_1y_1-(x_1-x_0)(y_1-y_0)}\\\\ \u0026y_{1c}=\\frac{(y_1-y_0)x_{0d}+x_1y_{0d}}{x_1y_1-(x_1-x_0)(y_1-y_0)} \\end{aligned} \\right. } $$\n通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\\leftrightarrow C_1$。\n📷之后有时间的话，希望能够写成代码检验一下这个算法的适用性🐶\nMansurov, N. (July 5, 2020). What is Lens Distortion? photography life. Retrieved on Nov 16, 2022. Link ↩︎\n",
-  "wordCount" : "154",
+  "articleBody": "Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。\n网上找到对Barrel distortion的描述如下。\n Barrel distortion: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.1\n \r为了便于理解Barrel distortion并尝试自行解决问题，我构建了一个极其简化的理想模型：\n将相机理想化为一个点，其到实物平面的垂足为$O(0,0)$，距离为$h$。平面上某一点相对于$O$的坐标为$P_1(x_1, y_1)$，该点对应的相机视野张角为$\\theta_1$。则 $$ \\tan{\\frac{\\theta_1}{2}}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n--\r\r而在成像端，该点在感光芯片上成像像素点相对于中心点的坐标记为$D_1(x_{1d}, y_{1d})$，单位是px。如果认为成像端的像素坐标和角度是成正比的（这一点存疑），那么 $$ \\frac{\\theta_1/2}{\\sqrt{x_{1d}^2+y_{1d}^2}}\\equiv K\\rm （常数）. $$\n$$ \\therefore ~\\tan{\\left(K\\cdot\\sqrt{x_{1d}^2+y_{1d}^2}\\right)}=\\frac{\\sqrt{x_1^2+y_1^2}}{h}. $$\n在进行图像校正之前，我们先给出参考用的“锚定点”，即成像点像素位置保持不变的点，$P_{0X}(x_0,0)$ ~ $D_{0X}(x_{0d},0)$，$P_{0Y}(0,y_0)$ ~ $D_{0Y}(0,y_{0d})$。经过校正之后，像素点移动到新的位置， $$ \\begin{aligned} D_1(x_{1d},y_{1d})\u0026\\rightarrow C_1(x_{1c},y_{1c}),\\\\ D_{0X}(x_{0d},0)\u0026\\rightarrow C_{0X}(x_{0c},0),\\\\ D_{0Y}(0,y_{0d})\u0026\\rightarrow C_{0Y}(0,y_{0c}). \\end{aligned} $$\n--\r\r但是“锚定点”事实上位置保持不变，即$x_{0d}=x_{0c},y_{0d}=y_{0c}$。经过校正之后应当满足：$\\triangle C_{0X}C_1C_{0Y}$相似于$\\triangle P_{0X}P_1P_{0Y}$，或者说$(C_{0X}C_1\\parallel{P_{0X}P_1})$且$({C_{0Y}C_1}\\parallel{P_{0Y}P_1})$， $$ \\displaylines{ \\left\\{ \\begin{aligned} \u0026\\frac{x_{1c}-x_{0d}}{y_{1c}-0}=\\frac{x_1-x_0}{y_1-0}\\\\ \u0026\\frac{x_{1c}-0}{y_{1c}-y_{0d}}=\\frac{x_1-0}{y_1-y_0} \\end{aligned} \\right. \\Rightarrow \\left\\{ \\begin{aligned} \u0026x_{1c}=\\frac{(x_1-x_0)y_{0d}+x_{0d}y_1}{x_1y_1-(x_1-x_0)(y_1-y_0)}\\\\ \u0026y_{1c}=\\frac{(y_1-y_0)x_{0d}+x_1y_{0d}}{x_1y_1-(x_1-x_0)(y_1-y_0)} \\end{aligned} \\right. } $$\n通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\\leftrightarrow C_1$。\n📷之后有时间的话，希望能够写成代码检验一下这个算法的适用性🐶\n  Mansurov, N. (July 5, 2020). What is Lens Distortion? photography life. Retrieved on Nov 16, 2022. Link ↩︎\n  ",
+  "wordCount" : "156",
   "inLanguage": "en",
   "datePublished": "2022-11-16T22:37:16+08:00",
   "dateModified": "2022-11-16T22:37:16+08:00",
@@ -177,7 +177,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
@@ -236,7 +236,7 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       简单理想情形下的Barrel distortion
     </h1>
@@ -295,7 +295,7 @@ $$
 }
 $$</p>
 <p>通过上述运算，我们现在可以基于给定两个“锚定点”的信息，实现从现实世界中的点坐标到校正后图像坐标的映射$P_1(x_1,y_1)\leftrightarrow C_1(x_{1c},y_{1c})$。通过解(反)三角函数可以得到$P_1\leftrightarrow D_1$的映射，从而构建起图像校正的像素点映射关系$D_1\leftrightarrow C_1$。</p>
-<p>&#x1f4f7;之后有时间的话，希望能够写成代码检验一下这个算法的适用性&#x1f436;</p>
+<p>📷之后有时间的话，希望能够写成代码检验一下这个算法的适用性🐶</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -311,7 +311,7 @@ $$</p>
     <ul class="post-tags">
       <li><a href="https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%A1%B6%E5%BD%A2%E7%95%B8%E5%8F%98/">桶形畸变</a></li>
-      <li><a href="https://dong2000.xyz/tags/barrel-distortion/">Barrel Distortion</a></li>
+      <li><a href="https://dong2000.xyz/tags/barrel-distortion/">Barrel distortion</a></li>
       <li><a href="https://dong2000.xyz/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a></li>
     </ul>
 <nav class="paginav">
@@ -332,7 +332,7 @@ $$</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

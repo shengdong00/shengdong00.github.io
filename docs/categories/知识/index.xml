@@ -9,7 +9,6 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2024 09:52:09 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献阅读 [April 3rd]</title>
@@ -18,8 +17,8 @@
       
       <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
       <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
-Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
-Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+ Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
+ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency  Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
     </item>
     
     <item>
@@ -29,8 +28,8 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
       
       <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
       <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
-Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+ Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+ Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
     </item>
     
     <item>
@@ -70,7 +69,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       
       <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
+&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -89,14 +88,13 @@ I will introduce the topic with four parts. For the first and second part, we wi
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+ 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+ 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
     </item>
     
     <item>

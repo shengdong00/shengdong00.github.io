@@ -10,7 +10,7 @@
 <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 <meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/tags/mmdetection/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://dong2000.xyz/ptr.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
@@ -99,7 +99,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
@@ -155,7 +155,7 @@ if (!doNotTrack) {
         </ul>
     </nav>
 </header><main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/tags/">Tags</a></div>
   <h1>
     MMDetection
     <a href="index.xml" title="RSS" aria-label="RSS">
@@ -178,8 +178,8 @@ if (!doNotTrack) {
     <p>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset....</p>
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset....</p>
   </div>
   <footer class="entry-footer">
 
@@ -204,7 +204,7 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

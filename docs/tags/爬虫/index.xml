@@ -9,7 +9,6 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 18 May 2022 19:27:46 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
@@ -57,7 +56,7 @@
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>

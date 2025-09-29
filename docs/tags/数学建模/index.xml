@@ -9,7 +9,6 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 16 Nov 2022 22:37:16 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>简单理想情形下的Barrel distortion</title>
@@ -31,7 +30,7 @@
 &lt;li&gt;指标实际可取值具有上边界；&lt;/li&gt;
 &lt;li&gt;不同指标之间存在重要性差异。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。&amp;#x1f4d0;&lt;/p&gt;</description>
+&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。📐&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,14 +48,13 @@
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+ 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+ 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
     </item>
     
     <item>
@@ -65,7 +63,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Sun, 08 May 2022 23:10:55 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/on_icm_2022/</guid>
-      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。&amp;#x1f436;&lt;/p&gt;</description>
+      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。🐶&lt;/p&gt;</description>
     </item>
     
   </channel>

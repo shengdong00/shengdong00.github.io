@@ -9,7 +9,6 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 06 Mar 2024 02:56:58 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献阅读 [March 6th]——人与自然耦合系统</title>
@@ -18,8 +17,8 @@
       
       <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
       <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
-Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+ Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+ Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
     </item>
     
     <item>
@@ -59,7 +58,7 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;amp;program=ccgg&amp;amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

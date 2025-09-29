@@ -9,8 +9,16 @@
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 08 Sep 2025 18:16:47 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Sep 2025 20:10:08 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速上手科学工程计算集群</title>
+      <link>https://dong2000.xyz/post/secc_quick_guide/</link>
+      <pubDate>Mon, 29 Sep 2025 20:10:08 +0800</pubDate>
+      
+      <guid>https://dong2000.xyz/post/secc_quick_guide/</guid>
+      <description>&lt;p&gt;与科学工程计算集群进行交互需要在校园网中，或者开启&lt;a href=&#34;https://vpn.westlake.edu.cn/&#34;&gt;西湖大学VPN客户端&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Context dependence 是一句万金油吗 (文献分享)</title>
       <link>https://dong2000.xyz/post/addressing_context_dependence_in_ecology/</link>
@@ -20,7 +28,7 @@
       <description>今年五月份去昆明参加了第三届国际农业生物多样性大会，虽然没有作报告，但是难得有机会向世界各地的学者们提问请教。我发现 context dependence (情景依赖性) 是一个被人们反复提及的字眼。某个因素的效应是正向的还是负向的？视具体情景而定。某个生态保护策略值得被推广应用吗？视具体情景而定……我常常感到这样的回答有如隔靴搔痒，好像什么都说了，又好像什么都没说。
 诚然，社会-经济-自然复合生态系统中充斥着各种非线性关系，很难像经典物理学那样抽象出极其具有普适性的规律。在试图观察某个对象时，我们必须要时刻注意到其所处情景以及观测方法的复杂性和特殊性，并对此保持谦卑谨慎。但是，粗暴地滥用context dependence几乎等同于承认我们对研究结论的普适程度一无所知，也就几乎等同于承认我们对世界探索的失败。这不免令人心生沮丧。
 虽然我们无法彻底抛弃这一概念，但至少可以对context dependence进行定义和分类。Catford et al. (2022) 的文章 Addressing context dependence in ecology: Trends in Ecology &amp;amp; Evolution 对此进行了探讨，指出情景依赖性可以被分为四个基本的类别，即多个因素之间的交互效应、混杂因素、统计显著性和方法差异。
-Source: Trends in Ecology and Evolution | CellPress </description>
+Source: Trends in Ecology and Evolution | CellPress</description>
     </item>
     
     <item>
@@ -44,7 +52,7 @@ Source: Trends in Ecology and Evolution | CellPress </description>
 Yoder在另一篇文章 Alert fatigue: The phrase that defined our climate in 2024 里提到的问题则更加具有时效性4。过去一年中我们听到了很多创下历史纪录的极端天气新闻：加利福尼亚的山火、斯里兰卡的洪涝、欧洲南部的超高温等等。这些极端气候/天气的警报在未来或许将越来越家常便饭。人们将学会忽视，而这也意味着科学家们关于气候变发出的警告的力量会越来越微弱，因为对于危机的反复刺激感到疲劳。有调查显示近三分之二的美国人明白气候变化正在影响他们的当地社区5，但这并不妨碍他们选举出强力推动传统化石能源的新任政府。过去一年中，大家或许也亲身经历了很多本地罕见的严寒酷暑。但回忆 2023 年，当时的我们同样为各类创下历史记录的天气情况感到震惊。如果未来的每一年都被冠以“史上最极端”的名号，用不了多久人们就会对此感到麻木。逐渐的环境恶化就会犹如温水煮青蛙，慢慢杀死未来的可能性。
 世界正在逐渐透支对于气候变化的危机感。希望我们能在代价来临之前形成更可持续的应对方式，毕竟这是百年大计。
 参考资料
-COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+  COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
     <item>
@@ -83,7 +91,8 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
       <pubDate>Sat, 28 Sep 2024 19:38:09 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/good_news_sept/</guid>
-      <description>九月发生了两件值得高兴的事情：通过了博士开题答辩，以及进组以来的第一篇论文（综述）见刊了！希望今后再接再厉&amp;#x1f389;&amp;#x1f389;</description>
+      <description>九月发生了两件值得高兴的事情：通过了博士开题答辩，以及进组以来的第一篇论文（综述）见刊了！希望今后再接再厉🎉🎉
+</description>
     </item>
     
     <item>
@@ -106,8 +115,8 @@ COP29: Key outcomes agreed at the UN climate talks in Baku - Carbon Brief&amp;#1
       <description>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print(&amp;#39;\n===Averaging all classes===&amp;#39;) print(&amp;#39;AP:&amp;#39;, average_precision) print(&amp;#39;AR:&amp;#39;, average_recall) print(&amp;#39;F1:&amp;#39;, f1) print(&amp;#39;Classes&amp;#39;, dataset.</description>
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print(&amp;#39;\n===Averaging all classes===&amp;#39;) print(&amp;#39;AP:&amp;#39;, average_precision) print(&amp;#39;AR:&amp;#39;, average_recall) print(&amp;#39;F1:&amp;#39;, f1) print(&amp;#39;Classes&amp;#39;, dataset.</description>
     </item>
     
     <item>
@@ -144,8 +153,8 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
       
       <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
       <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
-Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
-Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+ Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
+ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency  Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
     </item>
     
     <item>
@@ -155,8 +164,8 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
       
       <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
       <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
-Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+ Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+ Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
     </item>
     
     <item>
@@ -282,13 +291,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Tue, 09 May 2023 15:37:59 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/shitty-competition/</guid>
-      <description>byd这创赛搞得难受死了，不吐不快。搞不明白为啥要在创业大赛里弄一个学术论文赛道，却又以商业项目的风格来要求参赛作品。更搞不懂我一臭搞科研的大四狗为啥还要掺和这玩意儿。&amp;#x1f620; &amp;#x1f595;
-咱也不嫌得罪人了，索性从头到尾喷个遍。先挖个坑，以后回来填。
-更新于2023.6.19
-创赛结束将近一个月了。最终在省赛上的经历也谈不上有多好——面对一群并不专业也并不尊重的评委，用学术作品讲述了一个并不成熟的“创新创业”故事，拿了一个并不出彩的省赛银奖。自始至终，我们都并没有感受到这场比赛对于我们的研究成果的尊重，我和我的队员们也都因此感到不满。从那以来继续被驱使着经历了很多事情，关于这次经历的情绪和记忆也已经逐渐淡化。
-曾想过是否应该把这篇博客删掉——尽管挖了坑，但是我已经很难再找回当时那么痛苦、气愤的情绪状态——但最终还是觉得应该尊重自己曾经留下的痕迹，用更新补充的方式来做一个交代。
-如果问我参加这次比赛后不后悔，我可能还是会说不后悔。因为这次参赛经历确实带来了一些积极效果。和我一起参赛的两个学弟会因为省赛银奖得到不小的保研加分，算是为后辈们做了一件好事；他们参与发表的论文作为成果之一放进了参赛项目里，因此这也是他们应得的。奖项对于我们的指导老师和学院来说，也算是一点微小的荣誉。我很感激黄老师带我发了本科生涯的唯一一篇研究论文，而且是以第一作者的身份发表于SCI一区期刊。不论是从能力、经验积累，还是从是保研直博的申请过程来看，这一经历对我都至关重要。在毕业设计的校外合作流程中，黄老师也给了很大的帮助。某种程度上，我很想在这次比赛中为我们的论文争得一个好的奖项，也算是对这段科研经历、对老师指导的回报（虽然这可能从功利角度上并不能带来多大效果）。
-当然，如果再来一次，我还是不可避免地会骂骂咧咧，会很痛恨这场比赛的方方面面。时间的推移并没有将那些不合理的合理化，只是逐渐消弭了我的愤怒，让我从长远的角度更多地看到这次经历的正面效果。</description>
+      <description></description>
     </item>
     
     <item>
@@ -351,7 +354,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 15 Jan 2023 14:12:44 +0800</pubDate>
       
       <guid>https://dong2000.xyz/post/snow-in-hangzhou/</guid>
-      <description>&lt;p&gt;昨晚气温骤降，徘徊在0℃附近。下午出发去实验室时，发现小龟的挡风被和坐垫上碎散了一层雪花&amp;#x2744;&amp;#xfe0f;，才意识到雪已经若有若无的下了一小阵子了。&lt;/p&gt;</description>
+      <description>&lt;p&gt;昨晚气温骤降，徘徊在0℃附近。下午出发去实验室时，发现小龟的挡风被和坐垫上碎散了一层雪花❄️，才意识到雪已经若有若无的下了一小阵子了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -419,7 +422,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       
       <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
+&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -476,7 +479,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
 首先，系统提示内容违规的内容是大半个月前就已经发布的再读《社会-经济-自然复合生态系统》，在发布该博客之后我又进行了若干次重新部署，一直没有提示违规，直到国庆前夕的这一次更新才出现问题。其次，我不认为这篇博客内容中有任何暴恐、色情、政治敏感的内容。经过简单排查发现，违规内容来自于后半部分（并且不止一处），只不过是对马世骏先生早年论文的部分引用而已。由此我认为，违规问题的出现，归咎于平台在10月到来之前更新了检测系统，并且新上线的检测系统敏感到了草木皆兵的离谱程度。
 我起初试图修改内容以通过审核。由于平台并不会提示具体是哪一段文本违规，而我凭借自己的直觉、以及网上的各种违禁违规AI检测工具，都无法解决问题，因此我只能在二分法的基本思想下一点点排查。反复检查的结论是，只有几乎将后一半内容完全砍掉，这篇内容才能通过审核，但这是我所不能接受的。我宁可直接将它删掉，也不愿意看到一段被阉割至二分之一的文字。但是，删掉它并不意味着麻烦的结束，因为平台接着判定我的另一篇内容，系统科学与工程复习整理，违禁违规了……
 如果说前一篇内容还和什么社会什么政策扯一些边，违规还算能理解（不合理，但是能解释）的话，后一篇纯纯是课程复习资料的东西都不能幸免，那我是真的无话可说了。即使我搞定了这两篇的违规内容（不论是阉割还是删除），我也有充足的理由相信还会有第三个受害者出现。
-至此，这个问题已经消耗了我大半天的时间和大量的精力。在反复迭代排查的过程中，每一次修改内容、上传部署、审核打回的轮回都需要5~10分钟的时间，整个过程异常枯燥，而我则时时刻刻陷入“难道这玩意儿也是敏感内容”的灵魂拷问之中。最后我放弃修改了，睡觉之前到Gitee官方的页面里提了一个issue，询问部署违禁违规的问题。或许是因为语气冲了一点（当时整个人真的很恼火），用了一些反问句；又或许是因为我复制引用了平台自己的审查规则描述（形如”禁止出现xx内容“之类），从而引入了某些敏感词——总之，第二天醒来的时候，我发现我提的issue也TM的给ban了！&amp;#x1f621;
+至此，这个问题已经消耗了我大半天的时间和大量的精力。在反复迭代排查的过程中，每一次修改内容、上传部署、审核打回的轮回都需要5~10分钟的时间，整个过程异常枯燥，而我则时时刻刻陷入“难道这玩意儿也是敏感内容”的灵魂拷问之中。最后我放弃修改了，睡觉之前到Gitee官方的页面里提了一个issue，询问部署违禁违规的问题。或许是因为语气冲了一点（当时整个人真的很恼火），用了一些反问句；又或许是因为我复制引用了平台自己的审查规则描述（形如”禁止出现xx内容“之类），从而引入了某些敏感词——总之，第二天醒来的时候，我发现我提的issue也TM的给ban了！😡
 于是就有了今天删库跑路，溜到GitHub上边建仓的事情。
 本来这一次更新是为了提交一份微信公众平台JS接口安全域名的认证文件，以便于之后需要分享链接到票圈里。这下被迫从Gitee转移到了GitHub上边。这下要在微信公众平台上通过认证，还需要先完成域名绑定、网站备案等等一系列工作。考虑到时间上的经济性，短期内我也不会再去做这件事情了。虽然都说在境内访问GitHub的稳定性时好时坏，但是相比于其他选项来看，这也是最好的情况了。
 以前一直觉得互联网的一墙之隔并没有多大的影响，只要我自己进出自由，那么它的存在似乎也无可厚非。现在我不这么觉得了。</description>
@@ -502,7 +505,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 18 Sep 2022 16:16:51 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/on_socio_economic_natural_system/</guid>
-      <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开&amp;#x1f4a1;的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
+      <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开💡的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
     </item>
     
@@ -512,7 +515,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
       <pubDate>Sun, 11 Sep 2022 01:21:19 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/applying_phd/</guid>
-      <description>&lt;p&gt;&amp;#x1f393;最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
+      <description>&lt;p&gt;🎓最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -526,7 +529,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
 &lt;li&gt;指标实际可取值具有上边界；&lt;/li&gt;
 &lt;li&gt;不同指标之间存在重要性差异。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。&amp;#x1f4d0;&lt;/p&gt;</description>
+&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。📐&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -544,14 +547,13 @@ I will introduce the topic with four parts. For the first and second part, we wi
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
-在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
-投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+ 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+ 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
-其对偶模型为（对偶模型求解过程见文末）</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
     </item>
     
     <item>
@@ -619,7 +621,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Sun, 08 May 2022 23:10:55 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/on_icm_2022/</guid>
-      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。&amp;#x1f436;&lt;/p&gt;</description>
+      <description>&lt;p&gt;前天中午得知美赛开奖，怀着忐忑的心态赶紧查了一下。得到了一张Honorable Mention的奖状。虽然算不上什么大奖，但终于给本科阶段的数学建模经历留下了一个印记。之前就一直想着，等到美赛彻底结束之后要开一个纪念帖。几经拖延，现在终于画上了句号。🐶&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -632,7 +634,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;amp;program=ccgg&amp;amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -680,7 +682,7 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
       <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>

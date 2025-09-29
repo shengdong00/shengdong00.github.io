@@ -66,7 +66,7 @@ languages:
           subtitle: >
               <b>PhD candidate</b><br>
               School of Engineering, Westlake University<br>
-              Agroscope (Changins)
+              Agroscope (Changins)<br>
           imageUrl: "profile4.jpg"
           imageTitle: avatar
           imageWidth: 200

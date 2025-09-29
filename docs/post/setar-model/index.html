@@ -10,8 +10,8 @@
 <meta name="description" content="SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出1。">
 <meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/post/setar-model/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://dong2000.xyz/ptr.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
@@ -86,16 +86,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "SETAR Model",
       "item": "https://dong2000.xyz/post/setar-model/"
     }
@@ -112,7 +112,7 @@ if (!doNotTrack) {
   "keywords": [
     "SETAR", "数据分析", "时间序列分析"
   ],
-  "articleBody": "SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出1。\n考虑如下关于时间序列变量$y_t$的简单自回归模型$AR(p)$： $$ y_t=\\gamma_0 + \\gamma_1 y_{t-1}+\\gamma_2 y_{t-2}+\\dots+\\gamma_py_{t-p}+\\epsilon_t $$ 其中$\\gamma_i(i=1,2,\\dots,p)$是自回归的系数，$\\epsilon_t$~$WN(0;\\sigma^2)$是服从正态分布的白噪音项。、\n改写成向量形式： $$ y_t = {\\bf X_t}\\gamma+\\sigma\\epsilon_t $$ 其中${\\bf X_t}=[1, y_{t-1}, y_{t-2}, \\dots, y_{t-p}]$是时间变量的行向量，$\\gamma=[\\gamma_0, \\gamma_1, \\gamma_2, \\dots, \\gamma_p]^{\\rm T}$是系数列向量，$\\epsilon_t$~$WN(0;1)$是服从标准正态分布的白噪音项。\n在SETAR模型中，将$z_t=y_{t-d}$作为一个弱外源阈值变量(weakly exogenous threshold variable)，本质上就是$y_t$在迟滞项$d$之前的历史数值。SETAR模型的数学表达为： $$ y_t={\\bf X_t}\\gamma^{(j)}+\\sigma^{(j)}\\epsilon_t,~{\\rm if} ~r_{j-1}",
+  "articleBody": "SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出1。\n考虑如下关于时间序列变量$y_t$的简单自回归模型$AR(p)$： $$ y_t=\\gamma_0 + \\gamma_1 y_{t-1}+\\gamma_2 y_{t-2}+\\dots+\\gamma_py_{t-p}+\\epsilon_t $$ 其中$\\gamma_i(i=1,2,\\dots,p)$是自回归的系数，$\\epsilon_t$~$WN(0;\\sigma^2)$是服从正态分布的白噪音项。、\n改写成向量形式： $$ y_t = {\\bf X_t}\\gamma+\\sigma\\epsilon_t $$ 其中${\\bf X_t}=[1, y_{t-1}, y_{t-2}, \\dots, y_{t-p}]$是时间变量的行向量，$\\gamma=[\\gamma_0, \\gamma_1, \\gamma_2, \\dots, \\gamma_p]^{\\rm T}$是系数列向量，$\\epsilon_t$~$WN(0;1)$是服从标准正态分布的白噪音项。\n在SETAR模型中，将$z_t=y_{t-d}$作为一个弱外源阈值变量(weakly exogenous threshold variable)，本质上就是$y_t$在迟滞项$d$之前的历史数值。SETAR模型的数学表达为： $$ y_t={\\bf X_t}\\gamma^{(j)}+\\sigma^{(j)}\\epsilon_t,~{\\rm if} ~r_{j-1}在R语言中可以通过使用tsDynpackage里的函数setar()来进行SETAR模型分析，用法可以查看官方文档R: Self Threshold Autoregressive model (r-project.org)。另外，Michał Cukrow有一篇博客里给出了比较详细的解读和R例程（Threshold Autoregressive Models — beyond ARIMA + R Code | by Michał Cukrowski | Towards Data Science），以后有空再看。\n参考资料：Wikipedia | SETAR model\n  Tong, H. (1977) “Contribution to the discussion of the paper entitled Stochastic modelling of riverflow time series by A.J.Lawrance and N.T.Kottegoda”, Journal of the Royal Statistical Society, Series A, 140, 34-35. ↩︎\n  ",
   "wordCount" : "102",
   "inLanguage": "en",
   "datePublished": "2023-04-29T20:50:34+08:00",
@@ -177,7 +177,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
@@ -236,7 +236,7 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       SETAR Model
     </h1>
@@ -299,7 +299,7 @@ $$
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

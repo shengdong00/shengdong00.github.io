@@ -11,8 +11,8 @@
 So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.">
 <meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/post/tracking-noise/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://dong2000.xyz/ptr.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
@@ -89,16 +89,16 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "Tracking Noise with Smartphones",
       "item": "https://dong2000.xyz/post/tracking-noise/"
     }
@@ -115,7 +115,7 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
   "keywords": [
     "噪声污染", "noise", "Fourier transformation"
   ],
-  "articleBody": "Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.\nSo here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.\nThe noise in our bio lab is supposed to be the result of some structures causing standing waves as the ventilation system drives air through the room and into the duct. So the key to solve that noise pollution would be to find the most powerful standing waves, and alter related structures. Once these structures are altered, hopefully we won’t have any annoying standing waves.\nSampling To track standing waves we need some noise samples. However, we don’t have a proper device to record the noise, and the only thing available at had was my smartphone. Microphones in smartphones are good at recording human voice, but I’m not confident at their ability to record low-frequency noises. Sampling accuracy may be influenced by microphone sensitivity and other systematic bias caused by the smartphone structure.\nSo I found a way to (partly) compensate for this unreliability. I used 3 smartphones of different brands (vivo, Honor and iPhone), 2 of which borrowed from my colleagues Marcel \u0026 Lin Wei. I recorded 3 pieces of noise samples, each lasting for roughly 15 seconds (sample_A.m4a, sample_B.m4a, sample_C.m4a). sample_A.m4a and sample_B.m4a both had 2 channels, while sample_C.m4a had a single channel. The sampling rates were all 48000 Hz.\nFourier transform In order to find dominant frequencies, I used MATLAB to do Fourier transform. Sample sections (from the 4th second to the 12th second) were used to avoid disturbance at the beginning and end of noise records.\nNoise sample sections (8 seconds) recorded with 3 smartphones.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone. Then I used fft() function to do fast Fourier transform for these 5 channels. It’s clear that the 3 phones showed very different performance in recording noise samples. Channel 1-2 (Hornor) showed a high peak at 320 Hz, and one of its channel had a second peak at 95 Hz. Channel 3-4 (vivo) had their 1st peak at 97 Hz, and 2nd peak at 37 Hz. Channel 5 (iPhone) peaked at 48 Hz.\nPower-frequency curves, zoomed in 20-2000 Hz.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone. The results were quite a bit mess, but to some degree that’s exactly what I had expected. Some of the peaks make a lot of sense, e.g., the 97/95 Hz peaks indicate a wavelenght of 3.5 m, which is exactly the width of our bio lab - so this is a standing wave with its nodes attached to 2 opposite walls of the room.\nConclusion It’s fairly simple to remove that standing wave - just put some sound-absorbing cotton on related walls and it will be gone. But it’s also not so simple since we have to make sure that these sound-absorbing cotton will not bring other risks to our bio lab, e.g., undesired volatile chemicals or fire-proof/safety standards that are not met. Another pretty simple way is to lower the power of ventilation and thus the energy of vibration will also drop to an acceptable level, hopefully. Let’s wait and see what people from construction/decoration departments would suggest.\nMeanwhile, we’ve learned from this experience that it is never recommended to analyze frequency spectrums with smartphones - professional vibration meters are expensive for a good reason.\n",
+  "articleBody": "Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.\nSo here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.\nThe noise in our bio lab is supposed to be the result of some structures causing standing waves as the ventilation system drives air through the room and into the duct. So the key to solve that noise pollution would be to find the most powerful standing waves, and alter related structures. Once these structures are altered, hopefully we won’t have any annoying standing waves.\nSampling To track standing waves we need some noise samples. However, we don’t have a proper device to record the noise, and the only thing available at had was my smartphone. Microphones in smartphones are good at recording human voice, but I’m not confident at their ability to record low-frequency noises. Sampling accuracy may be influenced by microphone sensitivity and other systematic bias caused by the smartphone structure.\nSo I found a way to (partly) compensate for this unreliability. I used 3 smartphones of different brands (vivo, Honor and iPhone), 2 of which borrowed from my colleagues Marcel \u0026 Lin Wei. I recorded 3 pieces of noise samples, each lasting for roughly 15 seconds (sample_A.m4a, sample_B.m4a, sample_C.m4a). sample_A.m4a and sample_B.m4a both had 2 channels, while sample_C.m4a had a single channel. The sampling rates were all 48000 Hz.\nFourier transform In order to find dominant frequencies, I used MATLAB to do Fourier transform. Sample sections (from the 4th second to the 12th second) were used to avoid disturbance at the beginning and end of noise records.\n\rNoise sample sections (8 seconds) recorded with 3 smartphones.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone.\r\rThen I used fft() function to do fast Fourier transform for these 5 channels. It’s clear that the 3 phones showed very different performance in recording noise samples. Channel 1-2 (Hornor) showed a high peak at 320 Hz, and one of its channel had a second peak at 95 Hz. Channel 3-4 (vivo) had their 1st peak at 97 Hz, and 2nd peak at 37 Hz. Channel 5 (iPhone) peaked at 48 Hz.\n\rPower-frequency curves, zoomed in 20-2000 Hz.\nChannel 1-2: Honor; Channel 3-4: vivo; Channel 5: iPhone.\r\rThe results were quite a bit mess, but to some degree that’s exactly what I had expected. Some of the peaks make a lot of sense, e.g., the 97/95 Hz peaks indicate a wavelenght of 3.5 m, which is exactly the width of our bio lab - so this is a standing wave with its nodes attached to 2 opposite walls of the room.\nConclusion It’s fairly simple to remove that standing wave - just put some sound-absorbing cotton on related walls and it will be gone. But it’s also not so simple since we have to make sure that these sound-absorbing cotton will not bring other risks to our bio lab, e.g., undesired volatile chemicals or fire-proof/safety standards that are not met. Another pretty simple way is to lower the power of ventilation and thus the energy of vibration will also drop to an acceptable level, hopefully. Let’s wait and see what people from construction/decoration departments would suggest.\nMeanwhile, we’ve learned from this experience that it is never recommended to analyze frequency spectrums with smartphones - professional vibration meters are expensive for a good reason.\n",
   "wordCount" : "590",
   "inLanguage": "en",
   "datePublished": "2023-07-16T13:22:19+08:00",
@@ -180,7 +180,7 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
@@ -239,7 +239,7 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       Tracking Noise with Smartphones
     </h1>
@@ -275,8 +275,8 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://dong2000.xyz/tags/%E5%99%AA%E5%A3%B0%E6%B1%A1%E6%9F%93/">噪声污染</a></li>
-      <li><a href="https://dong2000.xyz/tags/noise/">Noise</a></li>
-      <li><a href="https://dong2000.xyz/tags/fourier-transformation/">Fourier Transformation</a></li>
+      <li><a href="https://dong2000.xyz/tags/noise/">noise</a></li>
+      <li><a href="https://dong2000.xyz/tags/fourier-transformation/">Fourier transformation</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://dong2000.xyz/post/summer-camp-2023/">
@@ -296,7 +296,7 @@ So here I am, trying to use my knowledge from environmental physics lessons to t
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

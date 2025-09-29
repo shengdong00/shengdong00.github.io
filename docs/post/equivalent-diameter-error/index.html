@@ -12,8 +12,8 @@
 ">
 <meta name="author" content="Sʜᴇɴɢ Dong">
 <link rel="canonical" href="https://dong2000.xyz/post/equivalent-diameter-error/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://dong2000.xyz/ptr.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
@@ -92,16 +92,16 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://dong2000.xyz/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "纤维状颗粒的空气动力学直径误差传递公式",
       "item": "https://dong2000.xyz/post/equivalent-diameter-error/"
     }
@@ -118,7 +118,7 @@ if (!doNotTrack) {
   "keywords": [
     "空气动力学直径", "纤维状颗粒", "误差传递"
   ],
-  "articleBody": " 基于Prodi et al (1982)的纤维颗粒空气动力学等效直径计算公式推导出以纤维颗粒的长度、直径为直接测量变量的等效直径误差传递公式。\nProdi et al1给出了纤维状颗粒的空气动力学等效直径计算公式： $$ D=\\frac{3W}{2}\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} $$ 其中$W$是纤维的直径，$\\beta$是基于投影尺寸的纵横比（长/宽，$L/W$）2。在做文献调研时，需要计算一些已发表实验中采用纤维颗粒的等效直径及误差，但是论文中通常只会给出纤维颗粒的直径和长度测量数据及误差，即$W±\\sigma_W,L±\\sigma_L$。这时虽然可以很方便地计算出$D=f(W,L)$，却不能直接知道$D$的误差是多少。本文给出从长度、直径误差计算出等效直径误差的推导过程和误差传递公式。\n以偏导的形式表达等效直径误差， $$ \\sigma_D^2=\\sigma_W^2\\left(\\frac{\\partial D}{\\partial W}\\right)^2_{\\overline W}+\\sigma_L^2\\left(\\frac{\\partial D}{\\partial L}\\right)^2_{\\overline L} $$ 接下来开始对两个偏导项逐个击破。\n对$W$的偏导 $$ \\frac{\\partial D}{\\partial W}=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} +\\frac{3W}{2}\\cdot\\frac{\\partial g(W,L)}{\\partial W} $$\n$$ \\begin{aligned} {\\rm where~~} g(W,L)\u0026=\\left[ \\frac1\\rho \\left( \\frac{0.385}{\\ln(L/W)+\\ln2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\right) \\right]^{-\\frac12}\\\\ \u0026=\\sqrt\\rho\\cdot h(W,L)^{-\\frac 12}\\\\ {\\rm where~~}h(W,L)\u0026= \\frac{0.385}{\\ln(L/W)+\\ln2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\end{aligned} $$\n$$ \\therefore~ \\frac{\\partial g(W,L)}{\\partial W}=-\\frac{\\sqrt\\rho}2\\cdot h(W,L)^{-\\frac32}\\cdot\\frac{\\partial h(W,L)}{\\partial W} $$\n$$ \\begin{aligned} \\frac{\\partial h(W,L)}{\\partial W}\u0026=\\frac{\\partial}{\\partial W}\\left[ \\frac{0.385}{\\ln(L/W)+\\ln 2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\right]\\\\ \u0026=\\frac{0.385}{\\left[\\ln(L/W)+\\ln 2-0.5\\right]^2}\\cdot\\frac1W +\\frac{1.23}{[\\ln(L/W)+\\ln2+0.5]^2}\\cdot\\frac1W\\\\ \u0026=\\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2\\cdot W} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot W} \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial g(W,L)}{\\partial W}\u0026=-\\frac{\\sqrt\\rho}{2W}\\cdot \\left( \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right)^{-\\frac32}\\cdot\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2\\cdot W} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot W} \\right)\\\\ \u0026=-\\frac{1}{2W}\\sqrt{ \\frac\\rho {\\left[ \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right]^3} } \\times\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} \\right) \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial D}{\\partial W}\u0026=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} +\\frac{3W}{2}\\cdot\\frac{\\partial g(W,L)}{\\partial W}\\\\ \u0026=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}}-\\frac34\\cdot\\sqrt{ \\frac\\rho {\\left[ \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right]^3} } \\times\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} \\right)\\\\ \u0026=\\frac32\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} \\left( 1-\\frac12\\frac{ \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} } {\\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5}} \\right) \\end{aligned} $$\n对$L$的偏导 $$ \\begin{aligned} \\frac{\\partial D}{\\partial L}\u0026=\\frac{3W}{2}\\times\\frac{\\partial g(W,L)}{\\partial L}\\\\ \\frac{\\partial g(W,L)}{\\partial L}\u0026=-\\frac{\\sqrt \\rho}{2}h(W,L)^{-\\frac32}\\frac{\\partial h(W,L)}{\\partial L} \\end{aligned} $$\n由于$W$和$-L$在函数$h(W,L)$里的地位是相同的，所以根据前一节对$h(W,L)$求偏导的计算可以很快得到\n$$ \\begin{aligned} \\frac{\\partial h(W,L)}{\\partial L}\u0026=-\\frac{\\partial h(W,L)}{\\partial W}\\\\ \u0026=-\\frac{0.385}{[\\ln (2\\beta)-0.5]^2\\cdot L}-\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot L} \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial D}{\\partial L}\u0026=\\frac{3}{4\\beta} \\sqrt{ \\frac{\\rho}{\\frac{0.385}{\\ln2\\beta-0.5}+\\frac{1.23}{\\ln2\\beta+0.5}} } \\left(\\frac{\\frac{0.385}{[\\ln(2\\beta)-0.5]^2}+\\frac{1.23}{[\\ln(2\\beta)+0.5]^2}}{\\frac{0.385}{\\ln2\\beta-0.5}+\\frac{1.23}{\\ln2\\beta+0.5}}\\right) \\end{aligned} $$\nProdi, V., De Zaiacomo, T., Hochrainer, D., \u0026 Spurny, K. (1982). Fibre collection and measurement with the inertial spectrometer. Journal of Aerosol Science, 13(1), 49–58. https://doi.org/10.1016/0021-8502(82)90007-6 ↩︎\nEdo, C., Fernández-Alba, A. R., Vejsnæs, F., van der Steen, J. J. M., Fernández-Piñas, F., \u0026 Rosal, R. (2021). Honeybees as active samplers for microplastics. Science of the Total Environment, 767, 144481. https://doi.org/10.1016/j.scitotenv.2020.144481 ↩︎\n",
+  "articleBody": " 基于Prodi et al (1982)的纤维颗粒空气动力学等效直径计算公式推导出以纤维颗粒的长度、直径为直接测量变量的等效直径误差传递公式。\n Prodi et al1给出了纤维状颗粒的空气动力学等效直径计算公式： $$ D=\\frac{3W}{2}\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} $$ 其中$W$是纤维的直径，$\\beta$是基于投影尺寸的纵横比（长/宽，$L/W$）2。在做文献调研时，需要计算一些已发表实验中采用纤维颗粒的等效直径及误差，但是论文中通常只会给出纤维颗粒的直径和长度测量数据及误差，即$W±\\sigma_W,L±\\sigma_L$。这时虽然可以很方便地计算出$D=f(W,L)$，却不能直接知道$D$的误差是多少。本文给出从长度、直径误差计算出等效直径误差的推导过程和误差传递公式。\n以偏导的形式表达等效直径误差， $$ \\sigma_D^2=\\sigma_W^2\\left(\\frac{\\partial D}{\\partial W}\\right)^2_{\\overline W}+\\sigma_L^2\\left(\\frac{\\partial D}{\\partial L}\\right)^2_{\\overline L} $$ 接下来开始对两个偏导项逐个击破。\n对$W$的偏导 $$ \\frac{\\partial D}{\\partial W}=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} +\\frac{3W}{2}\\cdot\\frac{\\partial g(W,L)}{\\partial W} $$\n$$ \\begin{aligned} {\\rm where~~} g(W,L)\u0026=\\left[ \\frac1\\rho \\left( \\frac{0.385}{\\ln(L/W)+\\ln2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\right) \\right]^{-\\frac12}\\\\ \u0026=\\sqrt\\rho\\cdot h(W,L)^{-\\frac 12}\\\\ {\\rm where~~}h(W,L)\u0026= \\frac{0.385}{\\ln(L/W)+\\ln2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\end{aligned} $$\n$$ \\therefore~ \\frac{\\partial g(W,L)}{\\partial W}=-\\frac{\\sqrt\\rho}2\\cdot h(W,L)^{-\\frac32}\\cdot\\frac{\\partial h(W,L)}{\\partial W} $$\n$$ \\begin{aligned} \\frac{\\partial h(W,L)}{\\partial W}\u0026=\\frac{\\partial}{\\partial W}\\left[ \\frac{0.385}{\\ln(L/W)+\\ln 2-0.5}+\\frac{1.23}{\\ln(L/W)+\\ln2+0.5} \\right]\\\\ \u0026=\\frac{0.385}{\\left[\\ln(L/W)+\\ln 2-0.5\\right]^2}\\cdot\\frac1W +\\frac{1.23}{[\\ln(L/W)+\\ln2+0.5]^2}\\cdot\\frac1W\\\\ \u0026=\\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2\\cdot W} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot W} \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial g(W,L)}{\\partial W}\u0026=-\\frac{\\sqrt\\rho}{2W}\\cdot \\left( \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right)^{-\\frac32}\\cdot\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2\\cdot W} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot W} \\right)\\\\ \u0026=-\\frac{1}{2W}\\sqrt{ \\frac\\rho {\\left[ \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right]^3} } \\times\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} \\right) \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial D}{\\partial W}\u0026=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} +\\frac{3W}{2}\\cdot\\frac{\\partial g(W,L)}{\\partial W}\\\\ \u0026=\\frac32\\cdot\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}}-\\frac34\\cdot\\sqrt{ \\frac\\rho {\\left[ \\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5} \\right]^3} } \\times\\left( \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} \\right)\\\\ \u0026=\\frac32\\sqrt{\\frac{\\rho}{\\frac{0.385}{\\ln{2\\beta}-0.5}+\\frac{1.23}{\\ln{2\\beta}+0.5}}} \\left( 1-\\frac12\\frac{ \\frac{0.385}{\\left[\\ln(2\\beta)-0.5\\right]^2} +\\frac{1.23}{[\\ln(2\\beta)+0.5]^2} } {\\frac{0.385}{\\ln(2\\beta)-0.5}+\\frac{1.23}{\\ln(2\\beta)+0.5}} \\right) \\end{aligned} $$\n对$L$的偏导 $$ \\begin{aligned} \\frac{\\partial D}{\\partial L}\u0026=\\frac{3W}{2}\\times\\frac{\\partial g(W,L)}{\\partial L}\\\\ \\frac{\\partial g(W,L)}{\\partial L}\u0026=-\\frac{\\sqrt \\rho}{2}h(W,L)^{-\\frac32}\\frac{\\partial h(W,L)}{\\partial L} \\end{aligned} $$\n由于$W$和$-L$在函数$h(W,L)$里的地位是相同的，所以根据前一节对$h(W,L)$求偏导的计算可以很快得到\n$$ \\begin{aligned} \\frac{\\partial h(W,L)}{\\partial L}\u0026=-\\frac{\\partial h(W,L)}{\\partial W}\\\\ \u0026=-\\frac{0.385}{[\\ln (2\\beta)-0.5]^2\\cdot L}-\\frac{1.23}{[\\ln(2\\beta)+0.5]^2\\cdot L} \\end{aligned} $$\n$$ \\begin{aligned} \\therefore~\\frac{\\partial D}{\\partial L}\u0026=\\frac{3}{4\\beta} \\sqrt{ \\frac{\\rho}{\\frac{0.385}{\\ln2\\beta-0.5}+\\frac{1.23}{\\ln2\\beta+0.5}} } \\left(\\frac{\\frac{0.385}{[\\ln(2\\beta)-0.5]^2}+\\frac{1.23}{[\\ln(2\\beta)+0.5]^2}}{\\frac{0.385}{\\ln2\\beta-0.5}+\\frac{1.23}{\\ln2\\beta+0.5}}\\right) \\end{aligned} $$\n  Prodi, V., De Zaiacomo, T., Hochrainer, D., \u0026 Spurny, K. (1982). Fibre collection and measurement with the inertial spectrometer. Journal of Aerosol Science, 13(1), 49–58. https://doi.org/10.1016/0021-8502(82)90007-6 ↩︎\n Edo, C., Fernández-Alba, A. R., Vejsnæs, F., van der Steen, J. J. M., Fernández-Piñas, F., \u0026 Rosal, R. (2021). Honeybees as active samplers for microplastics. Science of the Total Environment, 767, 144481. https://doi.org/10.1016/j.scitotenv.2020.144481 ↩︎\n  ",
   "wordCount" : "229",
   "inLanguage": "en",
   "datePublished": "2023-07-09T17:05:28+08:00",
@@ -183,7 +183,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
                 <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
@@ -242,7 +242,7 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
     <h1 class="post-title">
       纤维状颗粒的空气动力学直径误差传递公式
     </h1>
@@ -406,7 +406,7 @@ $$</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

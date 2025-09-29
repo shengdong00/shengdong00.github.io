@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Matlab on Sheng Dong&#39;s website</title>
+    <title>MATLAB on Sheng Dong&#39;s website</title>
     <link>https://dong2000.xyz/tags/matlab/</link>
-    <description>Recent content in Matlab on Sheng Dong&#39;s website</description>
+    <description>Recent content in MATLAB on Sheng Dong&#39;s website</description>
     <image>
       <url>https://dong2000.xyz/ptr.png</url>
       <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sat, 15 Oct 2022 16:17:15 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Matlab中使用进度条</title>
@@ -30,7 +29,7 @@
 &lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;amp;program=ccgg&amp;amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
