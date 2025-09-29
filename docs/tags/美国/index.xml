@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>美国 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E7%BE%8E%E5%9B%BD/</link>
+    <link>http://localhost:1313/tags/%E7%BE%8E%E5%9B%BD/</link>
     <description>Recent content in 美国 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Aug 2024 19:31:48 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%BE%8E%E5%9B%BD/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Aug 2024 19:31:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%BE%8E%E5%9B%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024年8月，长滩</title>
-      <link>https://dong2000.xyz/post/longbeach2024/</link>
+      <link>http://localhost:1313/post/longbeach2024/</link>
       <pubDate>Mon, 12 Aug 2024 19:31:48 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/longbeach2024/</guid>
+      <guid>http://localhost:1313/post/longbeach2024/</guid>
       <description>长滩的早上通常被浓浓的海雾所笼罩，温度很宜人。穿过downtown街道上隐约的甜腻与骚臭气息，一路向南到海边，再一路往西经过成排的度假酒店和棕榈树，就到了2024 Annual Meeting of the Ecological Society of America的会场。然后在数个不同的会议室之间来回穿梭听报告，直到傍晚再滑着滑板回到旅馆，或者在沿途路边的墨西哥餐车买个torta当晚饭。
 这样子听会议的日子重复了接近一个礼拜，笔记本上的潦草记录也飞速增长了好几页。碰到几位课题感兴趣的教授，冲上去提问交流并在会后发了跟进的邮件——属实是没想到身为I人的自己原来也能social至此。会议的规模很大，分会场的主题也很多。我试图在每一个感兴趣的话题上都了解到一些前沿进展，给自己9月份的博士开题积攒些灵感。期间还参观了当地中产社区里的花园农场，走出学术界听了听当地居民在生活中面临着什么食品问题。
 最后一天只有上午有活动，而我预定了夜里的飞机，于是下午到海边的景区逛了逛。不得不说风景确实很美，彩色的小屋​​、游艇​​、草坪和灯塔在午后晴朗的天空下明净艳丽。可惜没能​去逛水族馆和观​鲸，希望以后有机会再见吧！​</description>

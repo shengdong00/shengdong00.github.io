@@ -2,30 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>探索 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/</link>
+    <link>http://localhost:1313/categories/%E6%8E%A2%E7%B4%A2/</link>
     <description>Recent content in 探索 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Jul 2023 13:22:19 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jul 2023 13:22:19 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tracking Noise with Smartphones</title>
-      <link>https://dong2000.xyz/post/tracking-noise/</link>
+      <link>http://localhost:1313/post/tracking-noise/</link>
       <pubDate>Sun, 16 Jul 2023 13:22:19 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/tracking-noise/</guid>
+      <guid>http://localhost:1313/post/tracking-noise/</guid>
       <description>&lt;p&gt;Our bio lab is quite noisy because of a 24-7 working ventilation duct on the ceiling - the room needs to be kept under negative pressure. At some point the noise reached 80 dB, which is quite annoying.&lt;/p&gt;
 &lt;p&gt;So here I am, trying to use my knowledge from environmental physics lessons to track the source of noise pollution.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The conceptual evolution of green building in the 21st century – textual changes in LEED</title>
-      <link>https://dong2000.xyz/post/textual-analysis-on-leed/</link>
+      <link>http://localhost:1313/post/textual-analysis-on-leed/</link>
       <pubDate>Tue, 03 Jan 2023 14:37:30 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/textual-analysis-on-leed/</guid>
+      <guid>http://localhost:1313/post/textual-analysis-on-leed/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;The conceptual evolution of green building is reflected in historical versions of green building rating tools. Computational text analysis on historical versions of LEED revealed changes in the category systems and textual contents, which reflects how LEED’s green building concept has evolved in the 21st century.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -34,55 +35,55 @@
     
     <item>
       <title>Python多线程和多进程的运行速度比较</title>
-      <link>https://dong2000.xyz/post/python-threads-processes/</link>
+      <link>http://localhost:1313/post/python-threads-processes/</link>
       <pubDate>Fri, 16 Dec 2022 14:11:55 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/python-threads-processes/</guid>
+      <guid>http://localhost:1313/post/python-threads-processes/</guid>
       <description>&lt;p&gt;通过一个图像合成视频的脚本案例测试了一下Python3在单线程、多线程和多进程下的运行速度。发现多线程可以一定程度上提高运行速度（将1个线程拆为4个线程，提速大约83%），但是不能达到完全的并行运算，据说是因为&lt;code&gt;threading&lt;/code&gt;模块并不能真正调用多个处理器。在多进程下运行，可以接近完全平行的运算速度。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>简单理想情形下的Barrel distortion</title>
-      <link>https://dong2000.xyz/post/simple_barrel_disto/</link>
+      <link>http://localhost:1313/post/simple_barrel_disto/</link>
       <pubDate>Wed, 16 Nov 2022 22:37:16 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/simple_barrel_disto/</guid>
+      <guid>http://localhost:1313/post/simple_barrel_disto/</guid>
       <description>&lt;p&gt;Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在SBM模型中引入上边界和指标权重</title>
-      <link>https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/</link>
+      <link>http://localhost:1313/post/upper_bounds_and_weights_in_sbm/</link>
       <pubDate>Wed, 07 Sep 2022 09:31:54 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/</guid>
+      <guid>http://localhost:1313/post/upper_bounds_and_weights_in_sbm/</guid>
       <description>&lt;p&gt;在实际应用SBM模型分析绿色发展效率的时候，发现面临着以下两个困难：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;指标实际可取值具有上边界；&lt;/li&gt;
 &lt;li&gt;不同指标之间存在重要性差异。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。📐&lt;/p&gt;</description>
+&lt;p&gt;于是对经典的非期望产出SBM模型进行了修改，以解决上述问题。&amp;#x1f4d0;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>自回归滑动平均模型预测全球CO2浓度变化</title>
-      <link>https://dong2000.xyz/post/amra_co2/</link>
+      <link>http://localhost:1313/post/amra_co2/</link>
       <pubDate>Wed, 27 Apr 2022 03:03:57 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/amra_co2/</guid>
+      <guid>http://localhost:1313/post/amra_co2/</guid>
       <description>&lt;p&gt;自回归滑动平均模型（Autoregressive moving average model，ARMA）是研究时间序列的重要方法，以由自回归模型（简称AR模型）与移动平均模型（简称MA模型）为基础“混合”构成。用AMRA模型预测了在当前趋势下，未来二十年内全球二氧化碳浓度的变化趋势。&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;amp;program=ccgg&amp;amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>我国海水水质数据分析</title>
-      <link>https://dong2000.xyz/post/china_sea_water_data/</link>
+      <link>http://localhost:1313/post/china_sea_water_data/</link>
       <pubDate>Sun, 24 Apr 2022 01:36:16 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/china_sea_water_data/</guid>
+      <guid>http://localhost:1313/post/china_sea_water_data/</guid>
       <description>&lt;p&gt;环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;通过爬虫获取我国沿海海水水质的监测数据；&lt;/li&gt;
@@ -91,16 +92,16 @@
 &lt;li&gt;将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性；&lt;/li&gt;
 &lt;li&gt;利用机器学习，从多个污染指标数据预测海区分类。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>用Python爬虫爬取高校教师邮箱</title>
-      <link>https://dong2000.xyz/post/get_email_by_python_crawler/</link>
+      <link>http://localhost:1313/post/get_email_by_python_crawler/</link>
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
+      <guid>http://localhost:1313/post/get_email_by_python_crawler/</guid>
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>

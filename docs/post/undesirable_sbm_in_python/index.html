@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -16,26 +16,27 @@
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
- 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
- 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$">
+$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
+其对偶模型为（对偶模型求解过程见文末）">
 <meta name="author" content="Sʜᴇɴɢ Dong">
-<link rel="canonical" href="https://dong2000.xyz/post/undesirable_sbm_in_python/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
+<link rel="canonical" href="http://localhost:1313/post/undesirable_sbm_in_python/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://dong2000.xyz/ptr.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
-<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/undesirable_sbm_in_python/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/undesirable_sbm_in_python/">
 <noscript>
     <style>
         #theme-toggle,
@@ -93,20 +94,21 @@ if (!doNotTrack) {
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
- 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
- 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$" />
+$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
+其对偶模型为（对偶模型求解过程见文末）" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dong2000.xyz/post/undesirable_sbm_in_python/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/><meta property="article:section" content="post" />
+<meta property="og:url" content="http://localhost:1313/post/undesirable_sbm_in_python/" /><meta property="og:image" content="http://localhost:1313/ptr.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-10T23:00:38+00:00" />
 <meta property="article:modified_time" content="2022-08-10T23:00:38+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dong2000.xyz/ptr.png"/>
+<meta name="twitter:image" content="http://localhost:1313/ptr.png"/>
 
 <meta name="twitter:title" content="非期望产出SBM模型的数学推演及Python实现"/>
 <meta name="twitter:description" content="带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
@@ -118,31 +120,32 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
- 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
- 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$"/>
+$$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
+其对偶模型为（对偶模型求解过程见文末）"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
-      "item": "https://dong2000.xyz/post/"
+      "item": "http://localhost:1313/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "非期望产出SBM模型的数学推演及Python实现",
-      "item": "https://dong2000.xyz/post/undesirable_sbm_in_python/"
+      "item": "http://localhost:1313/post/undesirable_sbm_in_python/"
     }
   ]
 }
@@ -153,11 +156,11 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
   "@type": "BlogPosting",
   "headline": "非期望产出SBM模型的数学推演及Python实现",
   "name": "非期望产出SBM模型的数学推演及Python实现",
-  "description": "带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1\n这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。\n数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\\dots,n)$；\n每个$DMU$有$m$种投入，记为$X_i(i=1,2,\\dots,m)$，每种投入的权重为$v_i$；\n有$q$种产出，记为$Y_r(r=1,2,\\dots,q)$，每种产出的权重为$u_r$.\n对第$k$个可比决策单元而言，其投入产出比（技术效率）为\n$$ H_k=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}， $$\n限定范围为$H_k\\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\\dots,v_m]$和$[u_1,u_2,\\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \\begin{aligned} \\max\u0026amp;~~ z=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}\\\\ s.t.\u0026amp;~~ \\frac{\\sum_{r=1}^qu_rY_{rj}}{\\sum_{i=1}^mv_iX_{ij}}\\le1~ (v_i\\ge0,u_r\\ge0)\\\\ \u0026amp;~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\\sum_{i=1}^mv_iX_{ik}\u0026gt;0$，模型的规划条件即为 $$ s.t.~~\\sum_{r=1}^qu_rY_{rj}-\\sum_{i=1}^mv_iX_{ij}\\le0; $$\n 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\\vec u$和$\\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。\n 投入导向CCR 令$t=\\left(\\sum_{i=1}^mv_iX_{ik}\\right)^{-1}$，则模型的目标函数为\n$$ \\max ~~ z=t\\sum_{r=1}^qu_rY_{rk}=\\sum_{r=1}^qtu_rY_{rk}, $$\n令$\\mu_{r}=tu_r, \\nu_{i}=tv_i$，根据$t$的定义可知$\\sum_{i=1}^m\\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到\n$$ s.t. ~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0. $$\n从而将非线性规划模型转换为线性规划模型：\n$$ \\begin{aligned} \\max \u0026amp;~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026amp;~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026amp;~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026amp;~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$",
+  "description": "带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1\n这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。\n数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\\dots,n)$；\n每个$DMU$有$m$种投入，记为$X_i(i=1,2,\\dots,m)$，每种投入的权重为$v_i$；\n有$q$种产出，记为$Y_r(r=1,2,\\dots,q)$，每种产出的权重为$u_r$.\n对第$k$个可比决策单元而言，其投入产出比（技术效率）为\n$$ H_k=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}， $$\n限定范围为$H_k\\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\\dots,v_m]$和$[u_1,u_2,\\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \\begin{aligned} \\max\u0026amp;~~ z=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}\\\\ s.t.\u0026amp;~~ \\frac{\\sum_{r=1}^qu_rY_{rj}}{\\sum_{i=1}^mv_iX_{ij}}\\le1~ (v_i\\ge0,u_r\\ge0)\\\\ \u0026amp;~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\\sum_{i=1}^mv_iX_{ik}\u0026gt;0$，模型的规划条件即为 $$ s.t.~~\\sum_{r=1}^qu_rY_{rj}-\\sum_{i=1}^mv_iX_{ij}\\le0; $$\n在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\\vec u$和$\\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。\n投入导向CCR 令$t=\\left(\\sum_{i=1}^mv_iX_{ik}\\right)^{-1}$，则模型的目标函数为\n$$ \\max ~~ z=t\\sum_{r=1}^qu_rY_{rk}=\\sum_{r=1}^qtu_rY_{rk}, $$\n令$\\mu_{r}=tu_r, \\nu_{i}=tv_i$，根据$t$的定义可知$\\sum_{i=1}^m\\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到\n$$ s.t. ~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0. $$\n从而将非线性规划模型转换为线性规划模型：\n$$ \\begin{aligned} \\max \u0026amp;~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026amp;~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026amp;~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026amp;~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n其对偶模型为（对偶模型求解过程见文末）",
   "keywords": [
     "数学建模", "运筹学", "线性代数", "Python"
   ],
-  "articleBody": "带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1\n这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。\n数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\\dots,n)$；\n每个$DMU$有$m$种投入，记为$X_i(i=1,2,\\dots,m)$，每种投入的权重为$v_i$；\n有$q$种产出，记为$Y_r(r=1,2,\\dots,q)$，每种产出的权重为$u_r$.\n对第$k$个可比决策单元而言，其投入产出比（技术效率）为\n$$ H_k=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}， $$\n限定范围为$H_k\\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\\dots,v_m]$和$[u_1,u_2,\\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \\begin{aligned} \\max\u0026~~ z=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}\\\\ s.t.\u0026~~ \\frac{\\sum_{r=1}^qu_rY_{rj}}{\\sum_{i=1}^mv_iX_{ij}}\\le1~ (v_i\\ge0,u_r\\ge0)\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\\sum_{i=1}^mv_iX_{ik}0$，模型的规划条件即为 $$ s.t.~~\\sum_{r=1}^qu_rY_{rj}-\\sum_{i=1}^mv_iX_{ij}\\le0; $$\n 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\\vec u$和$\\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。\n 投入导向CCR 令$t=\\left(\\sum_{i=1}^mv_iX_{ik}\\right)^{-1}$，则模型的目标函数为\n$$ \\max ~~ z=t\\sum_{r=1}^qu_rY_{rk}=\\sum_{r=1}^qtu_rY_{rk}, $$\n令$\\mu_{r}=tu_r, \\nu_{i}=tv_i$，根据$t$的定义可知$\\sum_{i=1}^m\\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到\n$$ s.t. ~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0. $$\n从而将非线性规划模型转换为线性规划模型：\n$$ \\begin{aligned} \\max \u0026~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n其对偶模型为（对偶模型求解过程见文末）\n$$ \\begin{aligned} \\min \u0026 \\theta=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1}\\\\ s.t. \u0026 \\sum_{j=1}^n\\lambda_jX_{ij}\\le(\\theta+\\lambda_{n+1}) X_{ik}(\\lambda_j\\ge0)\\\\ \u0026 \\sum_{j=1}^n\\lambda_jY_{rj}\\ge Y_{rk}\\\\ \u0026 i=1,2,\\dots,m;r=1,2,\\dots,q;j=1,2,\\dots,n \\end{aligned} $$\n以上处理后得到的是投入导向的DEA模型。\n 这里与常见的处理方式有点差异，因为在转化为标准形式的时候规划模型的自由度减1。\n 产出导向CCR 同理，若在降低自变量自由度时采用$t=\\left(\\sum_{r=1}^qu_rY_{rk}\\right)^{-1}$，则可演算得到产出导向的DEA模型：\n$$ \\begin{aligned} \\min \u0026~~ z=\\sum_{i=1}^m\\nu_{r}X_{ik}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{r=1}^q\\mu_rY_{rk}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n其对偶模型为\n$$ \\begin{aligned} \\min \u0026~~ \\phi=\\sum_{j=1}^n\\frac{Y_{qj}}{Y_{qk}}\\lambda_j+\\lambda_{n+1}\\\\ s.t. \u0026~~ \\sum_{j=1}^n\\lambda_jY_{rj}\\le(\\theta+\\lambda_{n+1}) Y_{rk}~~(\\lambda_j\\ge0)\\\\ \u0026~~ \\sum_{j=1}^n\\lambda_jX_{ij}\\ge X_{rk}\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\nSBM模型 不带非期望产出的情形 在DEA模型中，线性规划的最终目的是使得$H_k$尽可能大，即$DMU_k$的产出效率尽可能高。虽然考虑到了多种产出的情形，但是每一种产出的权重都是正的($u_r\\ge0$) ，所以依然是要尽可能使得每一种产出都越高越好。当产出中存在非期望内容时，我们希望这些非期望的产出尽可能低，同时期望产出尽可能高。Kaoru Tone提出的SBM模型(slacks-based model)2可以处理这类非期望产出的问题。\n我们仍然以$X=(x_{ij})\\in R^{m\\times n}$表示实际投入，$Y=(y_{rj})\\in R^{q\\times n}$表示实际产出。在不带非期望产出的情况下，有可能存在的生产情形必然包括投入更多、产出更低的情况（即效率更低的情况总是能够实现的）：\n$$ P=\\left\\{ \\left(\\vec x,\\vec y\\right) ~|~ \\vec x\\ge X\\vec\\lambda,~\\vec y\\le Y\\vec\\lambda,~\\vec\\lambda\\ge\\vec0 \\right\\} $$\n其中$\\vec\\lambda$是$R^n$上的一个非负向量。\n $X$矩阵的每一列代表了一个可比决策单元，当$X$右乘一个$n$维向量后得到的是一个$m$维向量，$X\\vec\\lambda=\\left[ \\sum_{j=1}^nx_{ij}\\lambda_j \\right]_{m\\times1}$，可以视为由所有$DMU$按照$\\vec \\lambda$所规定的配比混合而成的新的生产投入组合。同理，$Y\\vec\\lambda$代表了所有$DMU$按照$\\vec \\lambda$所规定的配比混合而成的新的产出组合。$\\left(X\\vec\\lambda, Y\\vec\\lambda\\right)$就是所有实际生产情形线性混合而成的“虚拟生产情形”（基于规模报酬不变）。在这个“虚拟生产情形”的基础之上，更加浪费的生产情形必然是可行的，故采用上述形式定义有可能的生产情形。\n在这种定义下，默认了效率最高的生产情形暗含在实际生产情形通过线性组合所形成的参数空间范围之中。即我们不考虑生产效率远远超出现有技术水平的情形。\n 具体地，用$(\\vec x_0,\\vec y_0)$来描述某一个$DMU_0$（从实际生产情形$X,Y$中而来）： $$ \\displaylines{ \\vec x_0=X\\vec\\lambda + \\pmb s^-\\ \\vec y_0=Y\\vec\\lambda - \\pmb s^+ } $$ 其中$\\pmb s^-\\ge0,\\pmb s^+\\ge 0$分别称为投入过量(input excess)和产出不足(output shortfall)，统一称为和投入和产出的松弛向量(slacks)。据此定义指标：\n$$ \\rho = \\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)}{1+\\frac1q\\sum_{r=1}^q\\left({s^+_r}/{y_{r0}}\\right)} $$\n该指标满足以下特性：\n 每个$DMU$都有一个不同的$\\rho$ 随着投入和产出松弛向量$\\pmb s^-,\\pmb s^+$而单调变化 取值范围为$\\rho\\in\\left(0,1\\right]$  为了表达$(\\vec x_0,\\vec y_0)$的效率，以$\\rho$指标构建SBM模型：\n$$ \\begin{aligned} \\min \u0026~~\\rho=\\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)} {1+\\frac1q\\sum_{r=1}^q\\left({s^+_r}/{y_{r0}}\\right)}\\\\ s.t. \u0026~~ \\vec x_0 = X\\vec\\lambda + \\pmb s^- \\\\ \u0026~~ \\vec y_0 = Y\\vec\\lambda - \\pmb s^+\\\\ \u0026~~ \\vec\\lambda\\ge0,~\\pmb s^-\\ge0,~\\pmb s^+\\ge 0 \\end{aligned} $$\n当$DMU_0$达到效率最优(SBM-efficient)时，满足 $$ \\rho^*=1,~\\pmb s^-=0,~\\pmb s^+=0 $$\n 如何理解$DMU$效率最优等同于松弛变量均为零？在作者的理解中，认为SBM-efficient意味着该决策单元的任何优化都不会引起投入过量和产出不足。\n若有唯一的$\\vec\\lambda$，则确定唯一的$\\left(\\pmb s^-, \\pmb s^+\\right)\\sim\\left(\\vec x_0,\\vec y_0\\right)$关系。规划自变量为$\\left(\\pmb s^-, \\pmb s^+\\right)$，目的是使得$\\rho$尽可能小，即$\\pmb s^-$和$\\pmb s^+$都要尽可能大。这可以看成是一种对当下生产效率不信任的态度。\n当处于效率最优状态时，生产投入的要素配比恰到好处，此时进行任何调节都无法使得效率进一步提升。\n再将$\\vec\\lambda$也视为自变量，即尝试不同组合情况下的$DMU_0$，通过调整$\\vec\\lambda$可以进一步优化目标函数。\n **Charnes-Cooper transformation: **将目标函数的分子和分母都乘$t$，使得分母变为$1$，即\n$$ t=\\left[1+\\frac1q\\sum_{r=1}^q\\left(\\frac{s^+_r}{y_{r0}}\\right)\\right]^{-1}, $$\n从而目标函数变为\n$$ \\min~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{ts_i^-}{x_{i0}}. $$\n定义$\\pmb S^-=t\\pmb s^-,\\pmb S^+=t\\pmb s^+,\\pmb \\Lambda=t\\vec\\lambda$，则原非线性规划中的约束条件转换为 $$ \\begin{aligned} s.t. \u0026~~ 1=t+\\frac1q\\sum_{r=1}^q\\frac{S_r^+}{y_{r0}}\\\\ \u0026~~ t\\vec x_0=X\\pmb \\Lambda+\\pmb S^-\\\\ \u0026~~ t\\vec y_0=Y\\pmb \\Lambda-\\pmb S^+\\\\ \u0026~~ \\Lambda\\ge0,\\pmb S^-\\ge0, \\pmb S^+\\ge0,t\\ge0 \\end{aligned} $$ 最后完整地写一下转换后的线性规划（多项式形式）：\n$$ \\begin{aligned} \\min \u0026~~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{ts_i^-}{x_{i0}}\\\\ s.t. \u0026~~ 1=t+\\frac1q\\sum_{r=1}^q\\frac{S_r^+}{y_{r0}}\\\\ \u0026~~ tx_{i0}=\\sum_{j=1}^nx_{ij}\\Lambda_j + S_i^- \\\\ \u0026~~ ty_{r0}=\\sum_{j=1}^n y_{rj}\\Lambda_j-S_r^+ \\\\ \u0026~~ \\Lambda_j\\ge0,S_i^-\\ge0, S_r^+\\ge0,t\\ge0\\\\ \u0026~~ i=1,2,\\dots,m;r=1,2,\\dots,q;j=1,2,\\dots,n \\end{aligned} $$\n通过线性规划的可行解$\\left(\\rho^*,\\vec\\Lambda^*,t^*,\\pmb S^{-*}, \\pmb S^{+*}\\right)$，可以解出原型的可行解$\\left(\\rho^*,\\vec\\lambda^*,\\pmb s^{-*}, \\pmb s^{+*}\\right)$。\n若$\\rho^*=1$，则称该$DMU$为SBM-efficient，此时$\\pmb s^{-*}=0,\\pmb s^{+*}=0$； 若$\\rho^*$$ \\displaylines{ \\vec x_k = X\\vec\\lambda^* + \\pmb s^{-*}\\\\ \\vec y_k = Y\\vec\\lambda^* - \\pmb s^{+*} } $$\n由于得到了投入过量和产出不足的具体数值，因此我们可以对该可比决策单元进行优化，称为SBM投射(SBM-projection)：\n$$ \\displaylines{ \\vec x_k \\leftarrow \\vec x_k - \\pmb s^{-*}\\\\ \\vec y_k \\leftarrow \\vec y_k + \\pmb s^{+*} } $$\n带有非期望产出的情形 如果我们考虑到非期望产出的情形3，这些非期望产出在低效情况下的情形并非产出不足，而是“产出过多”，因此需要引入新的松弛向量$\\pmb s^{+’}$以规范非期望产出。记$Y$为实际期望产出，$Z$为实际非期望产出，分别有$q_1,q_2$个。生产可能性中也应区分期望产出和非期望产出，即$(\\vec x_0, \\vec y_0,\\vec z_0)$，其中 $$ \\vec z_0=Z\\vec\\lambda + \\pmb s^{+’}. $$ 同理以$\\rho$指标构建SBM模型：\n$$ \\begin{aligned} \\min \u0026~~\\rho=\\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)} {1+\\frac1{q_1+q_2}\\left[\\sum_{r_1=1}^{q_1}\\left({s^+_r}/{y_{r0}}\\right) + \\sum_{r=1}^{q_2}\\left({s^{+’}_r}/{z_{r0}}\\right)\\right]}\\\\ s.t. \u0026~~ \\vec x_0 = X\\vec\\lambda + \\pmb s^- \\\\ \u0026~~ \\vec y_0 = Y\\vec\\lambda - \\pmb s^+\\\\ \u0026~~\\vec z_0=Z\\vec\\lambda+\\pmb s^{+’}\\\\ \u0026~~ \\vec\\lambda\\ge0,~\\pmb s^-\\ge0,~\\pmb s^+\\ge 0 \\end{aligned} $$\n当某一个$DMU$达到效率最优时，\n$$ \\rho^*=1,~\\pmb s^-=0,~\\pmb s^+=0,~\\pmb s^{+’}=0. $$\n通过Charnes-Cooper转换，得到线性规划模型： $$ \\begin{aligned} \\min \u0026~~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{S_i^-}{x_{i0}}\\\\ s.t. \u0026~~ 1=t+\\frac1{q_1+q_2}\\left(\\sum_{r=1}^{q_1}\\frac{S_r^+}{y_{r0}}+\\sum_{r=1}^{q_2}\\frac{S_r^{+’}}{y_{r0}}\\right)\\\\ \u0026~~ tx_{i0}=\\sum_{j=1}^nx_{ij}\\Lambda_j + S_i^- ~(i=1,2,\\dots,m)\\\\ \u0026~~ ty_{r0}=\\sum_{j=1}^n y_{rj}\\Lambda_j-S_r^+ ~(r=1,2,\\dots,q_1)\\\\ \u0026~~ tz_{r0}=\\sum_{j=1}^n z_{rj}\\Lambda_j-S_r^+ ~(r=1,2,\\dots,q_2)\\\\ \u0026~~ \\Lambda_j\\ge0,S_i^-\\ge0, S_r^+\\ge0,t\\ge0 \\end{aligned} $$ 由线性规划的可行解$\\left(\\rho^*,\\vec\\Lambda^*,t^*,\\pmb S^{-*}, \\pmb S^{+*}, \\pmb S^{+’*}\\right)$，可以解出原始模型的可行解$\\left(\\rho^*,\\vec\\lambda^*,\\pmb s^{-*}, \\pmb s^{+*}, \\pmb s^{+’*}\\right)$，\n$$ \\pmbλ^* = \\frac{\\pmbΛ^*}{t^*},~\\pmb s^{-*}=\\frac{\\pmb S^{-*}}{t^*} ,~\\pmb s^{+*}=\\frac{\\pmb S^{+*}}{t^*} ,~\\pmb s^{+’*}=\\frac{\\pmb S^{+’*}}{t^*} $$\n若$\\rho^*=1$，则称该$DMU$为SBM-efficient，此时$\\pmb s^{-*}=0, \\pmb s^{+*}=0, \\pmb s^{+’*}=0$；\n若$\\rho^*$$ \\displaylines{ \\vec x_k = X\\vec\\lambda^* + \\pmb s^{-*}\\\\ \\vec y_k = Y\\vec\\lambda^* - \\pmb s^{+*}\\\\ \\vec z_k = Z\\vec\\lambda^* + \\pmb s^{+’*} } $$\n由于得到了投入过量和产出不足的具体数值，因此我们可以对该可比决策单元进行优化，称为SBM投射(SBM-projection)： $$ \\displaylines{ \\vec x_k \\leftarrow \\vec x_k - \\pmb s^{-*}\\\\ \\vec y_k \\leftarrow \\vec y_k + \\pmb s^{+*}\\\\ \\vec z_k \\leftarrow \\vec z_k - \\pmb s^{+’*} } $$\nPython代码实现 为了便于编程，我们将以上规划问题写成矩阵形式， $$ \\begin{aligned} \\min \u0026~~ \\rho=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X = b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 其中自变量为 $$ \\pmb X=\\left[ {\\color{red} \\lambda_1,\\lambda_2,\\dots,\\lambda_n,}~~t,~~ {\\color{blue} S_1^-,S_2^-,\\dots,S_m^-,}~~ {\\color{green} S_1^+,S_2^+,\\dots,S_{q_1}^+,~~ S_1^{+’},S_2^{+’},\\dots,S_{q_2}^{+’}} \\right]^\\rm T, $$ 目标函数系数矩阵为 $$ C=\\left[ {\\color{red} 0,0,\\dots,0,}~~1,~~{\\color{blue} -\\frac{1}{mx_{10}},-\\frac{1}{mx_{20}},\\dots,-\\frac{1}{mx_{m0}}},~~{\\color{green}0,\\dots,0} \\right], $$ 约束条件方程系数为 $$ \\displaylines{ A=\\left[ \\begin{matrix} \\color{red} 0 \u0026 \\color{red}\\cdots \u0026 \\color{red}0 \u0026 1 \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}\\alpha_{1} \u0026 \\color{green}\\cdots \u0026 \\color{green}\\alpha_{q_1} \u0026 \\color{green}\\beta_{1} \u0026 \\color{green}\\dots \u0026 \\color{green}\\beta_{q_2}\\\\ \\\\ \\\\ \\color{red}x_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}x_{1n} \u0026 -x_{10} \u0026 \\color{blue}1 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\ddots \u0026\u0026\u0026 \\color{green}\\vdots \u0026\u0026\u0026 \\color{green}\\vdots\\\\ \\color{red}x_{m1} \u0026 \\color{red}\\cdots \u0026 \\color{red}x_{mn} \u0026 -x_{m0} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}1 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \\\\ \\\\ \\color{red}y_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}y_{1n} \u0026 -y_{10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}-1 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\vdots \u0026\u0026\u0026 \\color{green}\\ddots \u0026\u0026\u0026 \\color{green}\\vdots\\\\ \\color{red}y_{q_11} \u0026 \\color{red}\\cdots \u0026 \\color{red}y_{q_1n} \u0026 -y_{q_10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}-1 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \\\\ \\\\ \\color{red}z_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}z_{1n} \u0026 -z_{10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}1 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\vdots \u0026\u0026\u0026 \\color{green}\\vdots \u0026\u0026\u0026 \\color{green}\\ddots\\\\ \\color{red}z_{q_21} \u0026 \\color{red}\\cdots \u0026 \\color{red}z_{q_2n} \u0026 -z_{q_20} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}1\\\\ \\end{matrix} \\right],\\\\ \\alpha_{r} = \\frac{1}{\\left(q_1+q_2\\right)y_{r0}}~\\left( r=1,2,\\dots,q_1\\right),\\\\ \\beta_{r} = \\frac{1}{\\left(q_1+q_2\\right)z_{r0}}~\\left( r=1,2,\\dots,q_2\\right), } $$\n约束条件常数项为 $$ b=\\left[ 1,~~0,0,\\dots,0 \\right]^\\rm T $$\n代码结构来自wonder1322的博客\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85  import pandas as pd import scipy.optimize as op import numpy as np def sbmeff2(input_variable, desirable_output, undesirable_output, dmu, data, method = 'revised simplex'): \"\"\"用于求解sbm模型 Parameters: ----------- input_variable: 投入[v1,v2,v3,...] desirable_output: 期望产出[v1,v2,v3,...] undesirable_output: 非期望产出[v1,v2,v3,...] dmu: 决策单元 data: 主数据 method: 求解方法.默认'revised simplex',可选'interior-point' Return: ------ res : DataFrame 结果数据框[dmu\tTE\tslack...] \"\"\" res = pd.DataFrame(columns = ['dmu','TE'], index = data.index) res['dmu'] = data[dmu] ## lambda有dmu个数个，S有变量个数个 dmu_counts = data.shape[0] ## 投入个数 m = len(input_variable) ## 期望产出个数 s1 = len(desirable_output) ## 非期望产出个数 s2 = len(undesirable_output) ## x[:dmu_counts] 为lambda ## x[dmu_counts : dmu_counts+1] 为 t ## x[dmu_counts+1 : dmu_counts + m + 1] 为投入slack ## x[dmu_counts+ 1 + m : dmu_counts + 1 + m + s1] 为期望产出slack ## x[dmu_counts + 1 + m + s1 :] 为非期望产出slack total = dmu_counts + m + s1 + s2 + 1 cols = input_variable + desirable_output + undesirable_output newcols = [] for j in cols: newcols.append(j+'_slack') res[j+'_slack'] = np.nan for i in range(dmu_counts): ## 优化目标：目标函数的系数矩阵 c = [0]*dmu_counts + [1] + list(-1 / (m*data.loc[i, input_variable])) + [0] * (s1+s2) ## 约束条件：约束方程的系数矩阵 A_eq = [[0]*dmu_counts + [1] + [0]*m + list(1/((s1+s2)*data.loc[i, desirable_output])) + list(1/((s1+s2)*data.loc[i, undesirable_output]))] ## 约束条件（1）：投入松弛变量为正 for j1 in range(m): list1 = [0] * m list1[j1] = 1 eq1 = list(data[input_variable[j1]]) + [-data.loc[i ,input_variable[j1]]] + list1 + [0]*(s1+s2) A_eq.append(eq1) ## 约束条件（2）：期望产出松弛变量为正 for j2 in range(s1): list2 = [0] * s1 list2[j2] = -1 eq2 = list(data[desirable_output[j2]]) + [-data.loc[i, desirable_output[j2]]] + [0]*m + list2 + [0]*s2 A_eq.append(eq2) ## 约束条件（3）：非期望产出松弛变量为正 for j3 in range(s2): list3 = [0] * s2 list3[j3] = 1 eq3 = list(data[undesirable_output[j3]]) + [-data.loc[i, undesirable_output[j3]]] + [0]*(m+s1) + list3 A_eq.append(eq3) ## 约束条件：常数向量 b_eq = [1] + [0]*(m+s1+s2) bounds = [(0, None)]*total ## 约束边界为零 ## 求解 op1 = op.linprog(c = c,A_eq=A_eq,b_eq=b_eq,bounds=bounds,method = method) res.loc[i, 'TE'] = op1.fun res.loc[i, newcols] = op1.x[dmu_counts+1 :] return res   补充：求解对偶模型的过程 线性规划的矩阵形式 学习SBM模型的时候遇到了对偶规划这一步骤，之前没有接触过，在B站上找了一个教程对照着推导了一遍。\n原始的线性规划模型，自变量是$\\vec \\mu=[\\mu_1, \\mu_2, \\dots,\\mu_q],\\vec\\nu=[\\nu_1,\\nu_2,\\dots,\\nu_m]$。\n注意：虽然规划模型中有$X$、$Y$，但是这是代表可比决策单元的投入量和产出量的，是已知的数据，所以并不是变量。 $$ \\begin{aligned} \\max \u0026~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$ 先转换为矩阵形式，自变量向量记为$\\pmb X$， $$ \\begin{aligned} \\max \u0026~~ Z=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X\\le b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 其中由于等式$\\sum_{i=1}^m\\nu_iX_{ik}=1$，导致自变量的自由度减1，这里剔除$\\nu_m$，即 $$ \\pmb X=\\left[\\mu_1, \\mu_2, \\dots,\\mu_q,\\nu_1,\\nu_2,\\dots,\\nu_{m-1}\\right]^\\rm T. $$ 目标函数的系数向量为 $$ C=\\left[ Y_{1k}, Y_{2k}, \\dots,Y_{qk},0,0,\\dots,0 \\right], $$ 其中有$m-1$个$0$。\n除了要满足$\\pmb X\\ge0$以外，还应保证$\\nu_m\\ge0$，即 $$ \\nu_m=\\frac{1-\\sum_{i=1}^{m-1}\\nu_iX_{ik}}{X_{mk}}\\ge0 \\Leftrightarrow \\sum_{i=1}^{m-1}\\nu_iX_{ik}\\le1. $$ 对于模型中的主要约束条件，消去$\\nu_m$后得到 $$ \\sum_{r=1}^q\\mu_{r}Y_{rj}+ \\sum_{i=1}^{m-1}\\nu_{i}\\left(\\frac{X_{ik}X_{mj}}{X_{mk}} -X_{ij}\\right)\\le \\frac{X_{mj}}{X_{mk}}, j=1,2,\\dots,n. $$ 以上两式整合得到$A\\cdot\\pmb X\\le b$，则\n$$ \\displaylines{ A_{(n+1)\\times (q+m-1)}= \\left[ \\begin{matrix} Y_{11} \u0026 Y_{21} \u0026 \\cdots \u0026 Y_{q1} \u0026 \\alpha_{11} \u0026 \\alpha_{21} \u0026 \\cdots \u0026 \\alpha_{m-1,1}\\\\ Y_{12} \u0026 Y_{22} \u0026 \\cdots \u0026 Y_{q2} \u0026 \\alpha_{12} \u0026 \\alpha_{22} \u0026 \\cdots \u0026 \\alpha_{m-1,2}\\\\ \u0026\u0026\\vdots\u0026\u0026\u0026\u0026\\vdots\\\\ Y_{1n} \u0026 Y_{2n} \u0026 \\cdots \u0026 Y_{qn} \u0026 \\alpha_{1n} \u0026 \\alpha_{2n} \u0026 \\cdots \u0026 \\alpha_{m-1,n}\\\\ 0 \u0026 0 \u0026 \\cdots \u0026 0 \u0026 X_{1k} \u0026 X_{2k} \u0026 \\cdots \u0026 X_{m-1,k} \\end{matrix} \\right],\\\\ {\\rm where}~\\alpha_{ij} = \\left(\\frac{X_{ik}X_{mj}}{X_{mk}} -X_{ij}\\right),b=\\left[ \\frac{X_{m1}}{X_{mk}}, \\frac{X_{m2}}{X_{mk}}, \\dots, \\frac{X_{mn}}{X_{mk}},1 \\right]^\\rm T } $$\n至此得到矩阵形式的全部系数。\n线性规划的对偶形式 这里补充一下关于线性规划问题转换为其对偶问题的数学推导4。已知有如下线性规划 $$ \\begin{aligned} {\\pmb P:~~}\\max \u0026~~ Z=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X\\le b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 的对偶形式为 $$ \\begin{aligned} {\\pmb D:~~}\\min \u0026~~ W={\\pmb Y}^{\\rm T}\\cdot b\\\\ s.t. \u0026~~ A^{\\rm T}\\cdot {\\pmb Y}\\ge C^{\\rm T}\\\\ \u0026~~ \\pmb Y\\ge0 \\end{aligned} $$ $\\pmb D$问题的自变量为$\\pmb Y=[\\lambda_1,\\lambda_2,\\dots,\\lambda_{n+1}]^\\rm T$，目标函数展开后为 $$ W={\\pmb Y}^{\\rm T}\\cdot b=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1}. $$ 主要约束条件展开后为 $$ \\begin{aligned} \u0026 \\sum_{j=1}^n\\lambda_j Y_{rj}\\ge Y_{rk}\\\\ \u0026 \\sum_{j=1}^n \\lambda_j \\left( \\frac{X_{ik}X_{mj}}{X_{mk}}-X_{ij} \\right)\\ge0 \\\\ \u0026r=1,2,\\dots,q;~i=1,2,\\dots,m \\end{aligned} $$ 将目标函数代入第二个不等式，得到 $$ \\sum_{j=1}^n\\lambda_jX_{ij}\\le X_{ik}\\left(\\lambda_{n+1}+W\\right). $$ 以上对偶规划模型的多项式形式如下所示： $$ \\begin{aligned} \\min \u0026~~ W=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1} \\\\ s.t. \u0026~~ \\sum_{j=1}^n\\lambda_j Y_{rj}\\ge Y_{rk}~(\\lambda_j\\ge0)\\\\ \u0026~~ \\sum_{j=1}^n\\lambda_jX_{ij}\\le X_{ik}\\left(\\lambda_{n+1}+W\\right)\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n  李成宇. 中国工业绿色发展质量测度及影响因素研究[D]. 山东科技大学, 2020. DOI: 10.27275/d.cnki.gsdku.2020.000319. ↩︎\n Tone, K. (2001). A slacks-based measure of efficiency in data envelopment analysis. European Journal of Operational Research, 130(3), 498-509. DOI: 10.1016/S0377-2217(01)00324-1 ↩︎\n 带有非期望产出的SBM模型（python）wonder1322的博客 - CSDN博客 非期望产出的sbm模型 ↩︎\n 线性规划的对偶模型 hongmofang10的博客 - CSDN博客 对偶模型 ↩︎\n   ",
+  "articleBody": "带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1\n这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。\n数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\\dots,n)$；\n每个$DMU$有$m$种投入，记为$X_i(i=1,2,\\dots,m)$，每种投入的权重为$v_i$；\n有$q$种产出，记为$Y_r(r=1,2,\\dots,q)$，每种产出的权重为$u_r$.\n对第$k$个可比决策单元而言，其投入产出比（技术效率）为\n$$ H_k=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}， $$\n限定范围为$H_k\\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\\dots,v_m]$和$[u_1,u_2,\\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \\begin{aligned} \\max\u0026~~ z=\\frac{\\sum_{r=1}^qu_rY_{rk}}{\\sum_{i=1}^mv_iX_{ik}}\\\\ s.t.\u0026~~ \\frac{\\sum_{r=1}^qu_rY_{rj}}{\\sum_{i=1}^mv_iX_{ij}}\\le1~ (v_i\\ge0,u_r\\ge0)\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\\sum_{i=1}^mv_iX_{ik}\u003e0$，模型的规划条件即为 $$ s.t.~~\\sum_{r=1}^qu_rY_{rj}-\\sum_{i=1}^mv_iX_{ij}\\le0; $$\n在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\\vec u$和$\\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。\n投入导向CCR 令$t=\\left(\\sum_{i=1}^mv_iX_{ik}\\right)^{-1}$，则模型的目标函数为\n$$ \\max ~~ z=t\\sum_{r=1}^qu_rY_{rk}=\\sum_{r=1}^qtu_rY_{rk}, $$\n令$\\mu_{r}=tu_r, \\nu_{i}=tv_i$，根据$t$的定义可知$\\sum_{i=1}^m\\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到\n$$ s.t. ~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0. $$\n从而将非线性规划模型转换为线性规划模型：\n$$ \\begin{aligned} \\max \u0026~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n其对偶模型为（对偶模型求解过程见文末）\n$$ \\begin{aligned} \\min \u0026 \\theta=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1}\\\\ s.t. \u0026 \\sum_{j=1}^n\\lambda_jX_{ij}\\le(\\theta+\\lambda_{n+1}) X_{ik}(\\lambda_j\\ge0)\\\\ \u0026 \\sum_{j=1}^n\\lambda_jY_{rj}\\ge Y_{rk}\\\\ \u0026 i=1,2,\\dots,m;r=1,2,\\dots,q;j=1,2,\\dots,n \\end{aligned} $$\n以上处理后得到的是投入导向的DEA模型。\n这里与常见的处理方式有点差异，因为在转化为标准形式的时候规划模型的自由度减1。\n产出导向CCR 同理，若在降低自变量自由度时采用$t=\\left(\\sum_{r=1}^qu_rY_{rk}\\right)^{-1}$，则可演算得到产出导向的DEA模型：\n$$ \\begin{aligned} \\min \u0026~~ z=\\sum_{i=1}^m\\nu_{r}X_{ik}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{r=1}^q\\mu_rY_{rk}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n其对偶模型为\n$$ \\begin{aligned} \\min \u0026~~ \\phi=\\sum_{j=1}^n\\frac{Y_{qj}}{Y_{qk}}\\lambda_j+\\lambda_{n+1}\\\\ s.t. \u0026~~ \\sum_{j=1}^n\\lambda_jY_{rj}\\le(\\theta+\\lambda_{n+1}) Y_{rk}~~(\\lambda_j\\ge0)\\\\ \u0026~~ \\sum_{j=1}^n\\lambda_jX_{ij}\\ge X_{rk}\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\nSBM模型 不带非期望产出的情形 在DEA模型中，线性规划的最终目的是使得$H_k$尽可能大，即$DMU_k$的产出效率尽可能高。虽然考虑到了多种产出的情形，但是每一种产出的权重都是正的($u_r\\ge0$) ，所以依然是要尽可能使得每一种产出都越高越好。当产出中存在非期望内容时，我们希望这些非期望的产出尽可能低，同时期望产出尽可能高。Kaoru Tone提出的SBM模型(slacks-based model)2可以处理这类非期望产出的问题。\n我们仍然以$X=(x_{ij})\\in R^{m\\times n}$表示实际投入，$Y=(y_{rj})\\in R^{q\\times n}$表示实际产出。在不带非期望产出的情况下，有可能存在的生产情形必然包括投入更多、产出更低的情况（即效率更低的情况总是能够实现的）：\n$$ P=\\left\\{ \\left(\\vec x,\\vec y\\right) ~|~ \\vec x\\ge X\\vec\\lambda,~\\vec y\\le Y\\vec\\lambda,~\\vec\\lambda\\ge\\vec0 \\right\\} $$\n其中$\\vec\\lambda$是$R^n$上的一个非负向量。\n$X$矩阵的每一列代表了一个可比决策单元，当$X$右乘一个$n$维向量后得到的是一个$m$维向量，$X\\vec\\lambda=\\left[ \\sum_{j=1}^nx_{ij}\\lambda_j \\right]_{m\\times1}$，可以视为由所有$DMU$按照$\\vec \\lambda$所规定的配比混合而成的新的生产投入组合。同理，$Y\\vec\\lambda$代表了所有$DMU$按照$\\vec \\lambda$所规定的配比混合而成的新的产出组合。$\\left(X\\vec\\lambda, Y\\vec\\lambda\\right)$就是所有实际生产情形线性混合而成的“虚拟生产情形”（基于规模报酬不变）。在这个“虚拟生产情形”的基础之上，更加浪费的生产情形必然是可行的，故采用上述形式定义有可能的生产情形。\n在这种定义下，默认了效率最高的生产情形暗含在实际生产情形通过线性组合所形成的参数空间范围之中。即我们不考虑生产效率远远超出现有技术水平的情形。\n具体地，用$(\\vec x_0,\\vec y_0)$来描述某一个$DMU_0$（从实际生产情形$X,Y$中而来）： $$ \\displaylines{ \\vec x_0=X\\vec\\lambda + \\pmb s^-\\ \\vec y_0=Y\\vec\\lambda - \\pmb s^+ } $$ 其中$\\pmb s^-\\ge0,\\pmb s^+\\ge 0$分别称为投入过量(input excess)和产出不足(output shortfall)，统一称为和投入和产出的松弛向量(slacks)。据此定义指标：\n$$ \\rho = \\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)}{1+\\frac1q\\sum_{r=1}^q\\left({s^+_r}/{y_{r0}}\\right)} $$\n该指标满足以下特性：\n每个$DMU$都有一个不同的$\\rho$ 随着投入和产出松弛向量$\\pmb s^-,\\pmb s^+$而单调变化 取值范围为$\\rho\\in\\left(0,1\\right]$ 为了表达$(\\vec x_0,\\vec y_0)$的效率，以$\\rho$指标构建SBM模型：\n$$ \\begin{aligned} \\min \u0026~~\\rho=\\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)} {1+\\frac1q\\sum_{r=1}^q\\left({s^+_r}/{y_{r0}}\\right)}\\\\ s.t. \u0026~~ \\vec x_0 = X\\vec\\lambda + \\pmb s^- \\\\ \u0026~~ \\vec y_0 = Y\\vec\\lambda - \\pmb s^+\\\\ \u0026~~ \\vec\\lambda\\ge0,~\\pmb s^-\\ge0,~\\pmb s^+\\ge 0 \\end{aligned} $$\n当$DMU_0$达到效率最优(SBM-efficient)时，满足 $$ \\rho^*=1,~\\pmb s^-=0,~\\pmb s^+=0 $$\n如何理解$DMU$效率最优等同于松弛变量均为零？在作者的理解中，认为SBM-efficient意味着该决策单元的任何优化都不会引起投入过量和产出不足。\n若有唯一的$\\vec\\lambda$，则确定唯一的$\\left(\\pmb s^-, \\pmb s^+\\right)\\sim\\left(\\vec x_0,\\vec y_0\\right)$关系。规划自变量为$\\left(\\pmb s^-, \\pmb s^+\\right)$，目的是使得$\\rho$尽可能小，即$\\pmb s^-$和$\\pmb s^+$都要尽可能大。这可以看成是一种对当下生产效率不信任的态度。\n当处于效率最优状态时，生产投入的要素配比恰到好处，此时进行任何调节都无法使得效率进一步提升。\n再将$\\vec\\lambda$也视为自变量，即尝试不同组合情况下的$DMU_0$，通过调整$\\vec\\lambda$可以进一步优化目标函数。\n**Charnes-Cooper transformation: **将目标函数的分子和分母都乘$t$，使得分母变为$1$，即\n$$ t=\\left[1+\\frac1q\\sum_{r=1}^q\\left(\\frac{s^+_r}{y_{r0}}\\right)\\right]^{-1}, $$\n从而目标函数变为\n$$ \\min~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{ts_i^-}{x_{i0}}. $$\n定义$\\pmb S^-=t\\pmb s^-,\\pmb S^+=t\\pmb s^+,\\pmb \\Lambda=t\\vec\\lambda$，则原非线性规划中的约束条件转换为 $$ \\begin{aligned} s.t. \u0026~~ 1=t+\\frac1q\\sum_{r=1}^q\\frac{S_r^+}{y_{r0}}\\\\ \u0026~~ t\\vec x_0=X\\pmb \\Lambda+\\pmb S^-\\\\ \u0026~~ t\\vec y_0=Y\\pmb \\Lambda-\\pmb S^+\\\\ \u0026~~ \\Lambda\\ge0,\\pmb S^-\\ge0, \\pmb S^+\\ge0,t\\ge0 \\end{aligned} $$ 最后完整地写一下转换后的线性规划（多项式形式）：\n$$ \\begin{aligned} \\min \u0026~~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{ts_i^-}{x_{i0}}\\\\ s.t. \u0026~~ 1=t+\\frac1q\\sum_{r=1}^q\\frac{S_r^+}{y_{r0}}\\\\ \u0026~~ tx_{i0}=\\sum_{j=1}^nx_{ij}\\Lambda_j + S_i^- \\\\ \u0026~~ ty_{r0}=\\sum_{j=1}^n y_{rj}\\Lambda_j-S_r^+ \\\\ \u0026~~ \\Lambda_j\\ge0,S_i^-\\ge0, S_r^+\\ge0,t\\ge0\\\\ \u0026~~ i=1,2,\\dots,m;r=1,2,\\dots,q;j=1,2,\\dots,n \\end{aligned} $$\n通过线性规划的可行解$\\left(\\rho^*,\\vec\\Lambda^*,t^*,\\pmb S^{-*}, \\pmb S^{+*}\\right)$，可以解出原型的可行解$\\left(\\rho^*,\\vec\\lambda^*,\\pmb s^{-*}, \\pmb s^{+*}\\right)$。\n若$\\rho^*=1$，则称该$DMU$为SBM-efficient，此时$\\pmb s^{-*}=0,\\pmb s^{+*}=0$； 若$\\rho^*\u003c1$，则称该$DMU$为SBM-inefficient，对于一个SBM-inefficient的决策单元（假设为$DMU_k$），其投入和产出满足：\n$$ \\displaylines{ \\vec x_k = X\\vec\\lambda^* + \\pmb s^{-*}\\\\ \\vec y_k = Y\\vec\\lambda^* - \\pmb s^{+*} } $$\n由于得到了投入过量和产出不足的具体数值，因此我们可以对该可比决策单元进行优化，称为SBM投射(SBM-projection)：\n$$ \\displaylines{ \\vec x_k \\leftarrow \\vec x_k - \\pmb s^{-*}\\\\ \\vec y_k \\leftarrow \\vec y_k + \\pmb s^{+*} } $$\n带有非期望产出的情形 如果我们考虑到非期望产出的情形3，这些非期望产出在低效情况下的情形并非产出不足，而是“产出过多”，因此需要引入新的松弛向量$\\pmb s^{+’}$以规范非期望产出。记$Y$为实际期望产出，$Z$为实际非期望产出，分别有$q_1,q_2$个。生产可能性中也应区分期望产出和非期望产出，即$(\\vec x_0, \\vec y_0,\\vec z_0)$，其中 $$ \\vec z_0=Z\\vec\\lambda + \\pmb s^{+’}. $$ 同理以$\\rho$指标构建SBM模型：\n$$ \\begin{aligned} \\min \u0026~~\\rho=\\frac{1-\\frac1m\\sum_{i=1}^m\\left({s^-_i}/{x_{i0}}\\right)} {1+\\frac1{q_1+q_2}\\left[\\sum_{r_1=1}^{q_1}\\left({s^+_r}/{y_{r0}}\\right) + \\sum_{r=1}^{q_2}\\left({s^{+’}_r}/{z_{r0}}\\right)\\right]}\\\\ s.t. \u0026~~ \\vec x_0 = X\\vec\\lambda + \\pmb s^- \\\\ \u0026~~ \\vec y_0 = Y\\vec\\lambda - \\pmb s^+\\\\ \u0026~~\\vec z_0=Z\\vec\\lambda+\\pmb s^{+’}\\\\ \u0026~~ \\vec\\lambda\\ge0,~\\pmb s^-\\ge0,~\\pmb s^+\\ge 0 \\end{aligned} $$\n当某一个$DMU$达到效率最优时，\n$$ \\rho^*=1,~\\pmb s^-=0,~\\pmb s^+=0,~\\pmb s^{+’}=0. $$\n通过Charnes-Cooper转换，得到线性规划模型： $$ \\begin{aligned} \\min \u0026~~\\rho=t-\\frac1m\\sum_{i=1}^m\\frac{S_i^-}{x_{i0}}\\\\ s.t. \u0026~~ 1=t+\\frac1{q_1+q_2}\\left(\\sum_{r=1}^{q_1}\\frac{S_r^+}{y_{r0}}+\\sum_{r=1}^{q_2}\\frac{S_r^{+’}}{y_{r0}}\\right)\\\\ \u0026~~ tx_{i0}=\\sum_{j=1}^nx_{ij}\\Lambda_j + S_i^- ~(i=1,2,\\dots,m)\\\\ \u0026~~ ty_{r0}=\\sum_{j=1}^n y_{rj}\\Lambda_j-S_r^+ ~(r=1,2,\\dots,q_1)\\\\ \u0026~~ tz_{r0}=\\sum_{j=1}^n z_{rj}\\Lambda_j-S_r^+ ~(r=1,2,\\dots,q_2)\\\\ \u0026~~ \\Lambda_j\\ge0,S_i^-\\ge0, S_r^+\\ge0,t\\ge0 \\end{aligned} $$ 由线性规划的可行解$\\left(\\rho^*,\\vec\\Lambda^*,t^*,\\pmb S^{-*}, \\pmb S^{+*}, \\pmb S^{+’*}\\right)$，可以解出原始模型的可行解$\\left(\\rho^*,\\vec\\lambda^*,\\pmb s^{-*}, \\pmb s^{+*}, \\pmb s^{+’*}\\right)$，\n$$ \\pmbλ^* = \\frac{\\pmbΛ^*}{t^*},~\\pmb s^{-*}=\\frac{\\pmb S^{-*}}{t^*} ,~\\pmb s^{+*}=\\frac{\\pmb S^{+*}}{t^*} ,~\\pmb s^{+’*}=\\frac{\\pmb S^{+’*}}{t^*} $$\n若$\\rho^*=1$，则称该$DMU$为SBM-efficient，此时$\\pmb s^{-*}=0, \\pmb s^{+*}=0, \\pmb s^{+’*}=0$；\n若$\\rho^*\u003c1$，则称该$DMU$为SBM-inefficient，对于一个SBM-inefficient的决策单元（假设为$DMU_k$），其投入和产出满足：\n$$ \\displaylines{ \\vec x_k = X\\vec\\lambda^* + \\pmb s^{-*}\\\\ \\vec y_k = Y\\vec\\lambda^* - \\pmb s^{+*}\\\\ \\vec z_k = Z\\vec\\lambda^* + \\pmb s^{+’*} } $$\n由于得到了投入过量和产出不足的具体数值，因此我们可以对该可比决策单元进行优化，称为SBM投射(SBM-projection)： $$ \\displaylines{ \\vec x_k \\leftarrow \\vec x_k - \\pmb s^{-*}\\\\ \\vec y_k \\leftarrow \\vec y_k + \\pmb s^{+*}\\\\ \\vec z_k \\leftarrow \\vec z_k - \\pmb s^{+’*} } $$\nPython代码实现 为了便于编程，我们将以上规划问题写成矩阵形式， $$ \\begin{aligned} \\min \u0026~~ \\rho=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X = b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 其中自变量为 $$ \\pmb X=\\left[ {\\color{red} \\lambda_1,\\lambda_2,\\dots,\\lambda_n,}~~t,~~ {\\color{blue} S_1^-,S_2^-,\\dots,S_m^-,}~~ {\\color{green} S_1^+,S_2^+,\\dots,S_{q_1}^+,~~ S_1^{+’},S_2^{+’},\\dots,S_{q_2}^{+’}} \\right]^\\rm T, $$ 目标函数系数矩阵为 $$ C=\\left[ {\\color{red} 0,0,\\dots,0,}~~1,~~{\\color{blue} -\\frac{1}{mx_{10}},-\\frac{1}{mx_{20}},\\dots,-\\frac{1}{mx_{m0}}},~~{\\color{green}0,\\dots,0} \\right], $$ 约束条件方程系数为 $$ \\displaylines{ A=\\left[ \\begin{matrix} \\color{red} 0 \u0026 \\color{red}\\cdots \u0026 \\color{red}0 \u0026 1 \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}\\alpha_{1} \u0026 \\color{green}\\cdots \u0026 \\color{green}\\alpha_{q_1} \u0026 \\color{green}\\beta_{1} \u0026 \\color{green}\\dots \u0026 \\color{green}\\beta_{q_2}\\\\ \\\\ \\\\ \\color{red}x_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}x_{1n} \u0026 -x_{10} \u0026 \\color{blue}1 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\ddots \u0026\u0026\u0026 \\color{green}\\vdots \u0026\u0026\u0026 \\color{green}\\vdots\\\\ \\color{red}x_{m1} \u0026 \\color{red}\\cdots \u0026 \\color{red}x_{mn} \u0026 -x_{m0} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}1 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \\\\ \\\\ \\color{red}y_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}y_{1n} \u0026 -y_{10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}-1 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\vdots \u0026\u0026\u0026 \\color{green}\\ddots \u0026\u0026\u0026 \\color{green}\\vdots\\\\ \\color{red}y_{q_11} \u0026 \\color{red}\\cdots \u0026 \\color{red}y_{q_1n} \u0026 -y_{q_10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}-1 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \\\\ \\\\ \\color{red}z_{11} \u0026 \\color{red}\\cdots \u0026 \\color{red}z_{1n} \u0026 -z_{10} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}1 \u0026 \\color{green}\\cdots \u0026 \\color{green}0\\\\ \u0026 \\color{red}\\vdots \u0026\u0026\u0026\u0026 \\color{blue}\\vdots \u0026\u0026\u0026 \\color{green}\\vdots \u0026\u0026\u0026 \\color{green}\\ddots\\\\ \\color{red}z_{q_21} \u0026 \\color{red}\\cdots \u0026 \\color{red}z_{q_2n} \u0026 -z_{q_20} \u0026 \\color{blue}0 \u0026 \\color{blue}\\cdots \u0026 \\color{blue}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}0 \u0026 \\color{green}0 \u0026 \\color{green}\\cdots \u0026 \\color{green}1\\\\ \\end{matrix} \\right],\\\\ \\alpha_{r} = \\frac{1}{\\left(q_1+q_2\\right)y_{r0}}~\\left( r=1,2,\\dots,q_1\\right),\\\\ \\beta_{r} = \\frac{1}{\\left(q_1+q_2\\right)z_{r0}}~\\left( r=1,2,\\dots,q_2\\right), } $$\n约束条件常数项为 $$ b=\\left[ 1,~~0,0,\\dots,0 \\right]^\\rm T $$\n代码结构来自wonder1322的博客\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 import pandas as pd import scipy.optimize as op import numpy as np def sbmeff2(input_variable, desirable_output, undesirable_output, dmu, data, method = 'revised simplex'): \"\"\"用于求解sbm模型 Parameters: ----------- input_variable: 投入[v1,v2,v3,...] desirable_output: 期望产出[v1,v2,v3,...] undesirable_output: 非期望产出[v1,v2,v3,...] dmu: 决策单元 data: 主数据 method: 求解方法.默认'revised simplex',可选'interior-point' Return: ------ res : DataFrame 结果数据框[dmu\tTE\tslack...] \"\"\" res = pd.DataFrame(columns = ['dmu','TE'], index = data.index) res['dmu'] = data[dmu] ## lambda有dmu个数个，S有变量个数个 dmu_counts = data.shape[0] ## 投入个数 m = len(input_variable) ## 期望产出个数 s1 = len(desirable_output) ## 非期望产出个数 s2 = len(undesirable_output) ## x[:dmu_counts] 为lambda ## x[dmu_counts : dmu_counts+1] 为 t ## x[dmu_counts+1 : dmu_counts + m + 1] 为投入slack ## x[dmu_counts+ 1 + m : dmu_counts + 1 + m + s1] 为期望产出slack ## x[dmu_counts + 1 + m + s1 :] 为非期望产出slack total = dmu_counts + m + s1 + s2 + 1 cols = input_variable + desirable_output + undesirable_output newcols = [] for j in cols: newcols.append(j+'_slack') res[j+'_slack'] = np.nan for i in range(dmu_counts): ## 优化目标：目标函数的系数矩阵 c = [0]*dmu_counts + [1] + list(-1 / (m*data.loc[i, input_variable])) + [0] * (s1+s2) ## 约束条件：约束方程的系数矩阵 A_eq = [[0]*dmu_counts + [1] + [0]*m + list(1/((s1+s2)*data.loc[i, desirable_output])) + list(1/((s1+s2)*data.loc[i, undesirable_output]))] ## 约束条件（1）：投入松弛变量为正 for j1 in range(m): list1 = [0] * m list1[j1] = 1 eq1 = list(data[input_variable[j1]]) + [-data.loc[i ,input_variable[j1]]] + list1 + [0]*(s1+s2) A_eq.append(eq1) ## 约束条件（2）：期望产出松弛变量为正 for j2 in range(s1): list2 = [0] * s1 list2[j2] = -1 eq2 = list(data[desirable_output[j2]]) + [-data.loc[i, desirable_output[j2]]] + [0]*m + list2 + [0]*s2 A_eq.append(eq2) ## 约束条件（3）：非期望产出松弛变量为正 for j3 in range(s2): list3 = [0] * s2 list3[j3] = 1 eq3 = list(data[undesirable_output[j3]]) + [-data.loc[i, undesirable_output[j3]]] + [0]*(m+s1) + list3 A_eq.append(eq3) ## 约束条件：常数向量 b_eq = [1] + [0]*(m+s1+s2) bounds = [(0, None)]*total ## 约束边界为零 ## 求解 op1 = op.linprog(c = c,A_eq=A_eq,b_eq=b_eq,bounds=bounds,method = method) res.loc[i, 'TE'] = op1.fun res.loc[i, newcols] = op1.x[dmu_counts+1 :] return res 补充：求解对偶模型的过程 线性规划的矩阵形式 学习SBM模型的时候遇到了对偶规划这一步骤，之前没有接触过，在B站上找了一个教程对照着推导了一遍。\n原始的线性规划模型，自变量是$\\vec \\mu=[\\mu_1, \\mu_2, \\dots,\\mu_q],\\vec\\nu=[\\nu_1,\\nu_2,\\dots,\\nu_m]$。\n注意：虽然规划模型中有$X$、$Y$，但是这是代表可比决策单元的投入量和产出量的，是已知的数据，所以并不是变量。 $$ \\begin{aligned} \\max \u0026~~ z=\\sum_{r=1}^q\\mu_{r}Y_{rk}\\\\ s.t. \u0026~~ \\sum_{r=1}^q\\mu_{r}Y_{rj}-\\sum_{i=1}^m\\nu_{i}X_{ij}\\le0~(\\mu_r\\ge0, \\nu_i\\ge0)\\\\ \u0026~~ \\sum_{i=1}^m\\nu_iX_{ik}=1\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$ 先转换为矩阵形式，自变量向量记为$\\pmb X$， $$ \\begin{aligned} \\max \u0026~~ Z=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X\\le b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 其中由于等式$\\sum_{i=1}^m\\nu_iX_{ik}=1$，导致自变量的自由度减1，这里剔除$\\nu_m$，即 $$ \\pmb X=\\left[\\mu_1, \\mu_2, \\dots,\\mu_q,\\nu_1,\\nu_2,\\dots,\\nu_{m-1}\\right]^\\rm T. $$ 目标函数的系数向量为 $$ C=\\left[ Y_{1k}, Y_{2k}, \\dots,Y_{qk},0,0,\\dots,0 \\right], $$ 其中有$m-1$个$0$。\n除了要满足$\\pmb X\\ge0$以外，还应保证$\\nu_m\\ge0$，即 $$ \\nu_m=\\frac{1-\\sum_{i=1}^{m-1}\\nu_iX_{ik}}{X_{mk}}\\ge0 \\Leftrightarrow \\sum_{i=1}^{m-1}\\nu_iX_{ik}\\le1. $$ 对于模型中的主要约束条件，消去$\\nu_m$后得到 $$ \\sum_{r=1}^q\\mu_{r}Y_{rj}+ \\sum_{i=1}^{m-1}\\nu_{i}\\left(\\frac{X_{ik}X_{mj}}{X_{mk}} -X_{ij}\\right)\\le \\frac{X_{mj}}{X_{mk}}, j=1,2,\\dots,n. $$ 以上两式整合得到$A\\cdot\\pmb X\\le b$，则\n$$ \\displaylines{ A_{(n+1)\\times (q+m-1)}= \\left[ \\begin{matrix} Y_{11} \u0026 Y_{21} \u0026 \\cdots \u0026 Y_{q1} \u0026 \\alpha_{11} \u0026 \\alpha_{21} \u0026 \\cdots \u0026 \\alpha_{m-1,1}\\\\ Y_{12} \u0026 Y_{22} \u0026 \\cdots \u0026 Y_{q2} \u0026 \\alpha_{12} \u0026 \\alpha_{22} \u0026 \\cdots \u0026 \\alpha_{m-1,2}\\\\ \u0026\u0026\\vdots\u0026\u0026\u0026\u0026\\vdots\\\\ Y_{1n} \u0026 Y_{2n} \u0026 \\cdots \u0026 Y_{qn} \u0026 \\alpha_{1n} \u0026 \\alpha_{2n} \u0026 \\cdots \u0026 \\alpha_{m-1,n}\\\\ 0 \u0026 0 \u0026 \\cdots \u0026 0 \u0026 X_{1k} \u0026 X_{2k} \u0026 \\cdots \u0026 X_{m-1,k} \\end{matrix} \\right],\\\\ {\\rm where}~\\alpha_{ij} = \\left(\\frac{X_{ik}X_{mj}}{X_{mk}} -X_{ij}\\right),b=\\left[ \\frac{X_{m1}}{X_{mk}}, \\frac{X_{m2}}{X_{mk}}, \\dots, \\frac{X_{mn}}{X_{mk}},1 \\right]^\\rm T } $$\n至此得到矩阵形式的全部系数。\n线性规划的对偶形式 这里补充一下关于线性规划问题转换为其对偶问题的数学推导4。已知有如下线性规划 $$ \\begin{aligned} {\\pmb P:~~}\\max \u0026~~ Z=C\\cdot \\pmb X\\\\ s.t. \u0026~~ A\\cdot\\pmb X\\le b\\\\ \u0026~~ \\pmb X\\ge0 \\end{aligned} $$ 的对偶形式为 $$ \\begin{aligned} {\\pmb D:~~}\\min \u0026~~ W={\\pmb Y}^{\\rm T}\\cdot b\\\\ s.t. \u0026~~ A^{\\rm T}\\cdot {\\pmb Y}\\ge C^{\\rm T}\\\\ \u0026~~ \\pmb Y\\ge0 \\end{aligned} $$ $\\pmb D$问题的自变量为$\\pmb Y=[\\lambda_1,\\lambda_2,\\dots,\\lambda_{n+1}]^\\rm T$，目标函数展开后为 $$ W={\\pmb Y}^{\\rm T}\\cdot b=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1}. $$ 主要约束条件展开后为 $$ \\begin{aligned} \u0026 \\sum_{j=1}^n\\lambda_j Y_{rj}\\ge Y_{rk}\\\\ \u0026 \\sum_{j=1}^n \\lambda_j \\left( \\frac{X_{ik}X_{mj}}{X_{mk}}-X_{ij} \\right)\\ge0 \\\\ \u0026r=1,2,\\dots,q;~i=1,2,\\dots,m \\end{aligned} $$ 将目标函数代入第二个不等式，得到 $$ \\sum_{j=1}^n\\lambda_jX_{ij}\\le X_{ik}\\left(\\lambda_{n+1}+W\\right). $$ 以上对偶规划模型的多项式形式如下所示： $$ \\begin{aligned} \\min \u0026~~ W=\\sum_{j=1}^n\\frac{X_{mj}}{X_{mk}}\\lambda_j+\\lambda_{n+1} \\\\ s.t. \u0026~~ \\sum_{j=1}^n\\lambda_j Y_{rj}\\ge Y_{rk}~(\\lambda_j\\ge0)\\\\ \u0026~~ \\sum_{j=1}^n\\lambda_jX_{ij}\\le X_{ik}\\left(\\lambda_{n+1}+W\\right)\\\\ \u0026~~ i=1,2,\\dots,m;~r=1,2,\\dots,q;~j=1,2,\\dots,n \\end{aligned} $$\n李成宇. 中国工业绿色发展质量测度及影响因素研究[D]. 山东科技大学, 2020. DOI: 10.27275/d.cnki.gsdku.2020.000319. ↩︎\nTone, K. (2001). A slacks-based measure of efficiency in data envelopment analysis. European Journal of Operational Research, 130(3), 498-509. DOI: 10.1016/S0377-2217(01)00324-1 ↩︎\n带有非期望产出的SBM模型（python）wonder1322的博客 - CSDN博客 非期望产出的sbm模型 ↩︎\n线性规划的对偶模型 hongmofang10的博客 - CSDN博客 对偶模型 ↩︎\n",
   "wordCount" : "1463",
   "inLanguage": "en",
   "datePublished": "2022-08-10T23:00:38Z",
@@ -168,14 +171,14 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dong2000.xyz/post/undesirable_sbm_in_python/"
+    "@id": "http://localhost:1313/post/undesirable_sbm_in_python/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Sheng Dong's website",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://dong2000.xyz/ptr.png"
+      "url": "http://localhost:1313/ptr.png"
     }
   }
 }
@@ -222,8 +225,8 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
-                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="http://localhost:1313/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -248,7 +251,7 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                        <a href="http://localhost:1313/profile/" title="Profile"
                             aria-label="Profile">Profile</a>
                     </li>
                 </ul>
@@ -256,22 +259,22 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
         </div>
         <ul id="menu">
             <li>
-                <a href="https://dong2000.xyz/archives/" title="Archive">
+                <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/about/" title="About">
+                <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/links/" title="Links">
+                <a href="http://localhost:1313/links/" title="Links">
                     <span>Links</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -281,7 +284,7 @@ $$ \begin{aligned} \max &amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;~~ \sum_
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
     <h1 class="post-title">
       非期望产出SBM模型的数学推演及Python实现
     </h1>
@@ -544,7 +547,7 @@ $$
 \displaylines{
 A=\left[
 \begin{matrix}
-\color{red} 0 &amp; \color{red}\cdots &amp; \color{red}0 &amp; 1 &amp; \color{blue}0 &amp; \color{blue}\cdots &amp; \color{blue}0 &amp; \color{green}\alpha_{1} &amp; \color{green}\cdots &amp; \color{green}\alpha_{q_1} &amp; 
+\color{red} 0 &amp; \color{red}\cdots &amp; \color{red}0 &amp; 1 &amp; \color{blue}0 &amp; \color{blue}\cdots &amp; \color{blue}0 &amp; \color{green}\alpha_{1} &amp; \color{green}\cdots &amp; \color{green}\alpha_{q_1} &amp;
 \color{green}\beta_{1} &amp; \color{green}\dots &amp; \color{green}\beta_{q_2}\\
 \\
 \\
@@ -576,91 +579,91 @@ $$</p>
 <p>代码结构来自<a href="https://blog.csdn.net/wonder1322/article/details/112987285">wonder1322的博客</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1"> 1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2"> 2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3"> 3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4"> 4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5"> 5</a>
-</span><span class="lnt" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6"> 6</a>
-</span><span class="lnt" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7"> 7</a>
-</span><span class="lnt" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8"> 8</a>
-</span><span class="lnt" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9"> 9</a>
-</span><span class="lnt" id="hl-0-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-10">10</a>
-</span><span class="lnt" id="hl-0-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-11">11</a>
-</span><span class="lnt" id="hl-0-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-12">12</a>
-</span><span class="lnt" id="hl-0-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-13">13</a>
-</span><span class="lnt" id="hl-0-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-14">14</a>
-</span><span class="lnt" id="hl-0-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-15">15</a>
-</span><span class="lnt" id="hl-0-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-16">16</a>
-</span><span class="lnt" id="hl-0-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-17">17</a>
-</span><span class="lnt" id="hl-0-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-18">18</a>
-</span><span class="lnt" id="hl-0-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-19">19</a>
-</span><span class="lnt" id="hl-0-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-20">20</a>
-</span><span class="lnt" id="hl-0-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-21">21</a>
-</span><span class="lnt" id="hl-0-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-22">22</a>
-</span><span class="lnt" id="hl-0-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-23">23</a>
-</span><span class="lnt" id="hl-0-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-24">24</a>
-</span><span class="lnt" id="hl-0-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-25">25</a>
-</span><span class="lnt" id="hl-0-26"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-26">26</a>
-</span><span class="lnt" id="hl-0-27"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-27">27</a>
-</span><span class="lnt" id="hl-0-28"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-28">28</a>
-</span><span class="lnt" id="hl-0-29"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-29">29</a>
-</span><span class="lnt" id="hl-0-30"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-30">30</a>
-</span><span class="lnt" id="hl-0-31"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-31">31</a>
-</span><span class="lnt" id="hl-0-32"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-32">32</a>
-</span><span class="lnt" id="hl-0-33"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-33">33</a>
-</span><span class="lnt" id="hl-0-34"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-34">34</a>
-</span><span class="lnt" id="hl-0-35"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-35">35</a>
-</span><span class="lnt" id="hl-0-36"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-36">36</a>
-</span><span class="lnt" id="hl-0-37"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-37">37</a>
-</span><span class="lnt" id="hl-0-38"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-38">38</a>
-</span><span class="lnt" id="hl-0-39"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-39">39</a>
-</span><span class="lnt" id="hl-0-40"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-40">40</a>
-</span><span class="lnt" id="hl-0-41"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-41">41</a>
-</span><span class="lnt" id="hl-0-42"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-42">42</a>
-</span><span class="lnt" id="hl-0-43"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-43">43</a>
-</span><span class="lnt" id="hl-0-44"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-44">44</a>
-</span><span class="lnt" id="hl-0-45"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-45">45</a>
-</span><span class="lnt" id="hl-0-46"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-46">46</a>
-</span><span class="lnt" id="hl-0-47"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-47">47</a>
-</span><span class="lnt" id="hl-0-48"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-48">48</a>
-</span><span class="lnt" id="hl-0-49"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-49">49</a>
-</span><span class="lnt" id="hl-0-50"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-50">50</a>
-</span><span class="lnt" id="hl-0-51"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-51">51</a>
-</span><span class="lnt" id="hl-0-52"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-52">52</a>
-</span><span class="lnt" id="hl-0-53"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-53">53</a>
-</span><span class="lnt" id="hl-0-54"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-54">54</a>
-</span><span class="lnt" id="hl-0-55"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-55">55</a>
-</span><span class="lnt" id="hl-0-56"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-56">56</a>
-</span><span class="lnt" id="hl-0-57"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-57">57</a>
-</span><span class="lnt" id="hl-0-58"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-58">58</a>
-</span><span class="lnt" id="hl-0-59"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-59">59</a>
-</span><span class="lnt" id="hl-0-60"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-60">60</a>
-</span><span class="lnt" id="hl-0-61"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-61">61</a>
-</span><span class="lnt" id="hl-0-62"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-62">62</a>
-</span><span class="lnt" id="hl-0-63"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-63">63</a>
-</span><span class="lnt" id="hl-0-64"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-64">64</a>
-</span><span class="lnt" id="hl-0-65"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-65">65</a>
-</span><span class="lnt" id="hl-0-66"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-66">66</a>
-</span><span class="lnt" id="hl-0-67"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-67">67</a>
-</span><span class="lnt" id="hl-0-68"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-68">68</a>
-</span><span class="lnt" id="hl-0-69"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-69">69</a>
-</span><span class="lnt" id="hl-0-70"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-70">70</a>
-</span><span class="lnt" id="hl-0-71"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-71">71</a>
-</span><span class="lnt" id="hl-0-72"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-72">72</a>
-</span><span class="lnt" id="hl-0-73"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-73">73</a>
-</span><span class="lnt" id="hl-0-74"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-74">74</a>
-</span><span class="lnt" id="hl-0-75"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-75">75</a>
-</span><span class="lnt" id="hl-0-76"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-76">76</a>
-</span><span class="lnt" id="hl-0-77"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-77">77</a>
-</span><span class="lnt" id="hl-0-78"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-78">78</a>
-</span><span class="lnt" id="hl-0-79"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-79">79</a>
-</span><span class="lnt" id="hl-0-80"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-80">80</a>
-</span><span class="lnt" id="hl-0-81"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-81">81</a>
-</span><span class="lnt" id="hl-0-82"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-82">82</a>
-</span><span class="lnt" id="hl-0-83"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-83">83</a>
-</span><span class="lnt" id="hl-0-84"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-84">84</a>
-</span><span class="lnt" id="hl-0-85"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-85">85</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1"> 1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2"> 2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3"> 3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4"> 4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5"> 5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6"> 6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7"> 7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8"> 8</a>
+</span><span class="lnt" id="hl-0-9"><a class="lnlinks" href="#hl-0-9"> 9</a>
+</span><span class="lnt" id="hl-0-10"><a class="lnlinks" href="#hl-0-10">10</a>
+</span><span class="lnt" id="hl-0-11"><a class="lnlinks" href="#hl-0-11">11</a>
+</span><span class="lnt" id="hl-0-12"><a class="lnlinks" href="#hl-0-12">12</a>
+</span><span class="lnt" id="hl-0-13"><a class="lnlinks" href="#hl-0-13">13</a>
+</span><span class="lnt" id="hl-0-14"><a class="lnlinks" href="#hl-0-14">14</a>
+</span><span class="lnt" id="hl-0-15"><a class="lnlinks" href="#hl-0-15">15</a>
+</span><span class="lnt" id="hl-0-16"><a class="lnlinks" href="#hl-0-16">16</a>
+</span><span class="lnt" id="hl-0-17"><a class="lnlinks" href="#hl-0-17">17</a>
+</span><span class="lnt" id="hl-0-18"><a class="lnlinks" href="#hl-0-18">18</a>
+</span><span class="lnt" id="hl-0-19"><a class="lnlinks" href="#hl-0-19">19</a>
+</span><span class="lnt" id="hl-0-20"><a class="lnlinks" href="#hl-0-20">20</a>
+</span><span class="lnt" id="hl-0-21"><a class="lnlinks" href="#hl-0-21">21</a>
+</span><span class="lnt" id="hl-0-22"><a class="lnlinks" href="#hl-0-22">22</a>
+</span><span class="lnt" id="hl-0-23"><a class="lnlinks" href="#hl-0-23">23</a>
+</span><span class="lnt" id="hl-0-24"><a class="lnlinks" href="#hl-0-24">24</a>
+</span><span class="lnt" id="hl-0-25"><a class="lnlinks" href="#hl-0-25">25</a>
+</span><span class="lnt" id="hl-0-26"><a class="lnlinks" href="#hl-0-26">26</a>
+</span><span class="lnt" id="hl-0-27"><a class="lnlinks" href="#hl-0-27">27</a>
+</span><span class="lnt" id="hl-0-28"><a class="lnlinks" href="#hl-0-28">28</a>
+</span><span class="lnt" id="hl-0-29"><a class="lnlinks" href="#hl-0-29">29</a>
+</span><span class="lnt" id="hl-0-30"><a class="lnlinks" href="#hl-0-30">30</a>
+</span><span class="lnt" id="hl-0-31"><a class="lnlinks" href="#hl-0-31">31</a>
+</span><span class="lnt" id="hl-0-32"><a class="lnlinks" href="#hl-0-32">32</a>
+</span><span class="lnt" id="hl-0-33"><a class="lnlinks" href="#hl-0-33">33</a>
+</span><span class="lnt" id="hl-0-34"><a class="lnlinks" href="#hl-0-34">34</a>
+</span><span class="lnt" id="hl-0-35"><a class="lnlinks" href="#hl-0-35">35</a>
+</span><span class="lnt" id="hl-0-36"><a class="lnlinks" href="#hl-0-36">36</a>
+</span><span class="lnt" id="hl-0-37"><a class="lnlinks" href="#hl-0-37">37</a>
+</span><span class="lnt" id="hl-0-38"><a class="lnlinks" href="#hl-0-38">38</a>
+</span><span class="lnt" id="hl-0-39"><a class="lnlinks" href="#hl-0-39">39</a>
+</span><span class="lnt" id="hl-0-40"><a class="lnlinks" href="#hl-0-40">40</a>
+</span><span class="lnt" id="hl-0-41"><a class="lnlinks" href="#hl-0-41">41</a>
+</span><span class="lnt" id="hl-0-42"><a class="lnlinks" href="#hl-0-42">42</a>
+</span><span class="lnt" id="hl-0-43"><a class="lnlinks" href="#hl-0-43">43</a>
+</span><span class="lnt" id="hl-0-44"><a class="lnlinks" href="#hl-0-44">44</a>
+</span><span class="lnt" id="hl-0-45"><a class="lnlinks" href="#hl-0-45">45</a>
+</span><span class="lnt" id="hl-0-46"><a class="lnlinks" href="#hl-0-46">46</a>
+</span><span class="lnt" id="hl-0-47"><a class="lnlinks" href="#hl-0-47">47</a>
+</span><span class="lnt" id="hl-0-48"><a class="lnlinks" href="#hl-0-48">48</a>
+</span><span class="lnt" id="hl-0-49"><a class="lnlinks" href="#hl-0-49">49</a>
+</span><span class="lnt" id="hl-0-50"><a class="lnlinks" href="#hl-0-50">50</a>
+</span><span class="lnt" id="hl-0-51"><a class="lnlinks" href="#hl-0-51">51</a>
+</span><span class="lnt" id="hl-0-52"><a class="lnlinks" href="#hl-0-52">52</a>
+</span><span class="lnt" id="hl-0-53"><a class="lnlinks" href="#hl-0-53">53</a>
+</span><span class="lnt" id="hl-0-54"><a class="lnlinks" href="#hl-0-54">54</a>
+</span><span class="lnt" id="hl-0-55"><a class="lnlinks" href="#hl-0-55">55</a>
+</span><span class="lnt" id="hl-0-56"><a class="lnlinks" href="#hl-0-56">56</a>
+</span><span class="lnt" id="hl-0-57"><a class="lnlinks" href="#hl-0-57">57</a>
+</span><span class="lnt" id="hl-0-58"><a class="lnlinks" href="#hl-0-58">58</a>
+</span><span class="lnt" id="hl-0-59"><a class="lnlinks" href="#hl-0-59">59</a>
+</span><span class="lnt" id="hl-0-60"><a class="lnlinks" href="#hl-0-60">60</a>
+</span><span class="lnt" id="hl-0-61"><a class="lnlinks" href="#hl-0-61">61</a>
+</span><span class="lnt" id="hl-0-62"><a class="lnlinks" href="#hl-0-62">62</a>
+</span><span class="lnt" id="hl-0-63"><a class="lnlinks" href="#hl-0-63">63</a>
+</span><span class="lnt" id="hl-0-64"><a class="lnlinks" href="#hl-0-64">64</a>
+</span><span class="lnt" id="hl-0-65"><a class="lnlinks" href="#hl-0-65">65</a>
+</span><span class="lnt" id="hl-0-66"><a class="lnlinks" href="#hl-0-66">66</a>
+</span><span class="lnt" id="hl-0-67"><a class="lnlinks" href="#hl-0-67">67</a>
+</span><span class="lnt" id="hl-0-68"><a class="lnlinks" href="#hl-0-68">68</a>
+</span><span class="lnt" id="hl-0-69"><a class="lnlinks" href="#hl-0-69">69</a>
+</span><span class="lnt" id="hl-0-70"><a class="lnlinks" href="#hl-0-70">70</a>
+</span><span class="lnt" id="hl-0-71"><a class="lnlinks" href="#hl-0-71">71</a>
+</span><span class="lnt" id="hl-0-72"><a class="lnlinks" href="#hl-0-72">72</a>
+</span><span class="lnt" id="hl-0-73"><a class="lnlinks" href="#hl-0-73">73</a>
+</span><span class="lnt" id="hl-0-74"><a class="lnlinks" href="#hl-0-74">74</a>
+</span><span class="lnt" id="hl-0-75"><a class="lnlinks" href="#hl-0-75">75</a>
+</span><span class="lnt" id="hl-0-76"><a class="lnlinks" href="#hl-0-76">76</a>
+</span><span class="lnt" id="hl-0-77"><a class="lnlinks" href="#hl-0-77">77</a>
+</span><span class="lnt" id="hl-0-78"><a class="lnlinks" href="#hl-0-78">78</a>
+</span><span class="lnt" id="hl-0-79"><a class="lnlinks" href="#hl-0-79">79</a>
+</span><span class="lnt" id="hl-0-80"><a class="lnlinks" href="#hl-0-80">80</a>
+</span><span class="lnt" id="hl-0-81"><a class="lnlinks" href="#hl-0-81">81</a>
+</span><span class="lnt" id="hl-0-82"><a class="lnlinks" href="#hl-0-82">82</a>
+</span><span class="lnt" id="hl-0-83"><a class="lnlinks" href="#hl-0-83">83</a>
+</span><span class="lnt" id="hl-0-84"><a class="lnlinks" href="#hl-0-84">84</a>
+</span><span class="lnt" id="hl-0-85"><a class="lnlinks" href="#hl-0-85">85</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -859,41 +862,41 @@ s.t. &amp;~~ \sum_{j=1}^n\lambda_j Y_{rj}\ge Y_{rk}~(\lambda_j\ge0)\\
 &amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n
 \end{aligned}
 $$</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>李成宇. 中国工业绿色发展质量测度及影响因素研究[D]. 山东科技大学, 2020. DOI: <a href="https://doi.org/10.27275/d.cnki.gsdku.2020.000319">10.27275/d.cnki.gsdku.2020.000319</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Tone, K. (2001). A slacks-based measure of efficiency in data envelopment analysis. European Journal of Operational Research, 130(3), 498-509. DOI: <a href="https://doi.org/10.1016/S0377-2217(01)00324-1">10.1016/S0377-2217(01)00324-1</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><a href="https://blog.csdn.net/wonder1322/article/details/112987285">带有非期望产出的SBM模型（python）wonder1322的博客 - CSDN博客 非期望产出的sbm模型</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p><a href="https://blog.csdn.net/hongmofang10/article/details/90484910">线性规划的对偶模型 hongmofang10的博客 - CSDN博客 对偶模型</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://dong2000.xyz/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></li>
-      <li><a href="https://dong2000.xyz/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</a></li>
-      <li><a href="https://dong2000.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a></li>
-      <li><a href="https://dong2000.xyz/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></li>
+      <li><a href="http://localhost:1313/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</a></li>
+      <li><a href="http://localhost:1313/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a></li>
+      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://dong2000.xyz/post/upper_bounds_and_weights_in_sbm/">
+  <a class="prev" href="http://localhost:1313/post/upper_bounds_and_weights_in_sbm/">
     <span class="title">« Prev</span>
     <br>
     <span>在SBM模型中引入上边界和指标权重</span>
   </a>
-  <a class="next" href="https://dong2000.xyz/post/at_end_of_term/">
+  <a class="next" href="http://localhost:1313/post/at_end_of_term/">
     <span class="title">Next »</span>
     <br>
     <span>（伪）期末小记</span>
@@ -905,7 +908,7 @@ $$</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="http://localhost:1313/">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

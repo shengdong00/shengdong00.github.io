@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>博士申请 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E5%8D%9A%E5%A3%AB%E7%94%B3%E8%AF%B7/</link>
+    <link>http://localhost:1313/tags/%E5%8D%9A%E5%A3%AB%E7%94%B3%E8%AF%B7/</link>
     <description>Recent content in 博士申请 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Sep 2022 01:21:19 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E5%8D%9A%E5%A3%AB%E7%94%B3%E8%AF%B7/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2022 01:21:19 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%A3%AB%E7%94%B3%E8%AF%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>申博二三事</title>
-      <link>https://dong2000.xyz/post/applying_phd/</link>
+      <link>http://localhost:1313/post/applying_phd/</link>
       <pubDate>Sun, 11 Sep 2022 01:21:19 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/applying_phd/</guid>
-      <description>&lt;p&gt;🎓最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/applying_phd/</guid>
+      <description>&lt;p&gt;&amp;#x1f393;最近有一搭没一搭地在准备着西湖大学工学院2023年博士招生预推免的材料准备工作，虽然按理并不会遇到太大的困难，但是心里还是难免会有一些焦虑——毕竟这是关乎到接下来五年何去何从的事情。在某个焦虑而摸鱼的时刻决定来写一篇博客记录申请直博的经历和心路&lt;s&gt;（实际上是因为personal statement挤牙膏挤不出来了）&lt;/s&gt;，算是作为这一重时间节点的纪念。&lt;/p&gt;</description>
     </item>
     
   </channel>

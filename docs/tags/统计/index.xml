@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>统计 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E7%BB%9F%E8%AE%A1/</link>
+    <link>http://localhost:1313/tags/%E7%BB%9F%E8%AE%A1/</link>
     <description>Recent content in 统计 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Oct 2022 01:20:00 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Oct 2022 01:20:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>偶识Mahalanobis Distance</title>
-      <link>https://dong2000.xyz/post/mahalanobis-distance/</link>
+      <link>http://localhost:1313/post/mahalanobis-distance/</link>
       <pubDate>Sun, 30 Oct 2022 01:20:00 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
+      <guid>http://localhost:1313/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）&lt;/p&gt;
+&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     

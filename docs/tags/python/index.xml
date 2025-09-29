@@ -2,29 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <description>Recent content in Python on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Dec 2022 14:11:55 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Dec 2022 14:11:55 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python多线程和多进程的运行速度比较</title>
-      <link>https://dong2000.xyz/post/python-threads-processes/</link>
+      <link>http://localhost:1313/post/python-threads-processes/</link>
       <pubDate>Fri, 16 Dec 2022 14:11:55 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/python-threads-processes/</guid>
+      <guid>http://localhost:1313/post/python-threads-processes/</guid>
       <description>&lt;p&gt;通过一个图像合成视频的脚本案例测试了一下Python3在单线程、多线程和多进程下的运行速度。发现多线程可以一定程度上提高运行速度（将1个线程拆为4个线程，提速大约83%），但是不能达到完全的并行运算，据说是因为&lt;code&gt;threading&lt;/code&gt;模块并不能真正调用多个处理器。在多进程下运行，可以接近完全平行的运算速度。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>非期望产出SBM模型的数学推演及Python实现</title>
-      <link>https://dong2000.xyz/post/undesirable_sbm_in_python/</link>
+      <link>http://localhost:1313/post/undesirable_sbm_in_python/</link>
       <pubDate>Wed, 10 Aug 2022 23:00:38 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/undesirable_sbm_in_python/</guid>
+      <guid>http://localhost:1313/post/undesirable_sbm_in_python/</guid>
       <description>带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
 这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
 数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
@@ -34,23 +35,24 @@
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
- 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
- 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
+其对偶模型为（对偶模型求解过程见文末）</description>
     </item>
     
     <item>
       <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
-      <link>https://dong2000.xyz/post/crawl_papers_from_scihub/</link>
+      <link>http://localhost:1313/post/crawl_papers_from_scihub/</link>
       <pubDate>Wed, 18 May 2022 19:27:46 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/crawl_papers_from_scihub/</guid>
+      <guid>http://localhost:1313/post/crawl_papers_from_scihub/</guid>
       <description>&lt;center&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;/center&gt;
 &lt;h1 id=&#34;操作思路&#34;&gt;操作思路&lt;/h1&gt;
 &lt;ul&gt;
@@ -68,10 +70,10 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>我国海水水质数据分析</title>
-      <link>https://dong2000.xyz/post/china_sea_water_data/</link>
+      <link>http://localhost:1313/post/china_sea_water_data/</link>
       <pubDate>Sun, 24 Apr 2022 01:36:16 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/china_sea_water_data/</guid>
+      <guid>http://localhost:1313/post/china_sea_water_data/</guid>
       <description>&lt;p&gt;环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;通过爬虫获取我国沿海海水水质的监测数据；&lt;/li&gt;
@@ -80,16 +82,16 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
 &lt;li&gt;将无机氮数据转换为正态分布，用Pearson分析和线性回归分析考察化学需氧量和无机氮数据的相关性；&lt;/li&gt;
 &lt;li&gt;利用机器学习，从多个污染指标数据预测海区分类。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20220424023106157.png&#34; alt=&#34;image-20220424023106157&#34; style=&#34;zoom:25%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>用Python爬虫爬取高校教师邮箱</title>
-      <link>https://dong2000.xyz/post/get_email_by_python_crawler/</link>
+      <link>http://localhost:1313/post/get_email_by_python_crawler/</link>
       <pubDate>Fri, 18 Mar 2022 11:01:32 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/get_email_by_python_crawler/</guid>
-      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。🕷️&lt;/p&gt;
+      <guid>http://localhost:1313/post/get_email_by_python_crawler/</guid>
+      <description>&lt;p&gt;最近在做的一个科研训练项目需要向某一交叉领域的专家们发送问卷调查。于是想到通过爬虫爬取国内各大高校在环境、建筑、能源等专业的教授的信息（姓名、邮箱、研究领域等等），再根据研究方向初步筛选，得到待定的专家组名单。&amp;#x1f577;&amp;#xfe0f;&lt;/p&gt;
 &lt;h1 id=&#34;预先准备&#34;&gt;预先准备&lt;/h1&gt;
 &lt;p&gt;安装python第三方库：&lt;code&gt;requests&lt;/code&gt;，&lt;code&gt;re&lt;/code&gt;，&lt;code&gt;csv&lt;/code&gt;（必要）&lt;/p&gt;
 &lt;p&gt;正则表达式在线测试工具：&lt;a href=&#34;https://tool.oschina.net/regex&#34;&gt;在线正则表达式测试 (oschina.net)&lt;/a&gt;（非必要）&lt;/p&gt;</description>

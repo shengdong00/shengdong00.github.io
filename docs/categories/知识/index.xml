@@ -2,52 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>知识 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/</link>
+    <link>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/</link>
     <description>Recent content in 知识 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Apr 2024 09:52:09 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Apr 2024 09:52:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献阅读 [April 3rd]</title>
-      <link>https://dong2000.xyz/post/reading-note-20240403/</link>
+      <link>http://localhost:1313/post/reading-note-20240403/</link>
       <pubDate>Wed, 03 Apr 2024 09:52:09 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/reading-note-20240403/</guid>
+      <guid>http://localhost:1313/post/reading-note-20240403/</guid>
       <description>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
- Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
- Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency  Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
+Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp;amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
+Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency.</description>
     </item>
     
     <item>
       <title>文献阅读 [March 6th]——人与自然耦合系统</title>
-      <link>https://dong2000.xyz/post/reading-note-20240306/</link>
+      <link>http://localhost:1313/post/reading-note-20240306/</link>
       <pubDate>Wed, 06 Mar 2024 02:56:58 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/reading-note-20240306/</guid>
+      <guid>http://localhost:1313/post/reading-note-20240306/</guid>
       <description>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
- Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
- Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
+Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units.</description>
     </item>
     
     <item>
       <title>Learning notes on agent-based modelling (ABM)</title>
-      <link>https://dong2000.xyz/post/learning-abm/</link>
+      <link>http://localhost:1313/post/learning-abm/</link>
       <pubDate>Tue, 03 Oct 2023 21:02:53 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/learning-abm/</guid>
+      <guid>http://localhost:1313/post/learning-abm/</guid>
       <description>In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
 I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.</description>
     </item>
     
     <item>
       <title>纤维状颗粒的空气动力学直径误差传递公式</title>
-      <link>https://dong2000.xyz/post/equivalent-diameter-error/</link>
+      <link>http://localhost:1313/post/equivalent-diameter-error/</link>
       <pubDate>Sun, 09 Jul 2023 17:05:28 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/equivalent-diameter-error/</guid>
+      <guid>http://localhost:1313/post/equivalent-diameter-error/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;基于Prodi et al (1982)的纤维颗粒空气动力学等效直径计算公式推导出以纤维颗粒的长度、直径为直接测量变量的等效直径误差传递公式。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -55,30 +56,30 @@ I will introduce the topic with four parts. For the first and second part, we wi
     
     <item>
       <title>SETAR Model</title>
-      <link>https://dong2000.xyz/post/setar-model/</link>
+      <link>http://localhost:1313/post/setar-model/</link>
       <pubDate>Sat, 29 Apr 2023 20:50:34 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/setar-model/</guid>
+      <guid>http://localhost:1313/post/setar-model/</guid>
       <description>&lt;p&gt;SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>偶识Mahalanobis Distance</title>
-      <link>https://dong2000.xyz/post/mahalanobis-distance/</link>
+      <link>http://localhost:1313/post/mahalanobis-distance/</link>
       <pubDate>Sun, 30 Oct 2022 01:20:00 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/mahalanobis-distance/</guid>
+      <guid>http://localhost:1313/post/mahalanobis-distance/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完😢）&lt;/p&gt;
+&lt;p&gt;糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&amp;#x1f622;）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
     <item>
       <title>非期望产出SBM模型的数学推演及Python实现</title>
-      <link>https://dong2000.xyz/post/undesirable_sbm_in_python/</link>
+      <link>http://localhost:1313/post/undesirable_sbm_in_python/</link>
       <pubDate>Wed, 10 Aug 2022 23:00:38 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/undesirable_sbm_in_python/</guid>
+      <guid>http://localhost:1313/post/undesirable_sbm_in_python/</guid>
       <description>带有非期望产出的SBM模型(slacks-based measure)可用于处理多个投入和产出变量的效率测度问题，可用于工业经济绿色发展效率的分析。在绿色发展分析中，需要同时考虑经济收益（期望产出）和负面环境效应（非期望产出）的问题，一方面要提高经济收益，另一方面需要减少污染排放，是投入、期望产出和非期望产出三方权衡的问题。1
 这个帖子记录了和非期望产出SBM模型苦苦斗争一个星期的学习成果。
 数学原理 DEA模型/CCR模型 DEA SBM模型是数据包络分析(Data Envelopment Analysis, DEA)的一种。在DEA模型中，假定存在$n$个可比决策单元(decision making units, DMU)，记为$DMU_j(j=1,2,\dots,n)$；
@@ -88,21 +89,22 @@ I will introduce the topic with four parts. For the first and second part, we wi
 $$ H_k=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}， $$
 限定范围为$H_k\in[0,1]$. 现要求在所有可比决策单元的效率均不超过$1$的条件下，调节权重$[v_1,v_2,\dots,v_m]$和$[u_1,u_2,\dots,u_q]$，使得被评价的单元$DMU_k$效率值最大化。即如下规划模型： $$ \begin{aligned} \max&amp;amp;~~ z=\frac{\sum_{r=1}^qu_rY_{rk}}{\sum_{i=1}^mv_iX_{ik}}\\ s.t.&amp;amp;~~ \frac{\sum_{r=1}^qu_rY_{rj}}{\sum_{i=1}^mv_iX_{ij}}\le1~ (v_i\ge0,u_r\ge0)\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
 该模型所确定的权重系数组合是对于$DMU_k$最有利的。由于$\sum_{i=1}^mv_iX_{ik}&amp;gt;0$，模型的规划条件即为 $$ s.t.~~\sum_{r=1}^qu_rY_{rj}-\sum_{i=1}^mv_iX_{ij}\le0; $$
- 在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
- 投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
+在上述线性规划模型中，所要求的是投入和产出项目的指标权重，在原始意义上就是$\vec u$和$\vec v$。模型指定了一个可比决策单元$DMU_k$，在规划过程中力求这个单元最终的效率评价达到最高。实际应用中，如何选择这个特殊的$DMU$必然会成为问题的关键。或许需要根据决策者的感性判断（或其他手段辅助），选定一个最优的决策单元，或者人为设置一个对照的“理想型”，将其视为效率最高的情形。
+投入导向CCR 令$t=\left(\sum_{i=1}^mv_iX_{ik}\right)^{-1}$，则模型的目标函数为
 $$ \max ~~ z=t\sum_{r=1}^qu_rY_{rk}=\sum_{r=1}^qtu_rY_{rk}, $$
 令$\mu_{r}=tu_r, \nu_{i}=tv_i$，根据$t$的定义可知$\sum_{i=1}^m\nu_iX_{ik}=1$；将规划条件两边同乘$t$，得到
 $$ s.t. ~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0. $$
 从而将非线性规划模型转换为线性规划模型：
-$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$</description>
+$$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;~~ \sum_{r=1}^q\mu_{r}Y_{rj}-\sum_{i=1}^m\nu_{i}X_{ij}\le0~(\mu_r\ge0, \nu_i\ge0)\\ &amp;amp;~~ \sum_{i=1}^m\nu_iX_{ik}=1\\ &amp;amp;~~ i=1,2,\dots,m;~r=1,2,\dots,q;~j=1,2,\dots,n \end{aligned} $$
+其对偶模型为（对偶模型求解过程见文末）</description>
     </item>
     
     <item>
       <title>系统科学与工程复习整理</title>
-      <link>https://dong2000.xyz/post/system_sci_review/</link>
+      <link>http://localhost:1313/post/system_sci_review/</link>
       <pubDate>Sun, 12 Jun 2022 01:30:13 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/system_sci_review/</guid>
+      <guid>http://localhost:1313/post/system_sci_review/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;来自老师的课程资料，请勿商用&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -126,10 +128,10 @@ $$ \begin{aligned} \max &amp;amp;~~ z=\sum_{r=1}^q\mu_{r}Y_{rk}\\ s.t. &amp;amp;
     
     <item>
       <title>梳理系统科学发展历程</title>
-      <link>https://dong2000.xyz/post/hostory_of_system_sci/</link>
+      <link>http://localhost:1313/post/hostory_of_system_sci/</link>
       <pubDate>Fri, 18 Mar 2022 09:37:41 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/hostory_of_system_sci/</guid>
+      <guid>http://localhost:1313/post/hostory_of_system_sci/</guid>
       <description>&lt;h1 id=&#34;系统问题的提出&#34;&gt;系统问题的提出&lt;/h1&gt;
 &lt;p&gt;关于系统、组织和复杂性的性质的问题并不是现代所特有的。正如国际系统工程委员会 (INCOSE) 的先驱和前国际系统科学学会 （ISSS）主席约翰·沃菲尔德所说，&lt;/p&gt;
 &lt;blockquote&gt;

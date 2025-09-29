@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ABM on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/abm/</link>
+    <link>http://localhost:1313/tags/abm/</link>
     <description>Recent content in ABM on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Oct 2023 21:02:53 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/abm/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Oct 2023 21:02:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/abm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning notes on agent-based modelling (ABM)</title>
-      <link>https://dong2000.xyz/post/learning-abm/</link>
+      <link>http://localhost:1313/post/learning-abm/</link>
       <pubDate>Tue, 03 Oct 2023 21:02:53 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/learning-abm/</guid>
+      <guid>http://localhost:1313/post/learning-abm/</guid>
       <description>In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
 I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.</description>
     </item>

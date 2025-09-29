@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sci-Hub on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/sci-hub/</link>
+    <link>http://localhost:1313/tags/sci-hub/</link>
     <description>Recent content in Sci-Hub on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 May 2022 19:27:46 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/sci-hub/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 18 May 2022 19:27:46 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sci-hub/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sci-Hub &#43; Python爬虫实现文献批量下载</title>
-      <link>https://dong2000.xyz/post/crawl_papers_from_scihub/</link>
+      <link>http://localhost:1313/post/crawl_papers_from_scihub/</link>
       <pubDate>Wed, 18 May 2022 19:27:46 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/crawl_papers_from_scihub/</guid>
+      <guid>http://localhost:1313/post/crawl_papers_from_scihub/</guid>
       <description>&lt;center&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220518230710288.png&#34; alt=&#34;image-20220518230710288&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;/center&gt;
 &lt;h1 id=&#34;操作思路&#34;&gt;操作思路&lt;/h1&gt;
 &lt;ul&gt;

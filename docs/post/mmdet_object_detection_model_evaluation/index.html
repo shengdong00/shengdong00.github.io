@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -10,21 +10,21 @@
 <meta name="description" content="使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset.">
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset.">
 <meta name="author" content="Sʜᴇɴɢ Dong">
-<link rel="canonical" href="https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.877d957fe02b1f7a031f35ea12de4515376d4fbd294b218d11e0647d4224857d.css" integrity="sha256-h32Vf&#43;ArH3oDHzXqEt5FFTdtT70pSyGNEeBkfUIkhX0=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.4cb6dde7293c7202004d8e5b0ff189900e27092e3785ab1323830eead980667b.js" integrity="sha256-TLbd5yk8cgIATY5bD/GJkA4nCS43hasTI4MO6tmAZns="
+<link rel="canonical" href="http://localhost:1313/post/mmdet_object_detection_model_evaluation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.79265b46f66f5bcf04b79589bf3d37013f67d61524773508f9719c7dded6d367.css" integrity="sha256-eSZbRvZvW88Et5WJvz03AT9n1hUkdzUI&#43;XGcfd7W02c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.4eed01e448f4569cb57e66d5e3d64b94bf981f8fab7d65ef40caf09fc438ace6.js" integrity="sha256-Tu0B5Ej0Vpy1fmbV49ZLlL&#43;YH4&#43;rfWXvQMrwn8Q4rOY="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://dong2000.xyz/ptr.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://dong2000.xyz/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://dong2000.xyz/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://dong2000.xyz/apple-touch-icon.png">
-<link rel="mask-icon" href="https://dong2000.xyz/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/ptr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/mmdet_object_detection_model_evaluation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,40 +76,40 @@ if (!doNotTrack) {
 <meta property="og:description" content="使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset." />
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/" /><meta property="og:image" content="https://dong2000.xyz/ptr.png"/><meta property="article:section" content="post" />
+<meta property="og:url" content="http://localhost:1313/post/mmdet_object_detection_model_evaluation/" /><meta property="og:image" content="http://localhost:1313/ptr.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2024-05-17T23:29:36+08:00" />
 <meta property="article:modified_time" content="2024-05-17T23:29:36+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dong2000.xyz/ptr.png"/>
+<meta name="twitter:image" content="http://localhost:1313/ptr.png"/>
 
 <meta name="twitter:title" content="自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR"/>
 <meta name="twitter:description" content="使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
-MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset."/>
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset."/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
-      "item": "https://dong2000.xyz/post/"
+      "item": "http://localhost:1313/post/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR",
-      "item": "https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/"
+      "item": "http://localhost:1313/post/mmdet_object_detection_model_evaluation/"
     }
   ]
 }
@@ -120,11 +120,11 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR",
   "name": "自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR",
-  "description": "使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。\n总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。\n需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。\n\rMMDetection官方文档里的normalized confusion matrix，\"background\"分类的真阳性比例一定是0%\r\r需要在main()函数末尾添加的代码为：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print(\u0026#39;\\n===Averaging all classes===\u0026#39;) print(\u0026#39;AP:\u0026#39;, average_precision) print(\u0026#39;AR:\u0026#39;, average_recall) print(\u0026#39;F1:\u0026#39;, f1) print(\u0026#39;Classes\u0026#39;, dataset.",
+  "description": "使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。\n总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。\n需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。\nMMDetection官方文档里的normalized confusion matrix，\"background\"分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print(\u0026#39;\\n===Averaging all classes===\u0026#39;) print(\u0026#39;AP:\u0026#39;, average_precision) print(\u0026#39;AR:\u0026#39;, average_recall) print(\u0026#39;F1:\u0026#39;, f1) print(\u0026#39;Classes\u0026#39;, dataset.",
   "keywords": [
     "MMDetection", "目标检测"
   ],
-  "articleBody": "使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。\n总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。\n需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。\n\rMMDetection官方文档里的normalized confusion matrix，\"background\"分类的真阳性比例一定是0%\r\r需要在main()函数末尾添加的代码为：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print('\\n===Averaging all classes===') print('AP:', average_precision) print('AR:', average_recall) print('F1:', f1) print('Classes', dataset.metainfo['classes'] + ('background', )) print('Precision', precision) print('Recall', recall)   然后按照官方文档的说明，正常运行代码就可以输出结果了。\n1  python tools/analysis_tools/confusion_matrix.py ${CONFIG} ${DETECTION_RESULTS} ${SAVE_DIR} --show   打印内容形如：\n1 2 3 4 5 6 7 8 9 10 11 12  loading annotations into memory... Done (t=0.02s) creating index... index created! [] 14/14, 62.8 task/s, elapsed: 0s, ETA: 0s ===Averaging all classes=== AP: 0.95018367938121 AR: 0.664406462586606 F1: 0.7820042508816204 Classes ('label1', 'label2', 'label3', 'label4', 'background') Precision [0.92405063 0.97506925 0.96411483 0.9375 0. ] Recall [0.65765766 0.80182232 0.79019608 0.40794979 0. ]   ",
+  "articleBody": "使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。\n总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。\n需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。\nMMDetection官方文档里的normalized confusion matrix，\"background\"分类的真阳性比例一定是0% 需要在main()函数末尾添加的代码为：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP + FP) recall = TP / (TP + FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision + average_recall) print('\\n===Averaging all classes===') print('AP:', average_precision) print('AR:', average_recall) print('F1:', f1) print('Classes', dataset.metainfo['classes'] + ('background', )) print('Precision', precision) print('Recall', recall) 然后按照官方文档的说明，正常运行代码就可以输出结果了。\n1 python tools/analysis_tools/confusion_matrix.py ${CONFIG} ${DETECTION_RESULTS} ${SAVE_DIR} --show 打印内容形如：\n1 2 3 4 5 6 7 8 9 10 11 12 loading annotations into memory... Done (t=0.02s) creating index... index created! [\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e] 14/14, 62.8 task/s, elapsed: 0s, ETA: 0s ===Averaging all classes=== AP: 0.95018367938121 AR: 0.664406462586606 F1: 0.7820042508816204 Classes ('label1', 'label2', 'label3', 'label4', 'background') Precision [0.92405063 0.97506925 0.96411483 0.9375 0. ] Recall [0.65765766 0.80182232 0.79019608 0.40794979 0. ] ",
   "wordCount" : "161",
   "inLanguage": "en",
   "datePublished": "2024-05-17T23:29:36+08:00",
@@ -135,14 +135,14 @@ if (!doNotTrack) {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/"
+    "@id": "http://localhost:1313/post/mmdet_object_detection_model_evaluation/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Sheng Dong's website",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://dong2000.xyz/ptr.png"
+      "url": "http://localhost:1313/ptr.png"
     }
   }
 }
@@ -168,8 +168,8 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://dong2000.xyz" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
-                <img src="https://dong2000.xyz/ptr.png" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="波忒利 (Alt + H)" style="font-size:1.2em;">
+                <img src="http://localhost:1313/ptr.png" alt="" aria-label="logo"
                     height="40">波忒利</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -194,7 +194,7 @@ if (!doNotTrack) {
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="https://dong2000.xyz/profile/" title="Profile"
+                        <a href="http://localhost:1313/profile/" title="Profile"
                             aria-label="Profile">Profile</a>
                     </li>
                 </ul>
@@ -202,22 +202,22 @@ if (!doNotTrack) {
         </div>
         <ul id="menu">
             <li>
-                <a href="https://dong2000.xyz/archives/" title="Archive">
+                <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/about/" title="About">
+                <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/links/" title="Links">
+                <a href="http://localhost:1313/links/" title="Links">
                     <span>Links</span>
                 </a>
             </li>
             <li>
-                <a href="https://dong2000.xyz/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -227,7 +227,7 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://dong2000.xyz">Home</a>&nbsp;»&nbsp;<a href="https://dong2000.xyz/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
     <h1 class="post-title">
       自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR
     </h1>
@@ -247,23 +247,23 @@ if (!doNotTrack) {
 <p>需要在<code>main()</code>函数末尾添加的代码为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1"> 1</a>
-</span><span class="lnt" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2"> 2</a>
-</span><span class="lnt" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3"> 3</a>
-</span><span class="lnt" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4"> 4</a>
-</span><span class="lnt" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5"> 5</a>
-</span><span class="lnt" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6"> 6</a>
-</span><span class="lnt" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7"> 7</a>
-</span><span class="lnt" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8"> 8</a>
-</span><span class="lnt" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9"> 9</a>
-</span><span class="lnt" id="hl-0-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-10">10</a>
-</span><span class="lnt" id="hl-0-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-11">11</a>
-</span><span class="lnt" id="hl-0-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-12">12</a>
-</span><span class="lnt" id="hl-0-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-13">13</a>
-</span><span class="lnt" id="hl-0-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-14">14</a>
-</span><span class="lnt" id="hl-0-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-15">15</a>
-</span><span class="lnt" id="hl-0-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-16">16</a>
-</span><span class="lnt" id="hl-0-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-17">17</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1"> 1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2"> 2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3"> 3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4"> 4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5"> 5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6"> 6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7"> 7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8"> 8</a>
+</span><span class="lnt" id="hl-0-9"><a class="lnlinks" href="#hl-0-9"> 9</a>
+</span><span class="lnt" id="hl-0-10"><a class="lnlinks" href="#hl-0-10">10</a>
+</span><span class="lnt" id="hl-0-11"><a class="lnlinks" href="#hl-0-11">11</a>
+</span><span class="lnt" id="hl-0-12"><a class="lnlinks" href="#hl-0-12">12</a>
+</span><span class="lnt" id="hl-0-13"><a class="lnlinks" href="#hl-0-13">13</a>
+</span><span class="lnt" id="hl-0-14"><a class="lnlinks" href="#hl-0-14">14</a>
+</span><span class="lnt" id="hl-0-15"><a class="lnlinks" href="#hl-0-15">15</a>
+</span><span class="lnt" id="hl-0-16"><a class="lnlinks" href="#hl-0-16">16</a>
+</span><span class="lnt" id="hl-0-17"><a class="lnlinks" href="#hl-0-17">17</a>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">TP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">)</span>
@@ -288,41 +288,41 @@ if (!doNotTrack) {
 </div><p>然后按照官方文档的说明，正常运行代码就可以输出结果了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1">1</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python tools/analysis_tools/confusion_matrix.py ${CONFIG}  ${DETECTION_RESULTS}  ${SAVE_DIR} --show
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">python</span> <span class="n">tools</span><span class="o">/</span><span class="n">analysis_tools</span><span class="o">/</span><span class="n">confusion_matrix</span><span class="o">.</span><span class="n">py</span> <span class="o">$</span><span class="p">{</span><span class="n">CONFIG</span><span class="p">}</span>  <span class="o">$</span><span class="p">{</span><span class="n">DETECTION_RESULTS</span><span class="p">}</span>  <span class="o">$</span><span class="p">{</span><span class="n">SAVE_DIR</span><span class="p">}</span> <span class="o">--</span><span class="n">show</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>打印内容形如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1"> 1</a>
-</span><span class="lnt" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2"> 2</a>
-</span><span class="lnt" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3"> 3</a>
-</span><span class="lnt" id="hl-2-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-4"> 4</a>
-</span><span class="lnt" id="hl-2-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-5"> 5</a>
-</span><span class="lnt" id="hl-2-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-6"> 6</a>
-</span><span class="lnt" id="hl-2-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-7"> 7</a>
-</span><span class="lnt" id="hl-2-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-8"> 8</a>
-</span><span class="lnt" id="hl-2-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-9"> 9</a>
-</span><span class="lnt" id="hl-2-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-10">10</a>
-</span><span class="lnt" id="hl-2-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-11">11</a>
-</span><span class="lnt" id="hl-2-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-12">12</a>
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1"> 1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2"> 2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3"> 3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4"> 4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5"> 5</a>
+</span><span class="lnt" id="hl-2-6"><a class="lnlinks" href="#hl-2-6"> 6</a>
+</span><span class="lnt" id="hl-2-7"><a class="lnlinks" href="#hl-2-7"> 7</a>
+</span><span class="lnt" id="hl-2-8"><a class="lnlinks" href="#hl-2-8"> 8</a>
+</span><span class="lnt" id="hl-2-9"><a class="lnlinks" href="#hl-2-9"> 9</a>
+</span><span class="lnt" id="hl-2-10"><a class="lnlinks" href="#hl-2-10">10</a>
+</span><span class="lnt" id="hl-2-11"><a class="lnlinks" href="#hl-2-11">11</a>
+</span><span class="lnt" id="hl-2-12"><a class="lnlinks" href="#hl-2-12">12</a>
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">loading annotations into memory...
-</span></span><span class="line"><span class="cl">Done (t=0.02s)
-</span></span><span class="line"><span class="cl">creating index...
-</span></span><span class="line"><span class="cl">index created!
-</span></span><span class="line"><span class="cl">[&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;] 14/14, 62.8 task/s, elapsed: 0s, ETA:     0s
-</span></span><span class="line"><span class="cl">===Averaging all classes===
-</span></span><span class="line"><span class="cl">AP: 0.95018367938121
-</span></span><span class="line"><span class="cl">AR: 0.664406462586606
-</span></span><span class="line"><span class="cl">F1: 0.7820042508816204
-</span></span><span class="line"><span class="cl">Classes (&#39;label1&#39;, &#39;label2&#39;, &#39;label3&#39;, &#39;label4&#39;, &#39;background&#39;)
-</span></span><span class="line"><span class="cl">Precision [0.92405063 0.97506925 0.96411483 0.9375     0.        ]
-</span></span><span class="line"><span class="cl">Recall [0.65765766 0.80182232 0.79019608 0.40794979 0.        ]
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">loading</span> <span class="n">annotations</span> <span class="n">into</span> <span class="n">memory</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Done</span> <span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">0.02</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">creating</span> <span class="n">index</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="n">created</span><span class="o">!</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="p">]</span> <span class="mi">14</span><span class="o">/</span><span class="mi">14</span><span class="p">,</span> <span class="mf">62.8</span> <span class="n">task</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">elapsed</span><span class="p">:</span> <span class="mi">0</span><span class="n">s</span><span class="p">,</span> <span class="n">ETA</span><span class="p">:</span>     <span class="mi">0</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="o">===</span><span class="n">Averaging</span> <span class="n">all</span> <span class="n">classes</span><span class="o">===</span>
+</span></span><span class="line"><span class="cl"><span class="n">AP</span><span class="p">:</span> <span class="mf">0.95018367938121</span>
+</span></span><span class="line"><span class="cl"><span class="n">AR</span><span class="p">:</span> <span class="mf">0.664406462586606</span>
+</span></span><span class="line"><span class="cl"><span class="n">F1</span><span class="p">:</span> <span class="mf">0.7820042508816204</span>
+</span></span><span class="line"><span class="cl"><span class="n">Classes</span> <span class="p">(</span><span class="s1">&#39;label1&#39;</span><span class="p">,</span> <span class="s1">&#39;label2&#39;</span><span class="p">,</span> <span class="s1">&#39;label3&#39;</span><span class="p">,</span> <span class="s1">&#39;label4&#39;</span><span class="p">,</span> <span class="s1">&#39;background&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Precision</span> <span class="p">[</span><span class="mf">0.92405063</span> <span class="mf">0.97506925</span> <span class="mf">0.96411483</span> <span class="mf">0.9375</span>     <span class="mf">0.</span>        <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Recall</span> <span class="p">[</span><span class="mf">0.65765766</span> <span class="mf">0.80182232</span> <span class="mf">0.79019608</span> <span class="mf">0.40794979</span> <span class="mf">0.</span>        <span class="p">]</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -331,16 +331,16 @@ if (!doNotTrack) {
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://dong2000.xyz/tags/mmdetection/">MMDetection</a></li>
-      <li><a href="https://dong2000.xyz/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/">目标检测</a></li>
+      <li><a href="http://localhost:1313/tags/mmdetection/">MMDetection</a></li>
+      <li><a href="http://localhost:1313/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/">目标检测</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://dong2000.xyz/post/longbeach2024/">
+  <a class="prev" href="http://localhost:1313/post/longbeach2024/">
     <span class="title">« Prev</span>
     <br>
     <span>2024年8月，长滩</span>
   </a>
-  <a class="next" href="https://dong2000.xyz/post/install_ssd/">
+  <a class="next" href="http://localhost:1313/post/install_ssd/">
     <span class="title">Next »</span>
     <br>
     <span>拆机加硬盘，新电脑已是老油条了</span>
@@ -352,7 +352,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2025 <a href="http://localhost:1313/">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

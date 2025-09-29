@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>人 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E4%BA%BA/</link>
+    <link>http://localhost:1313/tags/%E4%BA%BA/</link>
     <description>Recent content in 人 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Jan 2023 00:02:18 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Jan 2023 00:02:18 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>失败者应该缄默，像种子</title>
-      <link>https://dong2000.xyz/post/on-pilote-de-guerre/</link>
+      <link>http://localhost:1313/post/on-pilote-de-guerre/</link>
       <pubDate>Fri, 27 Jan 2023 00:02:18 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/on-pilote-de-guerre/</guid>
+      <guid>http://localhost:1313/post/on-pilote-de-guerre/</guid>
       <description>&lt;p&gt;——读《空军飞行员》（圣-埃克絮佩里）。&lt;/p&gt;
 &lt;p&gt;像大多数人一样，我对圣-埃克絮佩里的印象来源于他那篇家喻户晓的《小王子》。可惜那时候年龄尚小，理解有限；而各类阅读理解、名著导读等等又早已把《小王子》反复解读，将它的深层含义解剖出来并以标准（却并不诱人）的方式呈现在了面前。因此，我真正为圣-埃克絮佩里的文字所震撼到，是偶然读到他的《夜航》。虽然小说中所描述的航班🛩以死亡作为其失败的结局，但飞行员在坠毁前的最后一刻冲出乌云，在灿烂夜空下宛如流星🌠一般的谢幕，在我的心中留下了无法磨灭的画面。&lt;/p&gt;</description>
     </item>
