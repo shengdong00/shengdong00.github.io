@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computational Text Analysis on Sheng Dong&#39;s website</title>
-    <link>http://localhost:1313/tags/computational-text-analysis/</link>
+    <link>https://dong2000.xyz/tags/computational-text-analysis/</link>
     <description>Recent content in Computational Text Analysis on Sheng Dong&#39;s website</description>
     <image>
-      <url>http://localhost:1313/ptr.png</url>
-      <link>http://localhost:1313/ptr.png</link>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 14:37:30 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/computational-text-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 14:37:30 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/computational-text-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The conceptual evolution of green building in the 21st century – textual changes in LEED</title>
-      <link>http://localhost:1313/post/textual-analysis-on-leed/</link>
+      <link>https://dong2000.xyz/post/textual-analysis-on-leed/</link>
       <pubDate>Tue, 03 Jan 2023 14:37:30 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/textual-analysis-on-leed/</guid>
+      <guid>https://dong2000.xyz/post/textual-analysis-on-leed/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;The conceptual evolution of green building is reflected in historical versions of green building rating tools. Computational text analysis on historical versions of LEED revealed changes in the category systems and textual contents, which reflects how LEED’s green building concept has evolved in the 21st century.&lt;/p&gt;
 &lt;/blockquote&gt;

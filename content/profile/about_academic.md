@@ -3,7 +3,7 @@ title: "About Sʜᴇɴɢ Dong"
 date:
 draft: false
 mermaid: false
-ShowToc: true
+ShowToc: false
 tocopen: ture
 echarts: true
 ShowReadingTime: true
@@ -12,11 +12,17 @@ language: profile
 summary:
 ---
 
+My name is SHENG Dong and I am a 3rd year PhD student at Westlake University (joint program with Zhejiang University). I am also a visiting student at Agroscope (Changins). My research interest lies in the sustainability and environmental pressures on agricultural systems. I am passionate about applying cutting-edge technologies such as artificial intelligence to the quantitative analysis of ecological and environmental issues. I believe that knowledge and conscience are the keys in our essential quest to understand the relationship between humanity and nature.
 
+My work is supervised by Thomas Cherico WANGER (group leader at Agroscope) and LI Ling (chair professor at Westlake University). Currently, I'm working on the modelling of micropalstic fragmentation and source estimation in agricultural soils. I also work(ed) on pollinator behavior, computer vision, and ecosystem monitoring. I have published several papers on top/high tier journals such as *Nature Communications*. For details please **see my CV [here](https://dong2000.xyz/profile/CV_ShengDong.pdf)**.
 
-I am a 3rd year PhD student at Westlake University (joint program with Zhejiang University). I am also a visiting student at Agroscope (Changins). My research interest lies in the sustainability and environmental pressures on agricultural systems. I am passionate about applying cutting-edge technologies such as artificial intelligence to the quantitative analysis of ecological and environmental issues. I believe that knowledge and conscience are the keys in our essential quest to understand the relationship between humanity and nature.
-
-My work is supervised by Thomas Cherico Wanger (group leader at Agroscope) and Ling Li (chair professor at Westlake University). Currently, I'm working on the modelling of micropalstic fragmentation and source estimation in agricultural soils. I have published several papers on top/high tier journals such as *Nature Communications*. For details please **see my CV [here](https://dong2000.xyz/profile/CV_ShengDong.pdf)**.
+<center>
+    <table><tr>
+        <td><img src="/images/aboutme1.jpg"/></td>
+        <td><img src="/images/aboutme2.jpg"/></td>
+        <td><img src="/images/aboutme5.jpg"/></td>
+    </tr></table>
+</center>
 
 In my leisure time, I enjoy spending time with my partner, movies, skateboards,  guitars, and books. My favorite ones include Huxley's *Brave New World*, Fitzgerald's *The Great Gatsby*, and Asimov's *Foundation* series.
 
