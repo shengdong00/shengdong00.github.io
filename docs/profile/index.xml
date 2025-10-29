@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/profile/</link>
-    <description>Recent content on Sheng Dong&#39;s website</description>
+    <title>Profiles on Sheng Dong&#39;s website</title>
+    <link>http://localhost:1313/profile/</link>
+    <description>Recent content in Profiles on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>profile</language><atom:link href="https://dong2000.xyz/profile/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost:1313/profile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Sʜᴇɴɢ Dong</title>
+      <link>http://localhost:1313/profile/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/profile/about/</guid>
+      <description>I am a 3rd year PhD student at Westlake University (joint program with Zhejiang University). I am also a visiting student at Agroscope (Changins). My research interest lies in the sustainability and environmental pressures on agricultural systems. I am passionate about applying cutting-edge technologies such as artificial intelligence to the quantitative analysis of ecological and environmental issues. I believe that knowledge and conscience are the keys in our essential quest to understand the relationship between humanity and nature.</description>
+    </item>
+    
   </channel>
 </rss>

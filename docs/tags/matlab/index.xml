@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Matlab on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/matlab/</link>
+    <link>http://localhost:1313/tags/matlab/</link>
     <description>Recent content in Matlab on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Oct 2022 16:17:15 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 16:17:15 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Matlab中使用进度条</title>
-      <link>https://dong2000.xyz/post/matlab_bar/</link>
+      <link>http://localhost:1313/post/matlab_bar/</link>
       <pubDate>Sat, 15 Oct 2022 16:17:15 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/matlab_bar/</guid>
+      <guid>http://localhost:1313/post/matlab_bar/</guid>
       <description>&lt;p&gt;最近经常要跑一些很耗时的matlab脚本，命令行窗口里又需要不断输出信息，不方便直接看运行进度。需要搞一个独立的进度条来显示告诉我们脚本运行的情况。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>自回归滑动平均模型预测全球CO2浓度变化</title>
-      <link>https://dong2000.xyz/post/amra_co2/</link>
+      <link>http://localhost:1313/post/amra_co2/</link>
       <pubDate>Wed, 27 Apr 2022 03:03:57 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/amra_co2/</guid>
+      <guid>http://localhost:1313/post/amra_co2/</guid>
       <description>&lt;p&gt;自回归滑动平均模型（Autoregressive moving average model，ARMA）是研究时间序列的重要方法，以由自回归模型（简称AR模型）与移动平均模型（简称MA模型）为基础“混合”构成。用AMRA模型预测了在当前趋势下，未来二十年内全球二氧化碳浓度的变化趋势。&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-20220427030941064.png&#34; alt=&#34;image-20220427030941064&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h1 id=&#34;分析过程&#34;&gt;分析过程&lt;/h1&gt;
 &lt;p&gt;数据集：NOAA Earth System Research Laboratories下属的Global Monitoring Laboratory提供的1969年-2022年逐月的二氧化碳浓度变化数据&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://gml.noaa.gov/dv/iadv/graph.php?code=MLO&amp;program=ccgg&amp;type=ts&#34;&gt;数据来源网址&lt;/a&gt;&lt;/p&gt;</description>
