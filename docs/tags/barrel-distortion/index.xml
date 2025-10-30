@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Barrel Distortion on Sheng Dong&#39;s website</title>
-    <link>http://localhost:1313/tags/barrel-distortion/</link>
+    <link>https://dong2000.xyz/tags/barrel-distortion/</link>
     <description>Recent content in Barrel Distortion on Sheng Dong&#39;s website</description>
     <image>
-      <url>http://localhost:1313/ptr.png</url>
-      <link>http://localhost:1313/ptr.png</link>
+      <url>https://dong2000.xyz/ptr.png</url>
+      <link>https://dong2000.xyz/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Nov 2022 22:37:16 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/barrel-distortion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 22:37:16 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/barrel-distortion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>简单理想情形下的Barrel distortion</title>
-      <link>http://localhost:1313/post/simple_barrel_disto/</link>
+      <link>https://dong2000.xyz/post/simple_barrel_disto/</link>
       <pubDate>Wed, 16 Nov 2022 22:37:16 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/simple_barrel_disto/</guid>
+      <guid>https://dong2000.xyz/post/simple_barrel_disto/</guid>
       <description>&lt;p&gt;Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。&lt;/p&gt;</description>
     </item>
     
