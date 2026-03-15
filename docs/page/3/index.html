@@ -173,6 +173,24 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>使用自定义的类别和数据集训练了MMDetection的目标检测模型，需要汇报模型的precision, recall等等各项指标。在MMDetection的官网文档里只找到了生成混淆矩阵的代码，但似乎并不支持直接给出其他常见的评价指标（见Github项目的issue#6212和issue#8791。搜索一番后发现CSDN博客上有人分享了如何通过在tools/analysis_tools/confusion_matrix.py的main()函数末尾添加代码，从而得到precision, recall, F1, AP, AR。然而实际运行后发现其实有bug，并且原理上也有一些问题，所以进行了适当修改。
+总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
+需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
+MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset....</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-05-17 23:29:36 +0800 +0800'>May 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
+  <a class="entry-link" aria-label="post link to 自定义计算MMDetection目标检测模型的precision, recall, F1, AP, AR" href="https://dong2000.xyz/post/mmdet_object_detection_model_evaluation/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>拆机加硬盘，新电脑已是老油条了
     </h2>
   </header>
@@ -233,22 +251,6 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
 <span title='2024-04-03 09:52:09 +0800 +0800'>April 3, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
   <a class="entry-link" aria-label="post link to 文献阅读 [April 3rd]" href="https://dong2000.xyz/post/reading-note-20240403/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>文献阅读 [March 6th]——人与自然耦合系统
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
-Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units....</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2024-03-06 02:56:58 +0800 +0800'>March 6, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Sʜᴇɴɢ Dong&nbsp;·&nbsp;</footer>
-  <a class="entry-link" aria-label="post link to 文献阅读 [March 6th]——人与自然耦合系统" href="https://dong2000.xyz/post/reading-note-20240306/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://dong2000.xyz/page/2/">
@@ -261,7 +263,7 @@ Abstract: Integrated studies of coupled human and natural systems reveal new and
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022-2025 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
+    <span>&copy; 2022-2026 <a href="https://dong2000.xyz/">Sheng Dong&#39;s website</a></span>
     <span id="busuanzi_container_site_count">
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

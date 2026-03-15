@@ -145,8 +145,8 @@ params:
         
         Content: >
           <font size=4em>
-          <p align="left"><i>\"If knowledge can create problems, it is not through ignorance that we can solve them.\"</i></p>
-          <p align="right">Issac Asimov</p>
+          <p align="left"><i>« Je j'aime mieux être homme à paradoxes qu'homme à préjugés. »</i></p>
+          <!-- <p align="right">Jean-Jacques Rousseau</p> -->
           </font>
 
     socialIcons:

@@ -12,7 +12,7 @@ summary: about
 
 
 
-### 一些角色标签 :alien:
+#### 一些角色标签 :alien:
 
 2023级西湖大学工学院 环境科学与工程专业(浙江大学联合培养) 博士生
 
@@ -20,120 +20,41 @@ summary: about
 
 2019级浙江大学环境与资源学院 本科生，主修环境科学，辅修工程教育高级班
 
-杭州富阳人，最老的00后
+杭州富阳人
+
+INFJ-T
 
 
 
-### 一些人格标签 :skull:
-
-Type: [**Assertive Logician INTP-A**](https://www.16personalities.com/intp-personality)  <sub>2024 Summer</sub>
-
-
-<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="width: auto; height:200px;"></div>
-<script type="text/javascript">
-    // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('main'));
-    // 指定图表的配置项和数据
-    var option = {
-        // title: {
-        //     text: 'Assertive Logician (INTP-A)'
-        // },
-        tooltip: {},
-        yAxis: [
-          {
-            data: ["Assertive", "Judging","Thinking","Intuitive","Extraverted"],
-            axisTick: {show: false},
-            axisLine: {show: false},
-            axisLabel: {
-              textStyle: {fontSize: 16},
-            }
-          },
-          {
-            data: ["Turbulent","Prospecting","Feeling","Observant","Introverted"],
-            axisTick: {show: false},
-            axisLine: {show: false},
-            axisLabel: {
-              textStyle: {fontSize: 16},
-            }
-          },
-        ],
-        xAxis: {show: false},
-        grid: {
-    	  left: '0',
-          right: '0',
-          bottom: '0',
-          top: '0',
-          containLabel: true
-        },
-        series: [
-          {
-            data: [
-              {value: .61, itemStyle: {color: '#F25E62', borderRadius: 10}},
-              {value: .43, itemStyle: {color: 'lightgrey', borderRadius: 10}},
-              {value: .56, itemStyle: {color: '#33A474', borderRadius: 10}},
-              {value: .66, itemStyle: {color: '#E4AE3A', borderRadius: 10}},
-              {value: .21, itemStyle: {color: 'lightgrey', borderRadius: 10}},
-            ],
-            stack: 'x', type: 'bar', yAxisIndex: 0,  barWidth: '40%',
-          },
-          {
-            data: [
-              {value: .39, itemStyle: {color: 'lightgrey', borderRadius: 10}},
-              {value: .57, itemStyle: {color: '#88619A', borderRadius: 10}},
-              {value: .44, itemStyle: {color: 'lightgrey', borderRadius: 10}},
-              {value: .34, itemStyle: {color: 'lightgrey', borderRadius: 10}},
-              {value: .79, itemStyle: {color: '#4298B4', borderRadius: 10}},
-            ],
-            stack: 'x', type: 'bar', yAxisIndex: 1,  barWidth: '40%'
-          },
-          {
-            type: "scatter", symbolSize: 20, 
-            data: [
-                {value: .61, itemStyle: {color: '#F25E62', borderColor: "white", borderWidth: 2, opacity: 1}},
-                {value: .43, itemStyle: {color: '#88619A', borderColor: "white", borderWidth: 2, opacity: 1}},
-                {value: .56, itemStyle: {color: '#33A474', borderColor: "white", borderWidth: 2, opacity: 1}},
-                {value: .66, itemStyle: {color: '#E4AE3A', borderColor: "white", borderWidth: 2, opacity: 1}},
-                {value: .21, itemStyle: {color: '#4298B4', borderColor: "white", borderWidth: 2, opacity: 1}},
-            ]
-          }
-        ]
-    };
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
-</script>
-
-
-### 几句呓语 :pill:
-
-我自认是一个科学主义且功利主义的人，虽然并不能完整地总结出这二者的内涵。或许这两个“主义”在一般意义上并不是个好词，但是我有一些个人化的解读<s>（歪解）</s>。
-
-科学主义大概来自于从小到大的自然科学教育，以及随之而来的试图拆解问题并做出唯物解读的思考习惯。我很喜欢擅自将这一价值观延伸解读成实事求是、谦逊、冷静、目标明确（或许已经偏离科学主义的本质了啊喂:sweat_smile:）。一般来说，scientism被质疑是落入了用科学技术替代价值判断的窠臼，所以用这样带有争议的词也算是一种自嘲和训诫，要时刻反省自己是否在对科技的偏执追求中丢失了最基本的人之常情，反省自己是否从相信科学变成了迷信科学。
-
-而至于功利主义，似乎还应该加上两个修饰：群体的、持续的功利主义。可以把这看成生物的趋利避害本能、社会人的道德感和科学理性的混合产物。我不认为所谓“让世界更美好”的信念有多么高尚，但是我为自己抱有这样的想法感到合乎情理。虽然它包含了人类中心主义和擅自定义优劣的傲慢，但从渺小的个体来说，这也已经足够指引我们保持超越自我的视角，足够耗费一生的精力了。
-
-> If knowledge can create problems, it is not through ignorance that we can solve them.
-
-**继续去努力做一些让这个世界变得更好的事情​​，同时也继续寻找所谓的“更好”究竟意味着什么吧。**
-
-
-
-### 几本闲书 :books:
+#### 几本闲书 :books:
 
 - [x] **神们自己** [美]艾萨克·阿西莫夫
 - [x] **空军飞行员** [法]圣·埃克絮佩里
-- [ ] **The Open Veins of Latin America.** [Uruguay]Eduardo Galeano
 - [x] **永恒的终结** [美]艾萨克·阿西莫夫
 - [x] **变动的城市** [美]阿诺德·汤因比
-- [ ] **翦商** 李硕
+- [x] **翦商** 李硕
 - [x] **流浪苍穹** 郝景芳
 - [x] **泥潭** 刘楚昕
+- [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
+- [ ] **基督山伯爵** [法]大仲马
 
 <sub>这里是建站以来的阅读书目，读完了就会打勾</sub>
 
 
 
-### 网站历史 :computer:
+#### 爱听的:guitar:
+
+【Suede】 【Green Day】【万能青年旅店】 【The Strokes】 【普信主义】 【就木异象】 【James Blunt】 【门尼】 【草东没有派对】 【Vaundy】 【高桥优】 【闫泽欢】 【犬儒乐队】 【铁皮软糖】 【椿乐队】 【DOUDOU】 
+
+
+
+#### 玩些啥？:joystick:
+
+【都市天际线】    <s>【空洞骑士】</s>    【空洞骑士: 丝之歌】    <s>【黑神话: 悟空】</s>    <s>【GTA5】</s>    <s>【刺客信条2】</s>    <s>【刺客信条: 兄弟会】</s>    【刺客信条: 启示录】
+
+
+
+#### 网站历史 :computer:
 
 - 2022-03-20    使用Gitee Pages发布，域名https://dongsheng2000.gitee.io[现已失效]
 - 2022-08-22    添加友链页面，参考：[北宸 | Hexo NexT主题自定义友链页面](https://www.liaofuzhan.com/posts/1123041323.html)

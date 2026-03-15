@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dong2000.xyz/post/</loc>
-    <lastmod>2025-10-29T00:12:49+08:00</lastmod>
+    <lastmod>2026-03-15T16:07:10+01:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/</loc>
-    <lastmod>2025-10-29T00:12:49+08:00</lastmod>
+    <lastmod>2026-03-15T16:07:10+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="profile"
@@ -17,6 +17,9 @@
                 hreflang="en"
                 href="https://dong2000.xyz/"
                 />
+  </url><url>
+    <loc>https://dong2000.xyz/post/skipping-ahead/</loc>
+    <lastmod>2026-03-15T16:07:10+01:00</lastmod>
   </url><url>
     <loc>https://dong2000.xyz/tags/</loc>
     <lastmod>2025-10-29T00:12:49+08:00</lastmod>
