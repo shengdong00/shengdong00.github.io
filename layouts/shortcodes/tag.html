@@ -1,0 +1,7 @@
+{{- $text := .Inner | markdownify | chomp -}}
+{{- $past := .Get "past" | default false -}}
+{{- $class := "tag" -}}
+{{- if $past -}}
+    {{- $class = "tag tag-past" -}}
+{{- end -}}
+<span class="{{ $class }}">{{ $text }}</span>

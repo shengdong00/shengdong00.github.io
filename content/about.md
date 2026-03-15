@@ -12,49 +12,44 @@ summary: about
 
 
 
-#### 一些角色标签 :alien:
+### 一些标签 :alien:
 
-2023级西湖大学工学院 环境科学与工程专业(浙江大学联合培养) 博士生
-
-瑞士联邦农业生态研究所 访问学生
-
-2019级浙江大学环境与资源学院 本科生，主修环境科学，辅修工程教育高级班
+2023级西湖大学工学院 博士生，瑞士联邦农业生态研究所 访问学生
 
 杭州富阳人
 
 INFJ-T
 
 
-
-#### 几本闲书 :books:
+### 几本闲书 :books:
 
 - [x] **神们自己** [美]艾萨克·阿西莫夫
-- [x] **空军飞行员** [法]圣·埃克絮佩里
+- [x] **空军飞行员** [法]圣·埃克絮佩里 [:black_nib:](/post/on-pilote-de-guerre/)
 - [x] **永恒的终结** [美]艾萨克·阿西莫夫
 - [x] **变动的城市** [美]阿诺德·汤因比
 - [x] **翦商** 李硕
-- [x] **流浪苍穹** 郝景芳
-- [x] **泥潭** 刘楚昕
+- [x] **流浪苍穹** 郝景芳 [:black_nib:](/post/liu-lang-cang-qiong/)
+- [x] **泥潭** 刘楚昕 [:black_nib:](/post/on_quagmire/)
 - [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
 - [ ] **基督山伯爵** [法]大仲马
 
-<sub>这里是建站以来的阅读书目，读完了就会打勾</sub>
 
 
 
-#### 爱听的:guitar:
 
-【Suede】 【Green Day】【万能青年旅店】 【The Strokes】 【普信主义】 【就木异象】 【James Blunt】 【门尼】 【草东没有派对】 【Vaundy】 【高桥优】 【闫泽欢】 【犬儒乐队】 【铁皮软糖】 【椿乐队】 【DOUDOU】 
+### 爱听的:guitar:
 
-
-
-#### 玩些啥？:joystick:
-
-【都市天际线】    <s>【空洞骑士】</s>    【空洞骑士: 丝之歌】    <s>【黑神话: 悟空】</s>    <s>【GTA5】</s>    <s>【刺客信条2】</s>    <s>【刺客信条: 兄弟会】</s>    【刺客信条: 启示录】
+{{< tag >}}Suede{{< /tag >}} {{< tag >}}Green Day{{< /tag >}}{{< tag >}}The Strokes{{< /tag >}}{{< tag >}}万能青年旅店{{< /tag >}}{{< tag >}}草东没有派对{{< /tag >}} {{< tag >}}DOUDOU{{< /tag >}} {{< tag >}}普信主义{{< /tag >}} {{< tag >}}犬儒乐队{{< /tag >}} {{< tag >}}椿乐队{{< /tag >}}{{< tag >}}铁皮软糖{{< /tag >}} {{< tag >}}就木异象{{< /tag >}}{{< tag >}}门尼{{< /tag >}} {{< tag >}}Vaundy{{< /tag >}} {{< tag >}}高桥优{{< /tag >}} {{< tag >}}James Blunt{{< /tag >}}{{< tag >}}闫泽欢{{< /tag >}}
 
 
 
-#### 网站历史 :computer:
+### 玩些啥？:joystick:
+
+{{< tag >}}都市天际线{{< /tag >}} {{< tag past=true >}}黑神话: 悟空{{< /tag >}}    {{< tag past=true >}}空洞骑士{{< /tag >}}   {{< tag >}}空洞骑士: 丝之歌{{< /tag >}} {{< tag past=true >}}GTA5{{< /tag >}}    {{< tag past=true >}}刺客信条2{{< /tag >}}    {{< tag past=true >}}刺客信条: 兄弟会{{< /tag >}}    {{< tag >}}刺客信条: 启示录{{< /tag >}}
+
+
+<!--
+### 网站历史 :computer:
 
 - 2022-03-20    使用Gitee Pages发布，域名https://dongsheng2000.gitee.io[现已失效]
 - 2022-08-22    添加友链页面，参考：[北宸 | Hexo NexT主题自定义友链页面](https://www.liaofuzhan.com/posts/1123041323.html)
@@ -71,3 +66,4 @@ INFJ-T
 - 2024-04-11    修复内嵌pdf功能的bug，参考[Issue #44 · anvithks/hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode/issues/44)
 - 2024-08-29    在`/layouts/partials/svg.html`中添加自定义social icon
 - 2025-02-10    Hugo版本更新到v0.123.8。由于v0.124开始常用的命令有所改变，故以后不再更新网站架构（除非整个网站进行重大改版）
+-->
