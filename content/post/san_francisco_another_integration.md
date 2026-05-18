@@ -21,9 +21,9 @@ cover:
 Alcatraz。他们赶走原住民激进分子。<br>涂鸦被印上国家公园明信片，<br>救赎之道藏进纪念品商店。
 
 
-Haight Street。全市大停电瘫痪了交通与消费。<br>抗议的歌谣放进博物馆，<br>老嬉皮士变成vintage店掌柜。
+Haight Street。全市大停电瘫痪了交通与消费。<br>抗议的歌谣放进博物馆，<br>老嬉皮士变成vintage店的掌柜。
 
-观鲸船看不到鲸鱼，<br>码头上停满了海鸥，<br>我眼前覆盖着浓雾。
+观鲸船看不到鲸鱼，<br>码头上停满了海鸥，<br>一座生气蓬勃的墓碑。
 
 <sub>Visited in Dec 2025. Written in May 2026.</sub>
 
