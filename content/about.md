@@ -31,7 +31,8 @@ INFJ-T
 - [x] **流浪苍穹** 郝景芳 [:black_nib:](/post/liu-lang-cang-qiong/)
 - [x] **泥潭** 刘楚昕 [:black_nib:](/post/on_quagmire/)
 - [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
-- [ ] **基督山伯爵** [法]大仲马
+- [x] **基督山伯爵** [法]大仲马
+- [ ] **傅科摆** [意]翁贝托·埃科 
 
 
 
@@ -39,7 +40,7 @@ INFJ-T
 
 ### 爱听的:guitar:
 
-{{< tag >}}Suede{{< /tag >}} {{< tag >}}Green Day{{< /tag >}}{{< tag >}}The Strokes{{< /tag >}}{{< tag >}}万能青年旅店{{< /tag >}}{{< tag >}}草东没有派对{{< /tag >}} {{< tag >}}DOUDOU{{< /tag >}} {{< tag >}}普信主义{{< /tag >}} {{< tag >}}犬儒乐队{{< /tag >}} {{< tag >}}椿乐队{{< /tag >}}{{< tag >}}铁皮软糖{{< /tag >}} {{< tag >}}就木异象{{< /tag >}}{{< tag >}}门尼{{< /tag >}} {{< tag >}}Vaundy{{< /tag >}} {{< tag >}}高桥优{{< /tag >}} {{< tag >}}James Blunt{{< /tag >}}{{< tag >}}闫泽欢{{< /tag >}}
+{{< tag >}}刘森{{< /tag >}}{{< tag >}}浅水ShallowEnd{{< /tag >}}{{< tag >}}柳爽{{< /tag >}}{{< tag >}}Suede{{< /tag >}} {{< tag >}}Green Day{{< /tag >}}{{< tag >}}The Strokes{{< /tag >}}{{< tag >}}万能青年旅店{{< /tag >}}{{< tag >}}Кино{{< /tag >}}{{< tag >}}DOUDOU{{< /tag >}} {{< tag >}}普信主义{{< /tag >}} {{< tag >}}犬儒乐队{{< /tag >}} {{< tag >}}椿乐队{{< /tag >}}{{< tag >}}铁皮软糖{{< /tag >}} {{< tag >}}就木异象{{< /tag >}}{{< tag >}}门尼{{< /tag >}} {{< tag >}}Vaundy{{< /tag >}} {{< tag >}}高桥优{{< /tag >}} {{< tag >}}James Blunt{{< /tag >}}
 
 
 
