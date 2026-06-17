@@ -23,17 +23,16 @@ INFJ-T
 
 ### 几本闲书 :books:
 
-- [x] **神们自己** [美]艾萨克·阿西莫夫
-- [x] **空军飞行员** [法]圣·埃克絮佩里 [:black_nib:](/post/on-pilote-de-guerre/)
-- [x] **永恒的终结** [美]艾萨克·阿西莫夫
-- [x] **变动的城市** [美]阿诺德·汤因比
-- [x] **翦商** 李硕
-- [x] **流浪苍穹** 郝景芳 [:black_nib:](/post/liu-lang-cang-qiong/)
-- [x] **泥潭** 刘楚昕 [:black_nib:](/post/on_quagmire/)
+- [ ] **美丽新世界的美德与见识 (Ends and Means)** [英]阿道司·赫胥黎
+- [x] **傅科摆 (Il Pendolo di Foucault)** [意]翁贝托·埃科
+- [x] **基督山伯爵 (Compte de Mont Christo)** [法]大仲马
 - [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
-- [x] **基督山伯爵** [法]大仲马
-- [ ] **傅科摆** [意]翁贝托·埃科 
-
+- [x] **泥潭** 刘楚昕 [:black_nib:](/post/on_quagmire/)
+- [x] **流浪苍穹** 郝景芳 [:black_nib:](/post/liu-lang-cang-qiong/)
+- [x] **翦商** 李硕
+- [x] **永恒的终结 (The End of Eternity)** [美]艾萨克·阿西莫夫
+- [x] **空军飞行员 (Pilote de Guerre)** [法]圣·埃克絮佩里 [:black_nib:](/post/on-pilote-de-guerre/)
+- [x] **神们自己 (The Gods Themselves)** [美]艾萨克·阿西莫夫
 
 
 
