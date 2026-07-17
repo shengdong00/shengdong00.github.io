@@ -27,11 +27,11 @@ INFJ-T
 - [x] **傅科摆 (Il Pendolo di Foucault)** [意]翁贝托·埃科
 - [x] **基督山伯爵 (Compte de Mont Christo)** [法]大仲马
 - [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
-- [x] **泥潭** 刘楚昕 [:black_nib:](/post/on_quagmire/)
-- [x] **流浪苍穹** 郝景芳 [:black_nib:](/post/liu-lang-cang-qiong/)
+- [x] **泥潭** 刘楚昕 [:black_nib:读后感](/post/on_quagmire/)
+- [x] **流浪苍穹** 郝景芳 [:black_nib:读后感](/post/liu-lang-cang-qiong/)
 - [x] **翦商** 李硕
 - [x] **永恒的终结 (The End of Eternity)** [美]艾萨克·阿西莫夫
-- [x] **空军飞行员 (Pilote de Guerre)** [法]圣·埃克絮佩里 [:black_nib:](/post/on-pilote-de-guerre/)
+- [x] **空军飞行员 (Pilote de Guerre)** [法]圣·埃克絮佩里 [:black_nib:读后感](/post/on-pilote-de-guerre/)
 - [x] **神们自己 (The Gods Themselves)** [美]艾萨克·阿西莫夫
 
 
@@ -39,16 +39,42 @@ INFJ-T
 
 ### 爱听的:guitar:
 
-{{< tag >}}刘森{{< /tag >}}{{< tag >}}浅水ShallowEnd{{< /tag >}}{{< tag >}}柳爽{{< /tag >}}{{< tag >}}Suede{{< /tag >}} {{< tag >}}Green Day{{< /tag >}}{{< tag >}}The Strokes{{< /tag >}}{{< tag >}}万能青年旅店{{< /tag >}}{{< tag >}}Кино{{< /tag >}}{{< tag >}}DOUDOU{{< /tag >}} {{< tag >}}普信主义{{< /tag >}} {{< tag >}}犬儒乐队{{< /tag >}} {{< tag >}}椿乐队{{< /tag >}}{{< tag >}}铁皮软糖{{< /tag >}} {{< tag >}}就木异象{{< /tag >}}{{< tag >}}门尼{{< /tag >}} {{< tag >}}Vaundy{{< /tag >}} {{< tag >}}高桥优{{< /tag >}} {{< tag >}}James Blunt{{< /tag >}}
+{{< tag >}}刘森{{< /tag >}}
+{{< tag >}}浅水ShallowEnd{{< /tag >}}
+{{< tag >}}柳爽{{< /tag >}}
+{{< tag >}}Suede{{< /tag >}} 
+{{< tag >}}Green Day{{< /tag >}}
+{{< tag >}}The Strokes{{< /tag >}}
+{{< tag >}}万能青年旅店{{< /tag >}}
+{{< tag >}}Кино{{< /tag >}}
+{{< tag >}}DOUDOU{{< /tag >}} 
+{{< tag >}}普信主义{{< /tag >}} 
+{{< tag >}}犬儒乐队{{< /tag >}} 
+{{< tag >}}椿乐队{{< /tag >}}
+{{< tag >}}铁皮软糖{{< /tag >}} 
+{{< tag >}}就木异象{{< /tag >}}
+{{< tag >}}门尼{{< /tag >}} 
+{{< tag >}}Vaundy{{< /tag >}} 
+{{< tag >}}高桥优{{< /tag >}} 
+{{< tag >}}James Blunt{{< /tag >}}
 
 
 
 ### 玩些啥？:joystick:
 
-{{< tag >}}都市天际线{{< /tag >}} {{< tag past=true >}}黑神话: 悟空{{< /tag >}}    {{< tag past=true >}}空洞骑士{{< /tag >}}   {{< tag >}}空洞骑士: 丝之歌{{< /tag >}} {{< tag past=true >}}GTA5{{< /tag >}}    {{< tag past=true >}}刺客信条2{{< /tag >}}    {{< tag past=true >}}刺客信条: 兄弟会{{< /tag >}}    {{< tag >}}刺客信条: 启示录{{< /tag >}}
+{{< tag >}}师父{{< /tag >}}
+{{< tag >}}刺客信条: 启示录{{< /tag >}}
+{{< tag past=true >}}刺客信条: 兄弟会{{< /tag >}}
+{{< tag past=true >}}刺客信条2{{< /tag >}}
+{{< tag past=true >}}GTA5{{< /tag >}}
+{{< tag >}}空洞骑士: 丝之歌{{< /tag >}} 
+{{< tag past=true >}}空洞骑士{{< /tag >}}
+{{< tag past=true >}}黑神话: 悟空{{< /tag >}}
+{{< tag >}}都市天际线{{< /tag >}}
 
 
 <!--
+
 ### 网站历史 :computer:
 
 - 2022-03-20    使用Gitee Pages发布，域名https://dongsheng2000.gitee.io[现已失效]
