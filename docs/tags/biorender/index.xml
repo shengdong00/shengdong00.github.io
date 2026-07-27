@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>BioRender on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/biorender/</link>
+    <link>http://localhost:1313/tags/biorender/</link>
     <description>Recent content in BioRender on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Jul 2023 09:29:42 +0800</lastBuildDate><atom:link href="https://dong2000.xyz/tags/biorender/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jul 2023 09:29:42 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/biorender/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浅试Biorender</title>
-      <link>https://dong2000.xyz/post/try-biorender/</link>
+      <link>http://localhost:1313/post/try-biorender/</link>
       <pubDate>Thu, 06 Jul 2023 09:29:42 +0800</pubDate>
       
-      <guid>https://dong2000.xyz/post/try-biorender/</guid>
+      <guid>http://localhost:1313/post/try-biorender/</guid>
       <description>&lt;p&gt;在写一篇综述论文的时候被推荐了&lt;a href=&#34;https://www.biorender.com/&#34;&gt;BioRender&lt;/a&gt;这一作图工具，尝试了一下发现确实很好用，可以让生物领域的插图制作如有神助。&lt;/p&gt;</description>
     </item>
     

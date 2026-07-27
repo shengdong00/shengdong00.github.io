@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>人类世 on Sheng Dong&#39;s website</title>
-    <link>https://dong2000.xyz/tags/%E4%BA%BA%E7%B1%BB%E4%B8%96/</link>
+    <link>http://localhost:1313/tags/%E4%BA%BA%E7%B1%BB%E4%B8%96/</link>
     <description>Recent content in 人类世 on Sheng Dong&#39;s website</description>
     <image>
-      <url>https://dong2000.xyz/ptr.png</url>
-      <link>https://dong2000.xyz/ptr.png</link>
+      <url>http://localhost:1313/ptr.png</url>
+      <link>http://localhost:1313/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:40:15 +0000</lastBuildDate><atom:link href="https://dong2000.xyz/tags/%E4%BA%BA%E7%B1%BB%E4%B8%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2022 00:40:15 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BA%BA%E7%B1%BB%E4%B8%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Outlook on a balanced &amp; regenerative Anthropocene</title>
-      <link>https://dong2000.xyz/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
+      <link>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
       <pubDate>Sat, 19 Mar 2022 00:40:15 +0000</pubDate>
       
-      <guid>https://dong2000.xyz/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
+      <guid>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
       <description>&lt;p&gt;This is a draft version of course essay from Berkeley Summer Session 2021 (EPS-80).&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Huge environmental changes in my hometown have taken place for the past two decades of fast economic growth and industrialization, which is seen as a rough miniature of entering the Anthropocene. Using examples from class materials, my own experience and the book &lt;em&gt;Under a White Sky&lt;/em&gt;, several key aspects of anthropogenic actions are analyzed briefly, including land use, agriculture, soil remediation and green house gas management. Finally some personal insights and preparations are mentioned.&lt;/p&gt;
-&lt;img src=&#34;https://dong2000.xyz/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
     </item>
     
   </channel>

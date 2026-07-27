@@ -19,25 +19,27 @@ minify:
     # minifyOutput: true
 
 languages:
-  en:
+  blog:
     languageName: Blog
     menu:
         main:
+            - name: Profile home
+              url: ../
             - name: Archive
               url: archives/
-              weight: 5
+              # weight: 5
             # - name: Categ.
             #   url: categories/
             #   weight: 10
             # - name: Tags
             #   url: tags/
-              weight: 10
-            - name: About
-              url: about/
-            - name: Links
-              url: links/
-            - name: Search
-              url: search/
+              # weight: 10
+            - name: About me
+              url: about_interests/
+            # - name: Links
+            #   url: links/
+            # - name: Search
+            #   url: ../search/
     params:
       env: production # to enable google analytics, opengraph, twitter-cards and schema.
       description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
@@ -58,8 +60,14 @@ languages:
       images: ["ptr.png"]
       profileMode:
           enabled: false
-  profile:
+  en:
+    languageName: Profile
+    menu:
+        main:
+            - name: Profile home
+              url: /
     params:
+      ShowShareButtons: false
       profileMode:
           enabled: true
           title: Sʜᴇɴɢ Dong <a style="font-size:0.9em">盛 东</a>
@@ -72,12 +80,14 @@ languages:
           imageWidth: 200
           imageHeight: 200
           buttons:
-              - name: About me
-                url: /profile/about/
-              - name: Curriculum Vitae
-                url: CV_ShengDong.pdf
+              - name: About
+                url: /about
+              - name: Projects
+                url: /projects
+              - name: CV
+                url: /files/CV_ShengDong.pdf
               - name: Blog
-                url: /
+                url: /blog
       socialIcons:
         - name: email
           url: mailto:sheng-dong@outlook.com
@@ -107,12 +117,12 @@ taxonomies:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: "Sheng, D."
+    # author: "Sheng, D."
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
@@ -141,12 +151,13 @@ params:
     #           url: about
 
     homeInfoParams:
-        Title: "波忒利的博客"
+        Title: "凡言皆呓"
         
         Content: >
           <font size=4em>
-          <p align="left"><i>« Je j'aime mieux être homme à paradoxes qu'homme à préjugés. »</i></p>
-          <!-- <p align="right">Jean-Jacques Rousseau</p> -->
+          过去心不可得<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在心不可得<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未来心不可得
           </font>
 
     socialIcons:
