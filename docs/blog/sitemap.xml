@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/post/</loc>
+    <loc>https://shdong.net/blog/post/</loc>
     <lastmod>2026-05-13T14:03:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/post/"
+                href="https://shdong.net/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="blog"
-                href="http://localhost:1313/blog/post/"
+                href="https://shdong.net/blog/post/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://shdong.net/blog/</loc>
     <lastmod>2026-05-13T14:03:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://shdong.net/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="blog"
-                href="http://localhost:1313/blog/"
+                href="https://shdong.net/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/post/san_francisco_another_integration/</loc>
+    <loc>https://shdong.net/blog/post/san_francisco_another_integration/</loc>
     <lastmod>2026-05-13T14:03:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/post/skipping-ahead/</loc>
+    <loc>https://shdong.net/blog/post/skipping-ahead/</loc>
     <lastmod>2026-03-15T16:07:10+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/about_interests/</loc>
+    <loc>https://shdong.net/blog/about_interests/</loc>
     <lastmod>2022-11-01T15:31:30+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/archive/</loc>
+    <loc>https://shdong.net/blog/archive/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://shdong.net/blog/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://shdong.net/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="blog"
-                href="http://localhost:1313/blog/categories/"
+                href="https://shdong.net/blog/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/series/</loc>
+    <loc>https://shdong.net/blog/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://shdong.net/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="blog"
-                href="http://localhost:1313/blog/series/"
+                href="https://shdong.net/blog/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://shdong.net/blog/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://shdong.net/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="blog"
-                href="http://localhost:1313/blog/tags/"
+                href="https://shdong.net/blog/tags/"
                 />
   </url>
 </urlset>

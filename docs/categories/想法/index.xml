@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>想法 on Sheng Dong&#39;s website</title>
-    <link>http://localhost:1313/categories/%E6%83%B3%E6%B3%95/</link>
+    <link>https://shdong.net/categories/%E6%83%B3%E6%B3%95/</link>
     <description>Recent content in 想法 on Sheng Dong&#39;s website</description>
     <image>
-      <url>http://localhost:1313/ptr.png</url>
-      <link>http://localhost:1313/ptr.png</link>
+      <url>https://shdong.net/ptr.png</url>
+      <link>https://shdong.net/ptr.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Oct 2023 22:49:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Oct 2023 22:49:25 +0800</lastBuildDate><atom:link href="https://shdong.net/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>不适</title>
-      <link>http://localhost:1313/post/science-philosophy/</link>
+      <link>https://shdong.net/post/science-philosophy/</link>
       <pubDate>Sun, 22 Oct 2023 22:49:25 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/science-philosophy/</guid>
+      <guid>https://shdong.net/post/science-philosophy/</guid>
       <description>&lt;p&gt;这学期选修了《复杂系统理论》这门课。实际的课程内容完全超出了预料的方向——我本以为是各种复杂系统的数学推演和建模，结果讲了好几个礼拜的还原论、本体论和mind-body problem之类的哲学话题。起初我也并不排斥这样的讨论，但随着课堂进行，我开始有越来越强烈的不适感。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>City of Machines</title>
-      <link>http://localhost:1313/post/city-of-machines/</link>
+      <link>https://shdong.net/post/city-of-machines/</link>
       <pubDate>Thu, 11 May 2023 22:47:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/city-of-machines/</guid>
+      <guid>https://shdong.net/post/city-of-machines/</guid>
       <description>&lt;p&gt;城市和机器是一组被紧密捆绑的意象。&lt;/p&gt;
 &lt;p&gt;高中的时候很喜欢郝景芳的《北京折叠》，里边关于城市翻转过程的描写让我印象深刻。“晨光熹微中，一座城市折叠自身，向地面收拢。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>“可控核冬天”vs全球变暖？</title>
-      <link>http://localhost:1313/post/stratospheric-aerosol-injection/</link>
+      <link>https://shdong.net/post/stratospheric-aerosol-injection/</link>
       <pubDate>Sun, 26 Feb 2023 16:23:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/stratospheric-aerosol-injection/</guid>
+      <guid>https://shdong.net/post/stratospheric-aerosol-injection/</guid>
       <description>&lt;p&gt;全球变暖程度超出《巴黎协定》所设立的1.5℃限度越来越成为一件板上钉钉的事情。推动全球能源产业减排转型本就不是一件易事，其中牵扯到太多的利益纠葛和政治冲突。近年来随着疫情和战争冲击，忙于生存的人们更加无暇顾及未来的福祉。长痛不如短痛，与漫长的产业转型相比，一场人造且可控的“核冬天”看上去是一个更有诱惑力的捷径。&lt;/p&gt;
 &lt;p&gt;在核冬天的设想里，大量烟和微尘上升到对流层中上层并截断太阳辐射，引起地面上的漫长寒冷和黑暗。所谓太阳能地球工程，同样是通过各种手段对太阳辐射进行削弱，以期减缓乃至消除温室气体排放带来的全球变暖效应。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -45,52 +45,52 @@
     
     <item>
       <title>失败者应该缄默，像种子</title>
-      <link>http://localhost:1313/post/on-pilote-de-guerre/</link>
+      <link>https://shdong.net/post/on-pilote-de-guerre/</link>
       <pubDate>Fri, 27 Jan 2023 00:02:18 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/on-pilote-de-guerre/</guid>
+      <guid>https://shdong.net/post/on-pilote-de-guerre/</guid>
       <description>&lt;p&gt;——读《空军飞行员》（圣-埃克絮佩里）。&lt;/p&gt;
 &lt;p&gt;像大多数人一样，我对圣-埃克絮佩里的印象来源于他那篇家喻户晓的《小王子》。可惜那时候年龄尚小，理解有限；而各类阅读理解、名著导读等等又早已把《小王子》反复解读，将它的深层含义解剖出来并以标准（却并不诱人）的方式呈现在了面前。因此，我真正为圣-埃克絮佩里的文字所震撼到，是偶然读到他的《夜航》。虽然小说中所描述的航班🛩以死亡作为其失败的结局，但飞行员在坠毁前的最后一刻冲出乌云，在灿烂夜空下宛如流星🌠一般的谢幕，在我的心中留下了无法磨灭的画面。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Elimination of 3 years?</title>
-      <link>http://localhost:1313/post/epidemic-memory/</link>
+      <link>https://shdong.net/post/epidemic-memory/</link>
       <pubDate>Sat, 10 Dec 2022 19:46:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/epidemic-memory/</guid>
+      <guid>https://shdong.net/post/epidemic-memory/</guid>
       <description>&lt;p&gt;This post of &lt;strong&gt;nonsense&lt;/strong&gt; is written in English to avoid potential censorship of speech&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. I write this post as a personal record of the chaos at the end(?) of the strict COVID regulation &amp;ldquo;era&amp;rdquo;, as well as a witness of an ongoing elimination(?) of public discussion. NOTE: I&amp;rsquo;m not quoting any factual sources here, so all will be my personal opinions.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ESG杭州会客厅(Vol.5)所见</title>
-      <link>http://localhost:1313/post/esg-hangzhou-v5/</link>
+      <link>https://shdong.net/post/esg-hangzhou-v5/</link>
       <pubDate>Fri, 28 Oct 2022 21:19:45 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/esg-hangzhou-v5/</guid>
+      <guid>https://shdong.net/post/esg-hangzhou-v5/</guid>
       <description>&lt;p&gt;起初我以为这是一场典型的讲座，就像之前在学校里听到的许许多多学术大咖的讲座一样。&lt;sub&gt;所以还有些纳闷为什么要跑到一个商业中心来举办……&lt;/sub&gt;到现场之后发现并不是。事实上如果我事先查一下活动主题中”ESG“这个缩写的含义，或许就会早点搞明白这是一场把企业、学界、NGO等等所有stakeholders聚到一个屋子内进行交流的事情。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>再读《社会-经济-自然复合生态系统》</title>
-      <link>http://localhost:1313/post/on_socio_economic_natural_system/</link>
+      <link>https://shdong.net/post/on_socio_economic_natural_system/</link>
       <pubDate>Sun, 18 Sep 2022 16:16:51 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/on_socio_economic_natural_system/</guid>
+      <guid>https://shdong.net/post/on_socio_economic_natural_system/</guid>
       <description>&lt;p&gt;早在高中的时候就在生物选修课本上读到过马世骏先生的“生态工程”思想和“社会-经济-自然复合生态系统”的理论，虽然只是寥寥数句，读到这一部分课本的时候却有一种茅塞顿开&amp;#x1f4a1;的感觉，体会到以系统的眼光看待人与自然交互的重要性。（回想起几本高中生物必修与选修课本，确实可以发现整个体系从一开始就在逐渐构建起自然环境与人类活动相互影响的世界观，为引出生态工程这一思想做了知识铺垫和价值引导，确实是费了很多内容编排的功夫。）可以说马先生的思想是我对于环境学的启蒙之一了。&lt;/p&gt;
-&lt;img src=&#34;http://localhost:1313/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
+&lt;img src=&#34;https://shdong.net/images/image-20220918143620625.png&#34; alt=&#34;image-20220918143620625&#34; style=&#34;zoom: 50%;&#34; /&gt;</description>
     </item>
     
     <item>
       <title>Outlook on a balanced &amp; regenerative Anthropocene</title>
-      <link>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
+      <link>https://shdong.net/post/outlook-on-a-balanced-regenerative-anthropocene/</link>
       <pubDate>Sat, 19 Mar 2022 00:40:15 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
+      <guid>https://shdong.net/post/outlook-on-a-balanced-regenerative-anthropocene/</guid>
       <description>&lt;p&gt;This is a draft version of course essay from Berkeley Summer Session 2021 (EPS-80).&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Huge environmental changes in my hometown have taken place for the past two decades of fast economic growth and industrialization, which is seen as a rough miniature of entering the Anthropocene. Using examples from class materials, my own experience and the book &lt;em&gt;Under a White Sky&lt;/em&gt;, several key aspects of anthropogenic actions are analyzed briefly, including land use, agriculture, soil remediation and green house gas management. Finally some personal insights and preparations are mentioned.&lt;/p&gt;
-&lt;img src=&#34;http://localhost:1313/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
+&lt;img src=&#34;https://shdong.net/images/image-20210811000322522.png&#34; alt=&#34;Trajectory of cane toad invasion&#34; style=&#34;zoom: 33%;&#34; /&gt;</description>
     </item>
     
   </channel>

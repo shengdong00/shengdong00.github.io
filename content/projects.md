@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date:
-draft: false
+draft: true
 mermaid: false
 ShowToc: false
 tocopen: true
