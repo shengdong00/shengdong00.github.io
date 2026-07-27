@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date:
-draft: true
+draft: false
 mermaid: false
 ShowToc: false
 tocopen: true
@@ -14,44 +14,39 @@ summary:
 
 ### Modelling plastics
 
-Modelling paper, went to iEMSs conference.
-
-process-based
+Preprint at https://doi.org/10.32942/X2Z40P.
 
 ---
 
+### Pollination re-evaluation
 
-### Pollinaiton re-evaluation
-
-Internship project with Angelina
+Evaluate the economic values and nutrition contribution of pollination services in China using updated pollinator dependency values.
 
 ---
 
 
 ### Global Plastic Treaty
 
-Science-policy interface
-
-Attended the Coalition
+UN Global Plastic Treaty negotiations.
 
 ---
-
 
 ### Pollinators and plastics
 
-The Nat Comms paper. And also the bee box
+One research paper at https://doi.org/10.1101/2025.07.24.666509.
 
-two papers, one patent
+One software patent.
+
+One review paper at https://doi.org/10.1038/s41467-024-52734-3.
 
 ---
-
 
 ### Side projects
 
 #### Ecological monitoring
 
-With Kevin
+Using embedded vision cameras to monitor nocturnal insect and bat activities, https://doi.org/10.1111/2041-210X.14436.
 
 #### Cocoa agroforestry
 
-With Manuel
+Definition of cocoa agroforestry systems in literature.
