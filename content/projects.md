@@ -35,6 +35,8 @@ UN Global Plastic Treaty negotiations.
 
 One research paper at https://doi.org/10.1101/2025.07.24.666509.
 
+<img src="/images/beeboxabstract.png"/>
+
 One software patent.
 
 One review paper at https://doi.org/10.1038/s41467-024-52734-3.
