@@ -18,19 +18,6 @@ Preprint at https://doi.org/10.32942/X2Z40P.
 
 ---
 
-### Pollination re-evaluation
-
-Evaluate the economic values and nutrition contribution of pollination services in China using updated pollinator dependency values.
-
----
-
-
-### Global Plastic Treaty
-
-UN Global Plastic Treaty negotiations.
-
----
-
 ### Pollinators and plastics
 
 One research paper at https://doi.org/10.1101/2025.07.24.666509.
@@ -40,6 +27,18 @@ One research paper at https://doi.org/10.1101/2025.07.24.666509.
 One software patent.
 
 One review paper at https://doi.org/10.1038/s41467-024-52734-3.
+
+---
+
+### Pollination re-evaluation
+
+This project evaluates the economic values and nutrition contribution of pollination services in China using updated pollinator dependency values.
+
+---
+
+### Global Plastic Treaty
+
+We are interested in the progress of the UN Global Plastic Treaty negotiations, and the role of agroecosystems in the proposed texts of the treaty.
 
 ---
 
