@@ -26,6 +26,8 @@ My work is supervised by Thomas Cherico WANGER (group leader at Agroscope) and L
 
 In my leisure time, I enjoy spending time with my partner, movies, skateboards, guitars, and books. My favorite ones include Huxley's *Brave New World*, Fitzgerald's *The Great Gatsby*, and Asimov's *Foundation* series.
 
+<!--
+
 Doing research is a journey of exploring the beautiful world and learning new skills. Every step forward is based on my past experiences and brings me something new. Therefore, I’d like to summarize the sequential dependence of my works. The network graph below shows my research outputs (including papers, presentations, etc.) and their  connections. External links are provided if available. 
 
 
@@ -38,4 +40,5 @@ Doing research is a journey of exploring the beautiful world and learning new sk
         };
 </script>
 
+-->
 

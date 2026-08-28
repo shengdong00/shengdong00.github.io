@@ -20,7 +20,7 @@ Preprint at https://doi.org/10.32942/X2Z40P.
 
 ### Pollinators and plastics
 
-One research paper at https://doi.org/10.1101/2025.07.24.666509.
+One research paper at https://doi.org/10.1038/s42003-026-10833-5.
 
 <img src="/images/beeboxabstract.png"/>
 
