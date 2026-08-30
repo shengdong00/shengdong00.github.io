@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="快速上手科学工程计算集群" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="快速上手科学工程计算集群" />
 <meta property="og:description" content="与科学工程计算集群进行交互需要在校园网中，或者开启西湖大学VPN客户端。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/secc_quick_guide/" /><meta property="og:image" content="https://shdong.net/ptr.png"/><meta property="article:section" content="post" />
@@ -571,42 +574,42 @@ if (!doNotTrack) {
 </div>
 </div><p>常用Slurm参数：</p>
 <table>
-<thead>
-<tr>
-<th>参数</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-c</code></td>
-<td>申请CPU核心数量，默认为1，不能单个节点的核心上限</td>
-</tr>
-<tr>
-<td><code>--mem</code></td>
-<td>申请的总内存大小，默认为每个CPU核心2.5G</td>
-</tr>
-<tr>
-<td><code>-p</code></td>
-<td>指定computing节点分区，可以使用逗号指定多个分区</td>
-</tr>
-<tr>
-<td><code>-q</code></td>
-<td>指定QOS</td>
-</tr>
-<tr>
-<td><code>-o</code></td>
-<td>自定义任务标准输出（日志）文件</td>
-</tr>
-<tr>
-<td><code>-e</code></td>
-<td>自定义任务标准错误输出（错误日志）文件</td>
-</tr>
-<tr>
-<td><code>-a</code></td>
-<td>例如<code>-a 1-100</code>的参数会提交一组共100个相同的任务，每个子任务中的环境变量<code>${SLURM_ARRAY_TASK_ID}</code>则分别为1-100的单独数字 <em>(?)</em></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>参数</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-c</code></td>
+          <td>申请CPU核心数量，默认为1，不能单个节点的核心上限</td>
+      </tr>
+      <tr>
+          <td><code>--mem</code></td>
+          <td>申请的总内存大小，默认为每个CPU核心2.5G</td>
+      </tr>
+      <tr>
+          <td><code>-p</code></td>
+          <td>指定computing节点分区，可以使用逗号指定多个分区</td>
+      </tr>
+      <tr>
+          <td><code>-q</code></td>
+          <td>指定QOS</td>
+      </tr>
+      <tr>
+          <td><code>-o</code></td>
+          <td>自定义任务标准输出（日志）文件</td>
+      </tr>
+      <tr>
+          <td><code>-e</code></td>
+          <td>自定义任务标准错误输出（错误日志）文件</td>
+      </tr>
+      <tr>
+          <td><code>-a</code></td>
+          <td>例如<code>-a 1-100</code>的参数会提交一组共100个相同的任务，每个子任务中的环境变量<code>${SLURM_ARRAY_TASK_ID}</code>则分别为1-100的单独数字 <em>(?)</em></td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="提交和查看作业">提交和查看作业<a hidden class="anchor" aria-hidden="true" href="#提交和查看作业">#</a></h4>
 <p>提交脚本：</p>
@@ -631,30 +634,30 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><table>
-<thead>
-<tr>
-<th>任务状态</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PD</td>
-<td>排队中</td>
-</tr>
-<tr>
-<td>R</td>
-<td>运行中</td>
-</tr>
-<tr>
-<td>S</td>
-<td>暂停中</td>
-</tr>
-<tr>
-<td>CG</td>
-<td>即将完成</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>任务状态</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PD</td>
+          <td>排队中</td>
+      </tr>
+      <tr>
+          <td>R</td>
+          <td>运行中</td>
+      </tr>
+      <tr>
+          <td>S</td>
+          <td>暂停中</td>
+      </tr>
+      <tr>
+          <td>CG</td>
+          <td>即将完成</td>
+      </tr>
+  </tbody>
 </table>
 <p>修改排队中的任务的参数：</p>
 <div class="highlight"><div class="chroma">
@@ -707,56 +710,56 @@ if (!doNotTrack) {
 </div>
 </div><p>部分计算节点分区的说明：</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">分区名称</th>
-<th style="text-align:left">computing节点规格</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">amd-ep2</td>
-<td style="text-align:left">64核 amd CPU, 480G内存, QOS: normal/huge, 配有SSD缓存/data</td>
-</tr>
-<tr>
-<td style="text-align:left">amdepyc</td>
-<td style="text-align:left">64核 amd CPU, 480G内存, QOS: normal/huge</td>
-</tr>
-<tr>
-<td style="text-align:left">amd-ep2-short</td>
-<td style="text-align:left">64核 amd CPU, 480G内存, QOS: normal/huge, 使用时间上限为1天</td>
-</tr>
-<tr>
-<td style="text-align:left">intel-sc3(默认分区)</td>
-<td style="text-align:left">64核 amd CPU, 480G内存, QOS: normal/huge, 配有SSD缓存/data</td>
-</tr>
-<tr>
-<td style="text-align:left">intel-sc3-32c</td>
-<td style="text-align:left">64核 amd CPU, 480G内存, QOS: normal/huge, 任务必须使用32整倍数的CPU核心</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">分区名称</th>
+          <th style="text-align: left">computing节点规格</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">amd-ep2</td>
+          <td style="text-align: left">64核 amd CPU, 480G内存, QOS: normal/huge, 配有SSD缓存/data</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">amdepyc</td>
+          <td style="text-align: left">64核 amd CPU, 480G内存, QOS: normal/huge</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">amd-ep2-short</td>
+          <td style="text-align: left">64核 amd CPU, 480G内存, QOS: normal/huge, 使用时间上限为1天</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">intel-sc3(默认分区)</td>
+          <td style="text-align: left">64核 amd CPU, 480G内存, QOS: normal/huge, 配有SSD缓存/data</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">intel-sc3-32c</td>
+          <td style="text-align: left">64核 amd CPU, 480G内存, QOS: normal/huge, 任务必须使用32整倍数的CPU核心</td>
+      </tr>
+  </tbody>
 </table>
 <p>部分Quality of Service (QOS)的说明：</p>
 <table>
-<thead>
-<tr>
-<th>QOS</th>
-<th>优先级</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>normal</td>
-<td>高</td>
-<td>总任务提交数&lt;=1000，总任务同时运行数&lt;=30，总任务同时使用CPU核心&lt;=200</td>
-</tr>
-<tr>
-<td>huge</td>
-<td>低</td>
-<td>总任务提交数&lt;=20000，总任务同时使用CPU核心&lt;=1600</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>QOS</th>
+          <th>优先级</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>normal</td>
+          <td>高</td>
+          <td>总任务提交数&lt;=1000，总任务同时运行数&lt;=30，总任务同时使用CPU核心&lt;=200</td>
+      </tr>
+      <tr>
+          <td>huge</td>
+          <td>低</td>
+          <td>总任务提交数&lt;=20000，总任务同时使用CPU核心&lt;=1600</td>
+      </tr>
+  </tbody>
 </table>
 
   </div>

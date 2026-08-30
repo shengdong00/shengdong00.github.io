@@ -1,6 +1,7 @@
 baseURL: "https://shdong.net" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: "Sheng Dong's website"
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 publishDir: docs

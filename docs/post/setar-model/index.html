@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="SETAR Model" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="SETAR Model" />
 <meta property="og:description" content="SETAR的全称是“Self-Exciting Threshold Auto-Regressive (SETAR) models”，可用于对一个时间序列变量的模式演变进行阶段划分。该模型最早于1977年由Howell Tong提出1。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/setar-model/" /><meta property="og:image" content="https://shdong.net/ptr.png"/><meta property="article:section" content="post" />
@@ -244,7 +247,7 @@ y_t={\bf X_t}\gamma^{(j)}+\sigma^{(j)}\epsilon_t,~{\rm if} ~r_{j-1}&lt;z_t&lt;r_
 $$
 其中$-\infty=r_0&lt;r_1&lt;\dots&lt;r_k=+\infty$定义了$z_t$可能落入的$k$个区间。</p>
 <p>在R语言中可以通过使用<code>tsDyn</code>package里的函数<code>setar()</code>来进行SETAR模型分析，用法可以查看官方文档<a href="https://search.r-project.org/CRAN/refmans/tsDyn/html/setar.html">R: Self Threshold Autoregressive model (r-project.org)</a>。另外，Michał Cukrow有一篇博客里给出了比较详细的解读和R例程（<a href="https://towardsdatascience.com/threshold-autoregressive-models-beyond-arima-r-code-6af3331e2755">Threshold Autoregressive Models — beyond ARIMA + R Code | by Michał Cukrowski | Towards Data Science</a>），以后有空再看。</p>
-<p>参考资料：<a href="https://en.wikipedia.org/wiki/SETAR_(model)">Wikipedia | SETAR model</a></p>
+<p>参考资料：<a href="https://en.wikipedia.org/wiki/SETAR_%28model%29">Wikipedia | SETAR model</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

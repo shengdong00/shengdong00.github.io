@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://shdong.net/post/" /><meta property="og:image" content="https://shdong.net/ptr.png"/>
@@ -180,7 +183,9 @@ if (!doNotTrack) {
 总体思路是，先从混淆矩阵中计算出每个分类的真阳性样本量FP、假阳性样本量TP、假阴性样本量FN，然后按照公式计算各分类标签的precision和recall。
 需要注意的是，precision和recall的长度其实比分类数量多1。这是因为前面生成confusion matrix的时候，在已有分类的后边还加了一个“background”的标签。precision和recall的最后一位其实就是“background”的精确率和召回率，并且总是为零。从混淆矩阵里面也可以看出，background的真阳性比例一定是0%。在计算平均precision和recall的时候，我们不需要考虑这一个额外的分类。
 MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;分类的真阳性比例一定是0%需要在main()函数末尾添加的代码为：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset....</p>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 TP = np.diag(confusion_matrix) FP = np.sum(confusion_matrix, axis=0) - TP FN = np.sum(confusion_matrix, axis=1) - TP precision = TP / (TP &#43; FP) recall = TP / (TP &#43; FN) average_precision = np.mean(precision[:-1]) average_recall = np.mean(recall[:-1]) f1 = 2* (average_precision * average_recall) / (average_precision &#43; average_recall) print(&#39;\n===Averaging all classes===&#39;) print(&#39;AP:&#39;, average_precision) print(&#39;AR:&#39;, average_recall) print(&#39;F1:&#39;, f1) print(&#39;Classes&#39;, dataset.metainfo[&#39;classes&#39;] &#43; (&#39;background&#39;, )) print(&#39;Precision&#39;, precision) print(&#39;Recall&#39;, recall) 然后按照官方文档的说明，正常运行代码就可以输出结果了。
+1 python tools/analysis_tools/confusion_matrix.py ${CONFIG} ${DETECTION_RESULTS} ${SAVE_DIR} --show 打印内容形如：
+...</p>
   </div>
   <footer class="entry-footer">
 
@@ -228,7 +233,8 @@ MMDetection官方文档里的normalized confusion matrix，&#34;background&#34;�
   <div class="entry-content">
     <p>本次阅读的三篇文献都是蜂学方面的新进展。我主要关心的是两方面问题：昆虫生理和行为特征的指标及测量方式（研究方法），以及熊蜂在环境胁迫下的反应机制（研究结论）。
 Glass, J. R., Burnett, N. P., Combes, S. A., Weisman, E., Helbling, A., &amp; Harrison, J. F. (2024). Flying, nectar-loaded honey bees conserve water and improve heat tolerance by reducing wingbeat frequency and metabolic heat production. Proceedings of the National Academy of Sciences, 121(4), e2311025121. https://doi.org/10.1073/pnas.2311025121
-Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency....</p>
+Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering wingbeat frequency Reducing metabolic heat production is the result of lowering wingbeat frequency. Should not be mentioned separately as two mechanisms here. “Many flying insects generate aerodynamic force by using a combination of mechanisms, including the sweeping motion of the wing (i.e., wing translation) and by creation of rotational vortices when the wings rotate before reversing direction. Insects that fly with a large stroke amplitude generate the bulk of their force from the wing translation phase, while those that fly with a small stroke amplitude primarily generate significant forces during wing rotation.”
+...</p>
   </div>
   <footer class="entry-footer">
 
@@ -244,7 +250,8 @@ Focus on heat wave effects on honeybees Honeybees avoid overheating by lowering 
   <div class="entry-content">
     <p>这个礼拜潦草地阅读了几篇论文，在这里做一个简单的记录。理工科的学术研究永恒地在追寻新的前沿，我需要时刻和世界的发展保持同步。所以以后也希望能进一步推进文献阅读的深度和广度。
 Liu, Jianguo, Thomas Dietz, et al. “Complexity of Coupled Human and Natural Systems.” Science, vol. 317, no. 5844, Sept. 2007, pp. 1513–16, https://doi.org/10.1126/science.1144004.
-Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units....</p>
+Abstract: Integrated studies of coupled human and natural systems reveal new and complex patterns and processes not evident when studied by social or natural scientists separately. Synthesis of six case studies from around the world shows that couplings between human and natural systems vary across space, time, and organizational units. They also exhibit nonlinear dynamics with thresholds, reciprocal feedback loops, time lags, resilience, heterogeneity, and surprises. Furthermore, past couplings have legacy effects on present conditions and future possibilities.
+...</p>
   </div>
   <footer class="entry-footer">
 

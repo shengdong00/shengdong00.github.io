@@ -8,7 +8,7 @@
 <title>Learning notes on agent-based modelling (ABM) | Sheng Dong&#39;s website</title>
 <meta name="keywords" content="ABM">
 <meta name="description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
-I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.">
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they&rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics.">
 <meta name="author" content="">
 <link rel="canonical" href="https://shdong.net/post/learning-abm/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.884d9ea35b89583871ff494c963dd146770076c675b54f9d3aa6109ccd53c96d.css" integrity="sha256-iE2eo1uJWDhx/0lMlj3RRncAdsZ1tU&#43;dOqYQnM1TyW0=" rel="preload stylesheet" as="style">
@@ -59,19 +59,22 @@ I will introduce the topic with four parts. For the first and second part, we wi
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Learning notes on agent-based modelling (ABM)" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Learning notes on agent-based modelling (ABM)" />
 <meta property="og:description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
-I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling." />
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they&rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/learning-abm/" />
 <meta property="og:image" content="https://shdong.net/images/abm_cover.jpg" /><meta property="article:section" content="post" />
@@ -82,7 +85,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
 <meta name="twitter:image" content="https://shdong.net/images/abm_cover.jpg" />
 <meta name="twitter:title" content="Learning notes on agent-based modelling (ABM)"/>
 <meta name="twitter:description" content="In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.
-I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling."/>
+I will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they&rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics."/>
 
 
 <script type="application/ld+json">
@@ -111,7 +114,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
   "@type": "BlogPosting",
   "headline": "Learning notes on agent-based modelling (ABM)",
   "name": "Learning notes on agent-based modelling (ABM)",
-  "description": "In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.\nI will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling.",
+  "description": "In this note I will give a brief introduction of agent-based modelling (ABM). I was learning ABM from an online tutorial1, in which this method is actually mostly applied in areas of social sciences, for example, economics or sociology.\nI will introduce the topic with four parts. For the first and second part, we will not talk about agriculture. But at last two parts we will talk about why agriculture experts need agent-based modelling. Despite that the previous section are from other domains, I still think they\u0026rsquo;re quite interesting examples and then we can see how it can be applied in ecological related topics.\n",
   "keywords": [
     "ABM"
   ],
@@ -242,16 +245,16 @@ I will introduce the topic with four parts. For the first and second part, we wi
                         <a href="#2-modelling-examples" aria-label="2. Modelling examples">2. Modelling examples</a><ul>
                             
                     <li>
-                        <a href="#21-the-game-of-life-gol" aria-label="2.1. The game of life 5">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></a></li>
+                        <a href="#21-the-game-of-life" aria-label="2.1. The game of life 5">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></a></li>
                     <li>
-                        <a href="#22-modelling-civil-violence-mcv" aria-label="2.2. Modelling civil violence 6">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></a></li>
+                        <a href="#22-modelling-civil-violence" aria-label="2.2. Modelling civil violence 6">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></a></li>
                     <li>
-                        <a href="#23-fish-emotion-systems-fes" aria-label="2.3. Fish emotion systems 7">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></a></li>
+                        <a href="#23-fish-emotion-systems" aria-label="2.3. Fish emotion systems 7">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></a></li>
                     <li>
-                        <a href="#23-beehave-bh" aria-label="2.3. BEEHAVE 8">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></a></li></ul>
+                        <a href="#23-beehave" aria-label="2.3. BEEHAVE 8">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></a></li></ul>
                     </li>
                     <li>
-                        <a href="#3-constraints-and-new-opportunities-cano" aria-label="3. Constraints and new opportunities 9">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></a>
+                        <a href="#3-constraints-and-new-opportunities" aria-label="3. Constraints and new opportunities 9">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></a>
                     </li>
                 </ul>
             </div>
@@ -336,7 +339,7 @@ I will introduce the topic with four parts. For the first and second part, we wi
 </ol>
 <h3 id="2-modelling-examples">2. Modelling examples<a hidden class="anchor" aria-hidden="true" href="#2-modelling-examples">#</a></h3>
 <p>In this section I will talk about several classical (also interesting) modelling examples.</p>
-<h4 id="21-the-game-of-life-gol">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><a hidden class="anchor" aria-hidden="true" href="#21-the-game-of-life-gol">#</a></h4>
+<h4 id="21-the-game-of-life">2.1. The game of life <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><a hidden class="anchor" aria-hidden="true" href="#21-the-game-of-life">#</a></h4>
 <p>This might not be exactly an agent-based model, but quite similar. This is called &ldquo;the game of life&rdquo;. It was invented by a mathematician, John Conway from Princeton University, in 1970. It&rsquo;s an example of a cellular automation, in which rules are applied to cells and their neighbors in a regular grid. Life is played on a grid of square cells&ndash;like a chess board but extending infinitely in every direction. A cell can be alive or dead. A live cell is shown by putting a marker on its square. A dead cell is shown by leaving the square empty. Each cell in the grid has a neighborhood consisting of the eight cells in every direction including diagonals.</p>
 <p>To apply one step of the rules, we count the number of live neighbors for each cell. What happens next depends on this number.</p>
 <ul>
@@ -363,20 +366,20 @@ I will introduce the topic with four parts. For the first and second part, we wi
   </tr>
 </table>
 <p>An online laboratory for conducting the game of life experiments can be found at <a href="https://playgameoflife.com/">https://playgameoflife.com/</a>.</p>
-<h4 id="22-modelling-civil-violence-mcv">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><a hidden class="anchor" aria-hidden="true" href="#22-modelling-civil-violence-mcv">#</a></h4>
+<h4 id="22-modelling-civil-violence">2.2. Modelling civil violence <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><a hidden class="anchor" aria-hidden="true" href="#22-modelling-civil-violence">#</a></h4>
 <p>Here is another example of agent-based modelling. The model is used to represent civil violence development with different level of police power.</p>
 <p>A central authority uses &ldquo;cops&rdquo; to arrest (remove) actively rebelling citizens from the society for a specified jail term. In each time step, each agent (cop or citizen) randomly moves to a new unoccupied site within its limited vision. A rebelling citizen&rsquo;s estimated arrest probability is assumed to fall as the ratio of actively rebelling citizens to cops that the citizen perceives in its vicinity increases. Each citizen in each time step decides whether to actively rebel or not depending on this perceived ratio.</p>
 <p>In a multi-ethnic scenario, two different and hostile ethnic groups (blue and green, respectively) are mixed in the community. Red dots in the graph represent active events (violent conflicts between the two groups). When we don&rsquo;t have police power as peace keepers, the mixture of two ethnic groups would lead to mass violent activities and eventually genocide, where one ethnic group is completely wiped out by the other. A peaceful haven is only possible when enough amount of police power (black dots) are deployed in the community and form a protective fence that loosely separates these two hostile groups.</p>
 <center><img src="/images/image-20231003184754915.jpg" /></center>
-<h4 id="23-fish-emotion-systems-fes">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-fish-emotion-systems-fes">#</a></h4>
+<h4 id="23-fish-emotion-systems">2.3. Fish emotion systems <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-fish-emotion-systems">#</a></h4>
 <p>There are also a lot of ABM researches related to biology and ecology. For instance, there is a research on the phenotype and genotype development of the emotion systems of fish. They constructed a hierarchical model that shows how different genotypes trigger various organismal responses to certain environmental messages, and reacts accordingly. These reactions leads to different survival rates according to natural selection. By conducting modelling experiments, they found that in a given environment, phenotype frequency distributions are predictable while gene pools are not due. This result provides a lot of mechanism information on convergent evolution and the organismal level of selection.</p>
 <center><img src="/images/image-20231003190016387.jpg"/></center>
-<h4 id="23-beehave-bh">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-beehave-bh">#</a></h4>
+<h4 id="23-beehave">2.3. BEEHAVE <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><a hidden class="anchor" aria-hidden="true" href="#23-beehave">#</a></h4>
 <p>I also found a quite professional and open source software used for honeybee agent based models. BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes.</p>
 <p>The purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.</p>
 <p>The design of BEEHAVE is based on empirical data, expert knowledge, and earlier honeybee models, but BEEHAVE is the first model that integrates within-hive processes with an explicit representation of foraging in heterogeneous and dynamic landscapes.</p>
 <p>An introduction video from the BEEAHVE website can be found at <a href="https://www.youtube.com/watch?v=j5AZhaYEt5U">here</a>.</p>
-<h3 id="3-constraints-and-new-opportunities-cano">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><a hidden class="anchor" aria-hidden="true" href="#3-constraints-and-new-opportunities-cano">#</a></h3>
+<h3 id="3-constraints-and-new-opportunities">3. Constraints and new opportunities <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><a hidden class="anchor" aria-hidden="true" href="#3-constraints-and-new-opportunities">#</a></h3>
 <p>The number of scholars who developed or used ABMs has been steadily increasing at an exponential rate since the mid-1990s, reaching a climax in the 2000s. However, this hype faded with time because progress in agent-based modeling has been slower than initially anticipated. Challenges that ABM researches face may be concluded as:</p>
 <ol>
 <li>Basic difficulties in model development, communication, understanding, verification, and validation;</li>

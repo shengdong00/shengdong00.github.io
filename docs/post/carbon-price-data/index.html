@@ -10,8 +10,7 @@
 <meta name="description" content="这是一年多以前关于深圳碳排放交易所交易数据的一些分析，作为一门经济学课程的作业。分析手段和解读难免肤浅，聊供自娱。
 过去一年来，俄乌冲突以及随之而来的能源危机想必显著地冲击到了欧洲的碳排放权交易市场，后者又在全球碳排放权交易体系中具有举足轻重的地位，因此我也很好奇最新的碳排放市场情况。只是最近都没有时间和精力花在这件事情上面了。
 
-摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。
-">
+摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。">
 <meta name="author" content="">
 <link rel="canonical" href="https://shdong.net/post/carbon-price-data/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.884d9ea35b89583871ff494c963dd146770076c675b54f9d3aa6109ccd53c96d.css" integrity="sha256-iE2eo1uJWDhx/0lMlj3RRncAdsZ1tU&#43;dOqYQnM1TyW0=" rel="preload stylesheet" as="style">
@@ -62,22 +61,24 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="什么在影响着碳排放交易？" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="什么在影响着碳排放交易？" />
 <meta property="og:description" content="这是一年多以前关于深圳碳排放交易所交易数据的一些分析，作为一门经济学课程的作业。分析手段和解读难免肤浅，聊供自娱。
 过去一年来，俄乌冲突以及随之而来的能源危机想必显著地冲击到了欧洲的碳排放权交易市场，后者又在全球碳排放权交易体系中具有举足轻重的地位，因此我也很好奇最新的碳排放市场情况。只是最近都没有时间和精力花在这件事情上面了。
 
-摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。
-" />
+摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/carbon-price-data/" />
 <meta property="og:image" content="https://shdong.net/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-12%20221709.jpg" /><meta property="article:section" content="post" />
@@ -90,8 +91,7 @@ if (!doNotTrack) {
 <meta name="twitter:description" content="这是一年多以前关于深圳碳排放交易所交易数据的一些分析，作为一门经济学课程的作业。分析手段和解读难免肤浅，聊供自娱。
 过去一年来，俄乌冲突以及随之而来的能源危机想必显著地冲击到了欧洲的碳排放权交易市场，后者又在全球碳排放权交易体系中具有举足轻重的地位，因此我也很好奇最新的碳排放市场情况。只是最近都没有时间和精力花在这件事情上面了。
 
-摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。
-"/>
+摘要  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。"/>
 
 
 <script type="application/ld+json">
@@ -365,8 +365,7 @@ if (!doNotTrack) {
   <div class="post-content"><p>这是一年多以前关于深圳碳排放交易所交易数据的一些分析，作为一门经济学课程的作业。分析手段和解读难免肤浅，聊供自娱。</p>
 <p>过去一年来，俄乌冲突以及随之而来的能源危机想必显著地冲击到了欧洲的碳排放权交易市场，后者又在全球碳排放权交易体系中具有举足轻重的地位，因此我也很好奇最新的碳排放市场情况。只是最近都没有时间和精力花在这件事情上面了。</p>
 <blockquote>
-<p><strong>摘要</strong>  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。</p>
-</blockquote>
+<p><strong>摘要</strong>  碳排放权交易通过市场机制将温室气体排放的外部性内部化，促进经济主体的减排行为。国内碳排放权价格受到价值规律的影响，其影响因素按照供给和需求可分为排放权发放额度、绿色技术发展、传统和清洁能源价格、企业产量、国际碳价等方面，还受到市场调控机制的约束。以深圳排放权交易所为例，采用逐步回归法分析了碳排放权价格和成交量的需求端影响因素，发现国际石油价格和国内经济状况对价格和成交量均有显著正向影响，国内油价则有一定负向影响；国际碳排放权价格与国内价格存在正向关联。</p></blockquote>
 <h2 id="1碳排放权交易体系概述">1.碳排放权交易体系概述<a hidden class="anchor" aria-hidden="true" href="#1碳排放权交易体系概述">#</a></h2>
 <h3 id="11碳减排背景">1.1.碳减排背景<a hidden class="anchor" aria-hidden="true" href="#11碳减排背景">#</a></h3>
 <p>碳排放权交易是一种为控制全球温室气体排放所采用的市场机制。1997年12月由联合国气候变化框架公约参加国会议制定了《京都议定书》，规定了各国温室气体减排目标和减排方式。国家之间可以进行排放额度买卖的“排放权交易”，即难以完成削减任务的国家，可以花钱从超额完成任务的国家买进超出的额度<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。《京都议定书》在国际的层面上提出了碳排放权交易的基础，并首次将温室气体排放权作为一种虚拟的资产进行交易。同一国家（或多国集团）内部的碳交易市场参与者是持有政府发放碳排配额的企业厂商。环境是一种具有外部性的公共商品，而通过碳交易市场机制则可以将其外部性内部化，提升经济主体碳减排的意愿，避免碳资源的流失<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
@@ -503,194 +502,194 @@ $$</p>
 <p>本研究采用的影响因素原始数据如表 1所示。</p>
 <center>表 1：原始数据说明</center>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>编码</th>
-<th>说明</th>
-<th>编码</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>交易数据</td>
-<td>SZA-P</td>
-<td>SZA-2019收盘价格</td>
-<td>SZA-Q</td>
-<td>SZA-2019成交量</td>
-</tr>
-<tr>
-<td>经济发展指标</td>
-<td>DAX30</td>
-<td>法兰克福DAX指数<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
-<td>SCI300</td>
-<td>沪深300指数<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
-</tr>
-<tr>
-<td>能源价格</td>
-<td>I-OIL</td>
-<td>WTI原油期货<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></td>
-<td>D-OIL</td>
-<td>国内汽油价格<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></td>
-</tr>
-<tr>
-<td>国际碳价</td>
-<td>EUA</td>
-<td>欧盟排放配额价格<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>汇率</td>
-<td>EUR-USD</td>
-<td>欧元兑美元当期汇率<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></td>
-<td>USD-CNY</td>
-<td>美元兑人民币当期汇率<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>编码</th>
+          <th>说明</th>
+          <th>编码</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>交易数据</td>
+          <td>SZA-P</td>
+          <td>SZA-2019收盘价格</td>
+          <td>SZA-Q</td>
+          <td>SZA-2019成交量</td>
+      </tr>
+      <tr>
+          <td>经济发展指标</td>
+          <td>DAX30</td>
+          <td>法兰克福DAX指数<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
+          <td>SCI300</td>
+          <td>沪深300指数<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
+      </tr>
+      <tr>
+          <td>能源价格</td>
+          <td>I-OIL</td>
+          <td>WTI原油期货<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></td>
+          <td>D-OIL</td>
+          <td>国内汽油价格<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></td>
+      </tr>
+      <tr>
+          <td>国际碳价</td>
+          <td>EUA</td>
+          <td>欧盟排放配额价格<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>汇率</td>
+          <td>EUR-USD</td>
+          <td>欧元兑美元当期汇率<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></td>
+          <td>USD-CNY</td>
+          <td>美元兑人民币当期汇率<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></td>
+      </tr>
+  </tbody>
 </table>
 <p>通过当期汇率将DAX30, I-OIL, EUA换算成以当期人民币为单位表示的形式，对汇率数据缺失值进行线性插值，其余数据缺失值作剔除处理。（数据放在对应的<a href="https://github.com/shengdong00/SZ-carbon-price-2020-2021">Github 仓库</a>里——“影响因素数据.xlsx”，“SZA交易数据.xlsx”。）由于我国目前碳排放权交易市场的成交量和流动性都相对有限且不稳定因素较大，投资者在投资时都更为谨慎。考虑到信息流动的滞后性，其他市场的信息无法即时传导到碳排放权价格中，当期收益率波动冲击可能在下一期延续<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>，故分别采用逐步回归法分当期和前一期DAX300, SCI300, I-OIL, D-OIL, EUA对SZA-P的影响，参数估计结果如下。</p>
 <p>表 2：变量对ZSA-P影响的参数估计结果</p>
 <table>
-<thead>
-<tr>
-<th>Index</th>
-<th>当  期</th>
-<th></th>
-<th>上 一 期</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>Coeff.</td>
-<td>p-val</td>
-<td>Coeff.</td>
-<td>p-val</td>
-</tr>
-<tr>
-<td>DAX30</td>
-<td>0.000808354</td>
-<td>0.0000</td>
-<td>0.000902978</td>
-<td>0.0000</td>
-</tr>
-<tr>
-<td>SCI300</td>
-<td>0.0208637</td>
-<td>0.0001</td>
-<td>0.0215877</td>
-<td>0.0002</td>
-</tr>
-<tr>
-<td>I-OIL</td>
-<td>0.138116</td>
-<td>0.0000</td>
-<td>0.129705</td>
-<td>0.0001</td>
-</tr>
-<tr>
-<td>D-OIL</td>
-<td>-0.0119801</td>
-<td>0.0028</td>
-<td>-0.012632</td>
-<td>0.0060</td>
-</tr>
-<tr>
-<td>EUA</td>
-<td>0.0586508</td>
-<td>0.0005</td>
-<td>0.0697818</td>
-<td>0.0005</td>
-</tr>
-<tr>
-<td>R<sup>2</sup></td>
-<td>0.476468</td>
-<td></td>
-<td>0.499659</td>
-<td></td>
-</tr>
-<tr>
-<td>截距</td>
-<td>-173.329</td>
-<td></td>
-<td>-183.456</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Index</th>
+          <th>当  期</th>
+          <th></th>
+          <th>上 一 期</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>Coeff.</td>
+          <td>p-val</td>
+          <td>Coeff.</td>
+          <td>p-val</td>
+      </tr>
+      <tr>
+          <td>DAX30</td>
+          <td>0.000808354</td>
+          <td>0.0000</td>
+          <td>0.000902978</td>
+          <td>0.0000</td>
+      </tr>
+      <tr>
+          <td>SCI300</td>
+          <td>0.0208637</td>
+          <td>0.0001</td>
+          <td>0.0215877</td>
+          <td>0.0002</td>
+      </tr>
+      <tr>
+          <td>I-OIL</td>
+          <td>0.138116</td>
+          <td>0.0000</td>
+          <td>0.129705</td>
+          <td>0.0001</td>
+      </tr>
+      <tr>
+          <td>D-OIL</td>
+          <td>-0.0119801</td>
+          <td>0.0028</td>
+          <td>-0.012632</td>
+          <td>0.0060</td>
+      </tr>
+      <tr>
+          <td>EUA</td>
+          <td>0.0586508</td>
+          <td>0.0005</td>
+          <td>0.0697818</td>
+          <td>0.0005</td>
+      </tr>
+      <tr>
+          <td>R<sup>2</sup></td>
+          <td>0.476468</td>
+          <td></td>
+          <td>0.499659</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>截距</td>
+          <td>-173.329</td>
+          <td></td>
+          <td>-183.456</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>由于SZA-Q变动明显，呈现出数量级上的巨大差异。为获得较好的线性相关性，需要对其进行缩放。用log(SZA-Q) 替代SZA-Q，参数估计结果如下。</p>
 <p>表 3：变量对log(ZSA-Q) 影响的参数估计结果</p>
 <table>
-<thead>
-<tr>
-<th>Index</th>
-<th>当  期</th>
-<th></th>
-<th>上 一 期</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>Coeff.</td>
-<td>p-val</td>
-<td>Coeff.</td>
-<td>p-val</td>
-</tr>
-<tr>
-<td>DAX30</td>
-<td>0.000409093</td>
-<td>0.0000</td>
-<td>0.000466819</td>
-<td>0.0000</td>
-</tr>
-<tr>
-<td>SCI300</td>
-<td>0.00517</td>
-<td>0.0025</td>
-<td>0.00414639</td>
-<td>0.0089</td>
-</tr>
-<tr>
-<td>I-OIL</td>
-<td>0.0134441</td>
-<td>0.0499</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>D-OIL</td>
-<td>0</td>
-<td>-</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>EUA</td>
-<td>0</td>
-<td>-</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>R<sup>2</sup></td>
-<td>0.289824</td>
-<td></td>
-<td>0.262692</td>
-<td></td>
-</tr>
-<tr>
-<td>截距</td>
-<td>-75.7945</td>
-<td></td>
-<td>-71.58</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Index</th>
+          <th>当  期</th>
+          <th></th>
+          <th>上 一 期</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>Coeff.</td>
+          <td>p-val</td>
+          <td>Coeff.</td>
+          <td>p-val</td>
+      </tr>
+      <tr>
+          <td>DAX30</td>
+          <td>0.000409093</td>
+          <td>0.0000</td>
+          <td>0.000466819</td>
+          <td>0.0000</td>
+      </tr>
+      <tr>
+          <td>SCI300</td>
+          <td>0.00517</td>
+          <td>0.0025</td>
+          <td>0.00414639</td>
+          <td>0.0089</td>
+      </tr>
+      <tr>
+          <td>I-OIL</td>
+          <td>0.0134441</td>
+          <td>0.0499</td>
+          <td>0</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>D-OIL</td>
+          <td>0</td>
+          <td>-</td>
+          <td>0</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>EUA</td>
+          <td>0</td>
+          <td>-</td>
+          <td>0</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>R<sup>2</sup></td>
+          <td>0.289824</td>
+          <td></td>
+          <td>0.262692</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>截距</td>
+          <td>-75.7945</td>
+          <td></td>
+          <td>-71.58</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>Matlab代码（数据文件位于同级目录下）：</p>
 <div class="highlight"><div class="chroma">

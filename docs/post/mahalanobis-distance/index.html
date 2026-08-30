@@ -8,8 +8,7 @@
 <title>偶识Mahalanobis Distance | Sheng Dong&#39;s website</title>
 <meta name="keywords" content="统计, 马氏距离, Mahalanobis Distance, 数据处理">
 <meta name="description" content="
-糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
-">
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）">
 <meta name="author" content="">
 <link rel="canonical" href="https://shdong.net/post/mahalanobis-distance/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.884d9ea35b89583871ff494c963dd146770076c675b54f9d3aa6109ccd53c96d.css" integrity="sha256-iE2eo1uJWDhx/0lMlj3RRncAdsZ1tU&#43;dOqYQnM1TyW0=" rel="preload stylesheet" as="style">
@@ -60,20 +59,22 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="偶识Mahalanobis Distance" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="偶识Mahalanobis Distance" />
 <meta property="og:description" content="
-糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
-" />
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/mahalanobis-distance/" /><meta property="og:image" content="https://shdong.net/ptr.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-30T01:20:00+08:00" />
@@ -84,8 +85,7 @@ if (!doNotTrack) {
 
 <meta name="twitter:title" content="偶识Mahalanobis Distance"/>
 <meta name="twitter:description" content="
-糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）
-"/>
+糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）"/>
 
 
 <script type="application/ld+json">
@@ -234,8 +234,7 @@ if (!doNotTrack) {
 </div>
   </header> 
   <div class="post-content"><blockquote>
-<p>糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）</p>
-</blockquote>
+<p>糯米正在看机器学习的网课，我在旁边偷学了一点东西来，感觉还挺有意思的（结果自己的文献都没认真看完&#x1f622;）</p></blockquote>
 <h1 id="定义">定义<a hidden class="anchor" aria-hidden="true" href="#定义">#</a></h1>
 <p>马氏距离(Mahalanobis distance)是由印度统计学家马哈拉诺比斯(P. C. Mahalanobis)提出的，表示点与一个分布之间的距离，也可以定义为两个服从同一分布并且其协方差矩阵为$\Sigma$的随机变量之间的差异程度<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。马氏距离独立于数据的测量尺度。</p>
 <p>根据第一种定义给出的公式：

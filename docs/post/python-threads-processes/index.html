@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Python多线程和多进程的运行速度比较" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="Python多线程和多进程的运行速度比较" />
 <meta property="og:description" content="通过一个图像合成视频的脚本案例测试了一下Python3在单线程、多线程和多进程下的运行速度。发现多线程可以一定程度上提高运行速度（将1个线程拆为4个线程，提速大约83%），但是不能达到完全的并行运算，据说是因为threading模块并不能真正调用多个处理器。在多进程下运行，可以接近完全平行的运算速度。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/python-threads-processes/" /><meta property="og:image" content="https://shdong.net/ptr.png"/><meta property="article:section" content="post" />
@@ -479,8 +482,7 @@ if (!doNotTrack) {
 <ul>
 <li>在Windows中，由于没有fork(Linux中创建进程的机制)，在创建进程的时候会import启动该文件，而在import文件的时候又会再次运行整个文件，如果把<code>Process()</code>放在<code> if __name__ == '__main__'</code>判断之外，则<code>Process()</code>在被import的时候也会被运行，导致无限递归创建子进程导致报错，所以在Windows系统下，必须把<code>Process()</code>放在 <code>if __name__ == '__main__'</code> 的判断保护之下。</li>
 <li>在子进程中不能使用input，因为输入台只显示在主进程中，故如果在子进程中使用input，会导致报错。</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

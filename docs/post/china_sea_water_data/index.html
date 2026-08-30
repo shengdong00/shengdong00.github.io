@@ -66,17 +66,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="我国海水水质数据分析" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="我国海水水质数据分析" />
 <meta property="og:description" content="环境数据分析课程的大作业，主要目的应用一下课上学到的一些数据分析方法。
 
 通过爬虫获取我国沿海海水水质的监测数据；
@@ -860,8 +863,7 @@ if (!doNotTrack) {
 </div>
 </div><p>转换后的样本偏度约等于零，可以近似认为样本是无偏的。考虑到样本量&gt;7500，根据大数定理认为样本总体符合正态分布。</p>
 <blockquote>
-<p>事实上如果用K-S检验，还是会发现不能通过正态性检验的。可能是因为数据的差异性大，所以样本数量还远远不够；也有可能是因为数据本身的采样有偏，事实上水质监测数据确实不是完全随机时刻和取点的，会受到采样点设置偏好的影响。这里只是凭借大数定理和Q-Q图，定性地认为服从正态分布。</p>
-</blockquote>
+<p>事实上如果用K-S检验，还是会发现不能通过正态性检验的。可能是因为数据的差异性大，所以样本数量还远远不够；也有可能是因为数据本身的采样有偏，事实上水质监测数据确实不是完全随机时刻和取点的，会受到采样点设置偏好的影响。这里只是凭借大数定理和Q-Q图，定性地认为服从正态分布。</p></blockquote>
 <p>用Q-Q图辅助判断，处理后的数据点更好地分布在对角线上。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1312,30 +1314,30 @@ if (!doNotTrack) {
 </div><h2 id="数据清理">数据清理<a hidden class="anchor" aria-hidden="true" href="#数据清理">#</a></h2>
 <p>首先把数据转换为数值类型。将标记为“未检出”、“&lt;0.01”、“&lt;0.1”的数据转换为0。将因变量（海区）数值化，标记成0~3。</p>
 <table>
-<thead>
-<tr>
-<th>海区</th>
-<th>数值化</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>黄海</td>
-<td>0</td>
-</tr>
-<tr>
-<td>渤海</td>
-<td>1</td>
-</tr>
-<tr>
-<td>东海</td>
-<td>2</td>
-</tr>
-<tr>
-<td>南海</td>
-<td>3</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>海区</th>
+          <th>数值化</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>黄海</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>渤海</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>东海</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>南海</td>
+          <td>3</td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

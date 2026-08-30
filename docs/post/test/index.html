@@ -59,17 +59,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="HugoBlog Test" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="HugoBlog Test" />
 <meta property="og:description" content="This is a test page
 本页面用于测试网站的显示格式，以及不同模块的渲染情况。" />
 <meta property="og:type" content="article" />
@@ -265,7 +268,7 @@ if (!doNotTrack) {
                         <a href="#subtitle-3" aria-label="Subtitle 3">Subtitle 3</a><ul>
                             
                     <li>
-                        <a href="#%e5%b0%86hugo%e9%83%a8%e7%bd%b2%e5%88%b0%e5%88%b0github-pagesgit" aria-label="将Hugo部署到到Github Pages4">将Hugo部署到到Github Pages<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></a></li>
+                        <a href="#%e5%b0%86hugo%e9%83%a8%e7%bd%b2%e5%88%b0%e5%88%b0github-pages" aria-label="将Hugo部署到到Github Pages4">将Hugo部署到到Github Pages<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></a></li>
                     <li>
                         <a href="#html%e8%af%ad%e8%a8%80%e6%a0%87%e8%ae%b0%e8%a1%a5%e5%85%85" aria-label="html语言标记补充">html语言标记补充</a><ul>
                             
@@ -519,30 +522,29 @@ $$</p>
 </ul>
 <h2 id="subtitle-2">Subtitle 2<a hidden class="anchor" aria-hidden="true" href="#subtitle-2">#</a></h2>
 <table>
-<thead>
-<tr>
-<th>表格</th>
-<th>A</th>
-<th>B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>000</td>
-<td>111</td>
-<td>222</td>
-</tr>
-<tr>
-<td>0000</td>
-<td>1111</td>
-<td>2222</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>表格</th>
+          <th>A</th>
+          <th>B</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>000</td>
+          <td>111</td>
+          <td>222</td>
+      </tr>
+      <tr>
+          <td>0000</td>
+          <td>1111</td>
+          <td>2222</td>
+      </tr>
+  </tbody>
 </table>
 <p>try quoting?</p>
 <blockquote>
-<p>Blahblahblah&hellip;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-</blockquote>
+<p>Blahblahblah&hellip;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p></blockquote>
 <p>注脚的编号会根据出现的顺序自动生成</p>
 <h2 id="subtitle-3">Subtitle 3<a hidden class="anchor" aria-hidden="true" href="#subtitle-3">#</a></h2>
 <p>mermaid插件的渲染<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
@@ -580,7 +582,7 @@ sequenceDiagram
 flowchart LR
 A-->B-->C-->A
 </div>
-<h3 id="将hugo部署到到github-pagesgit">将Hugo部署到到Github Pages<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><a hidden class="anchor" aria-hidden="true" href="#将hugo部署到到github-pagesgit">#</a></h3>
+<h3 id="将hugo部署到到github-pages">将Hugo部署到到Github Pages<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><a hidden class="anchor" aria-hidden="true" href="#将hugo部署到到github-pages">#</a></h3>
 <p>生成网页静态页面文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

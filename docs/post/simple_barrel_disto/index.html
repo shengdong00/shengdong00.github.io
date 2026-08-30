@@ -58,17 +58,20 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-MT6FEG7LK4', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="简单理想情形下的Barrel distortion" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6FEG7LK4"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MT6FEG7LK4');
+        }
+      </script><meta property="og:title" content="简单理想情形下的Barrel distortion" />
 <meta property="og:description" content="Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shdong.net/post/simple_barrel_disto/" /><meta property="og:image" content="https://shdong.net/ptr.png"/><meta property="article:section" content="post" />
@@ -230,8 +233,7 @@ if (!doNotTrack) {
   <div class="post-content"><p>Barrel distortion(桶形畸变)是一种成像画面呈桶形膨胀的畸变现象，通常在广角镜头下出现。最近在调试生态监测相机时就遇到了非常典型的桶形畸变，会影响到对于监测对象的定位精确性。</p>
 <p>网上找到对Barrel distortion的描述如下。</p>
 <blockquote>
-<p><strong>Barrel distortion</strong>: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p><strong>Barrel distortion</strong>: When straight lines are curved inwards in a shape of a barrel, this type of aberration is called “barrel distortion”. Commonly seen on wide angle lenses, barrel distortion happens because the field of view of the lens is much wider than the size of the image sensor and hence it needs to be “squeezed” to fit. As a result, straight lines are visibly curved inwards, especially towards the extreme edges of the frame.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <center><img src="/images/image-20221116224413837.png" alt="image-20221116224413837" style="zoom: 67%;" /></center>
 <p>为了便于理解Barrel distortion并尝试自行解决问题，我构建了一个极其简化的理想模型：</p>
 <p>将相机理想化为一个点，其到实物平面的垂足为$O(0,0)$，距离为$h$。平面上某一点相对于$O$的坐标为$P_1(x_1, y_1)$，该点对应的相机视野张角为$\theta_1$。则
