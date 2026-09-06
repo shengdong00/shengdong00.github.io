@@ -83,8 +83,8 @@ languages:
           buttons:
               - name: About
                 url: /about
-              - name: Projects
-                url: /projects
+              # - name: Projects
+                # url: /projects
               - name: CV
                 url: /files/CV_ShengDong.pdf
               - name: Blog
