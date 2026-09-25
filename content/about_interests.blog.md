@@ -12,32 +12,46 @@ summary: about
 
 
 
-:alien: 00后，目前是INFJ-T
-
+:alien: 00后，目前是INFJ-T<sub>2026春</sub>
 
 
 
 ### 几本闲书 :books:
 
-- [ ] **美丽新世界的美德与见识 (Ends and Means)** [英]阿道司·赫胥黎
-- [x] **傅科摆 (Il Pendolo di Foucault)** [意]翁贝托·埃科
-- [x] **基督山伯爵 (Compte de Mont Christo)** [法]大仲马
-- [x] **学历之死：美国博士消亡史** [美]赫布·柴尔德里斯
+- [ ] **撒旦探戈 (Satantango)** [匈]好丘 (László Krasznahorkai)
+- [ ] **启蒙时代：人的觉醒与现代秩序的诞生 (The Enlightenment: An Interpretation)** [美]彼得·盖伊 (Peter Gay)
+  - [ ] **上卷：现代异教精神的兴起 (The Rise of Modern Paganism)**
+  - [ ] **下卷：自由的科学**
+
+- [x] **永别了，武器 (A Farewell to Arms)** [美]海明威 (Ernest M. Hemingway)
+- [x] **国家的视角：那些试图改善人类状况的项目是如何失败的 (Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed)** [美]詹姆斯·C. 斯科特 (James C. Scott)
+- [x] **傅科摆 (Il Pendolo di Foucault/Foucault’s Pendulum)** [意]翁贝托·埃科 (Umberto Eco)
+- [x] **基督山伯爵 (Compte de Mont Christo)** [法]大仲马 (Alexandre Dumas père)
+- [x] **学历之死：美国博士消亡史 (The Adjunct Underclass: How America’s Colleges Betrayed Their Faculty, Their Students, and Their Mission)** [美]赫布·柴尔德里斯 (Herb Childress)
 - [x] **泥潭** 刘楚昕 [:black_nib:读后感](/post/on_quagmire/)
 - [x] **流浪苍穹** 郝景芳 [:black_nib:读后感](/post/liu-lang-cang-qiong/)
 - [x] **翦商** 李硕
-- [x] **永恒的终结 (The End of Eternity)** [美]艾萨克·阿西莫夫
-- [x] **空军飞行员 (Pilote de Guerre)** [法]圣·埃克絮佩里 [:black_nib:读后感](/post/on-pilote-de-guerre/)
-- [x] **神们自己 (The Gods Themselves)** [美]艾萨克·阿西莫夫
+- [x] **永恒的终结 (The End of Eternity)** [美]艾萨克·阿西莫夫 (Issac Asimov)
+- [x] **空军飞行员 (Pilote de Guerre)** [法]圣·埃克絮佩里 (Antoine de Saint-Exupéry) [:black_nib:读后感](/post/on-pilote-de-guerre/)
+- [x] **神们自己 (The Gods Themselves)** [美]艾萨克·阿西莫夫 (Issac Asimov)
 
 
 
 ### 喜欢的电影/剧 :movie_camera:
 
-{{< tag >}}奥本海默{{< /tag >}} {{< tag >}}流浪地球2{{< /tag >}} {{<tag>}}亡命驾驶{{</tag>}} {{<tag>}}{{</tag>}} {{<tag>}}神盾局特工{{</tag>}} {{<tag>}}无间道1-3{{</tag>}} {{<tag>}}猫鼠游戏{{</tag>}} {{<tag>}}MIU404{{</tag>}} {{<tag>}}摩登家庭{{</tag>}} {{<tag>}}神探夏洛克{{</tag>}} {{<tag>}}蜘蛛侠纵横宇宙{{</tag>}}
+{{< tag >}}蜘蛛侠：崭新之日{{< /tag >}}
+{{< tag >}}奥本海默{{< /tag >}}
+{{< tag >}}流浪地球2{{< /tag >}}
+{{< tag >}}亡命驾驶{{< /tag >}}
+{{< tag >}}神盾局特工{{< /tag >}}
+{{< tag >}}无间道1-3{{< /tag >}}
+{{< tag >}}猫鼠游戏{{< /tag >}}
+{{< tag >}}MIU404{{< /tag >}}
+{{< tag >}}摩登家庭{{< /tag >}}
+{{< tag >}}神探夏洛克{{< /tag >}}
+{{< tag >}}蜘蛛侠：纵横宇宙{{< /tag >}}
 
-<!-- {{<tag>}}{{</tag>}} -->
-
+<!-- {{< tag >}}{{< /tag >}} -->
 
 
 
@@ -66,15 +80,17 @@ summary: about
 
 ### 玩些啥？:joystick:
 
-{{< tag >}}师父{{< /tag >}}
-{{< tag >}}刺客信条: 启示录{{< /tag >}}
-{{< tag past=true >}}刺客信条: 兄弟会{{< /tag >}}
+{{< tag >}}真·三国无双：起源{{< /tag >}}
+{{< tag >}}荒野大镖客{{< /tag >}}
+{{< tag past=true >}}师父{{< /tag >}}
+{{< tag past=true >}}刺客信条：启示录{{< /tag >}}
+{{< tag past=true >}}刺客信条：兄弟会{{< /tag >}}
 {{< tag past=true >}}刺客信条2{{< /tag >}}
 {{< tag past=true >}}GTA5{{< /tag >}}
-{{< tag >}}空洞骑士: 丝之歌{{< /tag >}} 
+{{< tag>}}空洞骑士: 丝之歌{{< /tag >}} 
 {{< tag past=true >}}空洞骑士{{< /tag >}}
 {{< tag past=true >}}黑神话: 悟空{{< /tag >}}
-{{< tag >}}都市天际线{{< /tag >}}
+{{< tag>}}都市天际线{{< /tag >}}
 
 
 
