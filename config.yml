@@ -155,12 +155,7 @@ params:
         Title: "凡言皆呓"
         
         Content: >
-          <font size=4em>
-          过去心不可得<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在心不可得<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未来心不可得
-          </font>
-
+          <font size=4em>过去心不可得, 现在心不可得, 未来心不可得</font>
     socialIcons:
         # - name: email
         #   url: mailto:sheng_dong@foxmail.com
